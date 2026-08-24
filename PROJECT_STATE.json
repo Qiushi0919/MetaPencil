@@ -9,7 +9,7 @@
     "last_recorded_commit": "125676b97065a4a018b7314bfe01a9b47533bd78",
     "remote_url": "https://github.com/Qiushi0919/MetaPencil",
     "remote_visibility": "private",
-    "remote_head_at_last_sync": "125676b97065a4a018b7314bfe01a9b47533bd78",
+    "remote_sync": "local main and origin/main synchronized at final handoff; resolve the current hash with git rev-parse origin/main",
     "workflow_push_blocker": null,
     "branch_protection": "documented but GitHub API returned 403 because the current private-account plan does not enable this feature"
   },

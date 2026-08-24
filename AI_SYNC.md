@@ -7,7 +7,7 @@
 - Branch: `main`
 - Local target commit: `f4279de24deaa25ed0163485e26b471ec94912ff`
 - Private remote: `https://github.com/Qiushi0919/MetaPencil`
-- Remote main: `125676b97065a4a018b7314bfe01a9b47533bd78`；完整初始化历史、CI、review packet、全新克隆报告和两个标签已非强推同步。
+- Remote main: 与本地 `main` 已非强推同步；完整初始化历史、CI、review packet、全新克隆报告和两个标签都已发布。当前哈希以 `git rev-parse origin/main` 为准。
 - GitHub Actions: `Repository checks` 在 commit `125676b` 上完成并成功，run `32703750790`。
 - Release: `handoff-v1.1-git-ready` 已发布；没有上传原始大 ZIP。
 - Branch protection: 已尝试禁止 force push/deletion；GitHub 因当前私有账户方案返回 403，故以仓库政策和非强推命令约束，未把仓库改为公开。

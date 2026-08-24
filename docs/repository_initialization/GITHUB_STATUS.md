@@ -5,7 +5,7 @@
 - URL: `https://github.com/Qiushi0919/MetaPencil`
 - Visibility: **PRIVATE**
 - Default branch: `main`
-- Remote main at this record: `125676b97065a4a018b7314bfe01a9b47533bd78`
+- Remote main: synchronized with local `main` at final handoff; resolve with `git rev-parse origin/main`.
 - Baseline tag pushed: `handoff-v1.0-20260824`
 - Git-ready tag pushed: `handoff-v1.1-git-ready`
 - Release: `https://github.com/Qiushi0919/MetaPencil/releases/tag/handoff-v1.1-git-ready`
