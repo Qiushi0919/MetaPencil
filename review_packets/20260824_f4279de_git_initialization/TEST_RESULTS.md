@@ -25,3 +25,15 @@
 
 The test is L0 coefficient/area/frequency mapping validation, not a full 700-point SAR recomputation.
 
+## Fresh clone from bundle
+
+- Clone commit: `0a49749deeab7153b3e2f768a873e8bca8f5df8a`
+- Initial worktree: clean
+- README and `PROJECT_STATE.json`: PASS
+- Full 872-entry checksum validation: PASS
+- Python harmonic and sensitive scans: PASS
+- Git LFS pointers requiring unavailable objects: 0
+- MATLAB smoke in fresh clone: PASS
+- Output directory write: PASS
+- Worktree after restoring smoke-generated tracked artifacts: clean
+

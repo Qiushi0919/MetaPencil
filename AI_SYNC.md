@@ -14,6 +14,7 @@
 - Tests actually run: Python 4/4 谐波断言通过；仓库结构通过；872/872 基线 SHA-256 通过；高置信凭据 0；MATLAB R2025a 烟雾测试 PASS。
 - MATLAB results: `|C+1|=0.900316316157`、`|S+1|=0.823639103546`、`|S-3|=1.963e-16`、`|S+5|=9.211e-16`、`|A(+1,+1)|=0.549875229298`。
 - Artifacts: `outputs/smoke_test/`；review packet 位于 `review_packets/20260824_f4279de_git_initialization/`。
+- Offline recovery: 完整 Git bundle 已创建并验证；从 bundle 的全新克隆在干净状态下通过 872 项哈希、Python 测试、凭据扫描和 MATLAB 烟雾测试，恢复生成文件后工作区重新为 clean。
 - Core algorithm changes: 无。
 - Next: 刷新 GitHub `workflow` scope 后推送本地 `main` 和 Git-ready 标签；开始 Issue #1/#2 的位置感知模型设计。
 

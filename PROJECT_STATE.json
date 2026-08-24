@@ -6,7 +6,7 @@
     "default_branch": "main",
     "current_branch_goal": "establish a verified Git/GitHub research baseline without changing core algorithms",
     "baseline_tag": "handoff-v1.0-20260824",
-    "last_recorded_commit": "f4279de24deaa25ed0163485e26b471ec94912ff",
+    "last_recorded_commit": "0a49749deeab7153b3e2f768a873e8bca8f5df8a",
     "remote_url": "https://github.com/Qiushi0919/MetaPencil",
     "remote_visibility": "private",
     "remote_head_at_last_sync": "6793330933969fdfb40c065b0116dc0af18738c2",
@@ -62,6 +62,13 @@
     "manifest": "outputs/smoke_test/run_manifest.json"
   },
   "git_lfs": "not installed; policy documented and no imported file exceeds 100 MiB",
+  "fresh_clone_validation": {
+    "status": "PASS",
+    "source": "verified Git bundle",
+    "validated_commit": "0a49749deeab7153b3e2f768a873e8bca8f5df8a",
+    "matlab_smoke": "PASS",
+    "final_worktree": "clean"
+  },
   "next_priority": "implement and validate explicit macro-cell geometry and scatterer ownership before claiming spatial-layout effects",
   "last_updated": "2026-08-24"
 }
