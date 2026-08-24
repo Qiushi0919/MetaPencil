@@ -1,0 +1,25 @@
+name: Hardware or nonideality model
+description: Add measured states, bandwidth, oblique incidence, coupling or controller errors.
+title: "[Hardware] "
+labels: ["hardware", "physics"]
+body:
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence source and operating conditions
+      description: Include frequency, incidence, polarization, state definition and whether data are simulated or measured.
+    validations:
+      required: true
+  - type: textarea
+    id: model
+    attributes:
+      label: Proposed amplitude/phase/error model
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation plan and pass criteria
+    validations:
+      required: true
+

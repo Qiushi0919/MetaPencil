@@ -1,0 +1,36 @@
+name: Repository checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  python-checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate required structure and JSON
+        run: python tests/validate_repository.py
+
+      - name: Test ideal harmonic model
+        run: python -m unittest tests/test_harmonic_model.py -v
+
+      - name: Scan high-confidence credential patterns
+        run: python tests/scan_secrets.py
+
+      - name: Check whitespace errors
+        run: git diff --check HEAD~1 HEAD || git diff --check
+

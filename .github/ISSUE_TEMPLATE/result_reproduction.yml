@@ -1,0 +1,30 @@
+name: Result reproduction
+description: Request a baseline reproduction or comparison.
+title: "[Reproduce] "
+labels: ["reproducibility"]
+body:
+  - type: input
+    id: baseline
+    attributes:
+      label: Baseline result path
+    validations:
+      required: true
+  - type: textarea
+    id: manifest
+    attributes:
+      label: Code commit, parameters and environment
+    validations:
+      required: true
+  - type: textarea
+    id: normalization
+    attributes:
+      label: Normalization and dB reference
+    validations:
+      required: true
+  - type: textarea
+    id: metrics
+    attributes:
+      label: Required metrics and tolerances
+    validations:
+      required: true
+

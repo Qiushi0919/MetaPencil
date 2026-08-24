@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Research context
+    url: https://github.com/Qiushi0919/MetaPencil/blob/main/AI_CONTEXT.md
+    about: Read the model boundaries before opening an issue.
+
