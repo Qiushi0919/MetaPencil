@@ -11,7 +11,6 @@ Imported the byte-verified 2026-08-24 handoff as an immutable baseline, added pr
 
 These are documented as P0 Issues #1 and #2, not silently corrected in this initialization.
 
-## Remote caveat
+## Remote status
 
-The repository is private and remote main contains commits through the recorded MATLAB smoke output. The CI commit remains local because the current OAuth token lacks GitHub's `workflow` scope. The complete state is preserved in the verified Git bundle.
-
+The repository is private. Full `main`, both handoff tags and the Git-ready Release are published; GitHub Actions passed on the tagged commit. The complete state is also preserved in the verified Git bundle.

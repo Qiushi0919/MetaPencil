@@ -5,8 +5,11 @@
 - URL: `https://github.com/Qiushi0919/MetaPencil`
 - Visibility: **PRIVATE**
 - Default branch: `main`
-- Remote main at this record: `6793330933969fdfb40c065b0116dc0af18738c2`
+- Remote main at this record: `125676b97065a4a018b7314bfe01a9b47533bd78`
 - Baseline tag pushed: `handoff-v1.0-20260824`
+- Git-ready tag pushed: `handoff-v1.1-git-ready`
+- Release: `https://github.com/Qiushi0919/MetaPencil/releases/tag/handoff-v1.1-git-ready`
+- CI: `Repository checks` PASS on commit `125676b`.
 
 ## Created collaboration objects
 
@@ -14,19 +17,18 @@
 - Milestones: `Paper-1 Core`, `Spatial Model v2`, `Prototype v0.1`.
 - Priority/model/reproducibility/hardware/data labels.
 
-## Remaining authorization limitation
+## Resolved workflow-push event
 
-The GitHub CLI OAuth token has `repo` but not `workflow` scope. GitHub therefore refused the commit that first adds `.github/workflows/repository-checks.yml`. No force push was attempted. The remote contains all commits through the recorded MATLAB smoke output; the local repository and bundle contain the additional templates, Issue drafts and CI commit.
+The first repository-creation push refused the commit that introduced `.github/workflows/repository-checks.yml`. The repository was then initialized non-destructively through the preceding verified commit. A later ordinary fast-forward push of full `main` and the Git-ready tag succeeded; no force push, tag rewrite or history rewrite was used. There is no remaining sync blocker.
 
-To complete the normal push:
+Normal future synchronization is:
 
 ```bash
-gh auth refresh -h github.com -s workflow
 git push origin main
 git push origin --tags
 ```
 
-The refresh is an interactive GitHub authorization and must be completed by the account owner. Do not paste a token into project files or terminal history.
+Do not paste a token into project files or terminal history.
 
 ## Force-push protection
 

@@ -1,10 +1,9 @@
-# GitHub publish/recovery commands
+# GitHub synchronization/recovery commands
 
-The private repository already exists. Current GitHub CLI authorization needs the `workflow` scope before it can push the CI workflow:
+The private repository and Git-ready tag are fully published. Normal future synchronization is:
 
 ```bash
 cd '/Users/qiushi/Library/CloudStorage/OneDrive-个人/谢秋实 本科/B 实习/5 Meta浙江大学/MetaPencil_Git_Workspace/MetaPencil'
-gh auth refresh -h github.com -s workflow
 git push origin main
 git push origin --tags
 ```
@@ -29,4 +28,3 @@ git push origin --tags
 ```
 
 Never use `--force` for these commands.
-

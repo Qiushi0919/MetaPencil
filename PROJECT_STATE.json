@@ -6,11 +6,11 @@
     "default_branch": "main",
     "current_branch_goal": "establish a verified Git/GitHub research baseline without changing core algorithms",
     "baseline_tag": "handoff-v1.0-20260824",
-    "last_recorded_commit": "0a49749deeab7153b3e2f768a873e8bca8f5df8a",
+    "last_recorded_commit": "125676b97065a4a018b7314bfe01a9b47533bd78",
     "remote_url": "https://github.com/Qiushi0919/MetaPencil",
     "remote_visibility": "private",
-    "remote_head_at_last_sync": "6793330933969fdfb40c065b0116dc0af18738c2",
-    "workflow_push_blocker": "GitHub OAuth token lacks workflow scope; local main is ahead until authorization is refreshed",
+    "remote_head_at_last_sync": "125676b97065a4a018b7314bfe01a9b47533bd78",
+    "workflow_push_blocker": null,
     "branch_protection": "documented but GitHub API returned 403 because the current private-account plan does not enable this feature"
   },
   "primary_language": "MATLAB",
@@ -69,6 +69,13 @@
     "matlab_smoke": "PASS",
     "final_worktree": "clean"
   },
+  "github_ci": {
+    "status": "PASS",
+    "workflow": "Repository checks",
+    "validated_commit": "125676b97065a4a018b7314bfe01a9b47533bd78",
+    "run_url": "https://github.com/Qiushi0919/MetaPencil/actions/runs/32703750790"
+  },
+  "github_release": "https://github.com/Qiushi0919/MetaPencil/releases/tag/handoff-v1.1-git-ready",
   "next_priority": "implement and validate explicit macro-cell geometry and scatterer ownership before claiming spatial-layout effects",
   "last_updated": "2026-08-24"
 }

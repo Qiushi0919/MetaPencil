@@ -9,7 +9,7 @@ Validation date: 2026-08-24
 - Branch: `main`
 - Initial worktree: clean
 
-The bundle route was used because the private GitHub remote is temporarily one local commit behind: its OAuth authorization lacks the `workflow` scope required to push the CI workflow.
+The bundle route was deliberately used to validate offline recovery independently of GitHub. During the first clone run the private remote was temporarily behind because the initial workflow-containing push was refused; the later ordinary fast-forward sync succeeded, and remote `main` now contains the validated commit.
 
 ## Checks
 
@@ -28,4 +28,3 @@ The bundle route was used because the private GitHub remote is temporarily one l
 MATLAB reproduced `|C+1|=0.900316316157`, `|S+1|=0.823639103546`, `|S-3|=1.963e-16`, `|S+5|=9.211e-16` and `|A(+1,+1)|=0.549875229298`.
 
 The smoke test intentionally updates tracked test artifacts. After verifying those outputs, the five generated modifications were restored inside the disposable clone; final clone status was clean. No user data were altered.
-
