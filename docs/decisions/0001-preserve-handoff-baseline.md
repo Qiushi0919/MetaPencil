@@ -13,5 +13,4 @@
 
 ## 后果
 
-根目录保留原始编号文档和小写 `project_state.json`；规范化副本与后续状态文件并存。后续不得移动或改写基线标签。
-
+原始小写 `project_state.json` 因 macOS 默认大小写不敏感文件系统无法与根目录规范化 `PROJECT_STATE.json` 并存，故在后续协作文档提交中原样移动为 `docs/handoff/project_state.original.json`；基线标签仍保留其原始根路径与字节。后续不得移动或改写基线标签。

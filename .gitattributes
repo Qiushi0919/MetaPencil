@@ -11,7 +11,7 @@
 
 # Preserve the byte-exact imported manifest used by the baseline checksum audit.
 /file_manifest.csv binary
-/project_state.json -text -diff -merge -eol
+/docs/handoff/project_state.original.json -text -diff -merge -eol
 
 # Binary research assets: never attempt textual merge or diff.
 *.mat binary

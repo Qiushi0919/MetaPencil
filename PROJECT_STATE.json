@@ -1,0 +1,56 @@
+{
+  "project_name": "MetaPencil",
+  "snapshot_date": "2026-08-24",
+  "repository": {
+    "visibility_required": "private",
+    "default_branch": "main",
+    "current_branch_goal": "establish a verified Git/GitHub research baseline without changing core algorithms",
+    "baseline_tag": "handoff-v1.0-20260824",
+    "last_recorded_commit": "b2a07f3976d82466e6925c9fa60c75ae717a4e3e",
+    "remote_url": null
+  },
+  "primary_language": "MATLAB",
+  "canonical_entrypoint": "source/2 暑假_两个月仿真任务/Week 5 0815之前/SAR假目标自由度与物理阵列/run_full_array_freedom_study.m",
+  "current_milestone": "Ideal single-polarized 2-bit point-scatterer validation with four-delay harmonic cancellation and outer H_k target codebooks",
+  "model_levels": {
+    "L0_harmonic_coefficients": "implemented_and_smoke_tested",
+    "L1_separable_fast_slow_time_response": "implemented_ideal",
+    "L2_point_scatterer_complex_raw_echo_RD": "implemented_baseline",
+    "L3_position_aware_finite_aperture_partition": "not_implemented_P0",
+    "L4_full_wave_conformal_hardware": "not_implemented"
+  },
+  "confirmed_model_boundaries": [
+    "tile_map spatial coordinates do not affect the current response; only per-channel counts and area weights are used",
+    "each H_k channel currently multiplies a weighted full-aircraft complex response rather than a spatial subset of scatterers"
+  ],
+  "key_parameters": {
+    "fc_hz": 10000000000,
+    "incidence_deg": 60,
+    "platform_height_m": 500,
+    "platform_velocity_mps": 80,
+    "ground_range_resolution_m": 0.25,
+    "azimuth_resolution_m": 0.25,
+    "grid_spacing_m": 8,
+    "phase_states_deg": [0, 90, 180, 270],
+    "inner_delay_fraction": [0, 0.1, 0.8333333333333334, 0.9333333333333333]
+  },
+  "validated_results": {
+    "C_plus1_amplitude": 0.900316316157106,
+    "S_plus1_amplitude": 0.823639103546332,
+    "A_plus1_plus1_amplitude": 0.549875229298,
+    "dominant_nulls": ["S_minus3", "S_plus5"]
+  },
+  "active_issue_drafts": [
+    "P0 position-aware tile model",
+    "P0 spatially partitioned aircraft response",
+    "P0 low-resolution end-to-end SAR smoke test",
+    "P0 unified baselines and normalization",
+    "P1 machine-readable run manifest",
+    "P0 energy accounting and SAR metrics",
+    "P1 hardware error model",
+    "P1 data and Git LFS policy"
+  ],
+  "next_priority": "implement and validate explicit macro-cell geometry and scatterer ownership before claiming spatial-layout effects",
+  "last_updated": "2026-08-24"
+}
+
