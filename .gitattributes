@@ -1,0 +1,25 @@
+* text=auto
+
+*.m text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.csv text eol=lf
+*.txt text eol=lf
+
+# Preserve the byte-exact imported manifest used by the baseline checksum audit.
+/file_manifest.csv binary
+
+# Binary research assets: never attempt textual merge or diff.
+*.mat binary
+*.fig binary
+*.stl binary
+*.fbx binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.pptx binary
+*.docx binary

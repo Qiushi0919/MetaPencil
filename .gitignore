@@ -1,0 +1,54 @@
+# MetaPencil repository hygiene
+# The imported handoff snapshot is already tracked. These rules govern new files.
+
+# Operating-system and editor metadata
+.DS_Store
+._*
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.bak
+*.asv
+*~
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# MATLAB generated state (do not ignore all MAT files globally)
+slprj/
+codegen/
+*.autosave
+**/cache/
+**/scratch/
+**/temp/
+
+# Large/reproducible run intermediates. Curated baselines and smoke outputs stay allowed.
+outputs/runs/
+outputs/tmp/
+outputs/cache/
+outputs/**/*.fig
+outputs/**/*.avi
+outputs/**/*.mp4
+outputs/**/*_raw.mat
+outputs/**/sar_results*.mat
+
+# Local reports and credentials
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+
+# Local packaging and clone-validation artifacts
+*.git.bundle
+MetaPencil_Code_Handoff_*.zip
+MetaPencil_Review_*.zip
+MetaPencil_Fresh_Clone/
+
