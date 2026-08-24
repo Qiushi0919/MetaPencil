@@ -1,0 +1,26 @@
+A .gitattributes
+A .github/ISSUE_TEMPLATE/*
+A .github/pull_request_template.md
+A .github/workflows/repository-checks.yml
+A .gitignore
+A AGENTS.md
+A AI_CONTEXT.md
+A AI_SYNC.md
+A CHANGELOG.md
+A CONTRIBUTING.md
+A LICENSE_PENDING.md
+A PROJECT_STATE.json
+A README.md
+A REPOSITORY_POLICY.md
+A docs/decisions/*
+A docs/handoff/*
+R project_state.json -> docs/handoff/project_state.original.json
+A docs/issues/*
+A docs/repository_initialization/*
+A docs/theory/*
+A outputs/smoke_test/*
+A review_packets/*
+A tests/*
+
+No file under the canonical MATLAB source path was modified after the raw handoff commit.
+

@@ -6,8 +6,12 @@
     "default_branch": "main",
     "current_branch_goal": "establish a verified Git/GitHub research baseline without changing core algorithms",
     "baseline_tag": "handoff-v1.0-20260824",
-    "last_recorded_commit": "b2a07f3976d82466e6925c9fa60c75ae717a4e3e",
-    "remote_url": null
+    "last_recorded_commit": "f4279de24deaa25ed0163485e26b471ec94912ff",
+    "remote_url": "https://github.com/Qiushi0919/MetaPencil",
+    "remote_visibility": "private",
+    "remote_head_at_last_sync": "6793330933969fdfb40c065b0116dc0af18738c2",
+    "workflow_push_blocker": "GitHub OAuth token lacks workflow scope; local main is ahead until authorization is refreshed",
+    "branch_protection": "documented but GitHub API returned 403 because the current private-account plan does not enable this feature"
   },
   "primary_language": "MATLAB",
   "canonical_entrypoint": "source/2 暑假_两个月仿真任务/Week 5 0815之前/SAR假目标自由度与物理阵列/run_full_array_freedom_study.m",
@@ -50,7 +54,14 @@
     "P1 hardware error model",
     "P1 data and Git LFS policy"
   ],
+  "github_issues": [1, 2, 3, 4, 5, 6, 7, 8],
+  "smoke_test": {
+    "status": "PASS",
+    "matlab_version": "R2025a",
+    "source_commit": "6ee3e36d16287b11ecfd16c00a79dbd06de364c6",
+    "manifest": "outputs/smoke_test/run_manifest.json"
+  },
+  "git_lfs": "not installed; policy documented and no imported file exceeds 100 MiB",
   "next_priority": "implement and validate explicit macro-cell geometry and scatterer ownership before claiming spatial-layout effects",
   "last_updated": "2026-08-24"
 }
-
