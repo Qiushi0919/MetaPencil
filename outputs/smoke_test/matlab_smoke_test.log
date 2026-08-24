@@ -1,0 +1,13 @@
+COMMAND=/Applications/MATLAB_R2025a.app/bin/matlab -batch run('<HANDOFF_ROOT>/handoff_tools/run_smoke_test.m')
+RETURN_CODE=0
+SMOKE_TEST_STATUS=PASS
+MATLAB_VERSION=25.1.0.2943329 (R2025a)
+|C+1|=0.900316316157
+|S+1|=0.823639103546
+|S-3|=1.963e-16
+|S+5|=9.211e-16
+|A(+1,+1)|=0.549875229298 (-5.195 dB)
+1to2_each_amplitude=[0.274937614649 0.274937614649]
+range_frequency_hz=[32000000.000 -32000000.000]
+azimuth_frequency_hz=[42.666667 42.666667]
+ELAPSED_SECONDS=4.498243

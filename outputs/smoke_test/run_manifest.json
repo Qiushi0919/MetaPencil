@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "return_code": 0,
+  "source_commit": "6ee3e36d16287b11ecfd16c00a79dbd06de364c6",
+  "branch": "main",
+  "command": "python3 handoff_tools/run_smoke_test.py",
+  "model_level": "L0 ideal harmonic coefficients and area/frequency mapping",
+  "generated_at_utc": "2026-08-24T07:45:22.386588+00:00",
+  "core_algorithm_changed": false
+}
