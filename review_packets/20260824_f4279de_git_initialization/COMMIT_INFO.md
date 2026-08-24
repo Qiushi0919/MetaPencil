@@ -1,7 +1,7 @@
 # Commit information
 
 - Repository: `https://github.com/Qiushi0919/MetaPencil`
-- Visibility: Private
+- Visibility: Public by explicit owner request; no open-source license granted
 - Branch: `main`
 - Base tag: `handoff-v1.0-20260824`
 - Base commit: `9a42c5b64019523c71af7849f7b8895ecca4efe0`

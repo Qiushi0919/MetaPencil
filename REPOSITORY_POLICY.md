@@ -2,7 +2,8 @@
 
 ## 可见性与历史安全
 
-- 仓库必须保持 **Private**，除非项目负责人明确批准公开。
+- 项目负责人已于 2026-08-24 明确批准将仓库设为 **Public**。
+- Public 只表示可见性，不构成开源许可；第三方材料与再分发权仍须逐项核查。
 - 默认分支为 `main`；禁止 force push，禁止重写已发布标签和已有历史。
 - 新研究、修复和分析在 `feature/*`、`fix/*`、`analysis/*` 分支完成，经审阅后合并。
 - 不提交令牌、密码、服务器凭据、个人密钥或未脱敏的实验账号信息。
@@ -25,4 +26,3 @@
 - 提交格式：`type(scope): summary`，如 `test(smoke): record harmonic null validation`。
 - 每个修改应包含必要测试；重要结果必须能追溯到 commit hash。
 - 合并前更新 `PROJECT_STATE.json`、`AI_SYNC.md`、`CHANGELOG.md` 和 review packet。
-

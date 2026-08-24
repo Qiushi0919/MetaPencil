@@ -6,9 +6,9 @@
 - Preserved the raw import in commit `9a42c5b` and tag `handoff-v1.0-20260824`.
 - Added repository/data policy, collaboration documentation, model-level boundaries, tests, review packets and GitHub templates.
 - Recorded a real MATLAB R2025a harmonic smoke test without changing core algorithms.
-- Created private GitHub repository `Qiushi0919/MetaPencil`.
+- Created GitHub repository `Qiushi0919/MetaPencil`; visibility was subsequently changed to Public by explicit owner request.
 - Created Issues #1–#8, 3 milestones and research labels.
-- Published `handoff-v1.1-git-ready` and a private GitHub Release; CI passed on the tagged commit.
+- Published `handoff-v1.1-git-ready` and a GitHub Release; CI passed on the tagged commit.
 - Generated and verified an offline Git bundle.
 - Passed a full fresh-clone validation from that bundle.
 
@@ -22,7 +22,7 @@
 
 No required publish step remains. Optionally:
 
-1. If the GitHub account plan later supports private branch protection, apply `branch_protection.json`.
+1. Review the redistribution rights and embedded metadata of third-party PDF/PPT/DOCX/model assets now exposed by Public visibility.
 2. Install Git LFS before adding any required new binary above the documented threshold.
 
-The repository must remain private; making it public is not an acceptable workaround for account-plan restrictions.
+`main` branch protection is enabled with force pushes and deletions disabled. No open-source license has been granted.

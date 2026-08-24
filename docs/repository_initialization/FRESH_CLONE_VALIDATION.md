@@ -9,7 +9,7 @@ Validation date: 2026-08-24
 - Branch: `main`
 - Initial worktree: clean
 
-The bundle route was deliberately used to validate offline recovery independently of GitHub. During the first clone run the private remote was temporarily behind because the initial workflow-containing push was refused; the later ordinary fast-forward sync succeeded, and remote `main` now contains the validated commit.
+The bundle route was deliberately used to validate offline recovery independently of GitHub. During the first clone run the GitHub remote was temporarily behind because the initial workflow-containing push was refused; the later ordinary fast-forward sync succeeded, and remote `main` now contains the validated commit.
 
 ## Checks
 

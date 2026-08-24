@@ -3,7 +3,7 @@
 ## Remote
 
 - URL: `https://github.com/Qiushi0919/MetaPencil`
-- Visibility: **PRIVATE**
+- Visibility: **PUBLIC**（按项目负责人明确要求变更）
 - Default branch: `main`
 - Remote main: synchronized with local `main` at final handoff; resolve with `git rev-parse origin/main`.
 - Baseline tag pushed: `handoff-v1.0-20260824`
@@ -32,4 +32,6 @@ Do not paste a token into project files or terminal history.
 
 ## Force-push protection
 
-The repository policy and all generated commands prohibit force push. An API request was also made with `allow_force_pushes: false` and `allow_deletions: false`, but GitHub returned HTTP 403 because branch protection for this private repository is unavailable on the current account plan. The repository was kept private; it was not made public to bypass this limitation. The intended protection payload is preserved in `branch_protection.json` for future use.
+After the explicit Public visibility change, the stored protection payload was successfully applied to `main`: `allow_force_pushes=false` and `allow_deletions=false`. Required reviews/status checks remain unset so ordinary authorized fast-forward maintenance is still possible.
+
+Public visibility does not create an open-source license. See `LICENSE_PENDING.md`; third-party literature, presentations and models still require permission review.

@@ -1,6 +1,6 @@
 # GitHub synchronization/recovery commands
 
-The private repository and Git-ready tag are fully published. Normal future synchronization is:
+The public repository and Git-ready tag are fully published. Normal future synchronization is:
 
 ```bash
 cd '/Users/qiushi/Library/CloudStorage/OneDrive-个人/谢秋实 本科/B 实习/5 Meta浙江大学/MetaPencil_Git_Workspace/MetaPencil'

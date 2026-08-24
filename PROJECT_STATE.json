@@ -2,16 +2,16 @@
   "project_name": "MetaPencil",
   "snapshot_date": "2026-08-24",
   "repository": {
-    "visibility_required": "private",
+    "visibility_required": "public_by_explicit_owner_request",
     "default_branch": "main",
     "current_branch_goal": "establish a verified Git/GitHub research baseline without changing core algorithms",
     "baseline_tag": "handoff-v1.0-20260824",
     "last_recorded_commit": "125676b97065a4a018b7314bfe01a9b47533bd78",
     "remote_url": "https://github.com/Qiushi0919/MetaPencil",
-    "remote_visibility": "private",
+    "remote_visibility": "public",
     "remote_sync": "local main and origin/main synchronized at final handoff; resolve the current hash with git rev-parse origin/main",
     "workflow_push_blocker": null,
-    "branch_protection": "documented but GitHub API returned 403 because the current private-account plan does not enable this feature"
+    "branch_protection": "enabled after public visibility change; force pushes and branch deletions are disabled"
   },
   "primary_language": "MATLAB",
   "canonical_entrypoint": "source/2 暑假_两个月仿真任务/Week 5 0815之前/SAR假目标自由度与物理阵列/run_full_array_freedom_study.m",

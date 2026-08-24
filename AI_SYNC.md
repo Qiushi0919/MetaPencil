@@ -2,6 +2,15 @@
 
 在文件顶部追加新记录。每条记录必须说明分支、commit、修改范围、实际测试、结果路径、假设和下一步；不得把计划写成已完成。
 
+## 2026-08-24 — Repository visibility changed to Public
+
+- Authorization: 项目负责人在当前任务中明确要求“改成 public”。
+- Remote: `https://github.com/Qiushi0919/MetaPencil`，visibility 已核验为 `PUBLIC`。
+- Protection: `main` 分支保护已启用；`allow_force_pushes=false`、`allow_deletions=false`。
+- License: 没有自动添加开源许可证；`LICENSE_PENDING.md` 明确说明公开可见不等于使用或再分发授权。
+- Risk note: 仓库包含论文、PPT/PDF、模型等第三方材料，许可与元数据仍需人工复核。
+- Core algorithm changes: 无。
+
 ## 2026-08-24 — Tests, private remote and collaboration governance
 
 - Branch: `main`

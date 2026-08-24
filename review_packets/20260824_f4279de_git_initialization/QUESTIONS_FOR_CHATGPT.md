@@ -3,7 +3,7 @@
 ## Repository
 
 - URL: `https://github.com/Qiushi0919/MetaPencil`
-- Visibility: Private
+- Visibility: Public by explicit owner request; license pending
 - Branch: `main`
 - Base commit: `9a42c5b64019523c71af7849f7b8895ecca4efe0`
 - Target commit: `f4279de24deaa25ed0163485e26b471ec94912ff`
@@ -11,7 +11,7 @@
 
 ## 本次任务
 
-把经过校验的交接包建立为安全、可追溯、适合 Codex/ChatGPT 协作的私有 Git 仓库，不改核心算法。
+把经过校验的交接包建立为安全、可追溯、适合 Codex/ChatGPT 协作的 Git 仓库，不改核心算法；可见性后来按项目负责人要求改为 Public。
 
 ## 修改前模型
 
@@ -44,7 +44,7 @@
 
 ## 已知限制
 
-宏格位置尚未进入有限口径散射；H_k 尚未对应散射点子集；Git LFS 与私有分支保护尚未启用。
+宏格位置尚未进入有限口径散射；H_k 尚未对应散射点子集；Git LFS 尚未启用；第三方材料许可仍待复核。
 
 ## 需要重点判断的问题
 
