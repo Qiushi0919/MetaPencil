@@ -1,0 +1,2 @@
+channel_id,range_offset_m,azimuth_offset_m,outer_tile_count,outer_area_fraction,range_mod_frequency_hz,azimuth_mod_frequency_hz
+1,8,8,16,1,-32000000,42.6666666666667

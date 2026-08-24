@@ -1,0 +1,794 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/0sg1l1",
+    "id": "0sg1l1",
+    "slide": 19,
+    "layoutId": "a13e4eeb-212c-4771-9ce1-3d1af324a18f",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "88b21a1a-3547-48b8-aad7-9d11ddde49a0",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Codex Grid SAR",
+    "colors": {
+      "accent1": "#2563EB",
+      "accent2": "#31B7E8",
+      "accent3": "#F59E0B",
+      "accent4": "#D64545",
+      "accent5": "#7C5CE0",
+      "accent6": "#159A69",
+      "bg1": "#FFFFFF",
+      "bg2": "#F2F4F7",
+      "tx1": "#17212B",
+      "tx2": "#52606D",
+      "dk1": "#000000",
+      "dk2": "#102A43",
+      "lt1": "#FFFFFF",
+      "lt2": "#D6DEE6",
+      "hlink": "#2563EB",
+      "folHlink": "#7C5CE0"
+    },
+    "typefaces": [
+      "PingFang SC"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "a13e4eeb-212c-4771-9ce1-3d1af324a18f",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "88b21a1a-3547-48b8-aad7-9d11ddde49a0",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "88b21a1a-3547-48b8-aad7-9d11ddde49a0",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kja507yp",
+      "id": "1",
+      "bbox": [
+        42,
+        24,
+        310,
+        22
+      ],
+      "geometry": "rect",
+      "text": "纯净度",
+      "textPreview": "纯净度",
+      "resolvedFontSize": 10.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "PingFang SC",
+        "color": "#2563EB",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.86,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "纯净度"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "纯净度",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "PingFang SC",
+            "color": "#2563EB",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "纯净度",
+              "fontSize": 12,
+              "typeface": "PingFang SC",
+              "color": "#2563EB",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ji14r2x4",
+      "id": "2",
+      "bbox": [
+        42,
+        50,
+        1120,
+        58
+      ],
+      "geometry": "rect",
+      "text": "副像控制：每个手绘通道都用内部4×4时延把−3/+5/+9变成零陷",
+      "textPreview": "副像控制：每个手绘通道都用内部4×4时延把−3/+5/+9变成零陷",
+      "resolvedFontSize": 35,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 35,
+        "typeface": "PingFang SC",
+        "color": "#17212B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "副像控制：每个手绘通道都用内部4×4时延把−3/+5/+9变成零陷"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "副像控制：每个手绘通道都用内部4×4时延把−3/+5/+9变成零陷",
+          "resolvedTextStyle": {
+            "fontSize": 35,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "副像控制：每个手绘通道都用内部4×4时延把−3/+5/+9变成零陷",
+              "fontSize": 35,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yh8nyxgz",
+      "id": "3",
+      "bbox": [
+        42,
+        116,
+        1196,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#2563EB",
+      "lineColor": "#2563EB",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xgzmpcfe",
+      "id": "4",
+      "bbox": [
+        1172,
+        671,
+        66,
+        22
+      ],
+      "geometry": "rect",
+      "text": "19",
+      "textPreview": "19",
+      "resolvedFontSize": 10.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "PingFang SC",
+        "color": "#52606D",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.86,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "19"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "19",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "PingFang SC",
+            "color": "#52606D",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "19",
+              "fontSize": 12,
+              "typeface": "PingFang SC",
+              "color": "#52606D",
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wfq5w7yt",
+      "id": "5",
+      "bbox": [
+        42,
+        142,
+        716,
+        446
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D6DEE6",
+      "lineWidth": 1
+    },
+    {
+      "order": 6,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/e50ra5gf",
+      "id": "6",
+      "bbox": [
+        46,
+        146,
+        708,
+        438
+      ],
+      "alt": "平衡2-bit编码与四时延分区的谐波对比",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "75b0fa5a-7c83-46b2-a7c1-f03ef54bc66f",
+        "contentType": "image/png",
+        "byteLength": 112931
+      }
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ad8nuxgn",
+      "id": "7",
+      "bbox": [
+        786,
+        142,
+        402,
+        204
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F2F4F7",
+      "lineColor": "#D6DEE6",
+      "lineWidth": 1
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9czmlsf2",
+      "id": "8",
+      "bbox": [
+        808,
+        160,
+        358,
+        34
+      ],
+      "geometry": "rect",
+      "text": "核心相量",
+      "textPreview": "核心相量",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#2563EB",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "核心相量"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "核心相量",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#2563EB",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "核心相量",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#2563EB",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/obq5snyh",
+      "id": "9",
+      "bbox": [
+        808,
+        203,
+        358,
+        128
+      ],
+      "geometry": "rect",
+      "text": "• 第n阶获得相位因子 exp(−j2πndₚ)\n• Sₙ=(1/4)Σₚ exp(−j2πndₚ)\n• 选择d=[0,1/10,5/6,14/15]T，使S₋₃=S₊₅=0",
+      "textPreview": "• 第n阶获得相位因子 exp(−j2πndₚ) | • Sₙ=(1/4)Σₚ exp(−j2πndₚ) | • 选择d=[0,1/10,5/6,14/15]T，使S₋₃=S₊₅=0",
+      "resolvedFontSize": 16.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16.51,
+        "typeface": "PingFang SC",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• 第n阶获得相位因子 exp(−j2πndₚ)"
+          },
+          {
+            "index": 2,
+            "text": "• Sₙ=(1/4)Σₚ exp(−j2πndₚ)"
+          },
+          {
+            "index": 3,
+            "text": "• 选择d=[0,1/10,5/6,14/15]T，使S₋₃=S₊₅=0"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• 第n阶获得相位因子 exp(−j2πndₚ)",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 第n阶获得相位因子 exp(−j2πndₚ)",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• Sₙ=(1/4)Σₚ exp(−j2πndₚ)",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• Sₙ=(1/4)Σₚ exp(−j2πndₚ)",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• 选择d=[0,1/10,5/6,14/15]T，使S₋₃=S₊₅=0",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 选择d=[0,1/10,5/6,14/15]T，使S₋₃=S₊₅=0",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m94f2hsv",
+      "id": "10",
+      "bbox": [
+        786,
+        370,
+        402,
+        218
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F2F4F7",
+      "lineColor": "#D6DEE6",
+      "lineWidth": 1
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nadgvmtg",
+      "id": "11",
+      "bbox": [
+        808,
+        388,
+        358,
+        34
+      ],
+      "geometry": "rect",
+      "text": "结果含义",
+      "textPreview": "结果含义",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#159A69",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "结果含义"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "结果含义",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#159A69",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "结果含义",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#159A69",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8bmx4ra1",
+      "id": "12",
+      "bbox": [
+        808,
+        431,
+        358,
+        142
+      ],
+      "geometry": "rect",
+      "text": "• 保留目标(+1,+1)的同时压制外侧十字像\n• 没有通过提高显示门限“藏掉”副像\n• 剩余更高阶可继续增加分区或优化时延",
+      "textPreview": "• 保留目标(+1,+1)的同时压制外侧十字像 | • 没有通过提高显示门限“藏掉”副像 | • 剩余更高阶可继续增加分区或优化时延",
+      "resolvedFontSize": 16.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16.51,
+        "typeface": "PingFang SC",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• 保留目标(+1,+1)的同时压制外侧十字像"
+          },
+          {
+            "index": 2,
+            "text": "• 没有通过提高显示门限“藏掉”副像"
+          },
+          {
+            "index": 3,
+            "text": "• 剩余更高阶可继续增加分区或优化时延"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• 保留目标(+1,+1)的同时压制外侧十字像",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 保留目标(+1,+1)的同时压制外侧十字像",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• 没有通过提高显示门限“藏掉”副像",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 没有通过提高显示门限“藏掉”副像",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• 剩余更高阶可继续增加分区或优化时延",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 剩余更高阶可继续增加分区或优化时延",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9cfyxwbm",
+      "id": "13",
+      "bbox": [
+        42,
+        666,
+        1090,
+        28
+      ],
+      "geometry": "rect",
+      "text": "外侧十字像的规范名称：高阶谐波副像 / 量化杂散谐波像（high-order harmonic replicas）。",
+      "textPreview": "外侧十字像的规范名称：高阶谐波副像 / 量化杂散谐波像（high-order harmonic replicas）。",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "PingFang SC",
+        "color": "#52606D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "外侧十字像的规范名称：高阶谐波副像 / 量化杂散谐波像（high-order harmonic replicas）。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "外侧十字像的规范名称：高阶谐波副像 / 量化杂散谐波像（high-order harmonic replicas）。",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "PingFang SC",
+            "color": "#52606D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "外侧十字像的规范名称：高阶谐波副像 / 量化杂散谐波像（high-order harmonic replicas）。",
+              "fontSize": 13,
+              "typeface": "PingFang SC",
+              "color": "#52606D",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

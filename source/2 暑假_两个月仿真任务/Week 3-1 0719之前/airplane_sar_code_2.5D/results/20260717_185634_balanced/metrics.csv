@@ -1,0 +1,3 @@
+case_name,resolution_mode,peak_amplitude,total_energy,peak_range_m,peak_azimuth_m,area_3db_m2
+普通飞机,balanced,783339.478433833,2442847900784.49,0,0,0.416666666666629
+超表面飞机,balanced,289722.34568627,2416180071774.04,3,10.8333333333333,1.24999999999989

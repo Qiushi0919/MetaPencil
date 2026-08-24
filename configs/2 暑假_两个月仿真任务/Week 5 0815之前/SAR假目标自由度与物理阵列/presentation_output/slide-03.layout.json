@@ -1,0 +1,1622 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/avsbxh",
+    "id": "avsbxh",
+    "slide": 3,
+    "layoutId": "a13e4eeb-212c-4771-9ce1-3d1af324a18f",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "88b21a1a-3547-48b8-aad7-9d11ddde49a0",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Codex Grid SAR",
+    "colors": {
+      "accent1": "#2563EB",
+      "accent2": "#31B7E8",
+      "accent3": "#F59E0B",
+      "accent4": "#D64545",
+      "accent5": "#7C5CE0",
+      "accent6": "#159A69",
+      "bg1": "#FFFFFF",
+      "bg2": "#F2F4F7",
+      "tx1": "#17212B",
+      "tx2": "#52606D",
+      "dk1": "#000000",
+      "dk2": "#102A43",
+      "lt1": "#FFFFFF",
+      "lt2": "#D6DEE6",
+      "hlink": "#2563EB",
+      "folHlink": "#7C5CE0"
+    },
+    "typefaces": [
+      "PingFang SC"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "a13e4eeb-212c-4771-9ce1-3d1af324a18f",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "88b21a1a-3547-48b8-aad7-9d11ddde49a0",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "88b21a1a-3547-48b8-aad7-9d11ddde49a0",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/kv6hszu1",
+      "id": "1",
+      "bbox": [
+        42,
+        24,
+        310,
+        22
+      ],
+      "geometry": "rect",
+      "text": "原理",
+      "textPreview": "原理",
+      "resolvedFontSize": 10.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "PingFang SC",
+        "color": "#2563EB",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.86,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "原理"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "原理",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "PingFang SC",
+            "color": "#2563EB",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "原理",
+              "fontSize": 12,
+              "typeface": "PingFang SC",
+              "color": "#2563EB",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jux0zedg",
+      "id": "2",
+      "bbox": [
+        42,
+        50,
+        1120,
+        58
+      ],
+      "geometry": "rect",
+      "text": "统一模型：SAR输出 = 真实目标分布 * 超表面谐波核",
+      "textPreview": "统一模型：SAR输出 = 真实目标分布 * 超表面谐波核",
+      "resolvedFontSize": 35,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 35,
+        "typeface": "PingFang SC",
+        "color": "#17212B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "统一模型：SAR输出 = 真实目标分布 * 超表面谐波核"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "统一模型：SAR输出 = 真实目标分布 * 超表面谐波核",
+          "resolvedTextStyle": {
+            "fontSize": 35,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "统一模型：SAR输出 = 真实目标分布 * 超表面谐波核",
+              "fontSize": 35,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/it4zq9wb",
+      "id": "3",
+      "bbox": [
+        42,
+        116,
+        1196,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#2563EB",
+      "lineColor": "#2563EB",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xsvix4vq",
+      "id": "4",
+      "bbox": [
+        1172,
+        671,
+        66,
+        22
+      ],
+      "geometry": "rect",
+      "text": "03",
+      "textPreview": "03",
+      "resolvedFontSize": 10.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "PingFang SC",
+        "color": "#52606D",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.86,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "03"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "03",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "PingFang SC",
+            "color": "#52606D",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "03",
+              "fontSize": 12,
+              "typeface": "PingFang SC",
+              "color": "#52606D",
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wrmhoze5",
+      "id": "5",
+      "bbox": [
+        58,
+        170,
+        330,
+        284
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F5FAFD",
+      "lineColor": "#D6DEE6",
+      "lineWidth": 1
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bqd0vudk",
+      "id": "6",
+      "bbox": [
+        82,
+        196,
+        282,
+        42
+      ],
+      "geometry": "rect",
+      "text": "① 真实目标 O(x,y)",
+      "textPreview": "① 真实目标 O(x,y)",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "PingFang SC",
+        "color": "#31B7E8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "① 真实目标 O(x,y)"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "① 真实目标 O(x,y)",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "PingFang SC",
+            "color": "#31B7E8",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "① 真实目标 O(x,y)",
+              "fontSize": 21,
+              "typeface": "PingFang SC",
+              "color": "#31B7E8",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ap4zmpwz",
+      "id": "7",
+      "bbox": [
+        82,
+        258,
+        282,
+        128
+      ],
+      "geometry": "rect",
+      "text": "1架、2架线目标、4架角点目标\n决定“原始散射模板”与基准位置。",
+      "textPreview": "1架、2架线目标、4架角点目标 | 决定“原始散射模板”与基准位置。",
+      "resolvedFontSize": 17.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17.51,
+        "typeface": "PingFang SC",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "1架、2架线目标、4架角点目标"
+          },
+          {
+            "index": 2,
+            "text": "决定“原始散射模板”与基准位置"
+          },
+          {
+            "index": 3,
+            "text": "。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "1架、2架线目标、4架角点目标",
+          "resolvedTextStyle": {
+            "fontSize": 17.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "1架、2架线目标、4架角点目标",
+              "fontSize": 17.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "决定“原始散射模板”与基准位置。",
+          "resolvedTextStyle": {
+            "fontSize": 17.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "决定“原始散射模板”与基准位置。",
+              "fontSize": 17.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hozi9ovu",
+      "id": "8",
+      "bbox": [
+        132,
+        395,
+        182,
+        34
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#31B7E8",
+      "lineColor": "#31B7E8",
+      "lineWidth": 1
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gnq10ju9",
+      "id": "9",
+      "bbox": [
+        140,
+        400,
+        166,
+        24
+      ],
+      "geometry": "rect",
+      "text": "目标几何",
+      "textPreview": "目标几何",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 14,
+        "typeface": "PingFang SC",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.86,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "目标几何"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "目标几何",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "PingFang SC",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "目标几何",
+              "fontSize": 14,
+              "typeface": "PingFang SC",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/a9wjm9cj",
+      "id": "10",
+      "bbox": [
+        403,
+        275,
+        44,
+        54
+      ],
+      "geometry": "rightArrow",
+      "fillColor": "#2563EB",
+      "lineColor": "#2563EB",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ba50vet4",
+      "id": "11",
+      "bbox": [
+        458,
+        170,
+        330,
+        284
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F5FAFD",
+      "lineColor": "#D6DEE6",
+      "lineWidth": 1
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wbe1ojup",
+      "id": "12",
+      "bbox": [
+        482,
+        196,
+        282,
+        42
+      ],
+      "geometry": "rect",
+      "text": "② 编码核 H(nᵣ,nₐ)",
+      "textPreview": "② 编码核 H(nᵣ,nₐ)",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "PingFang SC",
+        "color": "#F59E0B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "② 编码核 H(nᵣ,nₐ)"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "② 编码核 H(nᵣ,nₐ)",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "PingFang SC",
+            "color": "#F59E0B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "② 编码核 H(nᵣ,nₐ)",
+              "fontSize": 21,
+              "typeface": "PingFang SC",
+              "color": "#F59E0B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xcn2xoba",
+      "id": "13",
+      "bbox": [
+        482,
+        258,
+        282,
+        128
+      ],
+      "geometry": "rect",
+      "text": "每个非零二维傅里叶系数对应一个位移像；\n系数幅度/相位决定假目标复权重。",
+      "textPreview": "每个非零二维傅里叶系数对应一个位移像； | 系数幅度/相位决定假目标复权重。",
+      "resolvedFontSize": 17.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17.51,
+        "typeface": "PingFang SC",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "每个非零二维傅里叶系数对应一个"
+          },
+          {
+            "index": 2,
+            "text": "位移像；"
+          },
+          {
+            "index": 3,
+            "text": "系数幅度/相位决定假目标复权重"
+          },
+          {
+            "index": 4,
+            "text": "。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "每个非零二维傅里叶系数对应一个位移像；",
+          "resolvedTextStyle": {
+            "fontSize": 17.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "每个非零二维傅里叶系数对应一个位移像；",
+              "fontSize": 17.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "系数幅度/相位决定假目标复权重。",
+          "resolvedTextStyle": {
+            "fontSize": 17.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "系数幅度/相位决定假目标复权重。",
+              "fontSize": 17.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m5cji9cn",
+      "id": "14",
+      "bbox": [
+        532,
+        395,
+        182,
+        34
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F59E0B",
+      "lineColor": "#F59E0B",
+      "lineWidth": 1
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/n650ret8",
+      "id": "15",
+      "bbox": [
+        540,
+        400,
+        166,
+        24
+      ],
+      "geometry": "rect",
+      "text": "电磁自由度",
+      "textPreview": "电磁自由度",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 14,
+        "typeface": "PingFang SC",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.86,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "电磁自由度"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "电磁自由度",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "PingFang SC",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "电磁自由度",
+              "fontSize": 14,
+              "typeface": "PingFang SC",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/o7e1kjut",
+      "id": "16",
+      "bbox": [
+        803,
+        275,
+        44,
+        54
+      ],
+      "geometry": "rightArrow",
+      "fillColor": "#2563EB",
+      "lineColor": "#2563EB",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/98nitobe",
+      "id": "17",
+      "bbox": [
+        858,
+        170,
+        330,
+        284
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F5FAFD",
+      "lineColor": "#D6DEE6",
+      "lineWidth": 1
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/61gjutcr",
+      "id": "18",
+      "bbox": [
+        882,
+        196,
+        282,
+        42
+      ],
+      "geometry": "rect",
+      "text": "③ SAR结果 I=O*H",
+      "textPreview": "③ SAR结果 I=O*H",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "PingFang SC",
+        "color": "#159A69",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "③ SAR结果 I=O*H"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "③ SAR结果 I=O*H",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "PingFang SC",
+            "color": "#159A69",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "③ SAR结果 I=O*H",
+              "fontSize": 21,
+              "typeface": "PingFang SC",
+              "color": "#159A69",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/72pk3ytc",
+      "id": "19",
+      "bbox": [
+        882,
+        258,
+        282,
+        128
+      ],
+      "geometry": "rect",
+      "text": "每架真实飞机都生成一份平移核；\n相同位置的像会发生相干叠加。",
+      "textPreview": "每架真实飞机都生成一份平移核； | 相同位置的像会发生相干叠加。",
+      "resolvedFontSize": 17.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17.51,
+        "typeface": "PingFang SC",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "每架真实飞机都生成一份平移核；"
+          },
+          {
+            "index": 2,
+            "text": "相同位置的像会发生相干叠加。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "每架真实飞机都生成一份平移核；",
+          "resolvedTextStyle": {
+            "fontSize": 17.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "每架真实飞机都生成一份平移核；",
+              "fontSize": 17.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "相同位置的像会发生相干叠加。",
+          "resolvedTextStyle": {
+            "fontSize": 17.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "相同位置的像会发生相干叠加。",
+              "fontSize": 17.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3mhgvq9o",
+      "id": "20",
+      "bbox": [
+        932,
+        395,
+        182,
+        34
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#159A69",
+      "lineColor": "#159A69",
+      "lineWidth": 1
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2l8fmlsj",
+      "id": "21",
+      "bbox": [
+        940,
+        400,
+        166,
+        24
+      ],
+      "geometry": "rect",
+      "text": "完整RD结果",
+      "textPreview": "完整RD结果",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 14,
+        "typeface": "PingFang SC",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.86,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "完整RD结果"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "完整RD结果",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "PingFang SC",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "完整RD结果",
+              "fontSize": 14,
+              "typeface": "PingFang SC",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pojyx0ru",
+      "id": "22",
+      "bbox": [
+        58,
+        492,
+        1130,
+        122
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#102A43",
+      "lineColor": "#102A43",
+      "lineWidth": 1
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4naxova9",
+      "id": "23",
+      "bbox": [
+        82,
+        514,
+        150,
+        26
+      ],
+      "geometry": "rect",
+      "text": "位置映射",
+      "textPreview": "位置映射",
+      "resolvedFontSize": 13.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "PingFang SC",
+        "color": "#31B7E8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.85,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "位置映射"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "位置映射",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "PingFang SC",
+            "color": "#31B7E8",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "位置映射",
+              "fontSize": 16,
+              "typeface": "PingFang SC",
+              "color": "#31B7E8",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ra1gza90",
+      "id": "24",
+      "bbox": [
+        82,
+        546,
+        310,
+        38
+      ],
+      "geometry": "rect",
+      "text": "ΔR ∝ fₘ,ᵣ　　Δy ∝ fₘ,ₐ",
+      "textPreview": "ΔR ∝ fₘ,ᵣ　　Δy ∝ fₘ,ₐ",
+      "resolvedFontSize": 23.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "PingFang SC",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.95,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ΔR ∝ fₘ,ᵣ　　Δy ∝ fₘ,ₐ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ΔR ∝ fₘ,ᵣ　　Δy ∝ fₘ,ₐ",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "PingFang SC",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ΔR ∝ fₘ,ᵣ　　Δy ∝ fₘ,ₐ",
+              "fontSize": 25,
+              "typeface": "PingFang SC",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q9szq5sf",
+      "id": "25",
+      "bbox": [
+        456,
+        514,
+        150,
+        26
+      ],
+      "geometry": "rect",
+      "text": "幅度预算",
+      "textPreview": "幅度预算",
+      "resolvedFontSize": 13.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "PingFang SC",
+        "color": "#F59E0B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.85,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "幅度预算"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "幅度预算",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "PingFang SC",
+            "color": "#F59E0B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "幅度预算",
+              "fontSize": 16,
+              "typeface": "PingFang SC",
+              "color": "#F59E0B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dcjy1kr6",
+      "id": "26",
+      "bbox": [
+        456,
+        546,
+        330,
+        38
+      ],
+      "geometry": "rect",
+      "text": "Aₚ,ᵩ = Cₚ Cᵩ Sₚ Sᵩ",
+      "textPreview": "Aₚ,ᵩ = Cₚ Cᵩ Sₚ Sᵩ",
+      "resolvedFontSize": 23.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "PingFang SC",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.95,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Aₚ,ᵩ = Cₚ Cᵩ Sₚ Sᵩ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Aₚ,ᵩ = Cₚ Cᵩ Sₚ Sᵩ",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "PingFang SC",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Aₚ,ᵩ = Cₚ Cᵩ Sₚ Sᵩ",
+              "fontSize": 25,
+              "typeface": "PingFang SC",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 27,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cbahsfal",
+      "id": "27",
+      "bbox": [
+        846,
+        514,
+        150,
+        26
+      ],
+      "geometry": "rect",
+      "text": "物理含义",
+      "textPreview": "物理含义",
+      "resolvedFontSize": 13.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "PingFang SC",
+        "color": "#159A69",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.85,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "物理含义"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "物理含义",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "PingFang SC",
+            "color": "#159A69",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "物理含义",
+              "fontSize": 16,
+              "typeface": "PingFang SC",
+              "color": "#159A69",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 28,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ze1g3a9w",
+      "id": "28",
+      "bbox": [
+        846,
+        546,
+        310,
+        38
+      ],
+      "geometry": "rect",
+      "text": "空间分区 × 时间序列 × 相干叠加",
+      "textPreview": "空间分区 × 时间序列 × 相干叠加",
+      "resolvedFontSize": 19.98,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "PingFang SC",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.91,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "空间分区 × 时间序列 ×"
+          },
+          {
+            "index": 2,
+            "text": "相干叠加"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "空间分区 × 时间序列 × 相干叠加",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "PingFang SC",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "空间分区 × 时间序列 × 相干叠加",
+              "fontSize": 22,
+              "typeface": "PingFang SC",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 29,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/edszupsb",
+      "id": "29",
+      "bbox": [
+        42,
+        666,
+        1090,
+        28
+      ],
+      "geometry": "rect",
+      "text": "所有案例均由同一份整数阵列配置生成2-bit时序，再作用于原始LFM回波并执行RD成像；没有图像域复制或平移。",
+      "textPreview": "所有案例均由同一份整数阵列配置生成2-bit时序，再作用于原始LFM回波并执行RD成像；没有图像域复制或平移。",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "PingFang SC",
+        "color": "#52606D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "所有案例均由同一份整数阵列配置生成2-bit时序，再作用于原始LFM回波并执行RD成像；没有图像域复制或平移。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "所有案例均由同一份整数阵列配置生成2-bit时序，再作用于原始LFM回波并执行RD成像；没有图像域复制或平移。",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "PingFang SC",
+            "color": "#52606D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "所有案例均由同一份整数阵列配置生成2-bit时序，再作用于原始LFM回波并执行RD成像；没有图像域复制或平移。",
+              "fontSize": 13,
+              "typeface": "PingFang SC",
+              "color": "#52606D",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,1334 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/fywuqr",
+    "id": "fywuqr",
+    "slide": 2,
+    "layoutId": "a13e4eeb-212c-4771-9ce1-3d1af324a18f",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "88b21a1a-3547-48b8-aad7-9d11ddde49a0",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Codex Grid SAR",
+    "colors": {
+      "accent1": "#2563EB",
+      "accent2": "#31B7E8",
+      "accent3": "#F59E0B",
+      "accent4": "#D64545",
+      "accent5": "#7C5CE0",
+      "accent6": "#159A69",
+      "bg1": "#FFFFFF",
+      "bg2": "#F2F4F7",
+      "tx1": "#17212B",
+      "tx2": "#52606D",
+      "dk1": "#000000",
+      "dk2": "#102A43",
+      "lt1": "#FFFFFF",
+      "lt2": "#D6DEE6",
+      "hlink": "#2563EB",
+      "folHlink": "#7C5CE0"
+    },
+    "typefaces": [
+      "PingFang SC"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "a13e4eeb-212c-4771-9ce1-3d1af324a18f",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "88b21a1a-3547-48b8-aad7-9d11ddde49a0",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "88b21a1a-3547-48b8-aad7-9d11ddde49a0",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/43et476x",
+      "id": "1",
+      "bbox": [
+        42,
+        24,
+        310,
+        22
+      ],
+      "geometry": "rect",
+      "text": "核心结论",
+      "textPreview": "核心结论",
+      "resolvedFontSize": 10.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "PingFang SC",
+        "color": "#2563EB",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.86,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "核心结论"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "核心结论",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "PingFang SC",
+            "color": "#2563EB",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "核心结论",
+              "fontSize": 12,
+              "typeface": "PingFang SC",
+              "color": "#2563EB",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/325cv25c",
+      "id": "2",
+      "bbox": [
+        42,
+        50,
+        1120,
+        58
+      ],
+      "geometry": "rect",
+      "text": "结论先行：目标数、位置、幅度与副谐波可分层设计",
+      "textPreview": "结论先行：目标数、位置、幅度与副谐波可分层设计",
+      "resolvedFontSize": 35,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 35,
+        "typeface": "PingFang SC",
+        "color": "#17212B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "结论先行：目标数、位置、幅度与副谐波可分层设计"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "结论先行：目标数、位置、幅度与副谐波可分层设计",
+          "resolvedTextStyle": {
+            "fontSize": 35,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "结论先行：目标数、位置、幅度与副谐波可分层设计",
+              "fontSize": 35,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/21wb2xor",
+      "id": "3",
+      "bbox": [
+        42,
+        116,
+        1196,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#2563EB",
+      "lineColor": "#2563EB",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h0nutsn6",
+      "id": "4",
+      "bbox": [
+        1172,
+        671,
+        66,
+        22
+      ],
+      "geometry": "rect",
+      "text": "02",
+      "textPreview": "02",
+      "resolvedFontSize": 10.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "PingFang SC",
+        "color": "#52606D",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.86,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "02"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "02",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "PingFang SC",
+            "color": "#52606D",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "02",
+              "fontSize": 12,
+              "typeface": "PingFang SC",
+              "color": "#52606D",
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gzut0n61",
+      "id": "5",
+      "bbox": [
+        42,
+        144,
+        276,
+        120
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F5FAFD",
+      "lineColor": "#D6DEE6",
+      "lineWidth": 1
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fylcri5g",
+      "id": "6",
+      "bbox": [
+        42,
+        144,
+        7,
+        120
+      ],
+      "geometry": "rect",
+      "fillColor": "#2563EB",
+      "lineColor": "#2563EB",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/uxcbydov",
+      "id": "7",
+      "bbox": [
+        66,
+        162,
+        236,
+        48
+      ],
+      "geometry": "rect",
+      "text": "K",
+      "textPreview": "K",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 30,
+        "typeface": "PingFang SC",
+        "color": "#2563EB",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "K"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "K",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "PingFang SC",
+            "color": "#2563EB",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "K",
+              "fontSize": 30,
+              "typeface": "PingFang SC",
+              "color": "#2563EB",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tw3upsna",
+      "id": "8",
+      "bbox": [
+        66,
+        210,
+        236,
+        44
+      ],
+      "geometry": "rect",
+      "text": "单架通过K个波形/空间通道生成K个目标",
+      "textPreview": "单架通过K个波形/空间通道生成K个目标",
+      "resolvedFontSize": 14.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "PingFang SC",
+        "color": "#52606D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.9,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "单架通过K个波形/空间通道生成K"
+          },
+          {
+            "index": 2,
+            "text": "个目标"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "单架通过K个波形/空间通道生成K个目标",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "PingFang SC",
+            "color": "#52606D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "单架通过K个波形/空间通道生成K个目标",
+              "fontSize": 16,
+              "typeface": "PingFang SC",
+              "color": "#52606D",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/svutwn6p",
+      "id": "9",
+      "bbox": [
+        332,
+        144,
+        276,
+        120
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F5FAFD",
+      "lineColor": "#D6DEE6",
+      "lineWidth": 1
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m9cv6xsz",
+      "id": "10",
+      "bbox": [
+        332,
+        144,
+        7,
+        120
+      ],
+      "geometry": "rect",
+      "fillColor": "#31B7E8",
+      "lineColor": "#31B7E8",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/na5wf294",
+      "id": "11",
+      "bbox": [
+        356,
+        162,
+        236,
+        48
+      ],
+      "geometry": "rect",
+      "text": "2K",
+      "textPreview": "2K",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 30,
+        "typeface": "PingFang SC",
+        "color": "#31B7E8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2K"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2K",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "PingFang SC",
+            "color": "#31B7E8",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2K",
+              "fontSize": 30,
+              "typeface": "PingFang SC",
+              "color": "#31B7E8",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/obed87qp",
+      "id": "12",
+      "bbox": [
+        356,
+        210,
+        236,
+        44
+      ],
+      "geometry": "rect",
+      "text": "两机共享码本时得到两份平移目标核",
+      "textPreview": "两机共享码本时得到两份平移目标核",
+      "resolvedFontSize": 14.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "PingFang SC",
+        "color": "#52606D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.9,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "两机共享码本时得到两份平移目标"
+          },
+          {
+            "index": 2,
+            "text": "核"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "两机共享码本时得到两份平移目标核",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "PingFang SC",
+            "color": "#52606D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "两机共享码本时得到两份平移目标核",
+              "fontSize": 16,
+              "typeface": "PingFang SC",
+              "color": "#52606D",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9cnehcra",
+      "id": "13",
+      "bbox": [
+        622,
+        144,
+        276,
+        120
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F5FAFD",
+      "lineColor": "#D6DEE6",
+      "lineWidth": 1
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e5cv2xsn",
+      "id": "14",
+      "bbox": [
+        622,
+        144,
+        7,
+        120
+      ],
+      "geometry": "rect",
+      "fillColor": "#159A69",
+      "lineColor": "#159A69",
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/f6lwb298",
+      "id": "15",
+      "bbox": [
+        646,
+        162,
+        236,
+        48
+      ],
+      "geometry": "rect",
+      "text": "4×4",
+      "textPreview": "4×4",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 30,
+        "typeface": "PingFang SC",
+        "color": "#159A69",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "4×4"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "4×4",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "PingFang SC",
+            "color": "#159A69",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "4×4",
+              "fontSize": 30,
+              "typeface": "PingFang SC",
+              "color": "#159A69",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/07ud47at",
+      "id": "16",
+      "bbox": [
+        646,
+        210,
+        236,
+        44
+      ],
+      "geometry": "rect",
+      "text": "每架4通道；四角4架最终得到16架",
+      "textPreview": "每架4通道；四角4架最终得到16架",
+      "resolvedFontSize": 14.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "PingFang SC",
+        "color": "#52606D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.9,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "每架4通道；四角4架最终得到16"
+          },
+          {
+            "index": 2,
+            "text": "架"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "每架4通道；四角4架最终得到16架",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "PingFang SC",
+            "color": "#52606D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "每架4通道；四角4架最终得到16架",
+              "fontSize": 16,
+              "typeface": "PingFang SC",
+              "color": "#52606D",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/183edsre",
+      "id": "17",
+      "bbox": [
+        912,
+        144,
+        276,
+        120
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F5FAFD",
+      "lineColor": "#D6DEE6",
+      "lineWidth": 1
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qhsvydsr",
+      "id": "18",
+      "bbox": [
+        912,
+        144,
+        7,
+        120
+      ],
+      "geometry": "rect",
+      "fillColor": "#F59E0B",
+      "lineColor": "#F59E0B",
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/rilc7i9w",
+      "id": "19",
+      "bbox": [
+        936,
+        162,
+        236,
+        48
+      ],
+      "geometry": "rect",
+      "text": "−3/+5",
+      "textPreview": "−3/+5",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 30,
+        "typeface": "PingFang SC",
+        "color": "#F59E0B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "−3/+5"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "−3/+5",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "PingFang SC",
+            "color": "#F59E0B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "−3/+5",
+              "fontSize": 30,
+              "typeface": "PingFang SC",
+              "color": "#F59E0B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vmhsfepo",
+      "id": "20",
+      "bbox": [
+        936,
+        210,
+        236,
+        44
+      ],
+      "geometry": "rect",
+      "text": "四时延分区相干抵消主要十字副像",
+      "textPreview": "四时延分区相干抵消主要十字副像",
+      "resolvedFontSize": 14.41,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16,
+        "typeface": "PingFang SC",
+        "color": "#52606D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.9,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "四时延分区相干抵消主要十字副像"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "四时延分区相干抵消主要十字副像",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "typeface": "PingFang SC",
+            "color": "#52606D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "四时延分区相干抵消主要十字副像",
+              "fontSize": 16,
+              "typeface": "PingFang SC",
+              "color": "#52606D",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ul8b698j",
+      "id": "21",
+      "bbox": [
+        42,
+        290,
+        730,
+        350
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineColor": "#D6DEE6",
+      "lineWidth": 1
+    },
+    {
+      "order": 22,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/ahcz2tcr",
+      "id": "22",
+      "bbox": [
+        46,
+        294,
+        722,
+        342
+      ],
+      "alt": "单架飞机1到N自由度总览",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "64989b56-892f-4e39-b9a8-92201bdb8467",
+        "contentType": "image/png",
+        "byteLength": 317000
+      }
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gnqt8jq9",
+      "id": "23",
+      "bbox": [
+        796,
+        290,
+        392,
+        350
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F2F4F7",
+      "lineColor": "#D6DEE6",
+      "lineWidth": 1
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3ahsjyp0",
+      "id": "24",
+      "bbox": [
+        818,
+        308,
+        348,
+        34
+      ],
+      "geometry": "rect",
+      "text": "设计自由度",
+      "textPreview": "设计自由度",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#2563EB",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "设计自由度"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "设计自由度",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#2563EB",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "设计自由度",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#2563EB",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 25,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ip8bat8f",
+      "id": "25",
+      "bbox": [
+        818,
+        351,
+        348,
+        274
+      ],
+      "geometry": "rect",
+      "text": "• 位置：距离调制频率 + 方位调制频率\n• 数量：独立波形通道数K\n• 幅度：空间面积比例 / 驻留时间 / 反射幅度\n• 形状：真实飞机SAR模板随谐波整体平移\n• 纯净度：延迟分区形成高阶谐波零陷",
+      "textPreview": "• 位置：距离调制频率 + 方位调制频率 | • 数量：独立波形通道数K | • 幅度：空间面积比例 / 驻留时间 / 反射幅度 | • 形状：真实飞机SAR模板随谐波整体平移 | • 纯净度：延迟分区形成高阶谐波零陷",
+      "resolvedFontSize": 16.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16.51,
+        "typeface": "PingFang SC",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 6,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• 位置：距离调制频率 + 方位调制频率"
+          },
+          {
+            "index": 2,
+            "text": "• 数量：独立波形通道数K"
+          },
+          {
+            "index": 3,
+            "text": "• 幅度：空间面积比例 / 驻留时间 /"
+          },
+          {
+            "index": 4,
+            "text": "反射幅度"
+          },
+          {
+            "index": 5,
+            "text": "• 形状：真实飞机SAR模板随谐波整体平移"
+          },
+          {
+            "index": 6,
+            "text": "• 纯净度：延迟分区形成高阶谐波零陷"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• 位置：距离调制频率 + 方位调制频率",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 位置：距离调制频率 + 方位调制频率",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• 数量：独立波形通道数K",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 数量：独立波形通道数K",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• 幅度：空间面积比例 / 驻留时间 / 反射幅度",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 幅度：空间面积比例 / 驻留时间 / 反射幅度",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "• 形状：真实飞机SAR模板随谐波整体平移",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 形状：真实飞机SAR模板随谐波整体平移",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "• 纯净度：延迟分区形成高阶谐波零陷",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 纯净度：延迟分区形成高阶谐波零陷",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 26,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5cjalo76",
+      "id": "26",
+      "bbox": [
+        42,
+        666,
+        1090,
+        28
+      ],
+      "geometry": "rect",
+      "text": "浅蓝框统一表示真实飞机位置；黄色圆圈表示设定的目标中心。",
+      "textPreview": "浅蓝框统一表示真实飞机位置；黄色圆圈表示设定的目标中心。",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "PingFang SC",
+        "color": "#52606D",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "浅蓝框统一表示真实飞机位置；黄色圆圈表示设定的目标中心。"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "浅蓝框统一表示真实飞机位置；黄色圆圈表示设定的目标中心。",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "PingFang SC",
+            "color": "#52606D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "浅蓝框统一表示真实飞机位置；黄色圆圈表示设定的目标中心。",
+              "fontSize": 13,
+              "typeface": "PingFang SC",
+              "color": "#52606D",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

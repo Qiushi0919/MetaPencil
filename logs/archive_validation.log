@@ -1,0 +1,9 @@
+MetaPencil archive preflight — PASS
+Manifest original files: 1056
+Original files selected: 566
+Excluded original files >10 MiB: 139
+Required root documents: PASS
+project_state.json parse: PASS
+Smoke-test log: PASS
+Source-code completeness threshold: PASS
+Finalization policy: the script exits successfully only after ZIP CRC testzip PASS.

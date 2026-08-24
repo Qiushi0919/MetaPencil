@@ -1,0 +1,23 @@
+Minimum for the canonical numerical/RD path:
+- MATLAB R2025a
+
+Used only by the optional phone-sketch compiler in run_full_array_freedom_study.m:
+- Image Processing Toolbox (rgb2gray, im2double, imresize, graythresh)
+
+Model conversion/generation scripts may additionally use MATLAB STL import/export
+features. The SAR core is custom MATLAB code; it does not call Phased Array System
+Toolbox, Radar Toolbox, or Antenna Toolbox APIs.
+
+Relevant installed products on the verification machine:
+- MATLAB 25.1
+- Image Processing Toolbox 25.1
+- Signal Processing Toolbox 25.1
+- Phased Array System Toolbox 25.1
+- Radar Toolbox 25.1
+- Antenna Toolbox 25.1
+- RF Toolbox 25.1
+- Parallel Computing Toolbox 25.1
+
+The full installed-product list was much larger; only products plausibly relevant
+to this project are listed here. No Parallel Computing Toolbox API was found in the
+canonical entrypoint.

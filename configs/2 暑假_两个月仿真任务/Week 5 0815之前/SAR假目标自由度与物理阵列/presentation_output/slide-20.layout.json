@@ -1,0 +1,1478 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/rivaa8",
+    "id": "rivaa8",
+    "slide": 20,
+    "layoutId": "a13e4eeb-212c-4771-9ce1-3d1af324a18f",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "88b21a1a-3547-48b8-aad7-9d11ddde49a0",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "Codex Grid SAR",
+    "colors": {
+      "accent1": "#2563EB",
+      "accent2": "#31B7E8",
+      "accent3": "#F59E0B",
+      "accent4": "#D64545",
+      "accent5": "#7C5CE0",
+      "accent6": "#159A69",
+      "bg1": "#FFFFFF",
+      "bg2": "#F2F4F7",
+      "tx1": "#17212B",
+      "tx2": "#52606D",
+      "dk1": "#000000",
+      "dk2": "#102A43",
+      "lt1": "#FFFFFF",
+      "lt2": "#D6DEE6",
+      "hlink": "#2563EB",
+      "folHlink": "#7C5CE0"
+    },
+    "typefaces": [
+      "PingFang SC"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "a13e4eeb-212c-4771-9ce1-3d1af324a18f",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "88b21a1a-3547-48b8-aad7-9d11ddde49a0",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "88b21a1a-3547-48b8-aad7-9d11ddde49a0",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/twrqhore",
+      "id": "1",
+      "bbox": [
+        42,
+        24,
+        310,
+        22
+      ],
+      "geometry": "rect",
+      "text": "工程实现",
+      "textPreview": "工程实现",
+      "resolvedFontSize": 10.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "PingFang SC",
+        "color": "#2563EB",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.86,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "工程实现"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "工程实现",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "PingFang SC",
+            "color": "#2563EB",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "工程实现",
+              "fontSize": 12,
+              "typeface": "PingFang SC",
+              "color": "#2563EB",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/6tg7m9sn",
+      "id": "2",
+      "bbox": [
+        42,
+        50,
+        1120,
+        58
+      ],
+      "geometry": "rect",
+      "text": "投版建议：单极化2-bit PIN + 两级逻辑超单元 + 手机/FPGA控制链",
+      "textPreview": "投版建议：单极化2-bit PIN + 两级逻辑超单元 + 手机/FPGA控制链",
+      "resolvedFontSize": 35,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 35,
+        "typeface": "PingFang SC",
+        "color": "#17212B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "投版建议：单极化2-bit PIN + 两级逻辑超单元 + 手机/FPGA控制链"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "投版建议：单极化2-bit PIN + 两级逻辑超单元 + 手机/FPGA控制链",
+          "resolvedTextStyle": {
+            "fontSize": 35,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "投版建议：单极化2-bit PIN + 两级逻辑超单元 + 手机/FPGA控制链",
+              "fontSize": 35,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ru98fe98",
+      "id": "3",
+      "bbox": [
+        42,
+        116,
+        1196,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#2563EB",
+      "lineColor": "#2563EB",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/47ypkzax",
+      "id": "4",
+      "bbox": [
+        1172,
+        671,
+        66,
+        22
+      ],
+      "geometry": "rect",
+      "text": "20",
+      "textPreview": "20",
+      "resolvedFontSize": 10.33,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 12,
+        "typeface": "PingFang SC",
+        "color": "#52606D",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.86,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "20"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "20",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "typeface": "PingFang SC",
+            "color": "#52606D",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "20",
+              "fontSize": 12,
+              "typeface": "PingFang SC",
+              "color": "#52606D",
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5876d4ri",
+      "id": "5",
+      "bbox": [
+        42,
+        148,
+        362,
+        222
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F2F4F7",
+      "lineColor": "#D6DEE6",
+      "lineWidth": 1
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i5g7ipsr",
+      "id": "6",
+      "bbox": [
+        64,
+        166,
+        318,
+        34
+      ],
+      "geometry": "rect",
+      "text": "电磁单元",
+      "textPreview": "电磁单元",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#2563EB",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "电磁单元"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "电磁单元",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#2563EB",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "电磁单元",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#2563EB",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/j6pobu9c",
+      "id": "7",
+      "bbox": [
+        64,
+        209,
+        318,
+        146
+      ],
+      "geometry": "rect",
+      "text": "• 单极化即可满足当前单站SAR验证\n• 每单元2个PIN管形成00/01/10/11四相位\n• 四态需近似等幅、相差90°\n• 优先优化10 GHz附近斜入射与带宽",
+      "textPreview": "• 单极化即可满足当前单站SAR验证 | • 每单元2个PIN管形成00/01/10/11四相位 | • 四态需近似等幅、相差90° | • 优先优化10 GHz附近斜入射与带宽",
+      "resolvedFontSize": 16.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16.51,
+        "typeface": "PingFang SC",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• 单极化即可满足当前单站SAR验证"
+          },
+          {
+            "index": 2,
+            "text": "•"
+          },
+          {
+            "index": 3,
+            "text": "每单元2个PIN管形成00/01/10/11四相位"
+          },
+          {
+            "index": 4,
+            "text": "• 四态需近似等幅、相差90°"
+          },
+          {
+            "index": 5,
+            "text": "• 优先优化10 GHz附近斜入射与带宽"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• 单极化即可满足当前单站SAR验证",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 单极化即可满足当前单站SAR验证",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• 每单元2个PIN管形成00/01/10/11四相位",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 每单元2个PIN管形成00/01/10/11四相位",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• 四态需近似等幅、相差90°",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 四态需近似等幅、相差90°",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "• 优先优化10 GHz附近斜入射与带宽",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 优先优化10 GHz附近斜入射与带宽",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w3ypgzal",
+      "id": "8",
+      "bbox": [
+        426,
+        148,
+        362,
+        222
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F2F4F7",
+      "lineColor": "#D6DEE6",
+      "lineWidth": 1
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h47694r6",
+      "id": "9",
+      "bbox": [
+        448,
+        166,
+        318,
+        34
+      ],
+      "geometry": "rect",
+      "text": "控制与布线",
+      "textPreview": "控制与布线",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#F59E0B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "控制与布线"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "控制与布线",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#F59E0B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "控制与布线",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#F59E0B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9s769s7q",
+      "id": "10",
+      "bbox": [
+        448,
+        209,
+        318,
+        146
+      ],
+      "geometry": "rect",
+      "text": "• 外层宏格负责分配目标通道Hₖ\n• 每个宏格内部含4×4循环时延子组\n• FPGA输出四态码与循环时延\n• 距离/方位码按快时间和慢时间两级调度",
+      "textPreview": "• 外层宏格负责分配目标通道Hₖ | • 每个宏格内部含4×4循环时延子组 | • FPGA输出四态码与循环时延 | • 距离/方位码按快时间和慢时间两级调度",
+      "resolvedFontSize": 16.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16.51,
+        "typeface": "PingFang SC",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• 外层宏格负责分配目标通道Hₖ"
+          },
+          {
+            "index": 2,
+            "text": "• 每个宏格内部含4×4循环时延子组"
+          },
+          {
+            "index": 3,
+            "text": "• FPGA输出四态码与循环时延"
+          },
+          {
+            "index": 4,
+            "text": "•"
+          },
+          {
+            "index": 5,
+            "text": "距离/方位码按快时间和慢时间两级调度"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• 外层宏格负责分配目标通道Hₖ",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 外层宏格负责分配目标通道Hₖ",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• 每个宏格内部含4×4循环时延子组",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 每个宏格内部含4×4循环时延子组",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• FPGA输出四态码与循环时延",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• FPGA输出四态码与循环时延",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "• 距离/方位码按快时间和慢时间两级调度",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 距离/方位码按快时间和慢时间两级调度",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8re5gnq5",
+      "id": "11",
+      "bbox": [
+        810,
+        148,
+        378,
+        222
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F2F4F7",
+      "lineColor": "#D6DEE6",
+      "lineWidth": 1
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nq547i9k",
+      "id": "12",
+      "bbox": [
+        832,
+        166,
+        334,
+        34
+      ],
+      "geometry": "rect",
+      "text": "实验判据",
+      "textPreview": "实验判据",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 20,
+        "typeface": "PingFang SC",
+        "color": "#159A69",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "实验判据"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "实验判据",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "typeface": "PingFang SC",
+            "color": "#159A69",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "实验判据",
+              "fontSize": 20,
+              "typeface": "PingFang SC",
+              "color": "#159A69",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mpwned8f",
+      "id": "13",
+      "bbox": [
+        832,
+        209,
+        334,
+        146
+      ],
+      "geometry": "rect",
+      "text": "• 先测四态反射幅相，再回填MATLAB\n• 目标16点幅差<1 dB\n• −3/+5十字副像低于目标20–30 dBc\n• 核对开关速率、驱动延迟与同步抖动",
+      "textPreview": "• 先测四态反射幅相，再回填MATLAB | • 目标16点幅差<1 dB | • −3/+5十字副像低于目标20–30 dBc | • 核对开关速率、驱动延迟与同步抖动",
+      "resolvedFontSize": 16.51,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 16.51,
+        "typeface": "PingFang SC",
+        "color": "#17212B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• 先测四态反射幅相，再回填MATLAB"
+          },
+          {
+            "index": 2,
+            "text": "• 目标16点幅差<1 dB"
+          },
+          {
+            "index": 3,
+            "text": "• −3/+5十字副像低于目标20–30 dBc"
+          },
+          {
+            "index": 4,
+            "text": "• 核对开关速率、驱动延迟与同步抖动"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• 先测四态反射幅相，再回填MATLAB",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 先测四态反射幅相，再回填MATLAB",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• 目标16点幅差<1 dB",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 目标16点幅差<1 dB",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• −3/+5十字副像低于目标20–30 dBc",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• −3/+5十字副像低于目标20–30 dBc",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "• 核对开关速率、驱动延迟与同步抖动",
+          "resolvedTextStyle": {
+            "fontSize": 16.51,
+            "typeface": "PingFang SC",
+            "color": "#17212B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• 核对开关速率、驱动延迟与同步抖动",
+              "fontSize": 16.51,
+              "typeface": "PingFang SC",
+              "color": "#17212B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lonm58ru",
+      "id": "14",
+      "bbox": [
+        42,
+        408,
+        1146,
+        174
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#102A43",
+      "lineColor": "#102A43",
+      "lineWidth": 1
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0ne5c3q9",
+      "id": "15",
+      "bbox": [
+        70,
+        432,
+        270,
+        32
+      ],
+      "geometry": "rect",
+      "text": "下一步最小闭环实验",
+      "textPreview": "下一步最小闭环实验",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "PingFang SC",
+        "color": "#31B7E8",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.85,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "下一步最小闭环实验"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "下一步最小闭环实验",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "PingFang SC",
+            "color": "#31B7E8",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "下一步最小闭环实验",
+              "fontSize": 22,
+              "typeface": "PingFang SC",
+              "color": "#31B7E8",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zm543y9o",
+      "id": "16",
+      "bbox": [
+        70,
+        477,
+        1082,
+        70
+      ],
+      "geometry": "rect",
+      "text": "① 单元CST/HFSS四态幅相 → ② 两级逻辑分区样板 → ③ 单频谐波谱 → ④ 手机掩膜编译与FPGA下载 → ⑤ LFM回波/SAR成像 → ⑥ 实测幅相回填MATLAB",
+      "textPreview": "① 单元CST/HFSS四态幅相 → ② 两级逻辑分区样板 → ③ 单频谐波谱 → ④ 手机掩膜编译与FPGA下载 → ⑤ LFM回波/SAR成像 → ⑥ 实测幅相回填MATLAB",
+      "resolvedFontSize": 18.51,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 18.51,
+        "typeface": "PingFang SC",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "① 单元CST/HFSS四态幅相 → ② 两级逻辑分区样板 → ③ 单频谐波谱 → ④ 手机掩膜编译与FPGA下载 → ⑤"
+          },
+          {
+            "index": 2,
+            "text": "LFM回波/SAR成像 → ⑥ 实测幅相回填MATLAB"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "① 单元CST/HFSS四态幅相 → ② 两级逻辑分区样板 → ③ 单频谐波谱 → ④ 手机掩膜编译与FPGA下载 → ⑤ LFM回波/SAR成像 → ⑥ 实测幅相回填MATLAB",
+          "resolvedTextStyle": {
+            "fontSize": 18.51,
+            "typeface": "PingFang SC",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "① 单元CST/HFSS四态幅相 → ② 两级逻辑分区样板 → ③ 单频谐波谱 → ④ 手机掩膜编译与FPGA下载 → ⑤ LFM回波/SAR成像 → ⑥ 实测幅相回填MATLAB",
+              "fontSize": 18.51,
+              "typeface": "PingFang SC",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ylwnat83",
+      "id": "17",
+      "bbox": [
+        92,
+        610,
+        220,
+        34
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EAF5FB",
+      "lineColor": "#EAF5FB",
+      "lineWidth": 1
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dk3m18ri",
+      "id": "18",
+      "bbox": [
+        100,
+        615,
+        204,
+        24
+      ],
+      "geometry": "rect",
+      "text": "推荐首版：单极化",
+      "textPreview": "推荐首版：单极化",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 14,
+        "typeface": "PingFang SC",
+        "color": "#2563EB",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.86,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "推荐首版：单极化"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "推荐首版：单极化",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "PingFang SC",
+            "color": "#2563EB",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "推荐首版：单极化",
+              "fontSize": 14,
+              "typeface": "PingFang SC",
+              "color": "#2563EB",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cju583qx",
+      "id": "19",
+      "bbox": [
+        350,
+        610,
+        220,
+        34
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFF4DF",
+      "lineColor": "#FFF4DF",
+      "lineWidth": 1
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/43y5o3yt",
+      "id": "20",
+      "bbox": [
+        358,
+        615,
+        204,
+        24
+      ],
+      "geometry": "rect",
+      "text": "2-bit：四相位",
+      "textPreview": "2-bit：四相位",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 14,
+        "typeface": "PingFang SC",
+        "color": "#F59E0B",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.86,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2-bit：四相位"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2-bit：四相位",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "PingFang SC",
+            "color": "#F59E0B",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2-bit：四相位",
+              "fontSize": 14,
+              "typeface": "PingFang SC",
+              "color": "#F59E0B",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p476h8ze",
+      "id": "21",
+      "bbox": [
+        608,
+        610,
+        220,
+        34
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EAF8F1",
+      "lineColor": "#EAF8F1",
+      "lineWidth": 1
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i1gnmtg3",
+      "id": "22",
+      "bbox": [
+        616,
+        615,
+        204,
+        24
+      ],
+      "geometry": "rect",
+      "text": "PIN：高速开关",
+      "textPreview": "PIN：高速开关",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 14,
+        "typeface": "PingFang SC",
+        "color": "#159A69",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.86,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "PIN：高速开关"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "PIN：高速开关",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "PingFang SC",
+            "color": "#159A69",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "PIN：高速开关",
+              "fontSize": 14,
+              "typeface": "PingFang SC",
+              "color": "#159A69",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 23,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/32pofyh8",
+      "id": "23",
+      "bbox": [
+        866,
+        610,
+        270,
+        34
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F1ECFF",
+      "lineColor": "#F1ECFF",
+      "lineWidth": 1
+    },
+    {
+      "order": 24,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gzy5kjyx",
+      "id": "24",
+      "bbox": [
+        874,
+        615,
+        254,
+        24
+      ],
+      "geometry": "rect",
+      "text": "7×7：最多49个绘制点",
+      "textPreview": "7×7：最多49个绘制点",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 14,
+        "typeface": "PingFang SC",
+        "color": "#7C5CE0",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.86,
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "7×7：最多49个绘制点"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "7×7：最多49个绘制点",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "typeface": "PingFang SC",
+            "color": "#7C5CE0",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "7×7：最多49个绘制点",
+              "fontSize": 14,
+              "typeface": "PingFang SC",
+              "color": "#7C5CE0",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,30 @@
+MetaPencil handoff reproduction audit — 2026-08-24
+
+1. MATLAB environment was detected successfully:
+   MATLAB 25.1.0.2943329 (R2025a), macOS arm64.
+
+2. Static MATLAB Code Analyzer checks:
+   - run_full_array_freedom_study.m: 1 AGROW performance warning at original line 226.
+   - run_target_freedom_study.m: 1 INUSD warning at original line 439.
+   - SHIP_4x4.m: 0 warnings.
+   - SHIP_4x4_ssb_2bit.m: 0 warnings.
+
+3. Existing result evidence was found for:
+   - Week 4 1-bit four-aircraft baseline (20260812_133301_uav).
+   - Week 4 balanced 2-bit wide-field baseline (20260813_212143_uav).
+   - Week 5 4-delay partition cancellation (20260814_212232_uav).
+   - Week 5 4x4 target-group cancellation (20260815_202454_uav).
+   - Week 5 full-array freedom study and single/two/four-aircraft cases.
+   These are mapped in 07_RESULTS_TRACEABILITY.md. Their large MAT/FIG intermediates
+   were not rerun during packaging; retained PNG/CSV artifacts and source code are
+   the evidence for those historical runs.
+
+4. A new minimal smoke test was executed from the handoff copy. See smoke_test.log.
+   It validates the current Fourier coefficient, delay-vector cancellation, 2D
+   coefficient, 1->2 area allocation, and range/azimuth frequency mapping. It does
+   not claim to regenerate all 700-point/full-resolution SAR figures.
+
+5. 0818.pptx was rendered successfully as 26 slides for visual inspection. Visible
+   text and speaker notes were extracted from PPTX XML. The rendered temporary slide
+   PNGs were used only for audit and are not required in the final ZIP because the
+   original PPTX/PDF and extracted notes are included.

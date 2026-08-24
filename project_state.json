@@ -1,0 +1,106 @@
+{
+  "project_name": "MetaPencil",
+  "snapshot_date": "2026-08-24",
+  "primary_language": "MATLAB",
+  "secondary_languages": [
+    "Python",
+    "JavaScript/MJS"
+  ],
+  "canonical_entrypoints": [
+    "source/2 暑假_两个月仿真任务/Week 5 0815之前/SAR假目标自由度与物理阵列/run_full_array_freedom_study.m",
+    "source/2 暑假_两个月仿真任务/Week 5 0815之前/SAR假目标自由度与物理阵列/run_four_aircraft_ppt_style_shapes.m",
+    "source/2 暑假_两个月仿真任务/Week 5 0815之前/SAR假目标自由度与物理阵列/SHIP_4x4_to_4x4_7x7_physical.m"
+  ],
+  "current_milestone": "Ideal single-polarized 2-bit 2D point-scatterer validation of a 4x4 delay primitive plus outer H_k target codebooks in complex raw-echo/RD simulation",
+  "research_objective": "Generate programmable SAR false-target formations from one or more aircraft while suppressing the dominant -3/+5 quantization-harmonic cross ghosts using a partitioned space-time-coded metasurface.",
+  "completed_modules": [
+    "30/70 1-bit raw-echo baseline",
+    "balanced 2-bit raw-echo baseline",
+    "complex harmonic coefficient calculation",
+    "ideal 4-delay -3/+5 vector cancellation",
+    "separable 2D coefficient simulation",
+    "single-aircraft 1-to-1/2/3/4/5/9/16 target generation",
+    "two-aircraft shared and independent codebooks in complex raw data",
+    "four-aircraft independent coding and 16-target shapes",
+    "custom range-Doppler imaging",
+    "PPT note extraction and result traceability"
+  ],
+  "partial_modules": [
+    "strict physical validation of 2D separability",
+    "multi-aircraft coherent enhancement with synchronization uncertainty",
+    "hardware state amplitude/phase error support",
+    "multi-target energy accounting",
+    "phone-sketch-to-7x7 codebook prototype",
+    "historical image-domain freedom scan"
+  ],
+  "not_started_modules": [
+    "standard SAR PSLR/ISLR metric pipeline",
+    "full-wave 4x4 H primitive validation for the current design",
+    "2 m x 2 m conformal aircraft metasurface model",
+    "FPGA/control-word implementation",
+    "real radar/metasurface experiment"
+  ],
+  "blocked_modules": [
+    "hardware extrapolation is blocked by missing wideband oblique-incidence four-state measurements and control-bandwidth validation"
+  ],
+  "key_parameters": {
+    "fc_hz": 10000000000,
+    "incidence_deg": 60,
+    "platform_height_m": 500,
+    "platform_velocity_mps": 80,
+    "ground_range_resolution_m": 0.25,
+    "azimuth_resolution_m": 0.25,
+    "scatter_points_used": 700,
+    "scatter_points_available": 3000,
+    "grid_spacing_m": 8,
+    "phase_states_deg": [0, 90, 180, 270],
+    "inner_delay_fraction": [0, 0.1, 0.8333333333333334, 0.9333333333333333],
+    "display_floor_db": -36,
+    "C_plus1_amplitude": 0.900316316157106,
+    "S_plus1_amplitude": 0.823639103546332,
+    "A_plus1_plus1_amplitude": 0.549875229298
+  },
+  "key_results": [
+    "outputs/baseline_1bit",
+    "outputs/baseline_2bit",
+    "outputs/harmonic_suppression",
+    "outputs/single_uav",
+    "outputs/multi_uav",
+    "docs/source_materials/0818.pptx"
+  ],
+  "known_issues": [
+    "ideal equal-amplitude 90-degree states only in the partition-cancellation approximation",
+    "no mutual coupling, angular dispersion, polarization matrix, clutter, or noise",
+    "inconsistent normalization in historical presentation-only scripts",
+    "legacy amplitude-template synthesis is not strict coherent electromagnetics",
+    "no unified energy and SAR image-quality metrics",
+    "no Git repository",
+    "large MAT and FIG intermediates are excluded from this ZIP but indexed in file_manifest.csv"
+  ],
+  "recommended_reading_order": [
+    "00_README_FIRST.md",
+    "01_AI_CONTEXT.md",
+    "03_CURRENT_PROGRESS.md",
+    "06_FORMULA_CODE_MAPPING.md",
+    "07_RESULTS_TRACEABILITY.md",
+    "09_KNOWN_ISSUES.md",
+    "docs/PPT_SLIDE_CODE_MAPPING.md"
+  ],
+  "next_3_days": [
+    "unify 1-bit, ordinary 2-bit and cancelled 2-bit under one parameter snapshot",
+    "add energy, PSLR and ISLR metrics",
+    "make every run timestamped and hash its input/code"
+  ],
+  "next_7_days": [
+    "implement explicit nonideal 16-subcell H primitive",
+    "validate separable versus joint 2D coding",
+    "scan multi-aircraft relative phase and clock error",
+    "compare spatial tile assignment strategies"
+  ],
+  "open_questions": [
+    "Can a wideband single-polarized 2-bit cell maintain near-equal amplitude and 90-degree spacing near 60-degree incidence?",
+    "How should fast-time and slow-time control be scheduled in physical hardware without violating the separable model?",
+    "What outer partition layout minimizes spatial grating lobes under integer area constraints?",
+    "What false-target performance remains after state error, delay jitter, mutual coupling, clutter and noise?"
+  ]
+}

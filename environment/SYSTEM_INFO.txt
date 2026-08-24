@@ -1,0 +1,11 @@
+Verification system:
+- Operating system: macOS 26.5.2 (Build 25F84)
+- Architecture: arm64 (Apple Silicon)
+- MATLAB: R2025a, 25.1.0.2943329
+- Time zone: Asia/Shanghai
+- Snapshot date: 2026-08-24
+
+No CUDA, C/C++ build, HFSS, or CST execution was required for the current MATLAB
+smoke test. The archive contains historical CST-derived tables and CAD models, but
+does not contain a verified CST/HFSS solver project that reproduces the current SAR
+figures end-to-end.

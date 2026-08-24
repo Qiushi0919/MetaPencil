@@ -1,0 +1,8 @@
+Git repository: not detected at the workspace root or MetaPencil project root.
+Branch: N/A
+Commit: N/A
+Working-tree status: N/A
+
+Traceability therefore relies on file SHA256, modification times in the ZIP, the
+original-tree inventory, and the explicit current/legacy classification in the
+handoff documents.

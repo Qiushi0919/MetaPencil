@@ -1,0 +1,10 @@
+Sensitive-information scan — 2026-08-24
+
+- API keys, passwords, access tokens, bearer tokens: no matching plaintext found in
+  scanned MATLAB/Python/JS/Markdown/TXT/CSV/JSON/YAML files.
+- Absolute local-user paths: found in 2 original text files.
+- ZIP-copy action: absolute workspace/cache/user-home prefixes were replaced with
+  <REDACTED_WORKSPACE_ROOT>, <REDACTED_USER_CACHE>, or <REDACTED_USER_HOME>.
+- Presenter/author name inside 0818.pptx was retained as project attribution; it is
+  not a credential and the task explicitly requires the original report material.
+- No secret value is reproduced in this report.

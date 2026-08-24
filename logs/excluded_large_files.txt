@@ -1,0 +1,142 @@
+Excluded original files larger than 10 MiB
+Count: 139
+size_bytes|relative_path|reason
+303765258|2 暑假_两个月仿真任务/Week 5 0815之前/SAR假目标自由度与物理阵列/results_full_rd_7x7_physical/20260816_204644_uav/sar_results_4x4_2bit_7x7_physical_4x4_group_cancel_wide100.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+303763954|2 暑假_两个月仿真任务/Week 5 0815之前/歼36_4x4机群_2bit_4x4目标群_谐波相消/results_4x4_target_group_partition_cancel_wide100/20260815_202454_uav/sar_results_4x4_2bit_4x4_target_group_partition_cancel_wide100.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+303565916|2 暑假_两个月仿真任务/Week 5 0815之前/歼36_4x4机群_2bit分区相消/results_4x4_2bit_partition_cancel_wide100/20260814_212232_uav/sar_results_4x4_2bit_partition_cancel_wide100.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+303454969|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_balanced_wide100/20260813_212143_uav/sar_results_4x4_2bit_balanced_wide100.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+303448179|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_30_70_wide100/20260813_200206_uav/sar_results_4x4_2bit_30_70_wide100.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+224941935|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260717_193414_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+127004470|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260718_101412_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+127004470|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260718_100502_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+107163813|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260717_193414_uav/sar_comparison.fig|large reproducible FIG intermediate; PNG retained when available
+104694199|2 暑假_两个月仿真任务/Week 3-2 0811之前/cst.zip|large archive or generated HTML excluded
+101076293|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4/20260812_082416_uav/sar_results_4x4.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+100279812|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260717_191222_balanced/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+100279812|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260717_185634_balanced/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+90272233|2 暑假_两个月仿真任务/documents/PIER-1.pdf|non-selected or superseded report/reference
+76224224|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260717_193900_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+76217074|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260718_094944_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+75956091|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_ssb_2bit/20260812_174207_uav/sar_results_4x4_ssb_2bit.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+75956030|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_30_70/20260812_175651_uav/sar_results_4x4_2bit_30_70.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+75953046|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4/20260812_133301_uav/sar_results_4x4.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+75857310|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260723_162131_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+75857310|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260722_230138_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+75857310|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260722_164245_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+73441603|2 暑假_两个月仿真任务/Week 2 0715之前/1bit 4超表面/SHIP_false_ship_1bit_4panel_result.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+61162500|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260718_101412_uav/sar_comparison.fig|large reproducible FIG intermediate; PNG retained when available
+61162486|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260718_100502_uav/sar_comparison.fig|large reproducible FIG intermediate; PNG retained when available
+56577084|2 暑假_两个月仿真任务/Week 1 0708之前/暑假总体规划.pptx|non-selected or superseded report/reference
+50796758|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260718_102500_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+50717059|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260718_114830_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+50717059|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2D/results/20260718_114830_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+50622505|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260719_163346_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+50622505|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260719_162336_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+50622505|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2D/results/20260722_225708_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+50622505|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2D/results/20260719_163346_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+50622505|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2D/results/20260719_162336_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+50621328|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260719_145708_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+50621328|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2D/results/20260719_145708_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+50573331|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260718_182810_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+50573331|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2D/results/20260718_182810_uav/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+50572154|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_balanced/20260812_112217_uav/sar_results_4x4.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+50572154|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_balanced/20260812_105027_uav/sar_results_4x4.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+50569823|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4/20260812_083001_uav/sar_results_4x4.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+49650890|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4/20260812_133301_uav/sar_4x4_threshold_comparison.fig|large reproducible FIG intermediate; PNG retained when available
+49392051|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_30_70_wide100/20260813_200206_uav/sar_4x4_2bit_30_70_wide100_full_field.fig|large reproducible FIG intermediate; PNG retained when available
+49391573|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_30_70_wide100/20260813_200206_uav/sar_4x4_2bit_30_70_wide100.fig|large reproducible FIG intermediate; PNG retained when available
+49329748|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_balanced_wide100/20260813_212143_uav/harmonic_ghost_annotations/annotated_four_aircraft_target_and_cross_ghosts.fig|large reproducible FIG intermediate; PNG retained when available
+49319619|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_balanced_wide100/20260813_212143_uav/sar_4x4_2bit_balanced_wide100_full_field.fig|large reproducible FIG intermediate; PNG retained when available
+49319151|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_balanced_wide100/20260813_212143_uav/sar_4x4_2bit_balanced_wide100.fig|large reproducible FIG intermediate; PNG retained when available
+49114188|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_balanced_wide100/20260813_212143_uav/sar_4x4_2bit_balanced_wide100_central_2x2.fig|large reproducible FIG intermediate; PNG retained when available
+49113944|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_30_70_wide100/20260813_200206_uav/sar_4x4_2bit_30_70_wide100_central_2x2.fig|large reproducible FIG intermediate; PNG retained when available
+48884779|2 暑假_两个月仿真任务/Week 5 0815之前/SAR假目标自由度与物理阵列/results_full_rd_7x7_physical/20260816_204644_uav/sar_4x4_2bit_7x7_physical_4x4_group_cancel_wide100_full_field.fig|large reproducible FIG intermediate; PNG retained when available
+48884658|2 暑假_两个月仿真任务/Week 5 0815之前/歼36_4x4机群_2bit_4x4目标群_谐波相消/results_4x4_target_group_partition_cancel_wide100/20260815_202454_uav/sar_4x4_2bit_4x4_target_group_partition_cancel_wide100_full_field.fig|large reproducible FIG intermediate; PNG retained when available
+48884315|2 暑假_两个月仿真任务/Week 5 0815之前/SAR假目标自由度与物理阵列/results_full_rd_7x7_physical/20260816_204644_uav/sar_4x4_2bit_7x7_physical_4x4_group_cancel_wide100.fig|large reproducible FIG intermediate; PNG retained when available
+48884200|2 暑假_两个月仿真任务/Week 5 0815之前/歼36_4x4机群_2bit_4x4目标群_谐波相消/results_4x4_target_group_partition_cancel_wide100/20260815_202454_uav/sar_4x4_2bit_4x4_target_group_partition_cancel_wide100.fig|large reproducible FIG intermediate; PNG retained when available
+48877087|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_balanced_wide100/20260813_212143_uav/harmonic_ghost_annotations/annotated_single_aircraft_target_and_cross_ghosts.fig|large reproducible FIG intermediate; PNG retained when available
+48803933|2 暑假_两个月仿真任务/Week 5 0815之前/歼36_4x4机群_2bit分区相消/results_4x4_2bit_partition_cancel_wide100/20260814_212232_uav/sar_4x4_2bit_partition_cancel_wide100_full_field.fig|large reproducible FIG intermediate; PNG retained when available
+48803523|2 暑假_两个月仿真任务/Week 5 0815之前/歼36_4x4机群_2bit分区相消/results_4x4_2bit_partition_cancel_wide100/20260814_212232_uav/sar_4x4_2bit_partition_cancel_wide100.fig|large reproducible FIG intermediate; PNG retained when available
+48791707|2 暑假_两个月仿真任务/Week 5 0815之前/歼36_4x4机群_2bit_4x4目标群_谐波相消/results_4x4_target_group_partition_cancel_wide100/20260815_202454_uav/sar_4x4_2bit_4x4_target_group_partition_cancel_wide100_target_grid_4x4.fig|large reproducible FIG intermediate; PNG retained when available
+48791535|2 暑假_两个月仿真任务/Week 5 0815之前/SAR假目标自由度与物理阵列/results_full_rd_7x7_physical/20260816_204644_uav/sar_4x4_2bit_7x7_physical_4x4_group_cancel_wide100_target_grid_4x4.fig|large reproducible FIG intermediate; PNG retained when available
+48785572|2 暑假_两个月仿真任务/Week 5 0815之前/歼36_4x4机群_2bit分区相消/results_4x4_2bit_partition_cancel_wide100/20260814_212232_uav/sar_4x4_2bit_partition_cancel_wide100_central_2x2.fig|large reproducible FIG intermediate; PNG retained when available
+48784805|2 暑假_两个月仿真任务/Week 5 0815之前/歼36_4x4机群_2bit分区相消/results_4x4_2bit_partition_cancel_wide100/20260814_212232_uav/sar_four_real_corners.fig|large reproducible FIG intermediate; PNG retained when available
+48784804|2 暑假_两个月仿真任务/Week 5 0815之前/歼36_4x4机群_2bit_4x4目标群_谐波相消/results_4x4_target_group_partition_cancel_wide100/20260815_202454_uav/sar_four_real_corners.fig|large reproducible FIG intermediate; PNG retained when available
+48784804|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_balanced_wide100/20260813_212143_uav/sar_four_real_corners.fig|large reproducible FIG intermediate; PNG retained when available
+48784804|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_30_70_wide100/20260813_200206_uav/sar_four_real_corners.fig|large reproducible FIG intermediate; PNG retained when available
+48784800|2 暑假_两个月仿真任务/Week 5 0815之前/SAR假目标自由度与物理阵列/results_full_rd_7x7_physical/20260816_204644_uav/sar_four_real_corners.fig|large reproducible FIG intermediate; PNG retained when available
+48211747|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260717_185634_balanced/sar_comparison.fig|large reproducible FIG intermediate; PNG retained when available
+48210312|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260717_191222_balanced/sar_comparison.fig|large reproducible FIG intermediate; PNG retained when available
+36727209|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260718_101412_uav/sar_target_zoom.fig|large reproducible FIG intermediate; PNG retained when available
+36727180|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260718_100502_uav/sar_target_zoom.fig|large reproducible FIG intermediate; PNG retained when available
+36691502|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260718_094944_uav/sar_comparison.fig|large reproducible FIG intermediate; PNG retained when available
+36678989|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260717_193900_uav/sar_comparison.fig|large reproducible FIG intermediate; PNG retained when available
+36624587|2 暑假_两个月仿真任务/Week 5 0815之前/SAR假目标自由度与物理阵列/results_two_aircraft_independent_special/two_aircraft_independent_special_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+36524588|2 暑假_两个月仿真任务/Week 5 0815之前/SAR假目标自由度与物理阵列/results_four_aircraft_ppt_style_shapes/four_aircraft_ppt_style_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+30490221|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_30_70_wide100_fast/20260813_123328/wide100_harmonic_synthesis.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+25356993|2 暑假_两个月仿真任务/documents/基于分布式时间调制超表面的复杂目标电磁拟像方法研究(2)(1).pptx|non-selected or superseded report/reference
+25184751|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260717_185530_preview/sar_results.mat|large raw/result MAT excluded; compact data and PNG/CSV retained
+24512929|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4/20260812_082416_uav/sar_4x4_deception_1bit.fig|large reproducible FIG intermediate; PNG retained when available
+24481623|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260718_094944_uav/sar_target_zoom.fig|large reproducible FIG intermediate; PNG retained when available
+24470036|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260717_193900_uav/sar_target_zoom.fig|large reproducible FIG intermediate; PNG retained when available
+24295193|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4/20260812_082416_uav/sar_four_real_corners.fig|large reproducible FIG intermediate; PNG retained when available
+22650316|2 暑假_两个月仿真任务/Week 1 0708之前/时间调制超表面_SAR舰船假目标_自学讲义_含MATLAB结果.html|large archive or generated HTML excluded
+17866599|2 暑假_两个月仿真任务/Week 1 0708之前/公众号推文_时间调制超表面_SAR舰船假目标_预览版.html|large archive or generated HTML excluded
+17241385|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_30_70_wide100_fast/20260813_123328/sar_2bit_30_70_wide100_minus40dB.fig|large reproducible FIG intermediate; PNG retained when available
+17019352|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_30_70_wide100_fast/20260813_123328/sar_2bit_30_70_wide100_minus30dB.fig|large reproducible FIG intermediate; PNG retained when available
+12543583|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4/20260812_133301_uav/sar_4x4_deception_1bit_full_field.fig|large reproducible FIG intermediate; PNG retained when available
+12514914|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4/20260812_083001_uav/sar_4x4_deception_1bit.fig|large reproducible FIG intermediate; PNG retained when available
+12514837|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4/20260812_083001_uav/sar_4x4_deception_1bit_full_field.fig|large reproducible FIG intermediate; PNG retained when available
+12497393|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_balanced/20260812_105027_uav/sar_4x4_deception_1bit.fig|large reproducible FIG intermediate; PNG retained when available
+12497298|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_balanced/20260812_105027_uav/sar_4x4_deception_1bit_full_field.fig|large reproducible FIG intermediate; PNG retained when available
+12497230|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_balanced/20260812_112217_uav/sar_4x4_deception_1bit.fig|large reproducible FIG intermediate; PNG retained when available
+12497166|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_balanced/20260812_112217_uav/sar_4x4_deception_1bit_full_field.fig|large reproducible FIG intermediate; PNG retained when available
+12477926|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_30_70/20260812_175651_uav/sar_4x4_2bit_30_70.fig|large reproducible FIG intermediate; PNG retained when available
+12477830|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_30_70/20260812_175651_uav/sar_4x4_2bit_30_70_full_field.fig|large reproducible FIG intermediate; PNG retained when available
+12437445|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_ssb_2bit/20260812_174207_uav/sar_4x4_ssb_2bit.fig|large reproducible FIG intermediate; PNG retained when available
+12437366|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_ssb_2bit/20260812_174207_uav/sar_4x4_ssb_2bit_full_field.fig|large reproducible FIG intermediate; PNG retained when available
+12431984|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4/20260812_133301_uav/sar_4x4_deception_1bit.fig|large reproducible FIG intermediate; PNG retained when available
+12340709|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_30_70/20260812_175651_uav/sar_4x4_2bit_30_70_central_2x2.fig|large reproducible FIG intermediate; PNG retained when available
+12330854|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_ssb_2bit/20260812_174207_uav/sar_4x4_ssb_2bit_central_2x2.fig|large reproducible FIG intermediate; PNG retained when available
+12317110|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_balanced/20260812_112217_uav/sar_4x4_balanced_main_orders_8db.fig|large reproducible FIG intermediate; PNG retained when available
+12317080|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_balanced/20260812_105027_uav/sar_4x4_balanced_main_orders_8db.fig|large reproducible FIG intermediate; PNG retained when available
+12301792|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4/20260812_133301_uav/sar_four_real_corners.fig|large reproducible FIG intermediate; PNG retained when available
+12301790|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_ssb_2bit/20260812_174207_uav/sar_four_real_corners.fig|large reproducible FIG intermediate; PNG retained when available
+12301786|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_2bit_30_70/20260812_175651_uav/sar_four_real_corners.fig|large reproducible FIG intermediate; PNG retained when available
+12301770|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4/20260812_083001_uav/sar_four_real_corners.fig|large reproducible FIG intermediate; PNG retained when available
+12301767|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_balanced/20260812_105027_uav/sar_four_real_corners.fig|large reproducible FIG intermediate; PNG retained when available
+12301660|2 暑假_两个月仿真任务/Week 4 0813之前/歼36_4x4机群_sar_code_2D/results_4x4_balanced/20260812_112217_uav/sar_four_real_corners.fig|large reproducible FIG intermediate; PNG retained when available
+12298584|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260722_164245_uav/sar_metasurface_30_70.fig|large reproducible FIG intermediate; PNG retained when available
+12298442|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260723_162131_uav/sar_metasurface_30_70.fig|large reproducible FIG intermediate; PNG retained when available
+12298426|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260722_230138_uav/sar_metasurface_30_70.fig|large reproducible FIG intermediate; PNG retained when available
+12294834|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260723_162131_uav/sar_metasurface.fig|large reproducible FIG intermediate; PNG retained when available
+12294834|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260722_230138_uav/sar_metasurface.fig|large reproducible FIG intermediate; PNG retained when available
+12294825|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260722_164245_uav/sar_metasurface.fig|large reproducible FIG intermediate; PNG retained when available
+12269948|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260718_182810_uav/sar_metasurface.fig|large reproducible FIG intermediate; PNG retained when available
+12269948|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2D/results/20260718_182810_uav/sar_metasurface.fig|large reproducible FIG intermediate; PNG retained when available
+12265467|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260719_145708_uav/sar_metasurface.fig|large reproducible FIG intermediate; PNG retained when available
+12265467|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2D/results/20260719_145708_uav/sar_metasurface.fig|large reproducible FIG intermediate; PNG retained when available
+12264538|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260719_162336_uav/sar_metasurface.fig|large reproducible FIG intermediate; PNG retained when available
+12264538|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2D/results/20260719_162336_uav/sar_metasurface.fig|large reproducible FIG intermediate; PNG retained when available
+12264537|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2D/results/20260722_225708_uav/sar_metasurface.fig|large reproducible FIG intermediate; PNG retained when available
+12264531|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260719_163346_uav/sar_metasurface.fig|large reproducible FIG intermediate; PNG retained when available
+12264531|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2D/results/20260719_163346_uav/sar_metasurface.fig|large reproducible FIG intermediate; PNG retained when available
+12261316|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260718_114830_uav/sar_metasurface.fig|large reproducible FIG intermediate; PNG retained when available
+12261316|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2D/results/20260718_114830_uav/sar_metasurface.fig|large reproducible FIG intermediate; PNG retained when available
+12237733|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260718_102500_uav/sar_metasurface.fig|large reproducible FIG intermediate; PNG retained when available
+12226339|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260718_102500_uav/sar_plain.fig|large reproducible FIG intermediate; PNG retained when available
+12225512|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260718_114830_uav/sar_plain.fig|large reproducible FIG intermediate; PNG retained when available
+12225512|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2D/results/20260718_114830_uav/sar_plain.fig|large reproducible FIG intermediate; PNG retained when available
+12224036|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260723_162131_uav/sar_plain.fig|large reproducible FIG intermediate; PNG retained when available
+12224035|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260722_230138_uav/sar_plain.fig|large reproducible FIG intermediate; PNG retained when available
+12223972|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260722_164245_uav/sar_plain.fig|large reproducible FIG intermediate; PNG retained when available
+12202138|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260719_163346_uav/sar_plain.fig|large reproducible FIG intermediate; PNG retained when available
+12202138|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2D/results/20260722_225708_uav/sar_plain.fig|large reproducible FIG intermediate; PNG retained when available
+12202138|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2D/results/20260719_163346_uav/sar_plain.fig|large reproducible FIG intermediate; PNG retained when available
+12202121|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260719_162336_uav/sar_plain.fig|large reproducible FIG intermediate; PNG retained when available
+12202121|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2D/results/20260719_162336_uav/sar_plain.fig|large reproducible FIG intermediate; PNG retained when available
+12201996|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260719_145708_uav/sar_plain.fig|large reproducible FIG intermediate; PNG retained when available
+12201996|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2D/results/20260719_145708_uav/sar_plain.fig|large reproducible FIG intermediate; PNG retained when available
+12189097|2 暑假_两个月仿真任务/Week 3-2 0811之前/歼36_sar_code_2D/results/20260718_182810_uav/sar_plain.fig|large reproducible FIG intermediate; PNG retained when available
+12189097|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2D/results/20260718_182810_uav/sar_plain.fig|large reproducible FIG intermediate; PNG retained when available
+12151856|2 暑假_两个月仿真任务/Week 3-1 0719之前/airplane_sar_code_2.5D/results/20260717_185530_preview/sar_comparison.fig|large reproducible FIG intermediate; PNG retained when available

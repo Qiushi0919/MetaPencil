@@ -1,0 +1,5 @@
+target_id,range_m,azimuth_m,source_range_m,source_azimuth_m
+1,-4,4,-12,12
+2,4,4,12,12
+3,-4,-4,-12,-12
+4,4,-4,12,-12

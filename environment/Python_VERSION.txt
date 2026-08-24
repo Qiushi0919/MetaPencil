@@ -1,0 +1,5 @@
+System Python: 3.9.6
+Bundled Python used to build this handoff: 3.12.13
+
+The research simulation itself is MATLAB-first. Python is only needed for handoff
+inventory/PPT-note extraction and for launching the MATLAB smoke test.
