@@ -35,27 +35,14 @@
     "ground_range_resolution_m": 0.25,
     "azimuth_resolution_m": 0.25,
     "grid_spacing_m": 8,
-    "phase_states_deg": [
-      0,
-      90,
-      180,
-      270
-    ],
-    "inner_delay_fraction": [
-      0,
-      0.1,
-      0.8333333333333334,
-      0.9333333333333333
-    ]
+    "phase_states_deg": [0, 90, 180, 270],
+    "inner_delay_fraction": [0, 0.1, 0.8333333333333334, 0.9333333333333333]
   },
   "validated_results": {
     "C_plus1_amplitude": 0.900316316157106,
     "S_plus1_amplitude": 0.823639103546332,
     "A_plus1_plus1_amplitude": 0.549875229298,
-    "dominant_nulls": [
-      "S_minus3",
-      "S_plus5"
-    ]
+    "dominant_nulls": ["S_minus3", "S_plus5"]
   },
   "active_issue_drafts": [
     "P0 position-aware tile model",
@@ -67,16 +54,7 @@
     "P1 hardware error model",
     "P1 data and Git LFS policy"
   ],
-  "github_issues": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8
-  ],
+  "github_issues": [1, 2, 3, 4, 5, 6, 7, 8],
   "smoke_test": {
     "status": "PASS",
     "matlab_version": "R2025a",

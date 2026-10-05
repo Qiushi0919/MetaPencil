@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-05",
+  "branch": "feature/portfolio-links",
+  "base_commit": "ffc97f26fdf88916d84f1a98809b43d08dd34f15",
+  "scope": "README portfolio links and required documentation records",
+  "checks": [
+    {
+      "url": "https://qiushi0919.cn/",
+      "status": 200,
+      "lang": "zh-CN",
+      "title": "谢秋实 Qiushi Xie | 华中科技大学 · 科研与竞赛"
+    },
+    {
+      "url": "https://qiushi0919.github.io/",
+      "status": 200,
+      "lang": "en",
+      "title": "Qiushi Xie | HUST · Research & Projects"
+    }
+  ],
+  "model_level": "documentation only; existing L0-L4 boundaries unchanged",
+  "parameters": "not applicable to documentation",
+  "normalization": "not applicable to documentation"
+}
