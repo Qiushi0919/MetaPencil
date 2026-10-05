@@ -2,6 +2,17 @@
 
 在文件顶部追加新记录。每条记录必须说明分支、commit、修改范围、实际测试、结果路径、假设和下一步；不得把计划写成已完成。
 
+## 2026-10-05 — Personal portfolio links
+
+- Branch: `feature/portfolio-links`
+- Base commit: `ffc97f26fdf88916d84f1a98809b43d08dd34f15`
+- Scope: README 中英文主页链接及本仓库要求的文档记录。
+- Actual checks: 两个公开主页均 HTTP 200，语言分别为 zh-CN/en，页面含谢秋实 / Qiushi Xie。
+- Results: `review_packets/20261005_ffc97f2_portfolio_links/validation.json`
+- Assumptions: 本次仅为文档入口更新，无新的研究结果。
+- Parameters / normalization / model level: 本次不涉及；现有模型边界保持原记录。
+- Next: 通过 PR 完成文档合并。
+
 ## 2026-08-24 — Repository visibility changed to Public
 
 - Authorization: 项目负责人在当前任务中明确要求“改成 public”。
