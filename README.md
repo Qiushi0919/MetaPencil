@@ -60,3 +60,7 @@ run_full_array_freedom_study
 - 不覆盖历史基线，不静默更改坐标、符号、单位、相位约定或归一化。
 - 新结果必须记录参数、commit hash、证据层级和运行命令。
 - 当前未授予开源许可，见 [LICENSE_PENDING.md](LICENSE_PENDING.md)。
+
+## Personal portfolio / 个人主页
+
+[谢秋实 / Qiushi Xie · 中文主页](https://qiushi0919.cn/) · [English portfolio](https://qiushi0919.github.io/)

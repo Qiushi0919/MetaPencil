@@ -35,14 +35,27 @@
     "ground_range_resolution_m": 0.25,
     "azimuth_resolution_m": 0.25,
     "grid_spacing_m": 8,
-    "phase_states_deg": [0, 90, 180, 270],
-    "inner_delay_fraction": [0, 0.1, 0.8333333333333334, 0.9333333333333333]
+    "phase_states_deg": [
+      0,
+      90,
+      180,
+      270
+    ],
+    "inner_delay_fraction": [
+      0,
+      0.1,
+      0.8333333333333334,
+      0.9333333333333333
+    ]
   },
   "validated_results": {
     "C_plus1_amplitude": 0.900316316157106,
     "S_plus1_amplitude": 0.823639103546332,
     "A_plus1_plus1_amplitude": 0.549875229298,
-    "dominant_nulls": ["S_minus3", "S_plus5"]
+    "dominant_nulls": [
+      "S_minus3",
+      "S_plus5"
+    ]
   },
   "active_issue_drafts": [
     "P0 position-aware tile model",
@@ -54,7 +67,16 @@
     "P1 hardware error model",
     "P1 data and Git LFS policy"
   ],
-  "github_issues": [1, 2, 3, 4, 5, 6, 7, 8],
+  "github_issues": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
   "smoke_test": {
     "status": "PASS",
     "matlab_version": "R2025a",
@@ -77,5 +99,12 @@
   },
   "github_release": "https://github.com/Qiushi0919/MetaPencil/releases/tag/handoff-v1.1-git-ready",
   "next_priority": "implement and validate explicit macro-cell geometry and scatterer ownership before claiming spatial-layout effects",
-  "last_updated": "2026-08-24"
+  "last_updated": "2026-10-05",
+  "documentation": {
+    "last_update": "2026-10-05",
+    "personal_homepage_cn": "https://qiushi0919.cn/",
+    "personal_homepage_en": "https://qiushi0919.github.io/",
+    "validation": "review_packets/20261005_ffc97f2_portfolio_links/validation.json",
+    "base_commit": "ffc97f26fdf88916d84f1a98809b43d08dd34f15"
+  }
 }
