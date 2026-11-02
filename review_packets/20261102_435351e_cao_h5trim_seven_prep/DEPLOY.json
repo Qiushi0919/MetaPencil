@@ -1,0 +1,22 @@
+{
+  "pid": 54752,
+  "runtime": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r05-runtime-v1",
+  "config": {
+    "evidence_mirror": "\\\\tsclient\\doctor\\metapencil\\Unitcell-qiushi\\Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102\\Results_rlc_r05_v1",
+    "cases": "cases.json",
+    "projects": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r05-projects-v1",
+    "original_deadline": "2026-11-02T22:38:10.149521+08:00",
+    "guards": [
+      "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-base-runtime-v1"
+    ],
+    "available_memory_GiB": 9.754413604736328,
+    "purpose": "Seven-state 9-10GHz baseline with fixed scaled RLC; native structure checks before and after each solve; no real-device claim",
+    "manifest": {
+      "cases.json": "7e6ad83c59657460afdbcd8604860252b34d5bcea9ae690eeaf86db4f468a587",
+      "literature_run.py": "cfb659e305e3d79ce044a9617e626b8764fe84755f66dace9bb2b8626f5b6866",
+      "me_match_watch.py": "4f642afedde81f43c58e75db40a6be2eb9fe173f28071417198012448266925f",
+      "native_modes.py": "902ece56d09aaad53deca98be7754cebbb2ab92cf66ab378e7a3b755993abb7b",
+      "native_structure.py": "09abe839f00016e5d6e95b85a5cc98250f8b207c1fbadcf0cda595816a9a1d17"
+    }
+  }
+}
