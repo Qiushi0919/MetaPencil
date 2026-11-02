@@ -1,0 +1,43 @@
+{
+  "name": "r04",
+  "frequencies_GHz": [
+    9,
+    9.1,
+    9.2,
+    9.3,
+    9.4,
+    9.5,
+    9.625,
+    9.75,
+    9.875,
+    10
+  ],
+  "max_passes": 3,
+  "budget_minutes": 40,
+  "case_budget_seconds": 900,
+  "purpose": "H additional0.15mm L5 shortening follows measured r02->r03 sensitivity; test without asserting extrapolation. V positive common taper did not help upper band; restore baseline taper and test inactive longest V_L7 shortening with V_L9-.6 retained. Separate pairs, fixed RLC, not2bit certification.",
+  "candidates": [
+    {
+      "name": "h5trim",
+      "terminal_delta_mm": {
+        "H_L2": -0.6,
+        "H_L5": -0.65
+      },
+      "states": [
+        "H1V1",
+        "H2V1"
+      ]
+    },
+    {
+      "name": "v7v9minus",
+      "terminal_delta_mm": {
+        "V_L7": -0.6,
+        "V_L9": -0.6
+      },
+      "states": [
+        "H1V1",
+        "H1V2"
+      ]
+    }
+  ]
+}
