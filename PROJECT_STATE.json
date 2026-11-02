@@ -135,5 +135,321 @@
     "local_evidence": "Unitcell-qiushi/论文结构一致性修正_20261102/cao_pinlayout_build_v2; cao_plan_views",
     "native_plan_views_verified": true,
     "display_aspect_error_fraction": 0.0014245014245013454
+  },
+  "cao_l2launch_seven_state_20261102": {
+    "status": "seven_conditional_states_completed_geometry_checked_before_curves",
+    "source_commit": "c64fe55d0b03684aa7a624bc0cd6a4266463ef45",
+    "frequency_GHz": 3.6,
+    "model_level": "periodic full-wave reconstruction plus lumped SP4T, source-CAD unavailable",
+    "normalization": "native positive-real impedance power-wave S; amplitude=20log10(abs(S))",
+    "fixed_state_mapping": true,
+    "geometry_changes": "L2 RF-pad-to-open reference hypothesis totals24.6mm:1.11018016556mm lead+23.48981983444mm wide line. H RFC/launch contours moved closer to Fig2; remaining source dimensions not author-confirmed. V geometry unchanged.",
+    "L2_reference_author_confirmed": false,
+    "native_prebuild_review": true,
+    "all_seven_actual_postsolve_history_and_parts_verified_before_curves": true,
+    "common_geometry_and_solver_settings_verified": true,
+    "local_RF_max_step_mm": 0.25,
+    "MaxPasses": 3,
+    "MaxCPUs": 4,
+    "native_impedance_samples_checked": 224,
+    "rows": [
+      {
+        "state": "H1V1",
+        "frequency_GHz": 3.6,
+        "H_amp_dB": -0.9709682808334881,
+        "H_phase_deg": 175.16256893057988,
+        "V_amp_dB": -0.20686890562507357,
+        "V_phase_deg": -148.77659039651257,
+        "cross_dB": -27.877355961418306,
+        "last_deltaS": 0.0443065,
+        "converged": false
+      },
+      {
+        "state": "H2V1",
+        "frequency_GHz": 3.6,
+        "H_amp_dB": -1.3141354313201443,
+        "H_phase_deg": 56.62674601241865,
+        "V_amp_dB": -0.21882376318359886,
+        "V_phase_deg": -147.88255121043946,
+        "cross_dB": -33.88008313365695,
+        "last_deltaS": 0.0311794,
+        "converged": false
+      },
+      {
+        "state": "H3V1",
+        "frequency_GHz": 3.6,
+        "H_amp_dB": -1.3313917637507264,
+        "H_phase_deg": -36.86233602714329,
+        "V_amp_dB": -0.21467812174957474,
+        "V_phase_deg": -148.3333612599365,
+        "cross_dB": -28.96804465524788,
+        "last_deltaS": 0.105274,
+        "converged": false
+      },
+      {
+        "state": "H4V1",
+        "frequency_GHz": 3.6,
+        "H_amp_dB": -0.24392832144775606,
+        "H_phase_deg": -99.78414518735029,
+        "V_amp_dB": -0.20165300951549545,
+        "V_phase_deg": -146.8936509996945,
+        "cross_dB": -30.475175486349425,
+        "last_deltaS": 0.035958,
+        "converged": false
+      },
+      {
+        "state": "H1V2",
+        "frequency_GHz": 3.6,
+        "H_amp_dB": -1.0048073648121143,
+        "H_phase_deg": 174.2170937058794,
+        "V_amp_dB": -1.476107161890887,
+        "V_phase_deg": 72.29329073170386,
+        "cross_dB": -23.2356009843716,
+        "last_deltaS": 0.11695,
+        "converged": false
+      },
+      {
+        "state": "H1V3",
+        "frequency_GHz": 3.6,
+        "H_amp_dB": -0.9896193288853676,
+        "H_phase_deg": 174.6212801870023,
+        "V_amp_dB": -0.704283255158783,
+        "V_phase_deg": -20.006797292252287,
+        "cross_dB": -45.77001590031517,
+        "last_deltaS": 0.138932,
+        "converged": false
+      },
+      {
+        "state": "H1V4",
+        "frequency_GHz": 3.6,
+        "H_amp_dB": -0.9676069647252703,
+        "H_phase_deg": 175.33416445672395,
+        "V_amp_dB": -0.38141248779876313,
+        "V_phase_deg": -66.8139173858953,
+        "cross_dB": -34.87351605769951,
+        "last_deltaS": 0.0879943,
+        "converged": false
+      }
+    ],
+    "metrics": {
+      "H": {
+        "states": [
+          "H1V1",
+          "H2V1",
+          "H3V1",
+          "H4V1"
+        ],
+        "ideal_relative_deg": [
+          0,
+          -90,
+          -180,
+          90
+        ],
+        "relative_phase_deg": [
+          0.0,
+          -118.53582291816126,
+          147.97509504227685,
+          85.05328588206982
+        ],
+        "phase_error_deg": [
+          0.0,
+          -28.535822918161273,
+          -32.02490495772315,
+          -4.946714117930242
+        ],
+        "cyclic_adjacent_phase_deg": [
+          -118.53582291816126,
+          -93.48908203956195,
+          -62.92180916020699,
+          -85.05328588206983
+        ],
+        "cyclic_adjacent_error_deg": [
+          -28.535822918161273,
+          -3.4890820395619357,
+          27.078190839793024,
+          4.946714117930185
+        ],
+        "max_combined_error_deg": 32.02490495772315,
+        "amplitude_dB": [
+          -0.9709682808334881,
+          -1.3141354313201443,
+          -1.3313917637507264,
+          -0.24392832144775606
+        ],
+        "minimum_amplitude_dB": -1.3313917637507264,
+        "coarse_30deg_minus3dB_screen_pass": false,
+        "paper_90plusminus20deg_adjacent_phase_pass": false,
+        "max_cyclic_adjacent_error_deg": 28.535822918161273,
+        "max_first_three_adjacent_error_deg": 28.535822918161273,
+        "paper_minus1dB_amplitude_pass": false,
+        "fixed_other_polarization_phase_drift_deg": [
+          0.0,
+          0.8940391860731154,
+          0.4432291365760932,
+          1.8829393968180739
+        ],
+        "fixed_other_polarization_amplitude_drift_dB": [
+          1.928654933106574e-15,
+          -0.011954857558524885,
+          -0.0078092161245012694,
+          0.0052158961095776024
+        ],
+        "all_four_states_numerically_converged": false
+      },
+      "V": {
+        "states": [
+          "H1V1",
+          "H1V2",
+          "H1V3",
+          "H1V4"
+        ],
+        "ideal_relative_deg": [
+          0,
+          -90,
+          -180,
+          90
+        ],
+        "relative_phase_deg": [
+          0.0,
+          -138.9301188717836,
+          128.76979310426032,
+          81.96267301061727
+        ],
+        "phase_error_deg": [
+          0.0,
+          -48.930118871783606,
+          -51.230206895739684,
+          -8.037326989382791
+        ],
+        "cyclic_adjacent_phase_deg": [
+          -138.9301188717836,
+          -92.30008802395614,
+          -46.807120093643015,
+          -81.96267301061728
+        ],
+        "cyclic_adjacent_error_deg": [
+          -48.930118871783606,
+          -2.3000880239561354,
+          43.19287990635698,
+          8.037326989382734
+        ],
+        "max_combined_error_deg": 51.230206895739684,
+        "amplitude_dB": [
+          -0.2068689056250726,
+          -1.4761071618908859,
+          -0.704283255158783,
+          -0.3814124877987621
+        ],
+        "minimum_amplitude_dB": -1.4761071618908859,
+        "coarse_30deg_minus3dB_screen_pass": false,
+        "paper_90plusminus20deg_adjacent_phase_pass": false,
+        "max_cyclic_adjacent_error_deg": 48.930118871783606,
+        "max_first_three_adjacent_error_deg": 48.930118871783606,
+        "paper_minus1dB_amplitude_pass": false,
+        "fixed_other_polarization_phase_drift_deg": [
+          0.0,
+          -0.945475224700516,
+          -0.5412887435776099,
+          0.1715955261440456
+        ],
+        "fixed_other_polarization_amplitude_drift_dB": [
+          0.0,
+          -0.033839083978627185,
+          -0.018651048051880257,
+          0.0033613161082171926
+        ],
+        "all_four_states_numerically_converged": false
+      }
+    },
+    "audits": [
+      {
+        "state": "H1V1",
+        "seconds": 121.81300000008196,
+        "deltaS": [
+          0.188799,
+          0.0443065
+        ],
+        "project_sha256": "f157d7330227e5ef0a993653f0cb364aa1308314d0f6ba26b965816c5be67907",
+        "history_sha256": "af9f2020e839d7eafc27d4783feeb1de9e4f0615ea6c23b1853f796ea28de889",
+        "postsolve_geometry_pass": true
+      },
+      {
+        "state": "H2V1",
+        "seconds": 121.20299999997951,
+        "deltaS": [
+          0.120985,
+          0.0311794
+        ],
+        "project_sha256": "b22043ba9bfade58c23b6d6b65d5a49525e6658f94b0f5e30f610589980cd846",
+        "history_sha256": "0a5b83b3906c5a638be87b086536ec2514fa753cf0981d110ba24762079ca951",
+        "postsolve_geometry_pass": true
+      },
+      {
+        "state": "H3V1",
+        "seconds": 119.1569999998901,
+        "deltaS": [
+          0.214985,
+          0.105274
+        ],
+        "project_sha256": "0981118024edfc4ba4734e4266b2567c4ae624e55568b2131a4a4e46ab5168ef",
+        "history_sha256": "4d7bac627d621d94f2d88f893b533103b05ab4e731c424885535de59919b1b1b",
+        "postsolve_geometry_pass": true
+      },
+      {
+        "state": "H4V1",
+        "seconds": 111.76600000006147,
+        "deltaS": [
+          0.0291946,
+          0.035958
+        ],
+        "project_sha256": "821f562b1442c2b4c693fc22c4aa0cf3d4835184a7d54c99dc16779e604f3f70",
+        "history_sha256": "f6f4ca4f55b801445e1a92b2d3a6b6bfedf6110d648a89fa8e3ada3c67568979",
+        "postsolve_geometry_pass": true
+      },
+      {
+        "state": "H1V2",
+        "seconds": 121.39099999982864,
+        "deltaS": [
+          0.164499,
+          0.11695
+        ],
+        "project_sha256": "fe5e32e0a1ef1a903654ab178bbc9ee607bed8a45c5ef6d23285058de4547873",
+        "history_sha256": "86c19637b77a4bcc274bec0e01d013f4115ed3e0bc06770154a22cc8ccf70a2e",
+        "postsolve_geometry_pass": true
+      },
+      {
+        "state": "H1V3",
+        "seconds": 118.3289999999106,
+        "deltaS": [
+          0.183159,
+          0.138932
+        ],
+        "project_sha256": "7fb1b90eb04cecbd5f27c74fcc6c630519f542f349b0eeb18bf710e6a456c8c2",
+        "history_sha256": "4b02480dbe3efb6ca7a49ca22f307a3fc8d0f1379ddd86de167d48346b126663",
+        "postsolve_geometry_pass": true
+      },
+      {
+        "state": "H1V4",
+        "seconds": 118.70299999997951,
+        "deltaS": [
+          0.186628,
+          0.0879943
+        ],
+        "project_sha256": "d0ccce3269216b68aafa23221a61483eb4ddb1f873c0207e726c013a7a5f4e8e",
+        "history_sha256": "9b0e14c7f3baaf1ec3dfc4a51406f740340da1b71ccdb18c3d3658f6b428aeca",
+        "postsolve_geometry_pass": true
+      }
+    ],
+    "all_states_converged": false,
+    "paper_reproduction_accepted": false,
+    "seven_states_not_full_16_combinations": true,
+    "output_path": "Unitcell-qiushi/论文结构一致性修正_20261102/Results_cao_l2launch_v3six",
+    "next_action": "Numerical convergence at fixed geometry before treating phase error as a geometry error; then source-constrained remaining length-reference/launch audit. No new solve currently running.",
+    "files_sha256": {
+      "code/cao-l2launch-v3screen-cases.json": "91f31d54685b475fb65f8346a77bc53f30bbb432711f3178399e4b2d2287ea9e",
+      "code/cao-l2launch-v3six-cases.json": "f4b847c0009d51f16683231fe01d35e0ac1872a1285289cf8b88748dec89003a",
+      "Results_cao_l2launch_v3six/seven_state_data.csv": "b96efbfd5681bd7e877b979e8416ad19e7e4563f6884bc180fc73330651e59dd",
+      "Results_cao_l2launch_v3six/seven_state_phasors.png": "5ed5f73102186b6b19bb4011ad4ad7ae2cb579b57809d9a5c150026f07d26940"
+    }
   }
 }
