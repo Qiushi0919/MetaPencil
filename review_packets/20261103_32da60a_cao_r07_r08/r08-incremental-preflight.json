@@ -1,0 +1,105 @@
+{
+  "passed": true,
+  "parent": "r07",
+  "cases": [
+    {
+      "state": "H1V1",
+      "changed_nets": [
+        "H_L3",
+        "V_L9",
+        "V_L8"
+      ],
+      "history_changes": [
+        "H_L3 nominal pad and fanout",
+        "V_L9 nominal pad and fanout",
+        "V_L8 nominal pad and fanout"
+      ],
+      "parts_and_frequencies_identical": true
+    },
+    {
+      "state": "H2V1",
+      "changed_nets": [
+        "H_L3",
+        "V_L9",
+        "V_L8"
+      ],
+      "history_changes": [
+        "H_L3 nominal pad and fanout",
+        "V_L9 nominal pad and fanout",
+        "V_L8 nominal pad and fanout"
+      ],
+      "parts_and_frequencies_identical": true
+    },
+    {
+      "state": "H3V1",
+      "changed_nets": [
+        "H_L3",
+        "V_L9",
+        "V_L8"
+      ],
+      "history_changes": [
+        "H_L3 nominal pad and fanout",
+        "V_L9 nominal pad and fanout",
+        "V_L8 nominal pad and fanout"
+      ],
+      "parts_and_frequencies_identical": true
+    },
+    {
+      "state": "H4V1",
+      "changed_nets": [
+        "H_L3",
+        "V_L9",
+        "V_L8"
+      ],
+      "history_changes": [
+        "H_L3 nominal pad and fanout",
+        "V_L9 nominal pad and fanout",
+        "V_L8 nominal pad and fanout"
+      ],
+      "parts_and_frequencies_identical": true
+    },
+    {
+      "state": "H1V2",
+      "changed_nets": [
+        "H_L3",
+        "V_L9",
+        "V_L8"
+      ],
+      "history_changes": [
+        "H_L3 nominal pad and fanout",
+        "V_L9 nominal pad and fanout",
+        "V_L8 nominal pad and fanout"
+      ],
+      "parts_and_frequencies_identical": true
+    },
+    {
+      "state": "H1V3",
+      "changed_nets": [
+        "H_L3",
+        "V_L9",
+        "V_L8"
+      ],
+      "history_changes": [
+        "H_L3 nominal pad and fanout",
+        "V_L9 nominal pad and fanout",
+        "V_L8 nominal pad and fanout"
+      ],
+      "parts_and_frequencies_identical": true
+    },
+    {
+      "state": "H1V4",
+      "changed_nets": [
+        "H_L3",
+        "V_L9",
+        "V_L8"
+      ],
+      "history_changes": [
+        "H_L3 nominal pad and fanout",
+        "V_L9 nominal pad and fanout",
+        "V_L8 nominal pad and fanout"
+      ],
+      "parts_and_frequencies_identical": true
+    }
+  ],
+  "same_geometry_all_seven": true
+}
