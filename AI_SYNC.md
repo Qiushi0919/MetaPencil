@@ -1,3 +1,18 @@
+## 2026-11-02 15:54 — Cao 修订版七条件态完成，尚未达到论文2-bit判据
+
+- 同几何同设置完成H1V1/H2V1/H3V1/H4V1/H1V2/H1V3/H1V4共7态，3.6GHz单直接点，三轮/4线程，累计求解832.362秒。每态先核验实际保存history与16元件，再读曲线；7态几何相同、仅ON/OFF选择变化，224个原生阻抗样本匹配。首态另外导出并检查RF/孔径/侧视原生图，源工程SHA不变。
+- H循环相邻相位变化−118.536/−93.489/−62.922/−85.053度；V为−138.930/−92.300/−46.807/−81.963度。最大相邻误差28.536/48.930度，均未通过论文90±20度标准；最大首态相对误差32.025/51.230度。最差共极化幅度H−1.331/V−1.476dB；没有相位排序、共轭或拟合。
+- 七态末次ΔS依次.0443065/.0311794/.105274/.035958/.11695/.138932/.0879943，均未满足连续两轮<.03，不将粗算误差全部归因于结构；不宣称论文复现成功或完整16组合独立性。H切换对固定V相位最大扰动1.883度，V切换对固定H最大0.945度，仅为粗算条件态证据。
+- 保留源尺寸缺项：L2的输入端参考及局部扇出/折弯采用显式假设；模型图核验通过不等于作者CAD一致。下一步应在固定几何下先加密排除数值漂移，再继续按论文核对剩余参考定义。当前无运行中的solver，未启动PPT或迁频。
+- 证据、七态CSV和相量图在Unitcell-qiushi/论文结构一致性修正_20261102/Results_cao_l2launch_v3six；本地packet20261102_c64fe55_paper_alignment/cao_l2launch_v3。全部原始数据保留；脱敏记录进入PR#12，CAD/论文/机器日志不公开。
+
+## 2026-11-02 — Cao nominal RF pin-layout reconstruction
+
+- Native CST RF polygons and 16 lumped elements checked after datasheet-based pad-layout correction. Main dimensions/RLC/state order unchanged; L2 reference, absolute placement and fanout remain inferred.
+- Nets are disjoint and series endpoints lie inside metal. Native plan views verified after correcting export aspect ratio; source CAD hash unchanged. These checks do not establish exact author-CAD or paper-result reproduction.
+- Solver launch stopped at existing available-memory guard before invoking CST solve. No new S-parameters for this revision.
+- Audit: 项目管理/review_packets/20261102_c64fe55_cao_pinlayout/audit.json. Paper PDFs, CAD files, raw logs and machine details remain local.
+
 # AI synchronization log
 
 在文件顶部追加新记录。每条记录必须说明分支、commit、修改范围、实际测试、结果路径、假设和下一步；不得把计划写成已完成。
