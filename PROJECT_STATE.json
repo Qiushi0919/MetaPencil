@@ -453,7 +453,7 @@
     }
   },
   "cao_xband_initial_20261102": {
-    "status": "seven_state_xband_diagnostic_running",
+    "status": "six_state_resume_running_after_memory_guard",
     "solver_running": true,
     "solver_invoked": true,
     "target_band_GHz": [
@@ -462,15 +462,21 @@
     ],
     "center_GHz": 9.5,
     "case_sha256": "af6aeb62710d8c5fd9055558921ef9a103e29fd8497ccf58d9d1f3f80532e3af",
-    "model_level": "periodic full-wave geometry with ideal lumped SP4T, build only",
+    "model_level": "periodic full-wave geometry with ideal lumped SP4T; coarse diagnostic, not convergence certified",
     "xband_performance_validated": false,
     "original_band_reproduction_accepted": false,
     "ppt_slides": 41,
     "ppt_sha256": "c052cd71a73647e98eb35b0aa12d74b7d87faeeaf974aaeceaea097c594402c0",
     "review_packet": "项目管理/review_packets/20261102_c64fe55_cao_xband",
-    "next": "On completion audit native geometry/components before phase/amplitude analysis; no X-band result yet.",
-    "solver_started_local": "2026-11-02T16:32:40+08:00",
-    "runner_pid": 52528,
-    "results_path": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_xband_ideal_v1"
+    "next": "Verify resumed solver and combine six states with preserved H1V1; audit actual geometry before interpreting curves.",
+    "solver_started_local": "2026-11-02T16:45:41.634690+08:00",
+    "runner_pid": 44884,
+    "results_path": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_xband_ideal_v1r1",
+    "preserved_completed_states": [
+      "H1V1"
+    ],
+    "completed_results_path": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_xband_ideal_v1",
+    "memory_guard_GiB": 2.5,
+    "automation_id": "cao-x"
   }
 }
