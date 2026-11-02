@@ -1,0 +1,165 @@
+{
+  "schema_version": "cao-xband-build.v1",
+  "timestamp": "2026-11-02T16:28:26.694090+08:00",
+  "source_workspace_commit": "c64fe55",
+  "review_base_commit": "2cd39a23011fbbd0475bca1ba98b9e2e7dcf16d4",
+  "model_level": "periodic full-wave geometry with ideal lumped SP4T, build only",
+  "source_paper_doi": "10.1631/FITEE.2400379",
+  "target_band_GHz": [
+    9,
+    10
+  ],
+  "center_GHz": 9.5,
+  "passive_scale": 0.37894736842105264,
+  "parameters_mm": {
+    "P": 12.505263157894737,
+    "W": 9.663157894736843,
+    "W1": 0.41684210526315796,
+    "h1": 0.37894736842105264,
+    "h2": 0.19250526315789473,
+    "air1": 1.8947368421052633,
+    "air2": 3.031578947368421,
+    "L1": 2.2736842105263158,
+    "L2": 9.322105263157896,
+    "L3": 5.797894736842106,
+    "L4": 0.41684210526315796,
+    "L5": 2.8042105263157895,
+    "L6": 2.1789473684210527,
+    "L7": 7.010526315789474,
+    "L8": 4.926315789473684,
+    "L9": 3.6,
+    "L10": 0.18947368421052632,
+    "S1": 3.031578947368421,
+    "S2": 3.6,
+    "S3": 9.094736842105263
+  },
+  "case_sha256": "af6aeb62710d8c5fd9055558921ef9a103e29fd8497ccf58d9d1f3f80532e3af",
+  "states": [
+    "H1V1",
+    "H2V1",
+    "H3V1",
+    "H4V1",
+    "H1V2",
+    "H1V3",
+    "H1V4"
+  ],
+  "native_projects": [
+    {
+      "state": "H1V1",
+      "sha256": "1d875c40c4f70c021632a65a4097940f1b9415d7e9fc22f1c6ed4950aebcdba4",
+      "history_entries": 38,
+      "parts": 8,
+      "native_match": true
+    },
+    {
+      "state": "H2V1",
+      "sha256": "817ed1cee14500975e1fc2d2531b19f58813d5e416379245c4b01b7ea17897b3",
+      "history_entries": 38,
+      "parts": 8,
+      "native_match": true
+    },
+    {
+      "state": "H3V1",
+      "sha256": "c37cf1167bde9f79895f4c4dd5bc51e831f95e4118c1abc662e72ecc9a208735",
+      "history_entries": 38,
+      "parts": 8,
+      "native_match": true
+    },
+    {
+      "state": "H4V1",
+      "sha256": "05b75d19cb2d4b310cab669ceda3f1a7b776306e750e9a9c5eb114b7e0f893e8",
+      "history_entries": 38,
+      "parts": 8,
+      "native_match": true
+    },
+    {
+      "state": "H1V2",
+      "sha256": "234f8f6202f4960749f6ab5b72be94888183c48bd568f8215f18a44f2a5f0ca4",
+      "history_entries": 38,
+      "parts": 8,
+      "native_match": true
+    },
+    {
+      "state": "H1V3",
+      "sha256": "f9459aec5efa1461de1e73dc44cb1e22f87a9a5d2c9956a4230288ff1c006ad8",
+      "history_entries": 38,
+      "parts": 8,
+      "native_match": true
+    },
+    {
+      "state": "H1V4",
+      "sha256": "088a4282d997aa68d7c5258d16e0bdbade70176f70207f7fc44be7c5ade6d149",
+      "history_entries": 38,
+      "parts": 8,
+      "native_match": true
+    }
+  ],
+  "minimum_gap_mm": [
+    0.037894736842105196,
+    "V_L7",
+    "V_L8"
+  ],
+  "native_build_checks": {
+    "history": true,
+    "component_values_and_endpoints": true,
+    "states": 7,
+    "lumped_parts_total": 56,
+    "visual_views": [
+      "RF_top",
+      "coupling_aperture_top",
+      "stack_side"
+    ]
+  },
+  "switch_before": {
+    "model": "BGSA14GN10 paper RLC",
+    "Ron_ohm": 1.6,
+    "L_H": 1e-10,
+    "Coff_F": 1.2e-13,
+    "Cshunt_F": 4.2e-14,
+    "parts_per_state": 16
+  },
+  "switch_after": {
+    "model": "ideal SP4T diagnostic",
+    "Ron_ohm": 0.01,
+    "Roff_ohm": 1000000000.0,
+    "L_H": 0,
+    "C_F": 0,
+    "parts_per_state": 8,
+    "SP4T_count": 2,
+    "PIN_count": 0
+  },
+  "switch_change_reason": "Official BGSA14GN10 operating range 0.1–6 GHz; no extrapolated real-device X-band claim",
+  "switch_source": "https://www.infineon.com/part/BGSA14GN10",
+  "normalization": "No X-band S data. Planned co-pol Floquet power-wave S; dB=20log10|S|; H1V1 reference; fixed -90deg order, no conjugation/sorting/fitted offset",
+  "solver_invoked": false,
+  "xband_performance_validated": false,
+  "source_original_band_accepted": false,
+  "limitations": [
+    "3.6 GHz source reconstruction remains unconverged and outside paper adjacent-phase criterion",
+    "RF land dimensions retained with nonuniform local launch remap; not all line lengths uniformly scaled",
+    "0.0379 mm minimum gap; fabrication and standard stack selection pending",
+    "Real X-band switch/packaging and dispersion not characterized",
+    "Seven conditional states do not establish all 16 polarization combinations"
+  ],
+  "output_paths": {
+    "models": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/native_build_v1/projects",
+    "native_evidence": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/native_build_v1",
+    "ppt": "Unitcell-qiushi/文献结构快速复现_20261101/report/文献单元快速复现与混合结构粗算.pptx"
+  },
+  "ppt": {
+    "slides": 41,
+    "added_slides": [
+      39,
+      40,
+      41
+    ],
+    "seven_state_plot_slide": 40,
+    "sha256": "c052cd71a73647e98eb35b0aa12d74b7d87faeeaf974aaeceaea097c594402c0",
+    "source_backup_sha256": "ac19afc2286ecd884cf2cdd49e61a16e38cc200ef642d707ba971642d7ab3f3b",
+    "original_38_slides_and_40_embedded_workbooks_byte_preserved": true,
+    "package_layout_and_chart_validation_passed": true,
+    "all_slides_rendered": true,
+    "changed_slides_visually_reviewed": true,
+    "native_PowerPoint_open_test": false
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "pid": 52528,
+  "runner_status": {
+    "pid": 52528,
+    "started_local": "2026-11-02T16:32:03.195394+08:00",
+    "deadline_local": "2026-11-02T19:02:02.461460+08:00",
+    "completed": [],
+    "status": "solving",
+    "updated_local": "2026-11-02T16:32:40.046600+08:00",
+    "case": "cao-xband-ideal-H1V1",
+    "solver_started_local": "2026-11-02T16:32:40.045585+08:00",
+    "solver_limit_seconds": 900
+  },
+  "available_memory_GiB_at_launch": 9.328033447265625,
+  "frequencies_GHz": [
+    9,
+    9.25,
+    9.5,
+    9.75,
+    10
+  ],
+  "adaptive_pass_limit": 3,
+  "threads": 4,
+  "per_state_limit_seconds": 900,
+  "finite_deadline": "2026-11-02T19:02:02.461460+08:00",
+  "postsolve_order": [
+    "save native model",
+    "verify actual history unchanged",
+    "readback 8 native parts",
+    "export curves",
+    "archive evidence before next state"
+  ],
+  "source_case_sha256": "af6aeb62710d8c5fd9055558921ef9a103e29fd8497ccf58d9d1f3f80532e3af",
+  "output_path": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_xband_ideal_v1",
+  "launcher_sha256": "e713a54cd8d45e607a6560576ff7333d77fec72ff744720e59e74b018a412d06"
+}
