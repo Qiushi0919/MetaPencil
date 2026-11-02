@@ -1,0 +1,225 @@
+{
+  "round": "r08",
+  "pairs": [],
+  "completed_case_audits": [
+    {
+      "state": "H1V1",
+      "seconds": 512.375,
+      "deltaS": [
+        0.0309023,
+        0.0352741,
+        0.0325329,
+        0.0227218,
+        0.0166035
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r08-projects-v1\\caoxrlc-r08-residualtrim-H1V1.cst",
+      "source_sha256": "491208c2be9d6a021be4a1c3edfe4d4541b58032df8574582c180695061c7101",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r08/native/runs/caoxrlc-r08-residualtrim-H1V1",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "c40511d88fd4b83e98ca6460039a576a8a286e41a77dd9ec6732048bf39272b3",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L4",
+          "V_L10"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "effa91899a257e93c8abf30c60b3bd6a234b691f8fbdbd1d9983aa463e15f160"
+    },
+    {
+      "state": "H2V1",
+      "seconds": 519.1409999998286,
+      "deltaS": [
+        0.0858604,
+        0.0384415,
+        0.0413382,
+        0.0247536,
+        0.0138579
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r08-projects-v1\\caoxrlc-r08-residualtrim-H2V1.cst",
+      "source_sha256": "0518e8410a893f349407ff2787a55719fab8c3f797ad3922df2dba75e6d2ca9d",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r08/native/runs/caoxrlc-r08-residualtrim-H2V1",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "0c47e1aaaadba659274a269684ed2c7a801689e38e612e5f1c4b1a63331878a4",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L5",
+          "V_L10"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "ebcdf501e5a1d7ef323909bd8b0227d7e67a8d80d100f7d9caf19d3d6a01c3b4"
+    },
+    {
+      "state": "H3V1",
+      "seconds": 489.6879999998491,
+      "deltaS": [
+        0.143353,
+        0.0968233,
+        0.0510789,
+        0.0257938,
+        0.0128691
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r08-projects-v1\\caoxrlc-r08-residualtrim-H3V1.cst",
+      "source_sha256": "f664185b3e6c3e9148edfdf8a2c636c3fcf11379db3b51707fcad4fb765a73e2",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r08/native/runs/caoxrlc-r08-residualtrim-H3V1",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "d86f8f513d512da94634581d6c4947b7c3e1c9ffadd7a9cd9fea0388800d9c18",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L3",
+          "V_L10"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "426f8f7a907ab2868f8ade86caf523e647d597c2b50b2dfb6b645e2859879d89"
+    },
+    {
+      "state": "H4V1",
+      "seconds": 465.5629999998491,
+      "deltaS": [
+        0.0633353,
+        0.0499859,
+        0.038456,
+        0.0238406,
+        0.0134107
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r08-projects-v1\\caoxrlc-r08-residualtrim-H4V1.cst",
+      "source_sha256": "768d7884bd0e27c602f760c3e88537fae1de1bdb8fe0664bec6e61f6a090fa2f",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r08/native/runs/caoxrlc-r08-residualtrim-H4V1",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "1549d1184af628f8fc41ea4ee4b0085d981d6ce5d44341141155c3417e201c85",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L2",
+          "V_L10"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "28cbc8c701af94e49f953da613cf12c94be83787054ee68cf409831c01a1cf69"
+    },
+    {
+      "state": "H1V2",
+      "seconds": 531.530999999959,
+      "deltaS": [
+        0.110078,
+        0.0496,
+        0.0362643,
+        0.0312344,
+        0.0165789
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r08-projects-v1\\caoxrlc-r08-residualtrim-H1V2.cst",
+      "source_sha256": "c9b5a910bb092eed2ac22390034bac281045f071e99301910b81d907754a734e",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r08/native/runs/caoxrlc-r08-residualtrim-H1V2",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "dd912184f836d838e18176b895195d9ba2ea4c276d2c1931ff450ecb6180910c",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L4",
+          "V_L9"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "52b0027065a33f0094ac795aed59fbe40c4f58f26ce98cbf63d6be413ee2e40c"
+    },
+    {
+      "state": "H1V3",
+      "seconds": 529.2970000000205,
+      "deltaS": [
+        0.164214,
+        0.11481,
+        0.0562917,
+        0.0297106,
+        0.0154808
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r08-projects-v1\\caoxrlc-r08-residualtrim-H1V3.cst",
+      "source_sha256": "4d3f31f5254e2c0c1f8f525d282f0f30064e9d42144a83eef9eedea6c98570b2",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r08/native/runs/caoxrlc-r08-residualtrim-H1V3",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "9a9c27ea4835439861296119eaee9137951249904acd0f3a99e08185827af5b1",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L4",
+          "V_L8"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "e365d774f0f8e106a1a1f692e9caf9ae9676058e4bfcbb21b9fd2b982c043279"
+    },
+    {
+      "state": "H1V4",
+      "seconds": 505.2029999999795,
+      "deltaS": [
+        0.0791676,
+        0.0686544,
+        0.0360537,
+        0.0263545,
+        0.0130833
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r08-projects-v1\\caoxrlc-r08-residualtrim-H1V4.cst",
+      "source_sha256": "6a16a4925d37ba1c193e5da1a3b0ea6513aa535172da78185d2a91c3e4115657",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r08/native/runs/caoxrlc-r08-residualtrim-H1V4",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "7096d61c35296994950dbcb47135525220d974fe4aa98df5d6f53eceeeef30b0",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L4",
+          "V_L7"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "5f7bc2dd71fc384c8df564b6161eb71e95ebf6c8338d9501ce642a8cc63690fb"
+    }
+  ],
+  "pending_cases": [],
+  "cannot_combine_different_geometries": true
+}

@@ -1,0 +1,12 @@
+{
+  "pid": 49680,
+  "started_local": "2026-11-03T01:40:44.365782+08:00",
+  "deadline_local": "2026-11-03T02:45:43.617329+08:00",
+  "completed": [],
+  "status": "solving",
+  "updated_local": "2026-11-03T01:41:13.439555+08:00",
+  "case": "caoxrlc-r09-vnarrow-H1V1",
+  "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r09-projects-v1\\caoxrlc-r09-vnarrow-H1V1.cst",
+  "solver_started_local": "2026-11-03T01:41:13.438517+08:00",
+  "solver_limit_seconds": 1500
+}

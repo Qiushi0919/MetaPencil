@@ -1,0 +1,6 @@
+{
+  "analysis": "analysis_r08",
+  "candidate": "r08-residualtrim",
+  "geometry": "延迟线改动（相对统一缩放）：H：L₂ −0.60、L₅ −0.65、L₃ −0.50 mm；V：L₉ −0.85、L₈ −0.80 mm。",
+  "criterion": "Among audited complete seven-state candidates, minimize worst relative and cyclic phase error across both polarizations at common direct samples; retain amplitude and convergence limits."
+}

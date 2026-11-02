@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "parent": "r08",
+  "tests": [
+    "width factor1 identity",
+    "factors0.65/1.35 valid polygons",
+    "all4case circuit contacts gap bounds",
+    "onlyV_common historychanged; slots and solver unchanged"
+  ],
+  "cases": [
+    {
+      "id": "caoxrlc-r09-vnarrow-H1V1",
+      "changed_nets": [
+        "V_common"
+      ],
+      "history_changes": [
+        "V_common nominal pad and fanout"
+      ],
+      "RLC_endpoints_and_frequencies_unchanged": true
+    },
+    {
+      "id": "caoxrlc-r09-vnarrow-H1V2",
+      "changed_nets": [
+        "V_common"
+      ],
+      "history_changes": [
+        "V_common nominal pad and fanout"
+      ],
+      "RLC_endpoints_and_frequencies_unchanged": true
+    },
+    {
+      "id": "caoxrlc-r09-vwide-H1V1",
+      "changed_nets": [
+        "V_common"
+      ],
+      "history_changes": [
+        "V_common nominal pad and fanout"
+      ],
+      "RLC_endpoints_and_frequencies_unchanged": true
+    },
+    {
+      "id": "caoxrlc-r09-vwide-H1V2",
+      "changed_nets": [
+        "V_common"
+      ],
+      "history_changes": [
+        "V_common nominal pad and fanout"
+      ],
+      "RLC_endpoints_and_frequencies_unchanged": true
+    }
+  ]
+}
