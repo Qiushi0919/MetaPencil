@@ -546,17 +546,20 @@
     "next": "Fix target switch parasitic model before adjusting actual launch and delay-line geometry; original reconstruction remains unaccepted."
   },
   "cao_rlc_optimization_20261102": {
-    "status": "seven_state_baseline_running",
+    "status": "remaining_two_baseline_states_resumed",
     "solver_running": true,
-    "pid": 55232,
-    "started_local": "2026-11-02T18:25:40+08:00",
-    "results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_base_v1",
+    "pid": 54224,
+    "started_local": "2026-11-02T19:17:11.918225+08:00",
+    "results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_base_v1r1",
     "plan": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/optimization_plan.json",
     "completed_states": [
-      "caoxrlc-base-H1V1",
-      "caoxrlc-base-H2V1"
+      "H1V1",
+      "H2V1",
+      "H3V1",
+      "H4V1",
+      "H1V2"
     ],
-    "current_case": "caoxrlc-base-H3V1",
+    "current_case": "caoxrlc-base-H1V3",
     "fixed_RLC": {
       "Ron_ohm": 1.6,
       "L_nH": 0.037894736842105266,
@@ -567,7 +570,13 @@
     "native_checks": "Actual history, 10 RF nets, 8 series RLC and 8 shunt capacitors, branch mapping and metal contacts checked before and after each solve",
     "automation_id": "cao-rlc-x",
     "optimized_2bit_achieved": false,
-    "review_packet": "项目管理/review_packets/20261102_f8512f7_cao_rlc_opt",
-    "next": "After all seven finish, audit native structure, analyze full baseline, choose bounded launch/delay-line candidates and continue iteration"
+    "review_packet": "项目管理/review_packets/20261102_d43e7cf_cao_rlc_recovery",
+    "next": "Audit remaining two native states then analyze all seven from original five plus resumed two; continue geometry candidates",
+    "review_pr": null,
+    "review_pr_status": "pending",
+    "last_reported_case": "caoxrlc-base-H1V3",
+    "baseline_results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_base_v1",
+    "interruption_reason": "RDP disconnected; H1V2 completed native solve and audits; remote archival WinError5 stopped queue at18:48. Recovered fifth case; no completed states recomputed.",
+    "mirror_policy": "Windows-local archives; independent best-effort remote sync retries"
   }
 }

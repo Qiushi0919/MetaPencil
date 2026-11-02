@@ -1,0 +1,60 @@
+{
+  "base_commit": "d43e7cfdaea78ed8dd7b9012f127b716b185ceb9",
+  "state": {
+    "status": "remaining_two_baseline_states_resumed",
+    "solver_running": true,
+    "pid": 54224,
+    "started_local": "2026-11-02T19:17:11.918225+08:00",
+    "results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_base_v1r1",
+    "plan": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/optimization_plan.json",
+    "completed_states": [
+      "H1V1",
+      "H2V1",
+      "H3V1",
+      "H4V1",
+      "H1V2"
+    ],
+    "current_case": "caoxrlc-base-H1V3",
+    "fixed_RLC": {
+      "Ron_ohm": 1.6,
+      "L_nH": 0.037894736842105266,
+      "Coff_fF": 45.473684210526315,
+      "Cshunt_fF": 15.915789473684212,
+      "interpretation": "Mathematically scaled diagnostic RLC, not measured X-band BGSA hardware"
+    },
+    "native_checks": "Actual history, 10 RF nets, 8 series RLC and 8 shunt capacitors, branch mapping and metal contacts checked before and after each solve",
+    "automation_id": "cao-rlc-x",
+    "optimized_2bit_achieved": false,
+    "review_packet": "项目管理/review_packets/20261102_d43e7cf_cao_rlc_recovery",
+    "next": "Audit remaining two native states then analyze all seven from original five plus resumed two; continue geometry candidates",
+    "review_pr": null,
+    "review_pr_status": "pending",
+    "last_reported_case": "caoxrlc-base-H1V3",
+    "baseline_results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_base_v1",
+    "interruption_reason": "RDP disconnected; H1V2 completed native solve and audits; remote archival WinError5 stopped queue at18:48. Recovered fifth case; no completed states recomputed.",
+    "mirror_policy": "Windows-local archives; independent best-effort remote sync retries"
+  },
+  "source_hashes": {
+    "tools/caorlcrecover.py": "9dcbae045cd22551e333f08a6f9c0997bc0555c4d2d12184ec0177ae9decd89b",
+    "tools/caorlcrecover.cmd": "258a4af165fae113c6a33698831772e02eee3d1c33a4687b9034531274ba8af2",
+    "tools/caorlcresumetwo.py": "ecd5b3c49647e7cbd760535ee1397156572cfda370f448f0c9638353613397ff",
+    "tools/caorlcresumetwo.cmd": "8c450ae8c9c6593daa5f7e063c115072fe565cb3772234765fa90254c067bc14",
+    "tools/caorlctemplate.py": "3a88049dd62238b831fa5deb2757c6851323ccb4e95d168440c5f81eda94feb7",
+    "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/local_first_watch.py": "4f642afedde81f43c58e75db40a6be2eb9fe173f28071417198012448266925f",
+    "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/rlc-base-resume-cases.json": "c334b246434d8bcf17a9abc32327df8c7b73164d9015d9fa8f28c72f0124752b",
+    "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/rlc-base-resume-preflight.json": "4c7969807e976f19a3bf38f70ea8b1ff59be43f45aa90eadb634ab231c926aa8",
+    "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/analyze_rlc.py": "4e0cbbffbc89c77697a4ff741a2803ce59fb6cfa284bb2fec2e4f3dc5ba5554d",
+    "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/prepare_opt_round.py": "615e5519c7dada4649b318b3e21dd5b5974cd34b81da55c5120814ace0b5f51e"
+  },
+  "native_five_audits_passed": true,
+  "resume_specs_unchanged": true,
+  "phase_units_normalization_unchanged": true,
+  "model_level": "Periodic full-wave with mathematical scaled RLC; no X-band hardware claim or convergence certification",
+  "tests": [
+    "Five native before/after structure and 16-element audits",
+    "Five normal-completion logs, actual direct frequencies, port modes and power-wave normalization audited",
+    "Resume two specs exactly equal baseline",
+    "Python compilation and atomic copy smoke test passed"
+  ],
+  "raw_data_and_CAD_not_committed": true
+}
