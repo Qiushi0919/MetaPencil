@@ -98,8 +98,8 @@
     "run_url": "https://github.com/Qiushi0919/MetaPencil/actions/runs/32703750790"
   },
   "github_release": "https://github.com/Qiushi0919/MetaPencil/releases/tag/handoff-v1.1-git-ready",
-  "next_priority": "Cao X波段七态粗算未形成合格2-bit；结构读回已核验，下一步分离开关与引出迁移影响。",
-  "last_updated": "2026-11-02T17:22:12+08:00",
+  "next_priority": "Cao迁频对照定位开关理想化导致主要新增偏差；下一步固定含寄生开关模型再调几何。",
+  "last_updated": "2026-11-02T18:04:51.346615+08:00",
   "documentation": {
     "last_update": "2026-10-05",
     "personal_homepage_cn": "https://qiushi0919.cn/",
@@ -507,5 +507,42 @@
       [],
       []
     ]
+  },
+  "cao_xband_cause_20261102": {
+    "status": "controlled_diagnostic_complete",
+    "solver_running": false,
+    "pid": 51360,
+    "solver_started_local": "2026-11-02T17:47:25+08:00",
+    "results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_cause_v1",
+    "groups": [
+      "uniform_ideal",
+      "uniform_scaledRLC"
+    ],
+    "states_per_group": [
+      "H1V1",
+      "H2V1",
+      "H1V2"
+    ],
+    "frequency_GHz": 9.5,
+    "diagnostic_only": true,
+    "review_packet": "项目管理/review_packets/20261102_d00b7b4_cao_xband_cause",
+    "completed_local": "2026-11-02T18:04:51.346615+08:00",
+    "completed_cases": 6,
+    "analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/cause_diagnosis",
+    "primary_cause_for_tested_pairs": "switch network idealization, conditional coarse diagnostic",
+    "conditional_effects_deg": {
+      "H": {
+        "geometry_effect_current_minus_uniform_ideal_deg": -1.9356697453740708,
+        "switch_effect_ideal_minus_scaledRLC_at_uniform_geometry_deg": -62.333177731206035,
+        "scaledRLC_uniform_minus_original_similarity_residual_deg": 0.7032757810331987
+      },
+      "V": {
+        "geometry_effect_current_minus_uniform_ideal_deg": 7.3312157649230585,
+        "switch_effect_ideal_minus_scaledRLC_at_uniform_geometry_deg": -22.312414438574137,
+        "scaledRLC_uniform_minus_original_similarity_residual_deg": -2.114543298138045
+      }
+    },
+    "all_cases_converged": false,
+    "next": "Fix target switch parasitic model before adjusting actual launch and delay-line geometry; original reconstruction remains unaccepted."
   }
 }

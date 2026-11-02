@@ -1,0 +1,132 @@
+{
+  "rows": [
+    {
+      "variant": "original_3p6_RLC",
+      "H": {
+        "pair_phase_deg": -118.53582291816126,
+        "pair_error_deg": -28.535822918161273,
+        "pair_amplitude_dB": [
+          -0.9709682808334881,
+          -1.3141354313201443
+        ]
+      },
+      "V": {
+        "pair_phase_deg": -138.9301188717836,
+        "pair_error_deg": -48.930118871783606,
+        "pair_amplitude_dB": [
+          -0.2068689056250726,
+          -1.4761071618908859
+        ]
+      }
+    },
+    {
+      "variant": "nonuniform_ideal_9p5",
+      "H": {
+        "pair_phase_deg": 177.89860538629182,
+        "pair_error_deg": -92.10139461370818,
+        "pair_amplitude_dB": [
+          -0.1763204536910655,
+          -0.5109607762761448
+        ]
+      },
+      "V": {
+        "pair_phase_deg": -156.02586084357273,
+        "pair_error_deg": -66.02586084357273,
+        "pair_amplitude_dB": [
+          -0.15793518120294728,
+          -0.5688713342032508
+        ]
+      }
+    },
+    {
+      "variant": "uniform_ideal",
+      "H": {
+        "pair_phase_deg": 179.8342751316659,
+        "pair_error_deg": -90.16572486833411,
+        "pair_amplitude_dB": [
+          -0.1686214750712241,
+          -0.5476607032784783
+        ],
+        "pair_phase_by_adaptive_pass_deg": [
+          170.98821600483836,
+          179.26736000620747,
+          179.8342751316659
+        ],
+        "pair_last_pass_change_deg": 0.5669151254584506
+      },
+      "V": {
+        "pair_phase_deg": -163.3570766084958,
+        "pair_error_deg": -73.35707660849579,
+        "pair_amplitude_dB": [
+          -0.12523540723950477,
+          -0.6239790577350648
+        ],
+        "pair_phase_by_adaptive_pass_deg": [
+          -176.7402498749476,
+          -165.12003536593596,
+          -163.3570766084958
+        ],
+        "pair_last_pass_change_deg": 1.762958757440174
+      }
+    },
+    {
+      "variant": "uniform_scaledRLC",
+      "H": {
+        "pair_phase_deg": -117.83254713712806,
+        "pair_error_deg": -27.832547137128074,
+        "pair_amplitude_dB": [
+          -1.3469419981781776,
+          -1.4597020363233253
+        ],
+        "pair_phase_by_adaptive_pass_deg": [
+          -108.99451898336959,
+          -116.45483430469616,
+          -117.83254713712809
+        ],
+        "pair_last_pass_change_deg": -1.3777128324319108
+      },
+      "V": {
+        "pair_phase_deg": -141.04466216992165,
+        "pair_error_deg": -51.04466216992165,
+        "pair_amplitude_dB": [
+          -0.2574924283833461,
+          -1.6081579193302955
+        ],
+        "pair_phase_by_adaptive_pass_deg": [
+          -153.98663107577534,
+          -145.77437601975436,
+          -141.0446621699217
+        ],
+        "pair_last_pass_change_deg": 4.729713849832677
+      }
+    }
+  ],
+  "conditional_effects_deg": {
+    "H": {
+      "geometry_effect_current_minus_uniform_ideal_deg": -1.9356697453740708,
+      "switch_effect_ideal_minus_scaledRLC_at_uniform_geometry_deg": -62.333177731206035,
+      "scaledRLC_uniform_minus_original_similarity_residual_deg": 0.7032757810331987
+    },
+    "V": {
+      "geometry_effect_current_minus_uniform_ideal_deg": 7.3312157649230585,
+      "switch_effect_ideal_minus_scaledRLC_at_uniform_geometry_deg": -22.312414438574137,
+      "scaledRLC_uniform_minus_original_similarity_residual_deg": -2.114543298138045
+    }
+  },
+  "inference_limits": [
+    "Two state pairs only; no attribution for all four states or entire X band.",
+    "One path of conditional comparisons, not a full factorial interaction decomposition.",
+    "Three-pass mesh, use native pass history as a stability check, not error bars or convergence certification.",
+    "Scaled lumped elements are a similarity diagnostic, not a real X-band SP4T."
+  ],
+  "complete": true,
+  "model": "Counterfactual coarse periodic full-wave diagnostic. Scaled RLC is not a physical X-band device.",
+  "phase_definition": "arg(S2/S1), ideal -90deg; signed error wrap(relative+90deg)",
+  "normalization": "native power-wave S, amplitude20log10(abs(S)), fixed mode order, no fit or reordering",
+  "completed_local": "2026-11-02T18:04:51.346615+08:00",
+  "native_audits_passed": 6,
+  "converged_cases": 0,
+  "source_commit": "d00b7b49b9927db4949a87fc451ca442a1065ada",
+  "case_sha256": "16375d02c0c2afd7a0eabe25bb1c7bb02a4c28ecb4f35e49bf366bd227d0602c",
+  "review_packet": "项目管理/review_packets/20261102_d00b7b4_cao_xband_cause"
+}
