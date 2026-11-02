@@ -1,0 +1,20 @@
+{
+  "reason": "H2V1 guard aborted at available 3.3560867309570312 GiB",
+  "previous_guard_GiB": 3.5,
+  "resume_guard_GiB": 2.5,
+  "geometry_mesh_solver_settings_changed": false,
+  "preserved_completed": [
+    "H1V1"
+  ],
+  "resume_states": [
+    "H2V1",
+    "H3V1",
+    "H4V1",
+    "H1V2",
+    "H1V3",
+    "H1V4"
+  ],
+  "launcher_sha256": "7f1a31137d9fd5d3a10c969c39ac930b3f98877c667e110b9f45f34db82e3faa",
+  "results": "Results_xband_ideal_v1r1",
+  "timer_id": "cao-x"
+}
