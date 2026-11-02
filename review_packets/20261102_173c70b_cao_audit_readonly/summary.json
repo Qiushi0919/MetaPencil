@@ -1,0 +1,15 @@
+{
+  "problem": "Local re-audit rewrote archived native_structure_audit.json from Windows CRLF to LF; subsequent byte-exact extraction assertion failed despite identical JSON content.",
+  "fix": "Audit now supports write_report=False for local analysis, preserving native evidence bytes. Existing affected audit-report-only cache normalized back to archive bytes after exact JSON content comparison; all other evidence remains byte-exact.",
+  "checks": [
+    "Pair analysis repeated twice successfully on same two completed states",
+    "Full native history/16 parts/modes/direct frequency/log checks still passed"
+  ],
+  "running_solver_inputs_modified": false,
+  "pending_next_round_continues": true,
+  "source_hashes": {
+    "native_structure.py": "09abe839f00016e5d6e95b85a5cc98250f8b207c1fbadcf0cda595816a9a1d17",
+    "analyze_pairs.py": "8f2775e551df28f1abe460fcc1294b709402afc27e692657995f1319eb41b0a8",
+    "analyze_rlc.py": "4360007ebd8641718e8f4762d4e3629be72bef34e51ba3caf736f43c72636b2c"
+  }
+}
