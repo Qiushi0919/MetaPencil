@@ -1,0 +1,55 @@
+{
+  "name": "r09",
+  "frequencies_GHz": [
+    9,
+    9.1,
+    9.2,
+    9.3,
+    9.4,
+    9.5,
+    9.625,
+    9.75,
+    9.875,
+    10
+  ],
+  "max_passes": 6,
+  "budget_minutes": 65,
+  "case_budget_seconds": 1500,
+  "purpose": "r08 full seven-state evidence shows V2 error +27.02deg at9GHz to -47.47deg at10GHz. Another constant phase shift cannot solve both edges. Compare V common wide-stem width factors0.65 and1.35, keeping r08 terminals, narrow chip pad, RLC endpoints, slot and free coupling-stub end fixed. Each candidate H1V1/H1V2 only for dispersion sensitivity; never combine candidates or certify2bit. Promising direction must be evaluated as one complete seven-state geometry. Six-pass ceiling and10points unchanged.",
+  "candidates": [
+    {
+      "name": "vnarrow",
+      "terminal_delta_mm": {
+        "H_L2": -0.6,
+        "H_L5": -0.65,
+        "H_L3": -0.5,
+        "V_L9": -0.85,
+        "V_L8": -0.8
+      },
+      "states": [
+        "H1V1",
+        "H1V2"
+      ],
+      "common_width_factor": {
+        "V_common": 0.65
+      }
+    },
+    {
+      "name": "vwide",
+      "terminal_delta_mm": {
+        "H_L2": -0.6,
+        "H_L5": -0.65,
+        "H_L3": -0.5,
+        "V_L9": -0.85,
+        "V_L8": -0.8
+      },
+      "states": [
+        "H1V1",
+        "H1V2"
+      ],
+      "common_width_factor": {
+        "V_common": 1.35
+      }
+    }
+  ]
+}

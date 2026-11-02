@@ -546,13 +546,13 @@
     "next": "Fix target switch parasitic model before adjusting actual launch and delay-line geometry; original reconstruction remains unaccepted."
   },
   "cao_rlc_optimization_20261102": {
-    "status": "r08_residual_trim_solving",
+    "status": "r09_common_width_sensitivity_solving",
     "solver_running": true,
-    "pid": 54372,
-    "started_local": "2026-11-03T00:27:24.910711+08:00",
-    "results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r08_v1",
+    "pid": 49680,
+    "started_local": "2026-11-03T01:41:13.438517+08:00",
+    "results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r09_v1",
     "plan": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/optimization_plan.json",
-    "current_case": "caoxrlc-r08-residualtrim-H2V1",
+    "current_case": "caoxrlc-r09-vnarrow-H1V1",
     "fixed_RLC": {
       "Ron_ohm": 1.6,
       "L_nH": 0.037894736842105266,
@@ -563,9 +563,9 @@
     "native_checks": "Actual history, 10 RF nets, 8 series RLC and 8 shunt capacitors, branch mapping and metal contacts checked before and after each solve",
     "automation_id": "cao-rlc-x",
     "optimized_2bit_achieved": false,
-    "review_packet": "项目管理/review_packets/20261103_32da60a_cao_r07_r08",
-    "next": "Audit r08 each state then compare same-candidate seven-state results at10 identical points against r07; inspect V2 low-edge overshoot, V3/H3 correction and H4 upper-edge residual. Preserve scaled RLC. Final band validation requires21directpoints and9/9.5/10 adaptive checks.",
-    "review_pr_status": "pending",
+    "review_packet": "项目管理/review_packets/20261103_8ddb5fa_cao_r08_r09_width",
+    "next": "Audit r09 four cases; compare each V1/V2 pair against r08 at identical10 points. Check slope and amplitude, then test promising geometry in complete7states. Do not mix pair candidates or call2bit. If no width direction improves dispersion, expand launch/free-stub geometry with explicit validated parameters.",
+    "review_pr_status": "pending_new_review",
     "last_reported_case": "caoxrlc-r06-fulltrim-H1V1",
     "baseline_results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_base_v1",
     "interruption_reason": "RDP disconnected; H1V2 completed native solve and audits; remote archival WinError5 stopped queue at18:48. Recovered fifth case; no completed states recomputed.",
@@ -619,8 +619,8 @@
         ]
       }
     },
-    "converged_states": 0,
-    "active_round": "r08",
+    "converged_states": 6,
+    "active_round": "r09",
     "next_direct_frequencies_GHz": [
       9,
       9.1,
@@ -649,15 +649,13 @@
     "r02_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r02/pair_sensitivity.json",
     "r03_completed_cases": 4,
     "r03_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r03/pair_sensitivity.json",
-    "prepared_round": "r08",
+    "prepared_round": "r09",
     "prepared_round_started": true,
     "h5trim_pair_max_error_deg": 16.559956811161214,
     "h5trim_pair_min_amp_dB": -1.5974126616619342,
     "r04_completed_cases": 4,
     "r04_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r04/pair_sensitivity.json",
-    "current_round_completed_states": [
-      "caoxrlc-r08-residualtrim-H1V1"
-    ],
+    "current_round_completed_states": [],
     "last_heartbeat": "2026-11-03T00:37:40.453199+08:00",
     "r05_completed_cases": 5,
     "h5trim_seven_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_h5trim_seven/seven_state_diagnostic.json",
@@ -704,8 +702,8 @@
       "H1V3",
       "H1V4"
     ],
-    "review_pr": "https://github.com/Qiushi0919/MetaPencil/pull/26",
-    "review_merge_commit": "32da60af99f2b601263a1c01d6d513d7d1024496",
+    "review_pr": "https://github.com/Qiushi0919/MetaPencil/pull/27",
+    "review_merge_commit": "8ddb5fa77c5ad8335ebd3a1262eaab55146fc7e3",
     "r06_completed_cases": 7,
     "r06_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r06/seven_state_diagnostic.json",
     "r06_metrics": {
@@ -725,19 +723,20 @@
     "ppt_delivery": {
       "standalone": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T结构与结果汇报.pptx",
       "merged": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/文献单元快速复现与混合结构粗算.pptx",
-      "standalone_sha256": "b6598ae1ab85a39ebd37b944fdd158dcc19e4cbcc7a52a75a38cfeae48e3b659",
-      "merged_sha256": "d2efe3cfbc821a99440a790cb4d1f58201af596eb0bdd44c0d0ce651f1e741d4",
+      "standalone_sha256": "a94128b4cf0591b7bb67fae3180d3dd8d644c18e5f52753a71511a1fb96dc816",
+      "merged_sha256": "2eb5693c34e41d6eec7c18e1191d56f04bce7b9ffb7836af559fd3472b5d967f",
       "old_first38_slide_chart_workbook_parts_byte_identical": true,
-      "unchanged_Cao1to8_render_byte_identical": true,
+      "old_first38_render_byte_identical": true,
+      "unchanged_Cao1to7_render_byte_identical": true,
       "merged_Cao_renders_match_standalone": true,
       "Cao_slides": [
         39,
         50
       ],
-      "selected_result": "r07-meshcheck",
+      "selected_result": "r08-residualtrim",
       "validation": [
-        "final-fonts-v4-validation.json",
-        "merged-v4-validation.json"
+        "final-fonts-v5-validation.json",
+        "merged-v5-validation.json"
       ]
     },
     "ppt_style": {
@@ -763,6 +762,23 @@
     },
     "r07_center_converged_states": 6,
     "r08_plan": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/r08-plan.json",
-    "r08_deadline": "2026-11-03T02:16:56.277301+08:00"
+    "r08_deadline": "2026-11-03T02:16:56.277301+08:00",
+    "r08_completed_cases": 7,
+    "r08_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r08/seven_state_diagnostic.json",
+    "r08_metrics": {
+      "H": {
+        "worst_relative_deg": 22.342142639234112,
+        "worst_cyclic_deg": 24.122130016695422,
+        "minimum_amp_dB": -1.1586706959637585
+      },
+      "V": {
+        "worst_relative_deg": 47.47110546280541,
+        "worst_cyclic_deg": 47.47110546280541,
+        "minimum_amp_dB": -1.51658397944588
+      }
+    },
+    "r08_center_converged_states": 6,
+    "r09_plan": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/r09-plan.json",
+    "r09_deadline": "2026-11-03T02:45:43.617329+08:00"
   }
 }

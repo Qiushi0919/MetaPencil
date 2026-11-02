@@ -1,0 +1,94 @@
+{
+  "base_commit": "8ddb5fa77c5ad8335ebd3a1262eaab55146fc7e3",
+  "model_level": "periodic full-wave diagnostic fixed scaled-RLC; not hardware",
+  "normalization": "native power-wave S;20log10|S|; fixed negative90degree order",
+  "r08_state_count": 7,
+  "r09_case_count": 4,
+  "r09_source_cases_sha256": "02c6de6569ca297a3800ac0717d717d1112a907e5e5beee910a9251de92ac858",
+  "files": [
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r08/seven_state_diagnostic.json",
+      "sha256": "c6df6a674f4f3b1ad9223283f5af2d9b10e6a21bd071db8d8a546734e34c3b3e"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r08/pair_sensitivity.json",
+      "sha256": "5366d40d480584b4b500c1dcbb76bd42077aeca470457ed31ff77a8ed1afbc99"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r08/versus_r07.json",
+      "sha256": "2da138fd3b17ea83af0cd15e9eb0e143017b276688f2661dab5be75fdb4c6c3a"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/r09-plan.json",
+      "sha256": "0d7b8cf4cec9464b779fac2b0ef47ee671a55bfe22446ceba8c077b01644a531"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/rlc-r09-preflight.json",
+      "sha256": "bc458b2637790e1b40115c5b16d642622f7b159d6c29833728d4217e0849113f"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/r09-incremental-preflight.json",
+      "sha256": "c42e6b84b5de63f9b3721b017b81f348ce501bd0db51dbc74bc0b23b1bec8189"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/prepare_opt_round.py",
+      "sha256": "53f8f02e1b223f4ef312e759b14c0cde056f282be79b2005c2672ae2ce404f19"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/native_structure.py",
+      "sha256": "09abe839f00016e5d6e95b85a5cc98250f8b207c1fbadcf0cda595816a9a1d17"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/analyze_pairs.py",
+      "sha256": "b9157c50c2148a6102afddb2873f014e19d32df9480ee6792dd86ec18bc980c1"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/analyze_rlc.py",
+      "sha256": "adfdb177ea97cf2904fee41d5e9ab6a86ede3e99f53b026a1b8aeaa37592a43d"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/optimization_plan.json",
+      "sha256": "42dc99a18524ae428fd01d232ff85b68c666f21944857644f41fcf77167bff2d"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r09_v1/DEPLOY.json",
+      "sha256": "25907e2dc0c1e46c8179758f73496727921e1a54c0ae61d37841e2fc764ca4d8"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r09_v1/latest_status.json",
+      "sha256": "4a9667697575cf938a63418de77be4b49be0f0af18c357f5c5e563102d8f8cd2"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r08_v1/latest_status.json",
+      "sha256": "bf3d9d1daef9c09c6f8afac2bef80aeaae950af09800e89d8c3ed892e3c59737"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/report/.build/selection.json",
+      "sha256": "2b5117758ff4762222e9e5512a1b6b5c3b52d2e9061aa49adf8ce64e6935d27f"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/report/.build/build.mjs",
+      "sha256": "8a5da5f6649644dbe320dc9cfb9243b0f4e397bdd8df9fe6969b45ca3a8c1151"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/report/.build/finalize.mjs",
+      "sha256": "8daf08232a8536c14383ec695decb723b76d6b1a7b83fe4bce4c1bb285a5aaeb"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/report/.build/merge.py",
+      "sha256": "2d0b882b196485d6b82c0371c6e7a872db6ec5763b1000e33c39bcd81ad28bd5"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/report/.build/delivery.json",
+      "sha256": "68d7dc92c1cfc0d4a58a7472313c44a047b6825e82535eb6e824d9e27cd54407"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/report/.build/final-fonts-v5-validation.json",
+      "sha256": "d352d9a007a45de9c6b8f9f061e82a873c4cf9bec0cdf985828daf30d71d85b7"
+    },
+    {
+      "source": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/report/.build/merged-v5-validation.json",
+      "sha256": "c0aef2ee4506e72ad41146ab1bd53edd1ace3b0476e741e4c1c7dc1d3b39ac86"
+    }
+  ]
+}
