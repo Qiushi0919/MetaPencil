@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "geometry_solver_frequency_and_contacts_identical_to_r09_vwide": true,
+  "seven_state_history_equal_except_switch_RC": true,
+  "states": [
+    "H1V1",
+    "H2V1",
+    "H3V1",
+    "H4V1",
+    "H1V2",
+    "H1V3",
+    "H1V4"
+  ],
+  "only_missing5_solved": true
+}

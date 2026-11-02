@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "r09_numerical_results_unchanged_after_metadata_addition": true,
+  "r10_zero_completed_batch_audit_passed": true,
+  "multistate_partial_pair_guard": "Code reviewed: require2declared specs as well as2completed rows. No2completed r10 fixture available yet."
+}

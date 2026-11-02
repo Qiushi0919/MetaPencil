@@ -1,0 +1,41 @@
+{
+  "name": "r10",
+  "frequencies_GHz": [
+    9,
+    9.1,
+    9.2,
+    9.3,
+    9.4,
+    9.5,
+    9.625,
+    9.75,
+    9.875,
+    10
+  ],
+  "max_passes": 6,
+  "budget_minutes": 85,
+  "case_budget_seconds": 1500,
+  "purpose": "Complete the promising same r09 vwide geometry: width1.35 reduces V1/V2 error span74.49->58.45deg and worst47.47->38.36deg, but pair still fails. Reuse audited r09 vwide H1V1/H1V2, solve only remaining5 states with identical geometry/RLC/frequency/solver; merge only these7 same-geometry states before any2bit judgment.",
+  "candidates": [
+    {
+      "name": "vwide",
+      "terminal_delta_mm": {
+        "H_L2": -0.6,
+        "H_L5": -0.65,
+        "H_L3": -0.5,
+        "V_L9": -0.85,
+        "V_L8": -0.8
+      },
+      "states": [
+        "H2V1",
+        "H3V1",
+        "H4V1",
+        "H1V3",
+        "H1V4"
+      ],
+      "common_width_factor": {
+        "V_common": 1.35
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "status": "prepared_r10_missing5",
+  "samegeometry_history_equal_except_switch_RC": true,
+  "reuse_completed_r09_states": [
+    "H1V1",
+    "H1V2"
+  ],
+  "solve_only_r10_states": [
+    "H2V1",
+    "H3V1",
+    "H4V1",
+    "H1V3",
+    "H1V4"
+  ],
+  "sources": [
+    {
+      "id": "caoxrlc-r09-vwide-H1V1",
+      "state": "H1V1",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_rlc_r09_v1/case_snapshots/caoxrlc-r09-vwide-H1V1.zip"
+    },
+    {
+      "id": "caoxrlc-r10-vwide-H2V1",
+      "state": "H2V1",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_rlc_r10_v1/case_snapshots/caoxrlc-r10-vwide-H2V1.zip"
+    },
+    {
+      "id": "caoxrlc-r10-vwide-H3V1",
+      "state": "H3V1",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_rlc_r10_v1/case_snapshots/caoxrlc-r10-vwide-H3V1.zip"
+    },
+    {
+      "id": "caoxrlc-r10-vwide-H4V1",
+      "state": "H4V1",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_rlc_r10_v1/case_snapshots/caoxrlc-r10-vwide-H4V1.zip"
+    },
+    {
+      "id": "caoxrlc-r09-vwide-H1V2",
+      "state": "H1V2",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_rlc_r09_v1/case_snapshots/caoxrlc-r09-vwide-H1V2.zip"
+    },
+    {
+      "id": "caoxrlc-r10-vwide-H1V3",
+      "state": "H1V3",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_rlc_r10_v1/case_snapshots/caoxrlc-r10-vwide-H1V3.zip"
+    },
+    {
+      "id": "caoxrlc-r10-vwide-H1V4",
+      "state": "H1V4",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_rlc_r10_v1/case_snapshots/caoxrlc-r10-vwide-H1V4.zip"
+    }
+  ],
+  "merged_cases_sha256": "dfcce9f027ae29395c4f215043b0f87dbf0237fbe00d428751c5c9910038b93c"
+}

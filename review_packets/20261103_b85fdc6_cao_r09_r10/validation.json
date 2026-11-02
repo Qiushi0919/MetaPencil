@@ -1,0 +1,8 @@
+{
+  "repository_structure": "PASS",
+  "sensitive_scan": "PASS high_confidence_findings=0",
+  "git_diff_check": "PASS",
+  "analyzer_validation": "code/r10-analyzer-validation.json",
+  "native_r09_audit": "analysis_r09/pair_sensitivity.json",
+  "r10_incremental": "code/r10-incremental-preflight.json"
+}
