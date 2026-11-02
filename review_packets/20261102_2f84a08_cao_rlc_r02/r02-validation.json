@@ -1,0 +1,42 @@
+[
+  {
+    "case": "caoxrlc-r02-h2minus-H1V1",
+    "minimum_gap_mm": [
+      0.027975014402548914,
+      "H_L2",
+      "H_common"
+    ],
+    "parts": 16,
+    "direct_points": 10
+  },
+  {
+    "case": "caoxrlc-r02-h2minus-H2V1",
+    "minimum_gap_mm": [
+      0.027975014402548914,
+      "H_L2",
+      "H_common"
+    ],
+    "parts": 16,
+    "direct_points": 10
+  },
+  {
+    "case": "caoxrlc-r02-v9minus-H1V1",
+    "minimum_gap_mm": [
+      0.027975014402548914,
+      "H_L2",
+      "H_common"
+    ],
+    "parts": 16,
+    "direct_points": 10
+  },
+  {
+    "case": "caoxrlc-r02-v9minus-H1V2",
+    "minimum_gap_mm": [
+      0.027975014402548914,
+      "H_L2",
+      "H_common"
+    ],
+    "parts": 16,
+    "direct_points": 10
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "name": "r02",
+  "frequencies_GHz": [
+    9,
+    9.1,
+    9.2,
+    9.3,
+    9.4,
+    9.5,
+    9.625,
+    9.75,
+    9.875,
+    10
+  ],
+  "max_passes": 3,
+  "budget_minutes": 40,
+  "case_budget_seconds": 900,
+  "purpose": "R01 H_L4 +/-0.10mm failed upper-band pair error despite center improvement. Test longest inactive H_L2 terminal shortening as a parasitic-branch hypothesis, not established cause. V_L9 shortening improves pair error across common samples; expand shortening. Independent pairs, no 2bit claim. Fixed RLC and launch.",
+  "candidates": [
+    {
+      "name": "h2minus",
+      "terminal_delta_mm": {
+        "H_L2": -0.6
+      },
+      "states": [
+        "H1V1",
+        "H2V1"
+      ]
+    },
+    {
+      "name": "v9minus",
+      "terminal_delta_mm": {
+        "V_L9": -0.6
+      },
+      "states": [
+        "H1V1",
+        "H1V2"
+      ]
+    }
+  ]
+}
