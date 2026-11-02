@@ -1,0 +1,54 @@
+[
+  {
+    "case": "caoxrlc-r03-h2h5minus-H1V1",
+    "changed_net_vs_r02": [
+      "H_L5"
+    ],
+    "fixed_16parts": true,
+    "ten_points": true,
+    "minimum_gap_mm": [
+      0.027975014402548914,
+      "H_L2",
+      "H_common"
+    ]
+  },
+  {
+    "case": "caoxrlc-r03-h2h5minus-H2V1",
+    "changed_net_vs_r02": [
+      "H_L5"
+    ],
+    "fixed_16parts": true,
+    "ten_points": true,
+    "minimum_gap_mm": [
+      0.027975014402548914,
+      "H_L2",
+      "H_common"
+    ]
+  },
+  {
+    "case": "caoxrlc-r03-v9taper-H1V1",
+    "changed_net_vs_r02": [
+      "V_common"
+    ],
+    "fixed_16parts": true,
+    "ten_points": true,
+    "minimum_gap_mm": [
+      0.027975014402548914,
+      "H_L2",
+      "H_common"
+    ]
+  },
+  {
+    "case": "caoxrlc-r03-v9taper-H1V2",
+    "changed_net_vs_r02": [
+      "V_common"
+    ],
+    "fixed_16parts": true,
+    "ten_points": true,
+    "minimum_gap_mm": [
+      0.027975014402548914,
+      "H_L2",
+      "H_common"
+    ]
+  }
+]

@@ -546,11 +546,11 @@
     "next": "Fix target switch parasitic model before adjusting actual launch and delay-line geometry; original reconstruction remains unaccepted."
   },
   "cao_rlc_optimization_20261102": {
-    "status": "r02_ten_point_pair_screen_running",
+    "status": "r03_terminal_and_launch_screen_running",
     "solver_running": true,
-    "pid": 45492,
-    "started_local": "2026-11-02T20:20:57.196876+08:00",
-    "results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r02_v1",
+    "pid": 52900,
+    "started_local": "2026-11-02T20:50:35.942065+08:00",
+    "results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r03_v1",
     "plan": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/optimization_plan.json",
     "completed_states": [
       "H1V1",
@@ -561,7 +561,7 @@
       "H1V3",
       "H1V4"
     ],
-    "current_case": "caoxrlc-r02-h2minus-H1V1",
+    "current_case": "caoxrlc-r03-h2h5minus-H1V1",
     "fixed_RLC": {
       "Ron_ohm": 1.6,
       "L_nH": 0.037894736842105266,
@@ -572,10 +572,10 @@
     "native_checks": "Actual history, 10 RF nets, 8 series RLC and 8 shunt capacitors, branch mapping and metal contacts checked before and after each solve",
     "automation_id": "cao-rlc-x",
     "optimized_2bit_achieved": false,
-    "review_packet": "项目管理/review_packets/20261102_2f84a08_cao_rlc_r02",
-    "next": "Audit r02 pairs with10directpoints; assess H_L2 inactive-branch hypothesis and V_L9 extended shortening; samegeometry7states required for2bit",
+    "review_packet": "项目管理/review_packets/20261102_704bda0_cao_rlc_r03",
+    "next": "Audit r03 pairs against exact10point r02 predecessors; fixed RLC and pads; final samegeometry7states required",
     "review_pr_status": "pending",
-    "last_reported_case": "caoxrlc-r02-h2minus-H1V1",
+    "last_reported_case": "caoxrlc-r03-h2h5minus-H1V1",
     "baseline_results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_base_v1",
     "interruption_reason": "RDP disconnected; H1V2 completed native solve and audits; remote archival WinError5 stopped queue at18:48. Recovered fifth case; no completed states recomputed.",
     "mirror_policy": "Windows-local archives; independent best-effort remote sync retries",
@@ -629,7 +629,7 @@
       }
     },
     "converged_states": 0,
-    "active_round": "r02",
+    "active_round": "r03",
     "next_direct_frequencies_GHz": [
       9,
       9.1,
@@ -653,6 +653,8 @@
     },
     "local_audit_readonly_fix": "20261102_173c70b_cao_audit_readonly; native reports remain byte-identical after repeated local audit",
     "r01_completed_cases": 8,
-    "r01_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r01/pair_sensitivity.json"
+    "r01_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r01/pair_sensitivity.json",
+    "r02_completed_cases": 4,
+    "r02_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r02/pair_sensitivity.json"
   }
 }

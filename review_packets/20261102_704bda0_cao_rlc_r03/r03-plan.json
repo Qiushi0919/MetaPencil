@@ -1,0 +1,45 @@
+{
+  "name": "r03",
+  "frequencies_GHz": [
+    9,
+    9.1,
+    9.2,
+    9.3,
+    9.4,
+    9.5,
+    9.625,
+    9.75,
+    9.875,
+    10
+  ],
+  "max_passes": 3,
+  "budget_minutes": 40,
+  "case_budget_seconds": 900,
+  "purpose": "H L2 shortening reduces upper-band anomaly but pair remains -30 to-55deg; test additional L5 shortening. V L9 shortening produces frequency-dependent residual; test common launch taper shoulder +0.25mm with fixed pads and RLC. These are hypotheses, not mechanism proof or2bit certification.",
+  "candidates": [
+    {
+      "name": "h2h5minus",
+      "terminal_delta_mm": {
+        "H_L2": -0.6,
+        "H_L5": -0.5
+      },
+      "states": [
+        "H1V1",
+        "H2V1"
+      ]
+    },
+    {
+      "name": "v9taper",
+      "terminal_delta_mm": {
+        "V_L9": -0.6
+      },
+      "common_taper_delta_mm": {
+        "V_common": 0.25
+      },
+      "states": [
+        "H1V1",
+        "H1V2"
+      ]
+    }
+  ]
+}

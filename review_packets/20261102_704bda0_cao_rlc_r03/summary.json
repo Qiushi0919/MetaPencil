@@ -1,0 +1,163 @@
+{
+  "base_commit": "704bda0d7e8048ab41056bff0e6d83390985de3d",
+  "r02_completed_cases": 4,
+  "native_pre_post_audits_passed": true,
+  "r02_all_cases_converged": false,
+  "normalization": "native power-wave S;20log10|S|;fixed -90deg order",
+  "model": "periodic full-wave geometry with diagnostic scaled RLC, not real BGSA X-band hardware",
+  "r02_pairs": [
+    {
+      "candidate": "h2minus",
+      "polarization": "H",
+      "frequency_GHz": [
+        9,
+        9.1,
+        9.2,
+        9.3,
+        9.4,
+        9.5,
+        9.625,
+        9.75,
+        9.875,
+        10
+      ],
+      "terminal_delta_mm": {
+        "H_L2": -0.6
+      },
+      "pair_error_deg": [
+        -30.37240842453383,
+        -34.216700568599265,
+        -38.24879517238429,
+        -42.452210164581174,
+        -46.66163981234382,
+        -50.544663566428795,
+        -54.10880136198779,
+        -54.679121294345805,
+        -49.45998458977235,
+        -32.97446762704277
+      ],
+      "minimum_amplitude_dB": [
+        -1.4158214658720283,
+        -1.3815925552076682,
+        -1.35071113501359,
+        -1.318947106346067,
+        -1.2820240143233508,
+        -1.236509349935916,
+        -1.1653685048720028,
+        -1.0815424237056277,
+        -0.9974540485633787,
+        -1.5656894303239401
+      ]
+    },
+    {
+      "candidate": "v9minus",
+      "polarization": "V",
+      "frequency_GHz": [
+        9,
+        9.1,
+        9.2,
+        9.3,
+        9.4,
+        9.5,
+        9.625,
+        9.75,
+        9.875,
+        10
+      ],
+      "terminal_delta_mm": {
+        "V_L9": -0.6
+      },
+      "pair_error_deg": [
+        24.821765493116004,
+        19.439749694342936,
+        13.103936706497194,
+        5.608386446178855,
+        -3.207285699609656,
+        -13.379936733924097,
+        -27.447263567027505,
+        -41.32315771455171,
+        -54.23011272055837,
+        -62.66559612388235
+      ],
+      "minimum_amplitude_dB": [
+        -0.9753712954014016,
+        -1.048086323791751,
+        -1.1329761489270336,
+        -1.228889604192802,
+        -1.332566960372478,
+        -1.443206029946992,
+        -1.6346912621196923,
+        -1.5934860147272822,
+        -1.3813547367176584,
+        -1.1682867888577777
+      ]
+    }
+  ],
+  "r03_plan": {
+    "name": "r03",
+    "frequencies_GHz": [
+      9,
+      9.1,
+      9.2,
+      9.3,
+      9.4,
+      9.5,
+      9.625,
+      9.75,
+      9.875,
+      10
+    ],
+    "max_passes": 3,
+    "budget_minutes": 40,
+    "case_budget_seconds": 900,
+    "purpose": "H L2 shortening reduces upper-band anomaly but pair remains -30 to-55deg; test additional L5 shortening. V L9 shortening produces frequency-dependent residual; test common launch taper shoulder +0.25mm with fixed pads and RLC. These are hypotheses, not mechanism proof or2bit certification.",
+    "candidates": [
+      {
+        "name": "h2h5minus",
+        "terminal_delta_mm": {
+          "H_L2": -0.6,
+          "H_L5": -0.5
+        },
+        "states": [
+          "H1V1",
+          "H2V1"
+        ]
+      },
+      {
+        "name": "v9taper",
+        "terminal_delta_mm": {
+          "V_L9": -0.6
+        },
+        "common_taper_delta_mm": {
+          "V_common": 0.25
+        },
+        "states": [
+          "H1V1",
+          "H1V2"
+        ]
+      }
+    ]
+  },
+  "r03_status": {
+    "pid": 52900,
+    "started_local": "2026-11-02T20:50:06.997349+08:00",
+    "deadline_local": "2026-11-02T21:30:06.267442+08:00",
+    "completed": [],
+    "status": "solving",
+    "updated_local": "2026-11-02T20:50:35.942570+08:00",
+    "case": "caoxrlc-r03-h2h5minus-H1V1",
+    "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r03-projects-v1\\caoxrlc-r03-h2h5minus-H1V1.cst",
+    "solver_started_local": "2026-11-02T20:50:35.942065+08:00",
+    "solver_limit_seconds": 900
+  },
+  "two_bit_certified": false,
+  "PPT_changed": false,
+  "tests": [
+    "r02 all4 native pre/post structure and16parts audit",
+    "zero common-taper perturbation identity",
+    "bothcommon +/-0.25mm exactly two shoulder vertices change",
+    "r03 incremental RF net change vsr02 only intended net",
+    "fixed16parts and10points,4cases local geometry/gaps/contact preflight",
+    "three modified/generated scripts compile"
+  ]
+}
