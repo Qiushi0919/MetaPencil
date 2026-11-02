@@ -1,0 +1,156 @@
+{
+  "base_commit": "a92f841cd5e9fe3c8fbfdfdebef2f94d53e1bb2b",
+  "baseline_completed_local": "2026-11-02T19:24:54+08:00",
+  "native_seven_audits_pass": true,
+  "baseline_frequency_GHz": [
+    9.0,
+    9.25,
+    9.5,
+    9.75,
+    10.0
+  ],
+  "baseline_metrics": {
+    "H": {
+      "max_relative_error_deg": [
+        32.40402142583872,
+        34.132349212777854,
+        31.54939113718001,
+        147.67914188946116,
+        107.47606477257261
+      ],
+      "max_cyclic_adjacent_error_deg": [
+        25.410364905804784,
+        33.02965305662815,
+        27.832547141289865,
+        147.67914188946116,
+        107.47606477257261
+      ],
+      "minimum_amplitude_dB": [
+        -1.4229039965868013,
+        -1.3658127977374155,
+        -1.6805040124585218,
+        -4.0471420981796555,
+        -0.9012378538744581
+      ]
+    },
+    "V": {
+      "max_relative_error_deg": [
+        27.518713905154755,
+        41.633546742577096,
+        52.29751459483225,
+        75.85565130343122,
+        87.47525192564282
+      ],
+      "max_cyclic_adjacent_error_deg": [
+        27.213209471317896,
+        35.54206463399569,
+        51.044662501219506,
+        75.85565130343122,
+        87.47525192564282
+      ],
+      "minimum_amplitude_dB": [
+        -1.38219229394243,
+        -1.5444595441862916,
+        -1.6081578128754055,
+        -1.444267789837662,
+        -0.9776137025485587
+      ]
+    }
+  },
+  "converged_states": 0,
+  "geometry_hypotheses_and_scaled_RLC_limits_retained": true,
+  "active_round": "r01",
+  "pid": 51120,
+  "started": "2026-11-02T19:46:35.357990+08:00",
+  "plan": {
+    "name": "r01",
+    "frequencies_GHz": [
+      9,
+      9.5,
+      9.75,
+      10
+    ],
+    "max_passes": 3,
+    "budget_minutes": 45,
+    "case_budget_seconds": 900,
+    "purpose": "Independent plus/minus terminal sensitivity: H_L4 baseline notch and V_L9 state2 excessive phase delay. Partial pairs cannot certify2bit.",
+    "candidates": [
+      {
+        "name": "h4minus",
+        "terminal_delta_mm": {
+          "H_L4": -0.1
+        },
+        "states": [
+          "H1V1",
+          "H2V1"
+        ]
+      },
+      {
+        "name": "h4plus",
+        "terminal_delta_mm": {
+          "H_L4": 0.1
+        },
+        "states": [
+          "H1V1",
+          "H2V1"
+        ]
+      },
+      {
+        "name": "v9minus",
+        "terminal_delta_mm": {
+          "V_L9": -0.15
+        },
+        "states": [
+          "H1V1",
+          "H1V2"
+        ]
+      },
+      {
+        "name": "v9plus",
+        "terminal_delta_mm": {
+          "V_L9": 0.15
+        },
+        "states": [
+          "H1V1",
+          "H1V2"
+        ]
+      }
+    ]
+  },
+  "case_sha256": "134b2f1be71dd185e1605cecb23351374cd00b22cc6046707234248428f0067b",
+  "user_next_round_direct_frequencies_GHz": [
+    9,
+    9.1,
+    9.2,
+    9.3,
+    9.4,
+    9.5,
+    9.625,
+    9.75,
+    9.875,
+    10
+  ],
+  "running_r01_inputs_preserved": true,
+  "normalization": "Native positive-real-impedance power-wave S; amplitude = 20 log10 |S|; no amplitude renormalization",
+  "phase_definition": "Relative arg(S_s/S_1); ideal [0,-90,-180,+90] deg; error wrap(relative+90s); cyclic error wrap(arg(S_next/S_s)+90)",
+  "source_hashes": {
+    "prepare_opt_round.py": "c94bcd5377bd23e6e4925741af60de074ac54bac509733ee18f217e07e48f189",
+    "r01-plan.json": "c768ffd351ea02273e729c6a79f7c3cdab8f7fe31acccc57cbde340fa2a3b928",
+    "analyze_pairs.py": "a5cb1814a03d2f7d8af4ab1ba43363ca21a5087e115c2855a8a90bc3a17bfcd5",
+    "caorlcr01.cmd": "e0eaefb2f3652d636232ccf7b2b2c1b9a2d80b7bb0dbc568d62fffc18b40b1ff",
+    "rlc-r01-preflight.json": "a7be2716941a51a9c76031c3b06571c87aed9baddd1ec521106d40e97469321c",
+    "caorlcr01.py": "317fd0c6bfd01b7509380966f82396abf04ab3f601411ebcb83b3a64a544ab89",
+    "rlc-r01-cases.json": "134b2f1be71dd185e1605cecb23351374cd00b22cc6046707234248428f0067b",
+    "analyze_rlc.py": "4e0cbbffbc89c77697a4ff741a2803ce59fb6cfa284bb2fec2e4f3dc5ba5554d"
+  },
+  "no_2bit_claim": true,
+  "checks": [
+    "All7 actual native structures16parts/modes/frequencies/normal logs audited",
+    "Fixed geometry across baseline states confirmed",
+    "Phase metric ideal90deg self-check passed",
+    "Baseline amplitude phase plot visually checked",
+    "r01 four candidate local geometry contacts and fixedRLC preflight passed",
+    "Launcher/analyzer compilation passed",
+    "Pair analyzer on pending inputs produces no completed pair or2bit claim"
+  ]
+}
