@@ -546,22 +546,13 @@
     "next": "Fix target switch parasitic model before adjusting actual launch and delay-line geometry; original reconstruction remains unaccepted."
   },
   "cao_rlc_optimization_20261102": {
-    "status": "r05_solving",
+    "status": "r06_solving",
     "solver_running": true,
-    "pid": 54752,
-    "started_local": "2026-11-02T21:58:46.846878+08:00",
-    "results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r05_v1",
+    "pid": 55424,
+    "started_local": "2026-11-02T22:27:46.029295+08:00",
+    "results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r06_v1",
     "plan": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/optimization_plan.json",
-    "completed_states": [
-      "H1V1",
-      "H2V1",
-      "H3V1",
-      "H4V1",
-      "H1V2",
-      "H1V3",
-      "H1V4"
-    ],
-    "current_case": "caoxrlc-r05-h5trimfull-H3V1",
+    "current_case": "caoxrlc-r06-fulltrim-H1V1",
     "fixed_RLC": {
       "Ron_ohm": 1.6,
       "L_nH": 0.037894736842105266,
@@ -572,10 +563,10 @@
     "native_checks": "Actual history, 10 RF nets, 8 series RLC and 8 shunt capacitors, branch mapping and metal contacts checked before and after each solve",
     "automation_id": "cao-rlc-x",
     "optimized_2bit_achieved": false,
-    "review_packet": "项目管理/review_packets/20261102_435351e_cao_h5trim_seven_prep",
-    "next": "Audit each missing state; combine exact same h5trim geometry 2 r04 +5 r05 archives with merge manifest; run full seven-state analyzer then choose targeted next round.",
+    "review_packet": "项目管理/review_packets/20261102_cc82f9d_cao_seven_and_r06",
+    "next": "Audit each r06 state; when same geometry seven complete run analyze_rlc custom cases/results/analysis_r06 and compare all10points to h5trim. Evaluate H3/H4 and V2/V3 residuals plus amplitudes, no isolated sensitivity attribution for combined changes.",
     "review_pr_status": "pending",
-    "last_reported_case": "caoxrlc-r05-h5trimfull-H3V1",
+    "last_reported_case": "caoxrlc-r06-fulltrim-H1V1",
     "baseline_results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_base_v1",
     "interruption_reason": "RDP disconnected; H1V2 completed native solve and audits; remote archival WinError5 stopped queue at18:48. Recovered fifth case; no completed states recomputed.",
     "mirror_policy": "Windows-local archives; independent best-effort remote sync retries",
@@ -629,7 +620,7 @@
       }
     },
     "converged_states": 0,
-    "active_round": "r05",
+    "active_round": "r06",
     "next_direct_frequencies_GHz": [
       9,
       9.1,
@@ -658,13 +649,58 @@
     "r02_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r02/pair_sensitivity.json",
     "r03_completed_cases": 4,
     "r03_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r03/pair_sensitivity.json",
-    "prepared_round": "r05",
+    "prepared_round": "r06",
     "prepared_round_started": true,
     "h5trim_pair_max_error_deg": 16.559956811161214,
     "h5trim_pair_min_amp_dB": -1.5974126616619342,
     "r04_completed_cases": 4,
     "r04_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r04/pair_sensitivity.json",
     "current_round_completed_states": [],
-    "last_heartbeat": "2026-11-02T21:59:33.070573+08:00"
+    "last_heartbeat": "2026-11-02T22:28:09.303988+08:00",
+    "r05_completed_cases": 5,
+    "h5trim_seven_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_h5trim_seven/seven_state_diagnostic.json",
+    "h5trim_seven_metrics": {
+      "H": {
+        "worst_relative_deg": 36.49560995927516,
+        "worst_cyclic_deg": 47.627022506288,
+        "minimum_amp_dB": -1.5974126616619342,
+        "at9p5": {
+          "max_relative_error_deg": 36.49560995927516,
+          "max_cyclic_adjacent_error_deg": 29.354270751377953,
+          "minimum_amplitude_dB": -1.2175551221776297
+        },
+        "baseline_at9p5": {
+          "max_relative_error_deg": 31.54939113718001,
+          "max_cyclic_adjacent_error_deg": 27.832547141289865,
+          "minimum_amplitude_dB": -1.6805040124585218
+        },
+        "fixed_other_phase_drift_max_deg": 2.1168902472349203
+      },
+      "V": {
+        "worst_relative_deg": 86.54518697534249,
+        "worst_cyclic_deg": 86.54518697534249,
+        "minimum_amp_dB": -1.5777221528266456,
+        "at9p5": {
+          "max_relative_error_deg": 52.24588844731045,
+          "max_cyclic_adjacent_error_deg": 49.72523961326655,
+          "minimum_amplitude_dB": -1.56840413125071
+        },
+        "baseline_at9p5": {
+          "max_relative_error_deg": 52.29751459483225,
+          "max_cyclic_adjacent_error_deg": 51.044662501219506,
+          "minimum_amplitude_dB": -1.6081578128754055
+        },
+        "fixed_other_phase_drift_max_deg": 2.0547762338723317
+      }
+    },
+    "baseline_completed_states": [
+      "H1V1",
+      "H2V1",
+      "H3V1",
+      "H4V1",
+      "H1V2",
+      "H1V3",
+      "H1V4"
+    ]
   }
 }

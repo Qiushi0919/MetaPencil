@@ -1,0 +1,34 @@
+{
+  "H": {
+    "worst_relative_deg": 36.49560995927516,
+    "worst_cyclic_deg": 47.627022506288,
+    "minimum_amp_dB": -1.5974126616619342,
+    "at9p5": {
+      "max_relative_error_deg": 36.49560995927516,
+      "max_cyclic_adjacent_error_deg": 29.354270751377953,
+      "minimum_amplitude_dB": -1.2175551221776297
+    },
+    "baseline_at9p5": {
+      "max_relative_error_deg": 31.54939113718001,
+      "max_cyclic_adjacent_error_deg": 27.832547141289865,
+      "minimum_amplitude_dB": -1.6805040124585218
+    },
+    "fixed_other_phase_drift_max_deg": 2.1168902472349203
+  },
+  "V": {
+    "worst_relative_deg": 86.54518697534249,
+    "worst_cyclic_deg": 86.54518697534249,
+    "minimum_amp_dB": -1.5777221528266456,
+    "at9p5": {
+      "max_relative_error_deg": 52.24588844731045,
+      "max_cyclic_adjacent_error_deg": 49.72523961326655,
+      "minimum_amplitude_dB": -1.56840413125071
+    },
+    "baseline_at9p5": {
+      "max_relative_error_deg": 52.29751459483225,
+      "max_cyclic_adjacent_error_deg": 51.044662501219506,
+      "minimum_amplitude_dB": -1.6081578128754055
+    },
+    "fixed_other_phase_drift_max_deg": 2.0547762338723317
+  }
+}

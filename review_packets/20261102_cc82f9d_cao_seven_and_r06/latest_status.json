@@ -1,0 +1,12 @@
+{
+  "pid": 55424,
+  "started_local": "2026-11-02T22:27:07.224326+08:00",
+  "deadline_local": "2026-11-02T23:12:06.532443+08:00",
+  "completed": [],
+  "status": "solving",
+  "updated_local": "2026-11-02T22:27:46.030313+08:00",
+  "case": "caoxrlc-r06-fulltrim-H1V1",
+  "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r06-projects-v1\\caoxrlc-r06-fulltrim-H1V1.cst",
+  "solver_started_local": "2026-11-02T22:27:46.029295+08:00",
+  "solver_limit_seconds": 900
+}

@@ -1,0 +1,87 @@
+{
+  "base_commit": "cc82f9d96eab47d12739a55c10532330c481da3d",
+  "completed_geometry": "h5trim",
+  "all7_native_prepost16parts_frequency_mode_audits_pass": true,
+  "metrics": {
+    "H": {
+      "worst_relative_deg": 36.49560995927516,
+      "worst_cyclic_deg": 47.627022506288,
+      "minimum_amp_dB": -1.5974126616619342,
+      "at9p5": {
+        "max_relative_error_deg": 36.49560995927516,
+        "max_cyclic_adjacent_error_deg": 29.354270751377953,
+        "minimum_amplitude_dB": -1.2175551221776297
+      },
+      "baseline_at9p5": {
+        "max_relative_error_deg": 31.54939113718001,
+        "max_cyclic_adjacent_error_deg": 27.832547141289865,
+        "minimum_amplitude_dB": -1.6805040124585218
+      },
+      "fixed_other_phase_drift_max_deg": 2.1168902472349203
+    },
+    "V": {
+      "worst_relative_deg": 86.54518697534249,
+      "worst_cyclic_deg": 86.54518697534249,
+      "minimum_amp_dB": -1.5777221528266456,
+      "at9p5": {
+        "max_relative_error_deg": 52.24588844731045,
+        "max_cyclic_adjacent_error_deg": 49.72523961326655,
+        "minimum_amplitude_dB": -1.56840413125071
+      },
+      "baseline_at9p5": {
+        "max_relative_error_deg": 52.29751459483225,
+        "max_cyclic_adjacent_error_deg": 51.044662501219506,
+        "minimum_amplitude_dB": -1.6081578128754055
+      },
+      "fixed_other_phase_drift_max_deg": 2.0547762338723317
+    }
+  },
+  "full2bit_certified": false,
+  "numerically_converged": false,
+  "r06_status": {
+    "pid": 55424,
+    "started_local": "2026-11-02T22:27:07.224326+08:00",
+    "deadline_local": "2026-11-02T23:12:06.532443+08:00",
+    "completed": [],
+    "status": "solving",
+    "updated_local": "2026-11-02T22:27:46.030313+08:00",
+    "case": "caoxrlc-r06-fulltrim-H1V1",
+    "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r06-projects-v1\\caoxrlc-r06-fulltrim-H1V1.cst",
+    "solver_started_local": "2026-11-02T22:27:46.029295+08:00",
+    "solver_limit_seconds": 900
+  },
+  "r06_heartbeat": {
+    "pid": 55424,
+    "runner_alive": true,
+    "observed_local": "2026-11-02T22:28:09.303988+08:00",
+    "runner_status": {
+      "pid": 55424,
+      "started_local": "2026-11-02T22:27:07.224326+08:00",
+      "deadline_local": "2026-11-02T23:12:06.532443+08:00",
+      "completed": [],
+      "status": "solving",
+      "updated_local": "2026-11-02T22:27:46.030313+08:00",
+      "case": "caoxrlc-r06-fulltrim-H1V1",
+      "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r06-projects-v1\\caoxrlc-r06-fulltrim-H1V1.cst",
+      "solver_started_local": "2026-11-02T22:27:46.029295+08:00",
+      "solver_limit_seconds": 900
+    },
+    "solver_log_tail": "2026-11-02 22:27:46   *** Warning ***\n\n                      There are large gaps between some frequency sampling interval definitions: From\n                      9 to 9.1 GHz, from 9.1 to 9.2 GHz, from 9.2 to 9.3 GHz, from 9.3 to 9.4 GHz,\n                      from 9.4 to 9.5 GHz, from 9.5 to 9.625 GHz, from 9.625 to 9.75 GHz, from 9.75\n                      to 9.875 GHz, from 9.875 to 10 GHz.  More...\n\n                      ------------------------------------------------------------------------------\n2026-11-02 22:27:46   In order to get an optimal performance, hyperthreading is ignored for parallel\n                      computations.\n\n                      ------------------------------------------------------------------------------\n2026-11-02 22:27:53   \n                      ------------------------------------------------------------------------------\n"
+  },
+  "r06_source_case_sha256": "d7248d64d6f376b0becb75c62f6a707b28d150feb0e6eba3c47f1faf283d99cb",
+  "r06_incremental_preflight": {
+    "same_geometry_seven_states_except_switch_RC": true,
+    "only_changed_nets_from_h5trim": [
+      "H_L3",
+      "V_L9",
+      "V_L8"
+    ],
+    "all_16_RLC_values_and_contacts_unchanged": true,
+    "same10points_and3passes": true,
+    "source_case_sha256": "d7248d64d6f376b0becb75c62f6a707b28d150feb0e6eba3c47f1faf283d99cb",
+    "note": "H3 and V3 trims are hypotheses; combined changes do not isolate individual sensitivity."
+  },
+  "normalization": "Native powerwave S;20log10(abs(S));fixed -90deg relative and cyclic steps",
+  "model_level": "Periodic coarse full wave with fixed mathematically scaled RLC; not measured X-band device",
+  "next": "Audit each r06 state; when same geometry seven complete run analyze_rlc custom cases/results/analysis_r06 and compare all10points to h5trim. Evaluate H3/H4 and V2/V3 residuals plus amplitudes, no isolated sensitivity attribution for combined changes."
+}

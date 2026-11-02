@@ -1,0 +1,40 @@
+{
+  "name": "r06",
+  "frequencies_GHz": [
+    9,
+    9.1,
+    9.2,
+    9.3,
+    9.4,
+    9.5,
+    9.625,
+    9.75,
+    9.875,
+    10
+  ],
+  "max_passes": 3,
+  "budget_minutes": 45,
+  "case_budget_seconds": 900,
+  "purpose": "Full seven-state candidate from audited h5trim geometry. H3 error -32 to -36deg through lower/mid band and V3 -29 to -56deg motivate first H_L3/V_L8 trim hypotheses; V_L9-.6 direction supported by r02. Combined candidate must be assessed as one geometry; effects not isolated and no phase-success prediction. H4 upper edge and all cyclic errors remain explicit objectives. Fixed scaled RLC; coarse unconverged screen.",
+  "candidates": [
+    {
+      "name": "fulltrim",
+      "terminal_delta_mm": {
+        "H_L2": -0.6,
+        "H_L5": -0.65,
+        "H_L3": -0.25,
+        "V_L9": -0.6,
+        "V_L8": -0.4
+      },
+      "states": [
+        "H1V1",
+        "H2V1",
+        "H3V1",
+        "H4V1",
+        "H1V2",
+        "H1V3",
+        "H1V4"
+      ]
+    }
+  ]
+}

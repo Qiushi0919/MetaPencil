@@ -1,0 +1,12 @@
+{
+  "same_geometry_seven_states_except_switch_RC": true,
+  "only_changed_nets_from_h5trim": [
+    "H_L3",
+    "V_L9",
+    "V_L8"
+  ],
+  "all_16_RLC_values_and_contacts_unchanged": true,
+  "same10points_and3passes": true,
+  "source_case_sha256": "d7248d64d6f376b0becb75c62f6a707b28d150feb0e6eba3c47f1faf283d99cb",
+  "note": "H3 and V3 trims are hypotheses; combined changes do not isolate individual sensitivity."
+}
