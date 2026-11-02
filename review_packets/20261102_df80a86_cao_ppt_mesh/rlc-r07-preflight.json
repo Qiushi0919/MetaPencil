@@ -1,0 +1,46 @@
+{
+  "status": "local_geometry_and_circuit_preflight_pass",
+  "case_sha256": "71d17eca2eed4aa1af4657a863113120242880d9f0fcfd2eb40e382332b451ea",
+  "cases": 7,
+  "plan": {
+    "name": "r07",
+    "frequencies_GHz": [
+      9,
+      9.1,
+      9.2,
+      9.3,
+      9.4,
+      9.5,
+      9.625,
+      9.75,
+      9.875,
+      10
+    ],
+    "max_passes": 6,
+    "budget_minutes": 110,
+    "case_budget_seconds": 1500,
+    "purpose": "Numerical mesh-sensitivity control of the current best complete seven-state r06 geometry before further geometric optimization. All7 failed two successive DeltaS<.03 and H3 shift7-10deg may be comparable to discretization uncertainty. Preserve every geometric network, contact, RLC and10 direct sample points; increase9.5GHz adaptive ceiling3->6 only. Compare complete seven-state amplitude/phase errors without combining coarse and refined states. Not final band certification.",
+    "candidates": [
+      {
+        "name": "meshcheck",
+        "terminal_delta_mm": {
+          "H_L2": -0.6,
+          "H_L5": -0.65,
+          "H_L3": -0.25,
+          "V_L9": -0.6,
+          "V_L8": -0.4
+        },
+        "states": [
+          "H1V1",
+          "H2V1",
+          "H3V1",
+          "H4V1",
+          "H1V2",
+          "H1V3",
+          "H1V4"
+        ]
+      }
+    ]
+  },
+  "all_RLC_and_contacts_unchanged": true
+}
