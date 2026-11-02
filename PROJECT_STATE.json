@@ -544,5 +544,30 @@
     },
     "all_cases_converged": false,
     "next": "Fix target switch parasitic model before adjusting actual launch and delay-line geometry; original reconstruction remains unaccepted."
+  },
+  "cao_rlc_optimization_20261102": {
+    "status": "seven_state_baseline_running",
+    "solver_running": true,
+    "pid": 55232,
+    "started_local": "2026-11-02T18:25:40+08:00",
+    "results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_base_v1",
+    "plan": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/optimization_plan.json",
+    "completed_states": [
+      "caoxrlc-base-H1V1",
+      "caoxrlc-base-H2V1"
+    ],
+    "current_case": "caoxrlc-base-H3V1",
+    "fixed_RLC": {
+      "Ron_ohm": 1.6,
+      "L_nH": 0.037894736842105266,
+      "Coff_fF": 45.473684210526315,
+      "Cshunt_fF": 15.915789473684212,
+      "interpretation": "Mathematically scaled diagnostic RLC, not measured X-band BGSA hardware"
+    },
+    "native_checks": "Actual history, 10 RF nets, 8 series RLC and 8 shunt capacitors, branch mapping and metal contacts checked before and after each solve",
+    "automation_id": "cao-rlc-x",
+    "optimized_2bit_achieved": false,
+    "review_packet": "项目管理/review_packets/20261102_f8512f7_cao_rlc_opt",
+    "next": "After all seven finish, audit native structure, analyze full baseline, choose bounded launch/delay-line candidates and continue iteration"
   }
 }
