@@ -1,0 +1,18 @@
+{
+  "pid": 55424,
+  "runner_alive": true,
+  "observed_local": "2026-11-02T22:28:09.303988+08:00",
+  "runner_status": {
+    "pid": 55424,
+    "started_local": "2026-11-02T22:27:07.224326+08:00",
+    "deadline_local": "2026-11-02T23:12:06.532443+08:00",
+    "completed": [],
+    "status": "solving",
+    "updated_local": "2026-11-02T22:27:46.030313+08:00",
+    "case": "caoxrlc-r06-fulltrim-H1V1",
+    "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r06-projects-v1\\caoxrlc-r06-fulltrim-H1V1.cst",
+    "solver_started_local": "2026-11-02T22:27:46.029295+08:00",
+    "solver_limit_seconds": 900
+  },
+  "solver_log_tail": "2026-11-02 22:27:46   *** Warning ***\n\n                      There are large gaps between some frequency sampling interval definitions: From\n                      9 to 9.1 GHz, from 9.1 to 9.2 GHz, from 9.2 to 9.3 GHz, from 9.3 to 9.4 GHz,\n                      from 9.4 to 9.5 GHz, from 9.5 to 9.625 GHz, from 9.625 to 9.75 GHz, from 9.75\n                      to 9.875 GHz, from 9.875 to 10 GHz.  More...\n\n                      ------------------------------------------------------------------------------\n2026-11-02 22:27:46   In order to get an optimal performance, hyperthreading is ignored for parallel\n                      computations.\n\n                      ------------------------------------------------------------------------------\n2026-11-02 22:27:53   \n                      ------------------------------------------------------------------------------\n"
+}
