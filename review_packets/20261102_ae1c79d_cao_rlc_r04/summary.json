@@ -1,0 +1,209 @@
+{
+  "base_commit": "ae1c79df6fb1421534a120a5695fbfc40cba6256",
+  "r03_complete_cases": 4,
+  "native_pre_post_audits_passed": true,
+  "normalization": "native power-wave S;20log10|S|;fixed -90deg order",
+  "model": "periodic fullwave diagnostic scaled RLC; not actual Xband hardware",
+  "r03_incremental_vs_r02": {
+    "records": [
+      {
+        "candidate": "h2h5minus",
+        "prior_candidate": "h2minus",
+        "frequency_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "incremental_phase_change_deg": [
+          35.24615669410804,
+          35.03252182205688,
+          34.76460360596997,
+          34.36142605649954,
+          33.714594252202346,
+          32.71287068998234,
+          30.841739066324692,
+          28.268756328234588,
+          25.15352306449722,
+          21.79455154496472
+        ],
+        "pair_error_deg": [
+          4.873748269574207,
+          0.8158212534576137,
+          -3.4841915664143244,
+          -8.090784108081635,
+          -12.947045560141476,
+          -17.831792876446457,
+          -23.267062295663095,
+          -26.410364966111217,
+          -24.306461525275125,
+          -11.179916082078051
+        ],
+        "minimum_amplitude_dB": [
+          -1.2103658060504494,
+          -1.2195539791733965,
+          -1.2315432264821278,
+          -1.2438244279947528,
+          -1.2520765613893536,
+          -1.2506744082919607,
+          -1.2263772126011203,
+          -1.169516352363019,
+          -1.0798520214552996,
+          -1.5201456619569669
+        ],
+        "prior_minimum_amplitude_dB": [
+          -1.4158214658720283,
+          -1.3815925552076682,
+          -1.35071113501359,
+          -1.318947106346067,
+          -1.2820240143233508,
+          -1.236509349935916,
+          -1.1653685048720028,
+          -1.0815424237056277,
+          -0.9974540485633787,
+          -1.5656894303239401
+        ],
+        "max_pair_error_deg": 26.410364966111217,
+        "not_converged": true,
+        "pair_only_not_2bit": true
+      },
+      {
+        "candidate": "v9taper",
+        "prior_candidate": "v9minus",
+        "frequency_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "incremental_phase_change_deg": [
+          -4.460948139666186,
+          -4.819445063205535,
+          -5.1897894427909534,
+          -5.55070054806734,
+          -5.857070840501592,
+          -6.032446618534635,
+          -5.9090451233230965,
+          -5.516304465606339,
+          -4.5370728988285975,
+          -3.232144004784203
+        ],
+        "pair_error_deg": [
+          20.360817353449818,
+          14.620304631137401,
+          7.914147263706241,
+          0.057685898111515144,
+          -9.064356540111248,
+          -19.412383352458733,
+          -33.3563086903506,
+          -46.83946218015805,
+          -58.767185619386964,
+          -65.89774012866656
+        ],
+        "minimum_amplitude_dB": [
+          -1.026939731906906,
+          -1.0986582529415476,
+          -1.18059590115019,
+          -1.2702873579197331,
+          -1.3628108607580312,
+          -1.4557565340009235,
+          -1.6099310029754395,
+          -1.5281977731925143,
+          -1.3097553012713838,
+          -1.098893678866308
+        ],
+        "prior_minimum_amplitude_dB": [
+          -0.9753712954014016,
+          -1.048086323791751,
+          -1.1329761489270336,
+          -1.228889604192802,
+          -1.332566960372478,
+          -1.443206029946992,
+          -1.6346912621196923,
+          -1.5934860147272822,
+          -1.3813547367176584,
+          -1.1682867888577777
+        ],
+        "max_pair_error_deg": 65.89774012866656,
+        "not_converged": true,
+        "pair_only_not_2bit": true
+      }
+    ],
+    "pending_cases": []
+  },
+  "r04_plan": {
+    "name": "r04",
+    "frequencies_GHz": [
+      9,
+      9.1,
+      9.2,
+      9.3,
+      9.4,
+      9.5,
+      9.625,
+      9.75,
+      9.875,
+      10
+    ],
+    "max_passes": 3,
+    "budget_minutes": 40,
+    "case_budget_seconds": 900,
+    "purpose": "H additional0.15mm L5 shortening follows measured r02->r03 sensitivity; test without asserting extrapolation. V positive common taper did not help upper band; restore baseline taper and test inactive longest V_L7 shortening with V_L9-.6 retained. Separate pairs, fixed RLC, not2bit certification.",
+    "candidates": [
+      {
+        "name": "h5trim",
+        "terminal_delta_mm": {
+          "H_L2": -0.6,
+          "H_L5": -0.65
+        },
+        "states": [
+          "H1V1",
+          "H2V1"
+        ]
+      },
+      {
+        "name": "v7v9minus",
+        "terminal_delta_mm": {
+          "V_L7": -0.6,
+          "V_L9": -0.6
+        },
+        "states": [
+          "H1V1",
+          "H1V2"
+        ]
+      }
+    ]
+  },
+  "r04_status": {
+    "pid": 55240,
+    "started_local": "2026-11-02T21:20:04.018307+08:00",
+    "deadline_local": "2026-11-02T22:00:03.353483+08:00",
+    "completed": [],
+    "status": "solving",
+    "updated_local": "2026-11-02T21:20:32.534671+08:00",
+    "case": "caoxrlc-r04-h5trim-H1V1",
+    "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r04-projects-v1\\caoxrlc-r04-h5trim-H1V1.cst",
+    "solver_started_local": "2026-11-02T21:20:32.533668+08:00",
+    "solver_limit_seconds": 900
+  },
+  "two_bit_certified": false,
+  "PPT_changed": false,
+  "tests": [
+    "fourcase native pre/post audit",
+    "r04 incremental single-net delta vs selected parent",
+    "fixed16parts10points local geometry contact/gaps",
+    "launcher compile"
+  ]
+}
