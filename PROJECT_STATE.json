@@ -651,6 +651,7 @@
       "exclude_intermediate_iterations": true,
       "contents": "native layer views/key dimensions/switch description, co-polar amplitude/phase, fixed-order phase error; disclose convergence/pass status",
       "timing": "Update best X-band group after choosing and validating best candidate; do not add every round"
-    }
+    },
+    "local_audit_readonly_fix": "20261102_173c70b_cao_audit_readonly; native reports remain byte-identical after repeated local audit"
   }
 }
