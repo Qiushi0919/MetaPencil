@@ -1,0 +1,6 @@
+{
+  "analysis": "analysis_r06",
+  "candidate": "r06-fulltrim",
+  "geometry": "延迟线改动（相对统一缩放）：H：L₂ −0.60、L₅ −0.65、L₃ −0.25 mm；V：L₉ −0.60、L₈ −0.40 mm。",
+  "criterion": "Among audited complete seven-state candidates, minimize worst relative and cyclic phase error across both polarizations at common direct samples; retain amplitude and convergence limits."
+}

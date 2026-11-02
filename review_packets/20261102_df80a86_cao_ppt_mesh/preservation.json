@@ -1,0 +1,12 @@
+{
+  "original_parts": 348,
+  "original_parts_byte_identical": 344,
+  "modified_container_parts": [
+    "docProps/app.xml",
+    "ppt/presentation.xml",
+    "ppt/_rels/presentation.xml.rels",
+    "[Content_Types].xml"
+  ],
+  "appended_dependency_parts": 57,
+  "all_original_slide_chart_workbook_parts_unchanged": true
+}

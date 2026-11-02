@@ -1,0 +1,37 @@
+[
+  {
+    "state": "H1V1",
+    "identical_geometry_RLC_contacts_samples": true,
+    "only_history_change": "FDSolver MaxPasses3->6"
+  },
+  {
+    "state": "H2V1",
+    "identical_geometry_RLC_contacts_samples": true,
+    "only_history_change": "FDSolver MaxPasses3->6"
+  },
+  {
+    "state": "H3V1",
+    "identical_geometry_RLC_contacts_samples": true,
+    "only_history_change": "FDSolver MaxPasses3->6"
+  },
+  {
+    "state": "H4V1",
+    "identical_geometry_RLC_contacts_samples": true,
+    "only_history_change": "FDSolver MaxPasses3->6"
+  },
+  {
+    "state": "H1V2",
+    "identical_geometry_RLC_contacts_samples": true,
+    "only_history_change": "FDSolver MaxPasses3->6"
+  },
+  {
+    "state": "H1V3",
+    "identical_geometry_RLC_contacts_samples": true,
+    "only_history_change": "FDSolver MaxPasses3->6"
+  },
+  {
+    "state": "H1V4",
+    "identical_geometry_RLC_contacts_samples": true,
+    "only_history_change": "FDSolver MaxPasses3->6"
+  }
+]

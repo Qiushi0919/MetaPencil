@@ -1,0 +1,12 @@
+{
+  "pid": 52524,
+  "started_local": "2026-11-02T23:09:38.025012+08:00",
+  "deadline_local": "2026-11-03T00:59:37.275357+08:00",
+  "completed": [],
+  "status": "solving",
+  "updated_local": "2026-11-02T23:10:07.177577+08:00",
+  "case": "caoxrlc-r07-meshcheck-H1V1",
+  "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r07-projects-v1\\caoxrlc-r07-meshcheck-H1V1.cst",
+  "solver_started_local": "2026-11-02T23:10:07.176573+08:00",
+  "solver_limit_seconds": 1500
+}
