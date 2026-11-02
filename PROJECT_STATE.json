@@ -642,6 +642,15 @@
       9.75,
       9.875,
       10
-    ]
+    ],
+    "ppt_scope": {
+      "cao_groups_only": [
+        "original-paper-band reproduction",
+        "best9-10GHz optimized result"
+      ],
+      "exclude_intermediate_iterations": true,
+      "contents": "native layer views/key dimensions/switch description, co-polar amplitude/phase, fixed-order phase error; disclose convergence/pass status",
+      "timing": "Update best X-band group after choosing and validating best candidate; do not add every round"
+    }
   }
 }
