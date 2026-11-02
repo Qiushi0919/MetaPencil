@@ -98,8 +98,8 @@
     "run_url": "https://github.com/Qiushi0919/MetaPencil/actions/runs/32703750790"
   },
   "github_release": "https://github.com/Qiushi0919/MetaPencil/releases/tag/handoff-v1.1-git-ready",
-  "next_priority": "Cao X波段七态求解已启动：先完成结构读回核对，再评估9–10 GHz幅相及2-bit误差。",
-  "last_updated": "2026-11-02T16:33:00+08:00",
+  "next_priority": "Cao X波段七态粗算未形成合格2-bit；结构读回已核验，下一步分离开关与引出迁移影响。",
+  "last_updated": "2026-11-02T17:22:12+08:00",
   "documentation": {
     "last_update": "2026-10-05",
     "personal_homepage_cn": "https://qiushi0919.cn/",
@@ -453,8 +453,8 @@
     }
   },
   "cao_xband_initial_20261102": {
-    "status": "six_state_resume_running_after_memory_guard",
-    "solver_running": true,
+    "status": "seven_state_coarse_analysis_complete_not_2bit",
+    "solver_running": false,
     "solver_invoked": true,
     "target_band_GHz": [
       9,
@@ -467,8 +467,8 @@
     "original_band_reproduction_accepted": false,
     "ppt_slides": 41,
     "ppt_sha256": "c052cd71a73647e98eb35b0aa12d74b7d87faeeaf974aaeceaea097c594402c0",
-    "review_packet": "项目管理/review_packets/20261102_c64fe55_cao_xband",
-    "next": "Verify resumed solver and combine six states with preserved H1V1; audit actual geometry before interpreting curves.",
+    "review_packet": "项目管理/review_packets/20261102_12039d0_cao_xband_results",
+    "next": "Isolate ideal-switch and nonuniform chip-launch migration effects before choosing delay-line changes; no new solver started.",
     "solver_started_local": "2026-11-02T16:45:41.634690+08:00",
     "runner_pid": 44884,
     "results_path": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_xband_ideal_v1r1",
@@ -477,6 +477,35 @@
     ],
     "completed_results_path": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_xband_ideal_v1",
     "memory_guard_GiB": 2.5,
-    "automation_id": "cao-x"
+    "automation_id": null,
+    "completed_local": "2026-11-02T17:16:47.086086+08:00",
+    "completed_states": [
+      "H1V1",
+      "H2V1",
+      "H3V1",
+      "H4V1",
+      "H1V2",
+      "H1V3",
+      "H1V4"
+    ],
+    "automation_deleted": true,
+    "results_analysis_path": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_ideal_v1",
+    "center_adjacent_error_HV_deg": [
+      92.10139461370818,
+      66.02586084357273
+    ],
+    "center_relative_error_HV_deg": [
+      92.10139461370818,
+      76.12210718283347
+    ],
+    "center_min_amplitude_HV_dB": [
+      -0.5109607762761448,
+      -0.5688713342032508
+    ],
+    "numerically_converged_states": 0,
+    "paper_adjacent20_pass_samples_HV": [
+      [],
+      []
+    ]
   }
 }
