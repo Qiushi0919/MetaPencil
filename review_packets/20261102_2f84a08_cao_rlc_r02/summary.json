@@ -1,0 +1,167 @@
+{
+  "base_commit": "2f84a082a",
+  "r01_complete_cases": 8,
+  "all_native_pre_post_audits_passed": true,
+  "model": "periodic full-wave with fixed diagnostic scaled RLC; not measured X-band BGSA",
+  "normalization": "native power-wave S,20log10(abs(S))",
+  "fixed_order": "H1->H2,V1->V2;ideal -90deg; no cross-geometry mixing",
+  "pairs": [
+    {
+      "candidate": "h4minus",
+      "polarization": "H",
+      "frequency_GHz": [
+        9,
+        9.5,
+        9.75,
+        10
+      ],
+      "terminal_delta_mm": {
+        "H_L4": -0.1
+      },
+      "pair_error_deg": [
+        -27.929994102976593,
+        -34.3699892776809,
+        -143.3940887507531,
+        -109.99882159802348
+      ],
+      "minimum_amplitude_dB": [
+        -1.432535264009314,
+        -1.4625739130168758,
+        -3.727455743601727,
+        -0.8095281365540927
+      ]
+    },
+    {
+      "candidate": "h4plus",
+      "polarization": "H",
+      "frequency_GHz": [
+        9,
+        9.5,
+        9.75,
+        10
+      ],
+      "terminal_delta_mm": {
+        "H_L4": 0.1
+      },
+      "pair_error_deg": [
+        -21.320523381213377,
+        -16.75800792200971,
+        -148.22895348342513,
+        -106.30426647088564
+      ],
+      "minimum_amplitude_dB": [
+        -1.4264471344706575,
+        -1.6352111644775171,
+        -3.6588493034477683,
+        -0.9730248499717259
+      ]
+    },
+    {
+      "candidate": "v9minus",
+      "polarization": "V",
+      "frequency_GHz": [
+        9,
+        9.5,
+        9.75,
+        10
+      ],
+      "terminal_delta_mm": {
+        "V_L9": -0.15
+      },
+      "pair_error_deg": [
+        4.851566688057062,
+        -40.6647761554614,
+        -66.75885975385481,
+        -80.40285953052737
+      ],
+      "minimum_amplitude_dB": [
+        -1.2765204918286235,
+        -1.5949978363256498,
+        -1.4929671038969916,
+        -1.0262891657820246
+      ]
+    },
+    {
+      "candidate": "v9plus",
+      "polarization": "V",
+      "frequency_GHz": [
+        9,
+        9.5,
+        9.75,
+        10
+      ],
+      "terminal_delta_mm": {
+        "V_L9": 0.15
+      },
+      "pair_error_deg": [
+        -11.128875023577763,
+        -59.52027367117748,
+        -82.88529528752267,
+        -91.98642551949217
+      ],
+      "minimum_amplitude_dB": [
+        -1.4768682224553733,
+        -1.6087943927686634,
+        -1.3796458675997885,
+        -0.9321571955406807
+      ]
+    }
+  ],
+  "r02_plan": {
+    "name": "r02",
+    "frequencies_GHz": [
+      9,
+      9.1,
+      9.2,
+      9.3,
+      9.4,
+      9.5,
+      9.625,
+      9.75,
+      9.875,
+      10
+    ],
+    "max_passes": 3,
+    "budget_minutes": 40,
+    "case_budget_seconds": 900,
+    "purpose": "R01 H_L4 +/-0.10mm failed upper-band pair error despite center improvement. Test longest inactive H_L2 terminal shortening as a parasitic-branch hypothesis, not established cause. V_L9 shortening improves pair error across common samples; expand shortening. Independent pairs, no 2bit claim. Fixed RLC and launch.",
+    "candidates": [
+      {
+        "name": "h2minus",
+        "terminal_delta_mm": {
+          "H_L2": -0.6
+        },
+        "states": [
+          "H1V1",
+          "H2V1"
+        ]
+      },
+      {
+        "name": "v9minus",
+        "terminal_delta_mm": {
+          "V_L9": -0.6
+        },
+        "states": [
+          "H1V1",
+          "H1V2"
+        ]
+      }
+    ]
+  },
+  "r02_native_status": {
+    "pid": 45492,
+    "started_local": "2026-11-02T20:20:28.105783+08:00",
+    "deadline_local": "2026-11-02T21:00:27.445794+08:00",
+    "completed": [],
+    "status": "solving",
+    "updated_local": "2026-11-02T20:20:57.198027+08:00",
+    "case": "caoxrlc-r02-h2minus-H1V1",
+    "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r02-projects-v1\\caoxrlc-r02-h2minus-H1V1.cst",
+    "solver_started_local": "2026-11-02T20:20:57.196876+08:00",
+    "solver_limit_seconds": 900
+  },
+  "two_bit_certified": false,
+  "local_output": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102",
+  "ppt_changed": false,
+  "r01_all_cases_converged": false
+}
