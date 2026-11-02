@@ -1,3 +1,10 @@
+## 2026-11-02 — Cao nominal RF pin-layout reconstruction
+
+- Native CST RF polygons and 16 lumped elements checked after datasheet-based pad-layout correction. Main dimensions/RLC/state order unchanged; L2 reference, absolute placement and fanout remain inferred.
+- Nets are disjoint and series endpoints lie inside metal. Native plan views verified after correcting export aspect ratio; source CAD hash unchanged. These checks do not establish exact author-CAD or paper-result reproduction.
+- Solver launch stopped at existing available-memory guard before invoking CST solve. No new S-parameters for this revision.
+- Audit: 项目管理/review_packets/20261102_c64fe55_cao_pinlayout/audit.json. Paper PDFs, CAD files, raw logs and machine details remain local.
+
 # AI synchronization log
 
 在文件顶部追加新记录。每条记录必须说明分支、commit、修改范围、实际测试、结果路径、假设和下一步；不得把计划写成已完成。
