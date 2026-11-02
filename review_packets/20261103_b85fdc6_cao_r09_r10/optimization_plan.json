@@ -1,0 +1,709 @@
+{
+  "status": "r09_common_width_sensitivity_solving",
+  "base_commit": "f8512f7048b8e91b299a3a2151495bf94029a607",
+  "target_GHz": [
+    9,
+    10
+  ],
+  "baseline_cases": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/rlc-base-cases.json",
+  "baseline_results": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_base_v1",
+  "fixed_RLC": {
+    "Ron_ohm": 1.6,
+    "L_nH": 0.037894736842105266,
+    "Coff_fF": 45.473684210526315,
+    "Cshunt_fF": 15.915789473684212,
+    "interpretation": "Mathematically scaled diagnostic RLC, not measured X-band BGSA hardware"
+  },
+  "states": [
+    "H1V1",
+    "H2V1",
+    "H3V1",
+    "H4V1",
+    "H1V2",
+    "H1V3",
+    "H1V4"
+  ],
+  "frequencies_GHz": [
+    9,
+    9.25,
+    9.5,
+    9.75,
+    10
+  ],
+  "phase_order_H": [
+    "L4",
+    "L5",
+    "L3",
+    "L2"
+  ],
+  "phase_order_V": [
+    "L10",
+    "L9",
+    "L8",
+    "L7"
+  ],
+  "ideal_relative_deg": [
+    0,
+    -90,
+    -180,
+    90
+  ],
+  "acceptance": {
+    "max_relative_and_cyclic_adjacent_error_deg": 20,
+    "coarse_min_amplitude_dB": -3,
+    "paper_amplitude_reference_dB": -1,
+    "final_direct_points_min": 21,
+    "final_adaptive_GHz": [
+      9,
+      9.5,
+      10
+    ],
+    "consecutive_DeltaS_below": 0.03,
+    "consecutive_passes": 2,
+    "phase_stability_required": true
+  },
+  "constraints": [
+    "No state sorting, fitting, S conjugation or cross-geometry combination",
+    "16 actual RLC contacts and saved history audited before and after every solve",
+    "Preserve previous results; own process only; 4 threads and 2.5GiB available-memory guard"
+  ],
+  "next_action": "Audit r09 four cases; compare each V1/V2 pair against r08 at identical10 points. Check slope and amplitude, then test promising geometry in complete7states. Do not mix pair candidates or call2bit. If no width direction improves dispersion, expand launch/free-stub geometry with explicit validated parameters.",
+  "candidate_history": [
+    {
+      "round": "r01",
+      "plan": {
+        "name": "r01",
+        "frequencies_GHz": [
+          9,
+          9.5,
+          9.75,
+          10
+        ],
+        "max_passes": 3,
+        "budget_minutes": 45,
+        "case_budget_seconds": 900,
+        "purpose": "Independent plus/minus terminal sensitivity: H_L4 baseline notch and V_L9 state2 excessive phase delay. Partial pairs cannot certify2bit.",
+        "candidates": [
+          {
+            "name": "h4minus",
+            "terminal_delta_mm": {
+              "H_L4": -0.1
+            },
+            "states": [
+              "H1V1",
+              "H2V1"
+            ]
+          },
+          {
+            "name": "h4plus",
+            "terminal_delta_mm": {
+              "H_L4": 0.1
+            },
+            "states": [
+              "H1V1",
+              "H2V1"
+            ]
+          },
+          {
+            "name": "v9minus",
+            "terminal_delta_mm": {
+              "V_L9": -0.15
+            },
+            "states": [
+              "H1V1",
+              "H1V2"
+            ]
+          },
+          {
+            "name": "v9plus",
+            "terminal_delta_mm": {
+              "V_L9": 0.15
+            },
+            "states": [
+              "H1V1",
+              "H1V2"
+            ]
+          }
+        ]
+      },
+      "status": "complete_audited_8_cases",
+      "pid": 51120,
+      "completed_local": "2026-11-02T20:16:31.048425+08:00",
+      "analysis": "analysis_r01/pair_sensitivity.json"
+    },
+    {
+      "round": "r02",
+      "plan": {
+        "name": "r02",
+        "frequencies_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "max_passes": 3,
+        "budget_minutes": 40,
+        "case_budget_seconds": 900,
+        "purpose": "R01 H_L4 +/-0.10mm failed upper-band pair error despite center improvement. Test longest inactive H_L2 terminal shortening as a parasitic-branch hypothesis, not established cause. V_L9 shortening improves pair error across common samples; expand shortening. Independent pairs, no 2bit claim. Fixed RLC and launch.",
+        "candidates": [
+          {
+            "name": "h2minus",
+            "terminal_delta_mm": {
+              "H_L2": -0.6
+            },
+            "states": [
+              "H1V1",
+              "H2V1"
+            ]
+          },
+          {
+            "name": "v9minus",
+            "terminal_delta_mm": {
+              "V_L9": -0.6
+            },
+            "states": [
+              "H1V1",
+              "H1V2"
+            ]
+          }
+        ]
+      },
+      "status": "complete_audited_4_cases",
+      "pid": 45492,
+      "completed_local": "2026-11-02T20:39:49.300750+08:00",
+      "analysis": "analysis_r02/pair_sensitivity.json"
+    },
+    {
+      "round": "r03",
+      "plan": {
+        "name": "r03",
+        "frequencies_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "max_passes": 3,
+        "budget_minutes": 40,
+        "case_budget_seconds": 900,
+        "purpose": "H L2 shortening reduces upper-band anomaly but pair remains -30 to-55deg; test additional L5 shortening. V L9 shortening produces frequency-dependent residual; test common launch taper shoulder +0.25mm with fixed pads and RLC. These are hypotheses, not mechanism proof or2bit certification.",
+        "candidates": [
+          {
+            "name": "h2h5minus",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.5
+            },
+            "states": [
+              "H1V1",
+              "H2V1"
+            ]
+          },
+          {
+            "name": "v9taper",
+            "terminal_delta_mm": {
+              "V_L9": -0.6
+            },
+            "common_taper_delta_mm": {
+              "V_common": 0.25
+            },
+            "states": [
+              "H1V1",
+              "H1V2"
+            ]
+          }
+        ]
+      },
+      "status": "complete_audited_4_cases",
+      "pid": 52900,
+      "completed_local": "2026-11-02T21:09:30.268141+08:00",
+      "analysis": "analysis_r03/pair_sensitivity.json"
+    },
+    {
+      "round": "r04",
+      "plan": {
+        "name": "r04",
+        "frequencies_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "max_passes": 3,
+        "budget_minutes": 40,
+        "case_budget_seconds": 900,
+        "purpose": "H additional0.15mm L5 shortening follows measured r02->r03 sensitivity; test without asserting extrapolation. V positive common taper did not help upper band; restore baseline taper and test inactive longest V_L7 shortening with V_L9-.6 retained. Separate pairs, fixed RLC, not2bit certification.",
+        "candidates": [
+          {
+            "name": "h5trim",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.65
+            },
+            "states": [
+              "H1V1",
+              "H2V1"
+            ]
+          },
+          {
+            "name": "v7v9minus",
+            "terminal_delta_mm": {
+              "V_L7": -0.6,
+              "V_L9": -0.6
+            },
+            "states": [
+              "H1V1",
+              "H1V2"
+            ]
+          }
+        ]
+      },
+      "status": "complete_audited_4_cases",
+      "pid": 55240,
+      "completed_local": "2026-11-02T21:38:50.967144+08:00",
+      "dead_observed_local": "2026-11-02T21:48:16.125002+08:00",
+      "analysis": "analysis_r04/pair_sensitivity.json"
+    },
+    {
+      "round": "r05",
+      "plan": {
+        "name": "r05",
+        "frequencies_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "max_passes": 3,
+        "budget_minutes": 40,
+        "case_budget_seconds": 900,
+        "purpose": "Complete same h5trim geometry seven conditional states. Reuse audited r04 H1V1/H2V1 without recomputation; solve remaining5 only after prior worker confirmed exited. No acceptance until all7 verified.",
+        "candidates": [
+          {
+            "name": "h5trimfull",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.65
+            },
+            "states": [
+              "H3V1",
+              "H4V1",
+              "H1V2",
+              "H1V3",
+              "H1V4"
+            ]
+          }
+        ]
+      },
+      "status": "complete_5_missing_states_audited_7_same_geometry",
+      "pid": 54752,
+      "started_local": "2026-11-02T21:58:10.864721+08:00",
+      "completed_local": "2026-11-02T22:20:35.260310+08:00",
+      "dead_observed_local": "2026-11-02T22:20:59.555160+08:00",
+      "analysis": "analysis_h5trim_seven/seven_state_diagnostic.json"
+    },
+    {
+      "round": "r06",
+      "plan": {
+        "name": "r06",
+        "frequencies_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "max_passes": 3,
+        "budget_minutes": 45,
+        "case_budget_seconds": 900,
+        "purpose": "Full seven-state candidate from audited h5trim geometry. H3 error -32 to -36deg through lower/mid band and V3 -29 to -56deg motivate first H_L3/V_L8 trim hypotheses; V_L9-.6 direction supported by r02. Combined candidate must be assessed as one geometry; effects not isolated and no phase-success prediction. H4 upper edge and all cyclic errors remain explicit objectives. Fixed scaled RLC; coarse unconverged screen.",
+        "candidates": [
+          {
+            "name": "fulltrim",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.65,
+              "H_L3": -0.25,
+              "V_L9": -0.6,
+              "V_L8": -0.4
+            },
+            "states": [
+              "H1V1",
+              "H2V1",
+              "H3V1",
+              "H4V1",
+              "H1V2",
+              "H1V3",
+              "H1V4"
+            ]
+          }
+        ]
+      },
+      "status": "complete_audited_7_states_unconverged",
+      "pid": 55424,
+      "started_local": "2026-11-02T22:27:46.029295+08:00",
+      "completed_local": "2026-11-02T22:58:36.684998+08:00",
+      "analysis": "analysis_r06/seven_state_diagnostic.json"
+    },
+    {
+      "round": "r07",
+      "plan": {
+        "name": "r07",
+        "frequencies_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "max_passes": 6,
+        "budget_minutes": 110,
+        "case_budget_seconds": 1500,
+        "purpose": "Numerical mesh-sensitivity control of the current best complete seven-state r06 geometry before further geometric optimization. All7 failed two successive DeltaS<.03 and H3 shift7-10deg may be comparable to discretization uncertainty. Preserve every geometric network, contact, RLC and10 direct sample points; increase9.5GHz adaptive ceiling3->6 only. Compare complete seven-state amplitude/phase errors without combining coarse and refined states. Not final band certification.",
+        "candidates": [
+          {
+            "name": "meshcheck",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.65,
+              "H_L3": -0.25,
+              "V_L9": -0.6,
+              "V_L8": -0.4
+            },
+            "states": [
+              "H1V1",
+              "H2V1",
+              "H3V1",
+              "H4V1",
+              "H1V2",
+              "H1V3",
+              "H1V4"
+            ]
+          }
+        ]
+      },
+      "status": "complete_audited_7_states_6_center_converged",
+      "pid": 52524,
+      "started_local": "2026-11-02T23:10:07.176573+08:00",
+      "completed_local": "2026-11-03T00:10:32.089500+08:00",
+      "analysis": "analysis_r07/seven_state_diagnostic.json"
+    },
+    {
+      "round": "r08",
+      "plan": {
+        "name": "r08",
+        "frequencies_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "max_passes": 6,
+        "budget_minutes": 110,
+        "case_budget_seconds": 1500,
+        "purpose": "Full seven-state candidate guided by r07 mesh-controlled residuals. H3 remains -22 to -26deg lower/midband, V2 -57.4deg at10GHz and V3 -43.8deg around9.75GHz. Further shorten H_L3 by.25mm,V_L9 by.25mm,V_L8 by.40mm relative to r07; all other geometry/common launches/RLC unchanged. Expected shift direction from earlier terminal screens, magnitude and coupled effects unproven. V2 low-edge overshoot and H4 high-edge residual are explicit risks. Keep10 direct points and6-pass ceiling for like-for-like full-candidate comparison; not broadband certification.",
+        "candidates": [
+          {
+            "name": "residualtrim",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.65,
+              "H_L3": -0.5,
+              "V_L9": -0.85,
+              "V_L8": -0.8
+            },
+            "states": [
+              "H1V1",
+              "H2V1",
+              "H3V1",
+              "H4V1",
+              "H1V2",
+              "H1V3",
+              "H1V4"
+            ]
+          }
+        ]
+      },
+      "status": "complete_audited_7_states_6_center_converged",
+      "pid": 54372,
+      "started_local": "2026-11-03T00:27:24.910711+08:00",
+      "completed_local": "2026-11-03T01:30:26.893898+08:00",
+      "analysis": "analysis_r08/seven_state_diagnostic.json"
+    },
+    {
+      "round": "r09",
+      "plan": {
+        "name": "r09",
+        "frequencies_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "max_passes": 6,
+        "budget_minutes": 65,
+        "case_budget_seconds": 1500,
+        "purpose": "r08 full seven-state evidence shows V2 error +27.02deg at9GHz to -47.47deg at10GHz. Another constant phase shift cannot solve both edges. Compare V common wide-stem width factors0.65 and1.35, keeping r08 terminals, narrow chip pad, RLC endpoints, slot and free coupling-stub end fixed. Each candidate H1V1/H1V2 only for dispersion sensitivity; never combine candidates or certify2bit. Promising direction must be evaluated as one complete seven-state geometry. Six-pass ceiling and10points unchanged.",
+        "candidates": [
+          {
+            "name": "vnarrow",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.65,
+              "H_L3": -0.5,
+              "V_L9": -0.85,
+              "V_L8": -0.8
+            },
+            "states": [
+              "H1V1",
+              "H1V2"
+            ],
+            "common_width_factor": {
+              "V_common": 0.65
+            }
+          },
+          {
+            "name": "vwide",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.65,
+              "H_L3": -0.5,
+              "V_L9": -0.85,
+              "V_L8": -0.8
+            },
+            "states": [
+              "H1V1",
+              "H1V2"
+            ],
+            "common_width_factor": {
+              "V_common": 1.35
+            }
+          }
+        ]
+      },
+      "status": "complete_audited_4_cases",
+      "pid": 49680,
+      "started_local": "2026-11-03T01:41:13.438517+08:00",
+      "completed_local": "2026-11-03T02:16:46.165292+08:00",
+      "analysis": "analysis_r09/incremental_vs_r08.json"
+    },
+    {
+      "round": "r10",
+      "plan": {
+        "name": "r10",
+        "frequencies_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "max_passes": 6,
+        "budget_minutes": 85,
+        "case_budget_seconds": 1500,
+        "purpose": "Complete the promising same r09 vwide geometry: width1.35 reduces V1/V2 error span74.49->58.45deg and worst47.47->38.36deg, but pair still fails. Reuse audited r09 vwide H1V1/H1V2, solve only remaining5 states with identical geometry/RLC/frequency/solver; merge only these7 same-geometry states before any2bit judgment.",
+        "candidates": [
+          {
+            "name": "vwide",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.65,
+              "H_L3": -0.5,
+              "V_L9": -0.85,
+              "V_L8": -0.8
+            },
+            "states": [
+              "H2V1",
+              "H3V1",
+              "H4V1",
+              "H1V3",
+              "H1V4"
+            ],
+            "common_width_factor": {
+              "V_common": 1.35
+            }
+          }
+        ]
+      },
+      "status": "solving",
+      "pid": 13620,
+      "started_local": "2026-11-03T02:25:29.392009+08:00"
+    }
+  ],
+  "automation_id": "cao-rlc-x",
+  "helpers": {
+    "analyzer": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/analyze_rlc.py",
+    "candidate_generator": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/prepare_opt_round.py",
+    "generator_scope": "Terminal perturbations plus common_taper_delta_mm for H_common/V_common, bounded +/-0.25mm, only shoulder moves and pads/contacts fixed; V_common wide-stem width factor0.65..1.35: move7stem/shoulder vertices only, narrow chip pad/RLC/slot/free stub endpoint fixed."
+  },
+  "last_observed": {
+    "pid": 13620,
+    "started_local": "2026-11-03T02:24:58.380948+08:00",
+    "deadline_local": "2026-11-03T03:49:57.547958+08:00",
+    "completed": [],
+    "status": "solving",
+    "updated_local": "2026-11-03T02:25:29.393355+08:00",
+    "case": "caoxrlc-r10-vwide-H2V1",
+    "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r10-projects-v1\\caoxrlc-r10-vwide-H2V1.cst",
+    "solver_started_local": "2026-11-03T02:25:29.392009+08:00",
+    "solver_limit_seconds": 1500
+  },
+  "latest_observation": {
+    "pid": 13620,
+    "started_local": "2026-11-03T02:24:58.380948+08:00",
+    "deadline_local": "2026-11-03T03:49:57.547958+08:00",
+    "completed": [],
+    "status": "solving",
+    "updated_local": "2026-11-03T02:25:29.393355+08:00",
+    "case": "caoxrlc-r10-vwide-H2V1",
+    "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r10-projects-v1\\caoxrlc-r10-vwide-H2V1.cst",
+    "solver_started_local": "2026-11-03T02:25:29.392009+08:00",
+    "solver_limit_seconds": 1500
+  },
+  "resume_results": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_base_v1r1",
+  "resume_cases": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/rlc-base-resume-cases.json",
+  "mirror_policy": "Windows-local archives; independent best-effort remote sync retries",
+  "baseline_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_rlc_base_v1/seven_state_diagnostic.json",
+  "active_round": "r10",
+  "active_results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r10_v1",
+  "next_coarse_frequencies_GHz": [
+    9,
+    9.1,
+    9.2,
+    9.3,
+    9.4,
+    9.5,
+    9.625,
+    9.75,
+    9.875,
+    10
+  ],
+  "sampling_user_update": "User authorized10 direct frequencies during r01 deployment; preserve frozen running r01 four-point cases and use10 from next round; reduce batch count to target20-30min",
+  "ppt_scope": {
+    "cao_groups_only": [
+      "original-paper-band reproduction",
+      "best9-10GHz optimized result"
+    ],
+    "exclude_intermediate_iterations": true,
+    "contents": "native layer views/key dimensions/switch description, co-polar amplitude/phase, fixed-order phase error; disclose convergence/pass status",
+    "timing": "Update best X-band group after choosing and validating best candidate; do not add every round"
+  },
+  "r05_merge_manifest": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/h5trim-seven-merge-manifest.json",
+  "h5trim_seven_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_h5trim_seven/seven_state_diagnostic.json",
+  "best_audited_complete_candidate": "r08-residualtrim",
+  "best_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r08",
+  "r06_metrics": {
+    "H": {
+      "worst_relative_deg": 33.60244062233846,
+      "worst_cyclic_deg": 39.207109827664766,
+      "minimum_amp_dB": -1.558265914902997
+    },
+    "V": {
+      "worst_relative_deg": 62.278220381694496,
+      "worst_cyclic_deg": 62.278220381694496,
+      "minimum_amp_dB": -1.4491959221194652
+    }
+  },
+  "ppt_delivery": {
+    "standalone": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T结构与结果汇报.pptx",
+    "merged": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/文献单元快速复现与混合结构粗算.pptx",
+    "standalone_sha256": "a94128b4cf0591b7bb67fae3180d3dd8d644c18e5f52753a71511a1fb96dc816",
+    "merged_sha256": "2eb5693c34e41d6eec7c18e1191d56f04bce7b9ffb7836af559fd3472b5d967f",
+    "old_first38_slide_chart_workbook_parts_byte_identical": true,
+    "old_first38_render_byte_identical": true,
+    "unchanged_Cao1to7_render_byte_identical": true,
+    "merged_Cao_renders_match_standalone": true,
+    "Cao_slides": [
+      39,
+      50
+    ],
+    "selected_result": "r08-residualtrim",
+    "validation": [
+      "final-fonts-v5-validation.json",
+      "merged-v5-validation.json"
+    ]
+  },
+  "ppt_style": {
+    "Chinese": "SimSun",
+    "Latin_numbers": "Times New Roman",
+    "body": "black",
+    "key_conclusions": "dark blue bold",
+    "tables": "three horizontal rules"
+  },
+  "r07_metrics": {
+    "H": {
+      "worst_relative_deg": 25.929340002255003,
+      "worst_cyclic_deg": 34.01587794705648,
+      "minimum_amp_dB": -1.195061316213377
+    },
+    "V": {
+      "worst_relative_deg": 57.423711143007836,
+      "worst_cyclic_deg": 57.423711143007836,
+      "minimum_amp_dB": -1.3952928718229924
+    }
+  },
+  "r08_metrics": {
+    "H": {
+      "worst_relative_deg": 22.342142639234112,
+      "worst_cyclic_deg": 24.122130016695422,
+      "minimum_amp_dB": -1.1586706959637585
+    },
+    "V": {
+      "worst_relative_deg": 47.47110546280541,
+      "worst_cyclic_deg": 47.47110546280541,
+      "minimum_amp_dB": -1.51658397944588
+    }
+  },
+  "r10_merge_manifest": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/vwide-seven-merge-manifest.json"
+}
