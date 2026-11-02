@@ -1,0 +1,519 @@
+{
+  "round": "r04",
+  "pairs": [
+    {
+      "candidate": "h5trim",
+      "polarization": "H",
+      "states": [
+        "H1V1",
+        "H2V1"
+      ],
+      "frequency_GHz": [
+        9,
+        9.1,
+        9.2,
+        9.3,
+        9.4,
+        9.5,
+        9.625,
+        9.75,
+        9.875,
+        10
+      ],
+      "terminal_delta_mm": {
+        "H_L2": -0.6,
+        "H_L5": -0.65
+      },
+      "pair_relative_deg": [
+        -75.01665537917809,
+        -78.85757367797815,
+        -82.9674638925239,
+        -87.42680324484895,
+        -92.21094537375276,
+        -97.1413392078972,
+        -102.8607380119501,
+        -106.55995681116121,
+        -105.15566048961122,
+        -92.41845524752202
+      ],
+      "pair_error_deg": [
+        14.983344620821924,
+        11.142426322021834,
+        7.032536107476119,
+        2.5731967551510593,
+        -2.2109453737527645,
+        -7.141339207897204,
+        -12.860738011950104,
+        -16.559956811161214,
+        -15.155660489611222,
+        -2.4184552475220187
+      ],
+      "baseline_pair_relative_deg": [
+        -115.41036490580478,
+        null,
+        null,
+        null,
+        null,
+        -117.83254714128988,
+        null,
+        122.32085811053884,
+        null,
+        162.5239352274274
+      ],
+      "change_from_baseline_deg": [
+        40.39370952662671,
+        null,
+        null,
+        null,
+        null,
+        20.69120793339266,
+        null,
+        131.11918507829995,
+        null,
+        105.05760952505057
+      ],
+      "baseline_comparison_exact_common_frequencies_only": true,
+      "amplitude_dB": [
+        [
+          -0.3039624094874556,
+          -0.3162432677026077,
+          -0.33221828915856927,
+          -0.35398083164124766,
+          -0.3843961508916885,
+          -0.42792148416847253,
+          -0.5127354237450279,
+          -0.660755717150533,
+          -0.9487392687959737,
+          -1.5974126616619342
+        ],
+        [
+          -1.1092693981215866,
+          -1.1291558164174544,
+          -1.1526678521814284,
+          -1.1780580988450975,
+          -1.2015876028773085,
+          -1.2175551221776297,
+          -1.2162536326824238,
+          -1.1795955453332847,
+          -1.1017318197905326,
+          -0.987482429712796
+        ]
+      ],
+      "minimum_amplitude_dB": [
+        -1.1092693981215866,
+        -1.1291558164174544,
+        -1.1526678521814284,
+        -1.1780580988450975,
+        -1.2015876028773085,
+        -1.2175551221776297,
+        -1.2162536326824238,
+        -1.1795955453332847,
+        -1.1017318197905326,
+        -1.5974126616619342
+      ],
+      "native_phase_deg": [
+        [
+          -108.25408633781014,
+          -119.36715575125322,
+          -130.19066495960703,
+          -140.89024799974644,
+          -151.68859129174842,
+          -162.88638922237283,
+          -178.10481190550436,
+          164.05268413677967,
+          141.07157166022273,
+          107.45350972205428
+        ],
+        [
+          176.72925828301177,
+          161.77527057076864,
+          146.84187114786909,
+          131.68294875540465,
+          116.10046333449881,
+          99.97227156972997,
+          79.03445008254556,
+          57.49272732561846,
+          35.9159111706115,
+          15.035054474532249
+        ]
+      ],
+      "audits": [
+        {
+          "state": "H1V1",
+          "seconds": 240.84400000004098,
+          "deltaS": [
+            0.0236278,
+            0.0374649
+          ],
+          "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r04-projects-v1\\caoxrlc-r04-h5trim-H1V1.cst",
+          "source_sha256": "1ca83e23a069402f0ab09d8623ca5d4389a9ad2cb4878ea3dbc1d4c11ddcf64c",
+          "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r04/native/runs/caoxrlc-r04-h5trim-H1V1",
+          "native_audit_pass": true,
+          "geometry": {
+            "passed": true,
+            "native_history_sha256": "69a44a8116271acb97024249986a314e050fdbe15bc54efa6b679a1e8a08ec66",
+            "RF_nets": 10,
+            "series_RLC": 8,
+            "ground_shunts": 8,
+            "on_branches": [
+              "H_L4",
+              "V_L10"
+            ],
+            "actual_polygons_match_preflight": true,
+            "all_contacts_inside_actual_metal": true,
+            "all_shunts_on_unslotted_ground": true,
+            "paper_geometry_certified": false
+          },
+          "archive_sha256": "8aa42cafed594bbcd15f53edef7f78507a94eb0fd77720214dbb650c6266efcc"
+        },
+        {
+          "state": "H2V1",
+          "seconds": 242.15600000019185,
+          "deltaS": [
+            0.0767577,
+            0.0280693
+          ],
+          "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r04-projects-v1\\caoxrlc-r04-h5trim-H2V1.cst",
+          "source_sha256": "bf85e2b45f847c8acb561ebbf1d560b701adf460e7f7a76acee0a0aa3d670b8a",
+          "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r04/native/runs/caoxrlc-r04-h5trim-H2V1",
+          "native_audit_pass": true,
+          "geometry": {
+            "passed": true,
+            "native_history_sha256": "b3cb355e44f1c0a6ab58b43dea97c2e4076436399af1b028dde4641c9d1ffab0",
+            "RF_nets": 10,
+            "series_RLC": 8,
+            "ground_shunts": 8,
+            "on_branches": [
+              "H_L5",
+              "V_L10"
+            ],
+            "actual_polygons_match_preflight": true,
+            "all_contacts_inside_actual_metal": true,
+            "all_shunts_on_unslotted_ground": true,
+            "paper_geometry_certified": false
+          },
+          "archive_sha256": "81ef34828df8c146eed2098449375dd2a44a40707cb5abc41b4fff4f1131e833"
+        }
+      ],
+      "complete_two_state_pair": true,
+      "two_bit_certified": false,
+      "model": "fixed scaled RLC; coarse sensitivity only",
+      "launch_change": null
+    },
+    {
+      "candidate": "v7v9minus",
+      "polarization": "V",
+      "states": [
+        "H1V1",
+        "H1V2"
+      ],
+      "frequency_GHz": [
+        9,
+        9.1,
+        9.2,
+        9.3,
+        9.4,
+        9.5,
+        9.625,
+        9.75,
+        9.875,
+        10
+      ],
+      "terminal_delta_mm": {
+        "V_L7": -0.6,
+        "V_L9": -0.6
+      },
+      "pair_relative_deg": [
+        -66.51867620769934,
+        -71.90774413261573,
+        -78.26528510574566,
+        -85.80100292046272,
+        -94.67890380187137,
+        -104.93912528745555,
+        -119.1265831615646,
+        -133.3044621270329,
+        -146.65233880457842,
+        -155.78694140858107
+      ],
+      "pair_error_deg": [
+        23.481323792300657,
+        18.092255867384267,
+        11.734714894254353,
+        4.198997079537264,
+        -4.678903801871371,
+        -14.939125287455568,
+        -29.12658316156461,
+        -43.304462127032906,
+        -56.65233880457842,
+        -65.78694140858107
+      ],
+      "baseline_pair_relative_deg": [
+        -93.94258926168843,
+        null,
+        null,
+        null,
+        null,
+        -141.0446625012195,
+        null,
+        -165.85565130343122,
+        null,
+        -177.47525192564282
+      ],
+      "change_from_baseline_deg": [
+        27.423913053989082,
+        null,
+        null,
+        null,
+        null,
+        36.10553721376397,
+        null,
+        32.55118917639831,
+        null,
+        21.68831051706175
+      ],
+      "baseline_comparison_exact_common_frequencies_only": true,
+      "amplitude_dB": [
+        [
+          -0.19155958020511554,
+          -0.19584607008108673,
+          -0.20216592801882846,
+          -0.21152880459728818,
+          -0.22588558412640874,
+          -0.2510676249505559,
+          -0.3367740294522497,
+          -0.3817312620924914,
+          -0.39359760607243677,
+          -0.46223667178827255
+        ],
+        [
+          -0.976514348590853,
+          -1.049324635843531,
+          -1.134181267853982,
+          -1.2298812300231508,
+          -1.3331306051693328,
+          -1.4433090339911792,
+          -1.6339033980612208,
+          -1.5791288218745851,
+          -1.3711679906540466,
+          -1.1600279256151145
+        ]
+      ],
+      "minimum_amplitude_dB": [
+        -0.976514348590853,
+        -1.049324635843531,
+        -1.134181267853982,
+        -1.2298812300231508,
+        -1.3331306051693328,
+        -1.4433090339911792,
+        -1.6339033980612208,
+        -1.5791288218745851,
+        -1.3711679906540466,
+        -1.1600279256151145
+      ],
+      "native_phase_deg": [
+        [
+          -106.9232808850091,
+          -115.32465401386499,
+          -123.49005401722101,
+          -131.52383257107996,
+          -139.55613665841005,
+          -147.75229539751018,
+          -158.4153224093718,
+          -169.30343633263234,
+          177.5882302863924,
+          161.83607411541925
+        ],
+        [
+          -173.44195709270846,
+          172.7676018535193,
+          158.24466087703334,
+          142.67516450845733,
+          125.7649595397186,
+          107.30857931503425,
+          82.45809442906364,
+          57.392101540334785,
+          30.93589148181395,
+          6.049132706838172
+        ]
+      ],
+      "audits": [
+        {
+          "state": "H1V1",
+          "seconds": 256.0779999999795,
+          "deltaS": [
+            0.312391,
+            0.0510429
+          ],
+          "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r04-projects-v1\\caoxrlc-r04-v7v9minus-H1V1.cst",
+          "source_sha256": "5f94725e430c5e5f4db4f5dbd399d96c1065321c3c0c34f49cb524ed8d7039f0",
+          "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r04/native/runs/caoxrlc-r04-v7v9minus-H1V1",
+          "native_audit_pass": true,
+          "geometry": {
+            "passed": true,
+            "native_history_sha256": "4547b7fbde9a50ed8ebfb127984ad592fe702847f74351c40112fbb7edeca00b",
+            "RF_nets": 10,
+            "series_RLC": 8,
+            "ground_shunts": 8,
+            "on_branches": [
+              "H_L4",
+              "V_L10"
+            ],
+            "actual_polygons_match_preflight": true,
+            "all_contacts_inside_actual_metal": true,
+            "all_shunts_on_unslotted_ground": true,
+            "paper_geometry_certified": false
+          },
+          "archive_sha256": "5b1937e75e24b27ff56c7574bd083f5026dc45fa8759ba3aa914c3b85f18008b"
+        },
+        {
+          "state": "H1V2",
+          "seconds": 253.10999999986961,
+          "deltaS": [
+            0.259385,
+            0.0883174
+          ],
+          "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r04-projects-v1\\caoxrlc-r04-v7v9minus-H1V2.cst",
+          "source_sha256": "9d77d511bad61de85cfe9ee71d8c50d74992edac2e0f59cafe81920cd4f7f460",
+          "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r04/native/runs/caoxrlc-r04-v7v9minus-H1V2",
+          "native_audit_pass": true,
+          "geometry": {
+            "passed": true,
+            "native_history_sha256": "1b5d714657e056bd03585132710a166f5a82fb2a73424382ace0260229766cf2",
+            "RF_nets": 10,
+            "series_RLC": 8,
+            "ground_shunts": 8,
+            "on_branches": [
+              "H_L4",
+              "V_L9"
+            ],
+            "actual_polygons_match_preflight": true,
+            "all_contacts_inside_actual_metal": true,
+            "all_shunts_on_unslotted_ground": true,
+            "paper_geometry_certified": false
+          },
+          "archive_sha256": "1846dab3400d5bd4d626863edb282e7c0af4170a6c453aa31881bf2069a282f4"
+        }
+      ],
+      "complete_two_state_pair": true,
+      "two_bit_certified": false,
+      "model": "fixed scaled RLC; coarse sensitivity only",
+      "launch_change": null
+    }
+  ],
+  "completed_case_audits": [
+    {
+      "state": "H1V1",
+      "seconds": 240.84400000004098,
+      "deltaS": [
+        0.0236278,
+        0.0374649
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r04-projects-v1\\caoxrlc-r04-h5trim-H1V1.cst",
+      "source_sha256": "1ca83e23a069402f0ab09d8623ca5d4389a9ad2cb4878ea3dbc1d4c11ddcf64c",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r04/native/runs/caoxrlc-r04-h5trim-H1V1",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "69a44a8116271acb97024249986a314e050fdbe15bc54efa6b679a1e8a08ec66",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L4",
+          "V_L10"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "8aa42cafed594bbcd15f53edef7f78507a94eb0fd77720214dbb650c6266efcc"
+    },
+    {
+      "state": "H2V1",
+      "seconds": 242.15600000019185,
+      "deltaS": [
+        0.0767577,
+        0.0280693
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r04-projects-v1\\caoxrlc-r04-h5trim-H2V1.cst",
+      "source_sha256": "bf85e2b45f847c8acb561ebbf1d560b701adf460e7f7a76acee0a0aa3d670b8a",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r04/native/runs/caoxrlc-r04-h5trim-H2V1",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "b3cb355e44f1c0a6ab58b43dea97c2e4076436399af1b028dde4641c9d1ffab0",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L5",
+          "V_L10"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "81ef34828df8c146eed2098449375dd2a44a40707cb5abc41b4fff4f1131e833"
+    },
+    {
+      "state": "H1V1",
+      "seconds": 256.0779999999795,
+      "deltaS": [
+        0.312391,
+        0.0510429
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r04-projects-v1\\caoxrlc-r04-v7v9minus-H1V1.cst",
+      "source_sha256": "5f94725e430c5e5f4db4f5dbd399d96c1065321c3c0c34f49cb524ed8d7039f0",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r04/native/runs/caoxrlc-r04-v7v9minus-H1V1",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "4547b7fbde9a50ed8ebfb127984ad592fe702847f74351c40112fbb7edeca00b",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L4",
+          "V_L10"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "5b1937e75e24b27ff56c7574bd083f5026dc45fa8759ba3aa914c3b85f18008b"
+    },
+    {
+      "state": "H1V2",
+      "seconds": 253.10999999986961,
+      "deltaS": [
+        0.259385,
+        0.0883174
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r04-projects-v1\\caoxrlc-r04-v7v9minus-H1V2.cst",
+      "source_sha256": "9d77d511bad61de85cfe9ee71d8c50d74992edac2e0f59cafe81920cd4f7f460",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r04/native/runs/caoxrlc-r04-v7v9minus-H1V2",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "1b5d714657e056bd03585132710a166f5a82fb2a73424382ace0260229766cf2",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L4",
+          "V_L9"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "1846dab3400d5bd4d626863edb282e7c0af4170a6c453aa31881bf2069a282f4"
+    }
+  ],
+  "pending_cases": [],
+  "cannot_combine_different_geometries": true
+}

@@ -1,0 +1,52 @@
+{
+  "status": "r05_running_missing5",
+  "samegeometry_history_equal_except_switch_RC": true,
+  "reuse_completed_r04_states": [
+    "H1V1",
+    "H2V1"
+  ],
+  "solve_only_r05_states": [
+    "H3V1",
+    "H4V1",
+    "H1V2",
+    "H1V3",
+    "H1V4"
+  ],
+  "sources": [
+    {
+      "id": "caoxrlc-r04-h5trim-H1V1",
+      "state": "H1V1",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r04_v1/case_snapshots/caoxrlc-r04-h5trim-H1V1.zip"
+    },
+    {
+      "id": "caoxrlc-r04-h5trim-H2V1",
+      "state": "H2V1",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r04_v1/case_snapshots/caoxrlc-r04-h5trim-H2V1.zip"
+    },
+    {
+      "id": "caoxrlc-r05-h5trimfull-H3V1",
+      "state": "H3V1",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r05_v1/case_snapshots/caoxrlc-r05-h5trimfull-H3V1.zip"
+    },
+    {
+      "id": "caoxrlc-r05-h5trimfull-H4V1",
+      "state": "H4V1",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r05_v1/case_snapshots/caoxrlc-r05-h5trimfull-H4V1.zip"
+    },
+    {
+      "id": "caoxrlc-r05-h5trimfull-H1V2",
+      "state": "H1V2",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r05_v1/case_snapshots/caoxrlc-r05-h5trimfull-H1V2.zip"
+    },
+    {
+      "id": "caoxrlc-r05-h5trimfull-H1V3",
+      "state": "H1V3",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r05_v1/case_snapshots/caoxrlc-r05-h5trimfull-H1V3.zip"
+    },
+    {
+      "id": "caoxrlc-r05-h5trimfull-H1V4",
+      "state": "H1V4",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r05_v1/case_snapshots/caoxrlc-r05-h5trimfull-H1V4.zip"
+    }
+  ]
+}

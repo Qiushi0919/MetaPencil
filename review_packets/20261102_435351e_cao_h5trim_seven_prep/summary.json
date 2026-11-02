@@ -1,0 +1,163 @@
+{
+  "status": "r05_solving",
+  "r04_current_liveness": "exited; completed21:38:50, dead observed21:48:16 after reconnect",
+  "user_action_requested": "resolved: user unlocked and xqs reconnected",
+  "no_duplicate_solver_launched": true,
+  "H_pair_result": {
+    "candidate": "h5trim",
+    "prior": "r03h2h5minus",
+    "frequency_GHz": [
+      9,
+      9.1,
+      9.2,
+      9.3,
+      9.4,
+      9.5,
+      9.625,
+      9.75,
+      9.875,
+      10
+    ],
+    "pair_error_deg": [
+      14.983344620821924,
+      11.142426322021834,
+      7.032536107476119,
+      2.5731967551510593,
+      -2.2109453737527645,
+      -7.141339207897204,
+      -12.860738011950104,
+      -16.559956811161214,
+      -15.155660489611222,
+      -2.4184552475220187
+    ],
+    "incremental_phase_change_deg": [
+      10.109596351247717,
+      10.32660506856422,
+      10.516727673890443,
+      10.663980863232695,
+      10.736100186388711,
+      10.690453668549253,
+      10.40632428371299,
+      9.850408154950003,
+      9.150801035663903,
+      8.761460834556033
+    ],
+    "max_pair_error_deg": 16.559956811161214,
+    "minimum_amplitude_dB": -1.5974126616619342,
+    "sampled_pair_error_le20": true,
+    "full_four_state_2bit": false,
+    "numerically_converged": false
+  },
+  "r05_samegeometry_sevenstate_history_equivalence": true,
+  "r05_preserves16RLC_and10points": true,
+  "r05_reuses_r04_H1V1_H2V1": true,
+  "r05_missing_states": [
+    "H3V1",
+    "H4V1",
+    "H1V2",
+    "H1V3",
+    "H1V4"
+  ],
+  "merge_manifest": "code/h5trim-seven-merge-manifest.json",
+  "base_commit": "435351e015a95c00505ff23756aba8f229d74917",
+  "full2bit_certified": false,
+  "r04_all4_native_audits_pass": true,
+  "r05_observation": {
+    "pid": 54752,
+    "started_local": "2026-11-02T21:58:10.864721+08:00",
+    "deadline_local": "2026-11-02T22:38:10.149521+08:00",
+    "completed": [],
+    "status": "solving",
+    "updated_local": "2026-11-02T21:58:46.847878+08:00",
+    "case": "caoxrlc-r05-h5trimfull-H3V1",
+    "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r05-projects-v1\\caoxrlc-r05-h5trimfull-H3V1.cst",
+    "solver_started_local": "2026-11-02T21:58:46.846878+08:00",
+    "solver_limit_seconds": 900
+  },
+  "r05_heartbeat": {
+    "pid": 54752,
+    "runner_alive": true,
+    "observed_local": "2026-11-02T21:59:33.070573+08:00",
+    "runner_status": {
+      "pid": 54752,
+      "started_local": "2026-11-02T21:58:10.864721+08:00",
+      "deadline_local": "2026-11-02T22:38:10.149521+08:00",
+      "completed": [],
+      "status": "solving",
+      "updated_local": "2026-11-02T21:58:46.847878+08:00",
+      "case": "caoxrlc-r05-h5trimfull-H3V1",
+      "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r05-projects-v1\\caoxrlc-r05-h5trimfull-H3V1.cst",
+      "solver_started_local": "2026-11-02T21:58:46.846878+08:00",
+      "solver_limit_seconds": 900
+    },
+    "solver_log_tail": "2026-11-02 21:58:46   *** Warning ***\n\n                      There are large gaps between some frequency sampling interval definitions: From\n                      9 to 9.1 GHz, from 9.1 to 9.2 GHz, from 9.2 to 9.3 GHz, from 9.3 to 9.4 GHz,\n                      from 9.4 to 9.5 GHz, from 9.5 to 9.625 GHz, from 9.625 to 9.75 GHz, from 9.75\n                      to 9.875 GHz, from 9.875 to 10 GHz.  More...\n\n                      ------------------------------------------------------------------------------\n2026-11-02 21:58:46   In order to get an optimal performance, hyperthreading is ignored for parallel\n                      computations.\n\n                      ------------------------------------------------------------------------------\n2026-11-02 21:58:54   \n                      ------------------------------------------------------------------------------\n2026-11-02 21:58:55   *** Warning ***\n\n2026-11-02 21:58:55   `tbbmalloc_proxy` cannot replace memory allocation routines (status:-1):\n                      Success: free (ucrtbase.dll), byte pattern: <C7442410000000008B4424>\n                      Fail: _msize (ucrtbase.dll), byte pattern: <E9ABFFFFFFCCCCCCCCCCCC>\n                      The solver will continue with a reduced performance.\n\n                      ------------------------------------------------------------------------------\n2026-11-02 21:58:55   Units settings: \n\n                        Dimensions: mm\n                        Frequency:  GHz\n                        Time:       ns\n\n                      ------------------------------------------------------------------------------\n2026-11-02 21:58:55   Boundary conditions: \n\n                        YZsymmetry: none\n                        XZsymmetry: none\n                        XYsymmetry: none\n\n                        Xmin: unit cell\n                        Xmax: unit cell\n\n                        Ymin: unit cell\n                        Ymax: unit cell\n\n                        Zmin: electric\n                        Zmax: open\n\n                      ------------------------------------------------------------------------------\n2026-11-02 21:58:55   Order settings: \n\n                        Solver order   : 2nd (constant)\n                        Curved elements: up to order 3 (automatic)\n\n                      ------------------------------------------------------------------------------\n2026-11-02 21:58:55     Mesh time                :\t7 s\n\n\n                      ------------------------------------------------------------------------------\n2026-11-02 21:58:55   \n                      ================================================================================\n                      Frequency Domain Solver calculation cycle started\n\n                      ------------------------------------------------------------------------------\n2026-11-02 21:58:55   Solver started at: 2026-11-02 21:58:55 +0800\n\n                        Module:  Frequency Domain: S-Parameter (Win 64)\n                        Version: 2025.2 Release from 2024-12-16 (change 1361105)\n\n                        Free disk space at solver start is 435 GB.\n\n\n                      ------------------------------------------------------------------------------\n2026-11-02 21:58:55   An iterative solver will be used first.\n\n                      ------------------------------------------------------------------------------\n2026-11-02 21:58:55   Some mesh edges of lossy metal sheets and alike are refined before running the simulation. Please consider thickening \n                      the sheet or changing its material to PEC to avoid the mesh growth. Click here to show the positions.\n\n                      ------------------------------------------------------------------------------\n2026-11-02 21:58:56   *** Warning ***\n\n2026-11-02 21:58:56   Low memory: Only 9.03 GB of 127.72 GB available.\n\n\n                      ------------------------------------------------------------------------------\n2026-11-02 21:58:57   The low frequency stabilization is not applied to periodic problems.\n\n                      ------------------------------------------------------------------------------\n2026-11-02 21:58:57     Calculation 1 of 1 (Frequency: 9.5 GHz, Theta: 0, Phi: 0)\n\n\n                      ------------------------------------------------------------------------------\n2026-11-02 21:58:58   Adaptive mesh refinement pass 1\n\n                      ------------------------------------------------------------------------------\n2026-11-02 21:59:02   Performing block excitation with block size 2 and 4 threads.  More...\n\n                      ------------------------------------------------------------------------------\n2026-11-02 21:59:20     Matrix setup time        :\t2 s\n                        Solver setup             :\t1 s\n                        Degrees of freedom       :\t344180\n                        Number of mesh cells     :\t49427\n\n                        "
+  },
+  "r05_source_case_sha256": "031313dab76915bf8de9bcd8abc44e31af8a6715b5107e0db8308ab8511ccc1e",
+  "r05_deployed_case_sha256": "7e6ad83c59657460afdbcd8604860252b34d5bcea9ae690eeaf86db4f468a587",
+  "model_level": "Fixed scaled diagnostic RLC; not measured X-band hardware",
+  "normalization": "Native powerwave S;20log10(abs(S));fixed -90deg state step",
+  "V_incremental": {
+    "comparison": "r04 v7v9minus versus r02 v9minus; only V_L7 terminal additional -0.60mm",
+    "frequency_GHz": [
+      9,
+      9.1,
+      9.2,
+      9.3,
+      9.4,
+      9.5,
+      9.625,
+      9.75,
+      9.875,
+      10
+    ],
+    "phase_change_deg": [
+      -1.3404417008153473,
+      -1.3474938269586687,
+      -1.3692218122428699,
+      -1.4093893666415624,
+      -1.4716181022616865,
+      -1.5591885535314418,
+      -1.6793195945371053,
+      -1.9813044124811938,
+      -2.4222260840200533,
+      -3.1213452846987195
+    ],
+    "error_deg": [
+      23.481323792300657,
+      18.092255867384267,
+      11.734714894254353,
+      4.198997079537264,
+      -4.678903801871371,
+      -14.939125287455568,
+      -29.12658316156461,
+      -43.304462127032906,
+      -56.65233880457842,
+      -65.78694140858107
+    ],
+    "previous_error_deg": [
+      24.821765493116004,
+      19.439749694342936,
+      13.103936706497194,
+      5.608386446178855,
+      -3.207285699609656,
+      -13.379936733924097,
+      -27.447263567027505,
+      -41.32315771455171,
+      -54.23011272055837,
+      -62.66559612388235
+    ],
+    "minimum_amplitude_dB": [
+      -0.976514348590853,
+      -1.049324635843531,
+      -1.134181267853982,
+      -1.2298812300231508,
+      -1.3331306051693328,
+      -1.4433090339911792,
+      -1.6339033980612208,
+      -1.5791288218745851,
+      -1.3711679906540466,
+      -1.1600279256151145
+    ],
+    "conclusion": "No upper-band improvement; do not incorporate L7 shortening into chosen H geometry. Pair diagnostic only, unconverged."
+  }
+}
