@@ -1,0 +1,22 @@
+{
+  "sync_entry.md": "c538bc9d1b918cee7d0edaeed478f4e98cacfeab1b0a1052537eedfdcde4df8a",
+  "README.md": "d0b97009dff95fce25bbc95a6a5783dfbdd524b937ac265aabc175e4f7ba9841",
+  "optimization_plan.json": "6b0da54264e2bceded2079fdb501306a8fcec3002557ecf65b372d52924bebc8",
+  "verify_delivery.py": "c5cb949088d59f41c27232dbbbc6b1e03d30ca5c436923f9cf825b0bdf844bda",
+  "run_manifest.json": "a7c52cd123d5d0da10dd4b2976b8a389c9e7365940ba6b8e952ef16c770e9d56",
+  "tools/caorlcr19stop.py": "5713d049bef06a243d1336311692b2ff92ffc647fb853539c1ad1c96b9fe155c",
+  "tools/caorlcr19stop.cmd": "56f8e5b873093d0cf180f03c10dc4054d4c542c1688e78d102c7ab6944680c88",
+  "report/.build/typography.py": "2e6f662626713006d763d7a1c9f8c59470fe92ff30e89fcd359c6bfbbdcc4e35",
+  "report/.build/final-fonts-v10-validation.json": "ceb34bd60995134586521664f4e6e86f95f1d3c478e0c050d9f6bc4cf11b49a7",
+  "report/.build/merge.py": "fe7b5c02eec3960b39193a9ad8aaf8ff8d5e7b5e539f2c6ed40aa0338b14e78c",
+  "report/.build/merged-v10-validation.json": "2dd2f367e4bc895d103e85fc6257d701461567f1518d5b29d35220fe9ffcf5d5",
+  "report/.build/delivery-v10.json": "ec291dbca893c4b35b119e7b86dfd7bbe3b0816f79b7cfecdd21eba1cb217825",
+  "report/.build/preservation.json": "8d2b2d13655eb5281662ed4ded98a8e779748241e8b77e037ff5f8a2cee31be2",
+  "report/.build/build.mjs": "cc86bb29866f6c02031585a5c8af575d8b14cd95b952f4c85e86fce83ee136e1",
+  "report/.build/selection.json": "2ce2da524b844dbf3a60c60bc22131a7674054a534bf63c329073e5c89c524e9",
+  "report/.build/finalize.mjs": "7997931ee51ba7a46810a892574c8f3b5dc8e18084e4e028e64f76f4bfca31bc",
+  "report/.build/final-v10-renders/slide-11.png": "68b590ce59b02666feea4e61f370659bf76b0b16ac873f10f068ee65b83e9b7d",
+  "report/.build/final-v10-renders/slide-12.png": "4109dc6274b9a18b1b46deacfeca838d93bad89137481ea2120b01c776a09aff",
+  "Results_rlc_r19_v1/heartbeat.json": "4ec7ae558ee45624c9e1b210ffd09d2857ca91ccf07beb244170e3b6c3a3f589",
+  "Results_rlc_r19_v1/user_stop_receipt.json": "17b4ff89a0625697bd6b193ef382f5bf15694c21f87ce47bb6af8dcc168c9ee0"
+}

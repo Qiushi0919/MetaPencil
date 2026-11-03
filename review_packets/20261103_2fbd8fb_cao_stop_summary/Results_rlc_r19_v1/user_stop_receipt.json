@@ -1,0 +1,67 @@
+{
+  "user_request": "Stop optimizing; update and summarize PPT only",
+  "time": "2026-11-03T15:21:06.654574+08:00",
+  "runner_pid": 47156,
+  "scope": "Only verified r19 runner and its descendants; preserve existing projects and unrelated CST sessions",
+  "tree_before": [
+    {
+      "ProcessId": 47156,
+      "ParentProcessId": 50288,
+      "Name": "python.exe",
+      "CommandLine": "\"C:\\Program Files (x86)\\CST Studio Suite 2025\\Opera\\code\\bin\\python.exe\" C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r19-runtime-v1\\literature_run.py"
+    },
+    {
+      "ProcessId": 50936,
+      "ParentProcessId": 47156,
+      "Name": "conhost.exe",
+      "CommandLine": "\\??\\C:\\WINDOWS\\system32\\conhost.exe 0x4"
+    },
+    {
+      "ProcessId": 32696,
+      "ParentProcessId": 47156,
+      "Name": "CST DESIGN ENVIRONMENT_AMD64.exe",
+      "CommandLine": "\"C:\\Program Files (x86)\\CST Studio Suite 2025\\AMD64\\CST DESIGN ENVIRONMENT_AMD64.exe\" --quiet"
+    },
+    {
+      "ProcessId": 5624,
+      "ParentProcessId": 32696,
+      "Name": "DBStorageServer_AMD64.exe",
+      "CommandLine": "\"C:\\Program Files (x86)\\CST Studio Suite 2025\\AMD64\\DBStorageServer_AMD64.exe\" -bus tcp:host=127.0.0.1,port=64577 -address com.cst.DE.GlobalDBStorageService_0:/com/cst/DE/GlobalDBStorageObject/0 -global -ppid 32696 -cst-version:2025:2:20241216 \"-info:\""
+    },
+    {
+      "ProcessId": 53696,
+      "ParentProcessId": 32696,
+      "Name": "modeler_AMD64.exe",
+      "CommandLine": "\"C:\\Program Files (x86)\\CST Studio Suite 2025\\AMD64\\modeler_AMD64.exe\" -bus tcp:host=127.0.0.1,port=64577 -address com.cst.DE.Modeler_0:/com/cst/DE/Modeler/0:77 -cst-version:2025:2:20241216 \"-info:C:\\Users\\xqs\\AppData\\Local\\Temp\\13\\CSTDE1\\Temp\\DE1\\Untitled_0.cst\""
+    },
+    {
+      "ProcessId": 22496,
+      "ParentProcessId": 32696,
+      "Name": "schematic_AMD64.exe",
+      "CommandLine": "\"C:\\Program Files (x86)\\CST Studio Suite 2025\\AMD64\\schematic_AMD64.exe\" -bus tcp:host=127.0.0.1,port=64577 -address com.cst.DE.DS_0:/com/cst/DE/DS/0:0 -cst-version:2025:2:20241216 \"-info:C:\\Users\\xqs\\AppData\\Local\\Temp\\13\\CSTDE1\\Temp\\DE1\\Untitled_0.cst\""
+    },
+    {
+      "ProcessId": 51380,
+      "ParentProcessId": 32696,
+      "Name": "SchematicEditor_AMD64.exe",
+      "CommandLine": "\"C:\\Program Files (x86)\\CST Studio Suite 2025\\AMD64\\SchematicEditor_AMD64.exe\" bus tcp:host=127.0.0.1,port=64577 address:com.cst.DE.SchematicEditorService_0:/com/cst/DE/SchematicEditorObject/0 embedded -cst-version:2025:2:20241216 \"C:\\Users\\xqs\\AppData\\Local\\Temp\\13\\CSTDE1\\Temp\\DE1\\Untitled_0.cst\""
+    },
+    {
+      "ProcessId": 42812,
+      "ParentProcessId": 53696,
+      "Name": "TetMesh_AMD64.exe",
+      "CommandLine": "\"C:\\Program Files (x86)\\CST Studio Suite 2025\\AMD64\\TetMesh_AMD64.exe\" 127.0.0.1:64646:53696 \"C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r19-projects-v1\\caoxrlc-r19-vtaper10-H1V2.cst\" \"^\" \"[MesherCmdCode][--code vsbdi0]\" \"C:\\Program Files (x86)\\CST Studio Suite 2025\" \"-cst-version:2025:2:20241216\" \"-procgroup0\" \"-sockets=0,1\" \"\" \"\" \"\" \"\""
+    },
+    {
+      "ProcessId": 54776,
+      "ParentProcessId": 42812,
+      "Name": "conhost.exe",
+      "CommandLine": "\\??\\C:\\WINDOWS\\system32\\conhost.exe 0x4"
+    }
+  ],
+  "taskkill_returncode": 0,
+  "taskkill_stdout": "\u6210\u529f: \u5df2\u7ec8\u6b62 PID 54776 (\u5c5e\u4e8e PID 42812 \u5b50\u8fdb\u7a0b)\u7684\u8fdb\u7a0b\u3002\n\u6210\u529f: \u5df2\u7ec8\u6b62 PID 42812 (\u5c5e\u4e8e PID 53696 \u5b50\u8fdb\u7a0b)\u7684\u8fdb\u7a0b\u3002\n\u6210\u529f: \u5df2\u7ec8\u6b62 PID 5624 (\u5c5e\u4e8e PID 32696 \u5b50\u8fdb\u7a0b)\u7684\u8fdb\u7a0b\u3002\n\u6210\u529f: \u5df2\u7ec8\u6b62 PID 53696 (\u5c5e\u4e8e PID 32696 \u5b50\u8fdb\u7a0b)\u7684\u8fdb\u7a0b\u3002\n\u6210\u529f: \u5df2\u7ec8\u6b62 PID 22496 (\u5c5e\u4e8e PID 32696 \u5b50\u8fdb\u7a0b)\u7684\u8fdb\u7a0b\u3002\n\u6210\u529f: \u5df2\u7ec8\u6b62 PID 51380 (\u5c5e\u4e8e PID 32696 \u5b50\u8fdb\u7a0b)\u7684\u8fdb\u7a0b\u3002\n\u6210\u529f: \u5df2\u7ec8\u6b62 PID 50936 (\u5c5e\u4e8e PID 47156 \u5b50\u8fdb\u7a0b)\u7684\u8fdb\u7a0b\u3002\n\u6210\u529f: \u5df2\u7ec8\u6b62 PID 32696 (\u5c5e\u4e8e PID 47156 \u5b50\u8fdb\u7a0b)\u7684\u8fdb\u7a0b\u3002\n\u6210\u529f: \u5df2\u7ec8\u6b62 PID 47156 (\u5c5e\u4e8e PID 50288 \u5b50\u8fdb\u7a0b)\u7684\u8fdb\u7a0b\u3002\n",
+  "taskkill_stderr": "",
+  "remaining_tree_pids": [],
+  "verified_stopped": true
+}
