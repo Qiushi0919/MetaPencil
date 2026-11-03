@@ -1,0 +1,12 @@
+{
+  "pid": 15776,
+  "started_local": "2026-11-03T10:52:40.760778+08:00",
+  "deadline_local": "2026-11-03T12:42:39.994722+08:00",
+  "completed": [],
+  "status": "solving",
+  "updated_local": "2026-11-03T10:53:47.825374+08:00",
+  "case": "caoxrlc-r13-uppercomp-H1V1",
+  "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r13-projects-v1\\caoxrlc-r13-uppercomp-H1V1.cst",
+  "solver_started_local": "2026-11-03T10:53:47.824322+08:00",
+  "solver_limit_seconds": 1500
+}

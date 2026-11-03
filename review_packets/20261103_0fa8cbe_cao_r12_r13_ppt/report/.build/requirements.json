@@ -1,0 +1,15 @@
+{
+  "requiredNativeChartOwnerSlides": [
+    7,
+    9,
+    10,
+    11
+  ],
+  "requiredNativeTableOwnerSlides": [
+    1,
+    3,
+    6,
+    8,
+    12
+  ]
+}

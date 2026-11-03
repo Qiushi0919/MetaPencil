@@ -1,0 +1,127 @@
+{
+  "passed": true,
+  "only_changed_nets": [
+    "H_L2",
+    "V_L7",
+    "V_common"
+  ],
+  "seven_histories_equal_except_switch_RC": true,
+  "common_taper_and_contacts_fixed": true,
+  "minimum_gap_mm": [
+    0.010263438712950192,
+    "V_L7",
+    "V_common"
+  ],
+  "checks": [
+    {
+      "state": "H1V1",
+      "changed_history": [
+        "H_L2 nominal pad and fanout",
+        "V_L7 nominal pad and fanout",
+        "V_common nominal pad and fanout"
+      ],
+      "changed_nets": [
+        "H_L2",
+        "V_L7",
+        "V_common"
+      ],
+      "parts_and_frequencies_identical": true
+    },
+    {
+      "state": "H2V1",
+      "changed_history": [
+        "H_L2 nominal pad and fanout",
+        "V_L7 nominal pad and fanout",
+        "V_common nominal pad and fanout"
+      ],
+      "changed_nets": [
+        "H_L2",
+        "V_L7",
+        "V_common"
+      ],
+      "parts_and_frequencies_identical": true
+    },
+    {
+      "state": "H3V1",
+      "changed_history": [
+        "H_L2 nominal pad and fanout",
+        "V_L7 nominal pad and fanout",
+        "V_common nominal pad and fanout"
+      ],
+      "changed_nets": [
+        "H_L2",
+        "V_L7",
+        "V_common"
+      ],
+      "parts_and_frequencies_identical": true
+    },
+    {
+      "state": "H4V1",
+      "changed_history": [
+        "H_L2 nominal pad and fanout",
+        "V_L7 nominal pad and fanout",
+        "V_common nominal pad and fanout"
+      ],
+      "changed_nets": [
+        "H_L2",
+        "V_L7",
+        "V_common"
+      ],
+      "parts_and_frequencies_identical": true
+    },
+    {
+      "state": "H1V2",
+      "changed_history": [
+        "H_L2 nominal pad and fanout",
+        "V_L7 nominal pad and fanout",
+        "V_common nominal pad and fanout"
+      ],
+      "changed_nets": [
+        "H_L2",
+        "V_L7",
+        "V_common"
+      ],
+      "parts_and_frequencies_identical": true
+    },
+    {
+      "state": "H1V3",
+      "changed_history": [
+        "H_L2 nominal pad and fanout",
+        "V_L7 nominal pad and fanout",
+        "V_common nominal pad and fanout"
+      ],
+      "changed_nets": [
+        "H_L2",
+        "V_L7",
+        "V_common"
+      ],
+      "parts_and_frequencies_identical": true
+    },
+    {
+      "state": "H1V4",
+      "changed_history": [
+        "H_L2 nominal pad and fanout",
+        "V_L7 nominal pad and fanout",
+        "V_common nominal pad and fanout"
+      ],
+      "changed_nets": [
+        "H_L2",
+        "V_L7",
+        "V_common"
+      ],
+      "parts_and_frequencies_identical": true
+    }
+  ],
+  "width_range_checks": {
+    "identity": true,
+    "boundaries": [
+      0.65,
+      1.9
+    ],
+    "out_of_range_rejected": [
+      0.64,
+      1.91
+    ],
+    "seven_wide_vertices_only": true
+  }
+}
