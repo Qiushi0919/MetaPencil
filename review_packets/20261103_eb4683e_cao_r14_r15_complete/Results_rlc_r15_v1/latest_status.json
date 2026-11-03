@@ -1,0 +1,12 @@
+{
+  "pid": 54528,
+  "started_local": "2026-11-03T12:30:59.891901+08:00",
+  "deadline_local": "2026-11-03T13:40:59.156365+08:00",
+  "completed": [],
+  "status": "solving",
+  "updated_local": "2026-11-03T12:31:36.502404+08:00",
+  "case": "caoxrlc-r15-vtaperplus-H2V1",
+  "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r15-projects-v1\\caoxrlc-r15-vtaperplus-H2V1.cst",
+  "solver_started_local": "2026-11-03T12:31:36.501321+08:00",
+  "solver_limit_seconds": 1500
+}
