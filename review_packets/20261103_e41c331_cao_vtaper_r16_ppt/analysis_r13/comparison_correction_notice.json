@@ -1,0 +1,6 @@
+{
+  "affected_file": "analysis_r13/versus_r12.json",
+  "issue": "Legacy comparison helper loaded r13 as both reference and candidate, giving false zero deltas and wrong reference metrics. Original file preserved. Seven-state raw analyses and reported r12/r13 metrics unaffected.",
+  "replacement": "analysis_r13/versus_r12_corrected.json",
+  "prevention": "code/compare_seven.py requires distinct resolved paths and saves source hashes; checked reference maxima and nonzero deltas against independent diagnostics."
+}

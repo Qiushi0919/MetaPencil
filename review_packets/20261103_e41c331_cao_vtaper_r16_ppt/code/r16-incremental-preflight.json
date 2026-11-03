@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "parent": "r14r15-vtaperplus",
+  "only_changed_net": "V_L9",
+  "terminal_change_mm": [
+    -0.85,
+    -0.95
+  ],
+  "range_explicit_extension": {
+    "V_L9": [
+      -0.97,
+      1
+    ],
+    "lower_exclusive": true,
+    "identity_boundary_and_rejection_pass": true
+  },
+  "minimum_gap_mm": [
+    0.027975014402548914,
+    "H_L2",
+    "H_common"
+  ],
+  "histories_equal_except_switch_RC": true,
+  "checks": [
+    {
+      "state": "H1V1",
+      "history_changes": [
+        "V_L9 nominal pad and fanout"
+      ],
+      "parts_contacts_ground_slots_frequencies_solver_identical": true
+    },
+    {
+      "state": "H1V2",
+      "history_changes": [
+        "V_L9 nominal pad and fanout"
+      ],
+      "parts_contacts_ground_slots_frequencies_solver_identical": true
+    }
+  ],
+  "source_case_sha256": "6103ac67498fe9b70c42344fa9cf27a884fc71add4e31b946c3bc70f327bc358"
+}

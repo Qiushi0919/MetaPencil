@@ -1,0 +1,48 @@
+{
+  "status": "local_geometry_and_circuit_preflight_pass",
+  "case_sha256": "6103ac67498fe9b70c42344fa9cf27a884fc71add4e31b946c3bc70f327bc358",
+  "cases": 2,
+  "plan": {
+    "name": "r16",
+    "frequencies_GHz": [
+      9.0,
+      9.1,
+      9.2,
+      9.3,
+      9.4,
+      9.5,
+      9.625,
+      9.75,
+      9.875,
+      10.0
+    ],
+    "max_passes": 6,
+    "budget_minutes": 40,
+    "case_budget_seconds": 1500,
+    "purpose": "Single-parameter V_L9 terminal trim -0.85 to -0.95mm relative to vtaper seven. V2 negative trough -24.66deg at9.75 and V2->V3 edge29.95deg at10 motivate a positive relative-phase correction. Earlier V9 trim had positive phase shift on another geometry; current sensitivity is unverified. Two states only, no2bit or full-cycle claim. Same10 directpoints/9.5GHz6passes.",
+    "candidates": [
+      {
+        "name": "v9trim",
+        "terminal_delta_mm": {
+          "H_L2": -0.7,
+          "H_L5": -0.58,
+          "H_L3": -0.5,
+          "V_L9": -0.95,
+          "V_L8": -0.8,
+          "V_L7": 0.65
+        },
+        "common_width_factor": {
+          "V_common": 1.9
+        },
+        "states": [
+          "H1V1",
+          "H1V2"
+        ],
+        "common_taper_delta_mm": {
+          "V_common": 0.25
+        }
+      }
+    ]
+  },
+  "all_RLC_and_contacts_unchanged": true
+}
