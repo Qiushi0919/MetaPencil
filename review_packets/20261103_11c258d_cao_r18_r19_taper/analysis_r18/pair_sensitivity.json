@@ -1,0 +1,131 @@
+{
+  "round": "r18",
+  "pairs": [],
+  "completed_case_audits": [
+    {
+      "state": "H1V1",
+      "seconds": 422.96899999980815,
+      "deltaS": [
+        0.0549765,
+        0.038275,
+        0.0286031,
+        0.0226129
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r18-projects-v1\\caoxrlc-r18-vtaper45-H1V1.cst",
+      "source_sha256": "b5a5465a2c29d13d98edbb5403be69a93af31d92ef725fc1958011aeb6e65c96",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r18/native/runs/caoxrlc-r18-vtaper45-H1V1",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "615a6c4643b0e208e3e7f38d1846dfbbc6e17b2e9b035b2caaf62309d0571009",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L4",
+          "V_L10"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "7326d406d2ffef4814cf4c337a0f91521850682b7d9ab7b00b796d19c92019cb"
+    },
+    {
+      "state": "H1V2",
+      "seconds": 554.0,
+      "deltaS": [
+        0.0584874,
+        0.0715563,
+        0.0454616,
+        0.0251636,
+        0.01709
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r18-projects-v1\\caoxrlc-r18-vtaper45-H1V2.cst",
+      "source_sha256": "7d170f9b5aef2786950958bfc30c6045c3cdb128866436f926d88b532687460d",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r18/native/runs/caoxrlc-r18-vtaper45-H1V2",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "52fadb8b51661025b25380ead4454301a54bde65423101f56c73d4841f26929d",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L4",
+          "V_L9"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "649d5d0d8d05dbc7be70eadd8917a9ea658802243913a698435117ff279dab40"
+    },
+    {
+      "state": "H1V3",
+      "seconds": 524.780999999959,
+      "deltaS": [
+        0.109155,
+        0.115868,
+        0.0552997,
+        0.0306305,
+        0.0127981
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r18-projects-v1\\caoxrlc-r18-vtaper45-H1V3.cst",
+      "source_sha256": "978010258e5cf32a341cdd3e374e268c063ec64e230535304075025f56b9d9f9",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r18/native/runs/caoxrlc-r18-vtaper45-H1V3",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "22881f453bfb8d45e8c1472d79cdfa5d7d65e94edd44cc02d24fe3e3c32d96e0",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L4",
+          "V_L8"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "173fb70fa7ff654787c795dde64d89907ef3edb0ad1785ef0f6862a4284ed41b"
+    },
+    {
+      "state": "H1V4",
+      "seconds": 541.3279999999795,
+      "deltaS": [
+        0.0310634,
+        0.0526773,
+        0.0300262,
+        0.0206148,
+        0.0194609
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r18-projects-v1\\caoxrlc-r18-vtaper45-H1V4.cst",
+      "source_sha256": "0a0de04a40fe58a6d0277b7078441946f647d5466c4933d4f8f179aca1bdd13d",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r18/native/runs/caoxrlc-r18-vtaper45-H1V4",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "2686191e0da788dc55c702aebc5fd46456050242483ace1d80c1c96ad6e0aff0",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L4",
+          "V_L7"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "74c17e55ec3cd42989bc5f7de518d9e5a658382a597fc78e1e26da8ad039c157"
+    }
+  ],
+  "pending_cases": [],
+  "cannot_combine_different_geometries": true
+}
