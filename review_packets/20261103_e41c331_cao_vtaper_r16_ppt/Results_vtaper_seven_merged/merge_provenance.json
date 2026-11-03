@@ -1,0 +1,83 @@
+{
+  "status": "seven_archives_copied_hash_verified",
+  "samegeometry_history_equal_except_switch_RC": true,
+  "all_parts_match_fixed_RLC_baseline": true,
+  "identical_frequency_and_solver_history": true,
+  "minimum_gap_mm": [
+    0.027975014402548914,
+    "H_L2",
+    "H_common"
+  ],
+  "reuse_completed_r14_states": [
+    "H1V1",
+    "H1V3",
+    "H1V4"
+  ],
+  "solve_only_r15_states": [
+    "H2V1",
+    "H3V1",
+    "H4V1",
+    "H1V2"
+  ],
+  "sources": [
+    {
+      "id": "caoxrlc-r14-vtaperplus-H1V1",
+      "state": "H1V1",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_rlc_r14_v1/case_snapshots/caoxrlc-r14-vtaperplus-H1V1.zip",
+      "sha256": "b19ea1e5356e8fa4b00df9ed3ddc050830d3ef562e8d98c8ca1881fd39c8ef08",
+      "destination": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_vtaper_seven_merged/case_snapshots/caoxrlc-r14-vtaperplus-H1V1.zip"
+    },
+    {
+      "id": "caoxrlc-r15-vtaperplus-H2V1",
+      "state": "H2V1",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_rlc_r15_v1/case_snapshots/caoxrlc-r15-vtaperplus-H2V1.zip",
+      "sha256": "cade33aa2664bf7f8b2a5216e61b763bf3dbc61c5c0156d60a5cfff351ecba54",
+      "destination": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_vtaper_seven_merged/case_snapshots/caoxrlc-r15-vtaperplus-H2V1.zip"
+    },
+    {
+      "id": "caoxrlc-r15-vtaperplus-H3V1",
+      "state": "H3V1",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_rlc_r15_v1/case_snapshots/caoxrlc-r15-vtaperplus-H3V1.zip",
+      "sha256": "634fba9652f59e1755d0b3a683eaf2c4d8735f66ed57f4cf82c4d17f0c5a05f3",
+      "destination": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_vtaper_seven_merged/case_snapshots/caoxrlc-r15-vtaperplus-H3V1.zip"
+    },
+    {
+      "id": "caoxrlc-r15-vtaperplus-H4V1",
+      "state": "H4V1",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_rlc_r15_v1/case_snapshots/caoxrlc-r15-vtaperplus-H4V1.zip",
+      "sha256": "673a77957fce22170a939443bcd2bfa1ac318ad1040c158255af934089eb2c86",
+      "destination": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_vtaper_seven_merged/case_snapshots/caoxrlc-r15-vtaperplus-H4V1.zip"
+    },
+    {
+      "id": "caoxrlc-r15-vtaperplus-H1V2",
+      "state": "H1V2",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_rlc_r15_v1/case_snapshots/caoxrlc-r15-vtaperplus-H1V2.zip",
+      "sha256": "5b9777145d2dfe5749f8273a3de4a754ba24596e7fcdeaaf343441b8244acbd4",
+      "destination": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_vtaper_seven_merged/case_snapshots/caoxrlc-r15-vtaperplus-H1V2.zip"
+    },
+    {
+      "id": "caoxrlc-r14-vtaperplus-H1V3",
+      "state": "H1V3",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_rlc_r14_v1/case_snapshots/caoxrlc-r14-vtaperplus-H1V3.zip",
+      "sha256": "6f29fb309e3dd4d25aff0d042b75fe4d5119d31bbdf8de2966d0f1dba600a2a8",
+      "destination": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_vtaper_seven_merged/case_snapshots/caoxrlc-r14-vtaperplus-H1V3.zip"
+    },
+    {
+      "id": "caoxrlc-r14-vtaperplus-H1V4",
+      "state": "H1V4",
+      "archive": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_rlc_r14_v1/case_snapshots/caoxrlc-r14-vtaperplus-H1V4.zip",
+      "sha256": "5dc86a431a930f97e6205ff1d672799c35f4817aeacfeb372ec5ff16c951c7f8",
+      "destination": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao\u53ccSP4T_9\u81f310GHz\u8fc1\u9891_20261102/Results_vtaper_seven_merged/case_snapshots/caoxrlc-r14-vtaperplus-H1V4.zip"
+    }
+  ],
+  "merged_cases_sha256": "1666e95c2a0751eb31248fa88e632befe58306383fe3fd28064a580e9b6cffea",
+  "results_destination": "Results_vtaper_seven_merged",
+  "analysis_destination": "analysis_vtaper_seven",
+  "r14_V3_last_two_deltaS": [
+    0.0304903,
+    0.0119545
+  ],
+  "all_state_center_convergence_not_yet_met": true,
+  "merged_at": "2026-11-03T13:11:24.978231+08:00",
+  "source_archives_unchanged": true
+}

@@ -1,0 +1,3948 @@
+{
+  "status": "r16_V9_single_parameter_two_state_solving",
+  "base_commit": "f8512f7048b8e91b299a3a2151495bf94029a607",
+  "target_GHz": [
+    9,
+    10
+  ],
+  "baseline_cases": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/rlc-base-cases.json",
+  "baseline_results": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_base_v1",
+  "fixed_RLC": {
+    "Ron_ohm": 1.6,
+    "L_nH": 0.037894736842105266,
+    "Coff_fF": 45.473684210526315,
+    "Cshunt_fF": 15.915789473684212,
+    "interpretation": "Mathematically scaled diagnostic RLC, not measured X-band BGSA hardware"
+  },
+  "states": [
+    "H1V1",
+    "H2V1",
+    "H3V1",
+    "H4V1",
+    "H1V2",
+    "H1V3",
+    "H1V4"
+  ],
+  "frequencies_GHz": [
+    9,
+    9.25,
+    9.5,
+    9.75,
+    10
+  ],
+  "phase_order_H": [
+    "L4",
+    "L5",
+    "L3",
+    "L2"
+  ],
+  "phase_order_V": [
+    "L10",
+    "L9",
+    "L8",
+    "L7"
+  ],
+  "ideal_relative_deg": [
+    0,
+    -90,
+    -180,
+    90
+  ],
+  "acceptance": {
+    "max_relative_and_cyclic_adjacent_error_deg": 20,
+    "coarse_min_amplitude_dB": -3,
+    "paper_amplitude_reference_dB": -1,
+    "final_direct_points_min": 21,
+    "final_adaptive_GHz": [
+      9,
+      9.5,
+      10
+    ],
+    "consecutive_DeltaS_below": 0.03,
+    "consecutive_passes": 2,
+    "phase_stability_required": true
+  },
+  "constraints": [
+    "No state sorting, fitting, S conjugation or cross-geometry combination",
+    "16 actual RLC contacts and saved history audited before and after every solve",
+    "Preserve previous results; own process only; 4 threads and 2.5GiB available-memory guard"
+  ],
+  "next_action": "Do not repeat caorlcr16.cmd. Audit each archive with code/analyze_pairs.py r16. Once two ready, compare V1/V2 against analysis_vtaper_seven at all same10direct points (not the old baseline common subset): signed relative errors, slopes, worst error, amplitude, both states center convergence. Two states cannot certify2bit. If trim helps, test same-geometry remaining V states and H plus V4 upper-edge compensation based on evidence; no cross-geometry state mixing. Continue optimization. Final candidate>=21direct points and9/9.5/10 adaptive checks plus lasttwo DeltaS<.03 and amplitude/phase stability; current vtaper H1V3 convergence failure stays explicit.",
+  "candidate_history": [
+    {
+      "round": "r01",
+      "plan": {
+        "name": "r01",
+        "frequencies_GHz": [
+          9,
+          9.5,
+          9.75,
+          10
+        ],
+        "max_passes": 3,
+        "budget_minutes": 45,
+        "case_budget_seconds": 900,
+        "purpose": "Independent plus/minus terminal sensitivity: H_L4 baseline notch and V_L9 state2 excessive phase delay. Partial pairs cannot certify2bit.",
+        "candidates": [
+          {
+            "name": "h4minus",
+            "terminal_delta_mm": {
+              "H_L4": -0.1
+            },
+            "states": [
+              "H1V1",
+              "H2V1"
+            ]
+          },
+          {
+            "name": "h4plus",
+            "terminal_delta_mm": {
+              "H_L4": 0.1
+            },
+            "states": [
+              "H1V1",
+              "H2V1"
+            ]
+          },
+          {
+            "name": "v9minus",
+            "terminal_delta_mm": {
+              "V_L9": -0.15
+            },
+            "states": [
+              "H1V1",
+              "H1V2"
+            ]
+          },
+          {
+            "name": "v9plus",
+            "terminal_delta_mm": {
+              "V_L9": 0.15
+            },
+            "states": [
+              "H1V1",
+              "H1V2"
+            ]
+          }
+        ]
+      },
+      "status": "complete_audited_8_cases",
+      "pid": 51120,
+      "completed_local": "2026-11-02T20:16:31.048425+08:00",
+      "analysis": "analysis_r01/pair_sensitivity.json"
+    },
+    {
+      "round": "r02",
+      "plan": {
+        "name": "r02",
+        "frequencies_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "max_passes": 3,
+        "budget_minutes": 40,
+        "case_budget_seconds": 900,
+        "purpose": "R01 H_L4 +/-0.10mm failed upper-band pair error despite center improvement. Test longest inactive H_L2 terminal shortening as a parasitic-branch hypothesis, not established cause. V_L9 shortening improves pair error across common samples; expand shortening. Independent pairs, no 2bit claim. Fixed RLC and launch.",
+        "candidates": [
+          {
+            "name": "h2minus",
+            "terminal_delta_mm": {
+              "H_L2": -0.6
+            },
+            "states": [
+              "H1V1",
+              "H2V1"
+            ]
+          },
+          {
+            "name": "v9minus",
+            "terminal_delta_mm": {
+              "V_L9": -0.6
+            },
+            "states": [
+              "H1V1",
+              "H1V2"
+            ]
+          }
+        ]
+      },
+      "status": "complete_audited_4_cases",
+      "pid": 45492,
+      "completed_local": "2026-11-02T20:39:49.300750+08:00",
+      "analysis": "analysis_r02/pair_sensitivity.json"
+    },
+    {
+      "round": "r03",
+      "plan": {
+        "name": "r03",
+        "frequencies_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "max_passes": 3,
+        "budget_minutes": 40,
+        "case_budget_seconds": 900,
+        "purpose": "H L2 shortening reduces upper-band anomaly but pair remains -30 to-55deg; test additional L5 shortening. V L9 shortening produces frequency-dependent residual; test common launch taper shoulder +0.25mm with fixed pads and RLC. These are hypotheses, not mechanism proof or2bit certification.",
+        "candidates": [
+          {
+            "name": "h2h5minus",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.5
+            },
+            "states": [
+              "H1V1",
+              "H2V1"
+            ]
+          },
+          {
+            "name": "v9taper",
+            "terminal_delta_mm": {
+              "V_L9": -0.6
+            },
+            "common_taper_delta_mm": {
+              "V_common": 0.25
+            },
+            "states": [
+              "H1V1",
+              "H1V2"
+            ]
+          }
+        ]
+      },
+      "status": "complete_audited_4_cases",
+      "pid": 52900,
+      "completed_local": "2026-11-02T21:09:30.268141+08:00",
+      "analysis": "analysis_r03/pair_sensitivity.json"
+    },
+    {
+      "round": "r04",
+      "plan": {
+        "name": "r04",
+        "frequencies_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "max_passes": 3,
+        "budget_minutes": 40,
+        "case_budget_seconds": 900,
+        "purpose": "H additional0.15mm L5 shortening follows measured r02->r03 sensitivity; test without asserting extrapolation. V positive common taper did not help upper band; restore baseline taper and test inactive longest V_L7 shortening with V_L9-.6 retained. Separate pairs, fixed RLC, not2bit certification.",
+        "candidates": [
+          {
+            "name": "h5trim",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.65
+            },
+            "states": [
+              "H1V1",
+              "H2V1"
+            ]
+          },
+          {
+            "name": "v7v9minus",
+            "terminal_delta_mm": {
+              "V_L7": -0.6,
+              "V_L9": -0.6
+            },
+            "states": [
+              "H1V1",
+              "H1V2"
+            ]
+          }
+        ]
+      },
+      "status": "complete_audited_4_cases",
+      "pid": 55240,
+      "completed_local": "2026-11-02T21:38:50.967144+08:00",
+      "dead_observed_local": "2026-11-02T21:48:16.125002+08:00",
+      "analysis": "analysis_r04/pair_sensitivity.json"
+    },
+    {
+      "round": "r05",
+      "plan": {
+        "name": "r05",
+        "frequencies_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "max_passes": 3,
+        "budget_minutes": 40,
+        "case_budget_seconds": 900,
+        "purpose": "Complete same h5trim geometry seven conditional states. Reuse audited r04 H1V1/H2V1 without recomputation; solve remaining5 only after prior worker confirmed exited. No acceptance until all7 verified.",
+        "candidates": [
+          {
+            "name": "h5trimfull",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.65
+            },
+            "states": [
+              "H3V1",
+              "H4V1",
+              "H1V2",
+              "H1V3",
+              "H1V4"
+            ]
+          }
+        ]
+      },
+      "status": "complete_5_missing_states_audited_7_same_geometry",
+      "pid": 54752,
+      "started_local": "2026-11-02T21:58:10.864721+08:00",
+      "completed_local": "2026-11-02T22:20:35.260310+08:00",
+      "dead_observed_local": "2026-11-02T22:20:59.555160+08:00",
+      "analysis": "analysis_h5trim_seven/seven_state_diagnostic.json"
+    },
+    {
+      "round": "r06",
+      "plan": {
+        "name": "r06",
+        "frequencies_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "max_passes": 3,
+        "budget_minutes": 45,
+        "case_budget_seconds": 900,
+        "purpose": "Full seven-state candidate from audited h5trim geometry. H3 error -32 to -36deg through lower/mid band and V3 -29 to -56deg motivate first H_L3/V_L8 trim hypotheses; V_L9-.6 direction supported by r02. Combined candidate must be assessed as one geometry; effects not isolated and no phase-success prediction. H4 upper edge and all cyclic errors remain explicit objectives. Fixed scaled RLC; coarse unconverged screen.",
+        "candidates": [
+          {
+            "name": "fulltrim",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.65,
+              "H_L3": -0.25,
+              "V_L9": -0.6,
+              "V_L8": -0.4
+            },
+            "states": [
+              "H1V1",
+              "H2V1",
+              "H3V1",
+              "H4V1",
+              "H1V2",
+              "H1V3",
+              "H1V4"
+            ]
+          }
+        ]
+      },
+      "status": "complete_audited_7_states_unconverged",
+      "pid": 55424,
+      "started_local": "2026-11-02T22:27:46.029295+08:00",
+      "completed_local": "2026-11-02T22:58:36.684998+08:00",
+      "analysis": "analysis_r06/seven_state_diagnostic.json"
+    },
+    {
+      "round": "r07",
+      "plan": {
+        "name": "r07",
+        "frequencies_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "max_passes": 6,
+        "budget_minutes": 110,
+        "case_budget_seconds": 1500,
+        "purpose": "Numerical mesh-sensitivity control of the current best complete seven-state r06 geometry before further geometric optimization. All7 failed two successive DeltaS<.03 and H3 shift7-10deg may be comparable to discretization uncertainty. Preserve every geometric network, contact, RLC and10 direct sample points; increase9.5GHz adaptive ceiling3->6 only. Compare complete seven-state amplitude/phase errors without combining coarse and refined states. Not final band certification.",
+        "candidates": [
+          {
+            "name": "meshcheck",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.65,
+              "H_L3": -0.25,
+              "V_L9": -0.6,
+              "V_L8": -0.4
+            },
+            "states": [
+              "H1V1",
+              "H2V1",
+              "H3V1",
+              "H4V1",
+              "H1V2",
+              "H1V3",
+              "H1V4"
+            ]
+          }
+        ]
+      },
+      "status": "complete_audited_7_states_6_center_converged",
+      "pid": 52524,
+      "started_local": "2026-11-02T23:10:07.176573+08:00",
+      "completed_local": "2026-11-03T00:10:32.089500+08:00",
+      "analysis": "analysis_r07/seven_state_diagnostic.json"
+    },
+    {
+      "round": "r08",
+      "plan": {
+        "name": "r08",
+        "frequencies_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "max_passes": 6,
+        "budget_minutes": 110,
+        "case_budget_seconds": 1500,
+        "purpose": "Full seven-state candidate guided by r07 mesh-controlled residuals. H3 remains -22 to -26deg lower/midband, V2 -57.4deg at10GHz and V3 -43.8deg around9.75GHz. Further shorten H_L3 by.25mm,V_L9 by.25mm,V_L8 by.40mm relative to r07; all other geometry/common launches/RLC unchanged. Expected shift direction from earlier terminal screens, magnitude and coupled effects unproven. V2 low-edge overshoot and H4 high-edge residual are explicit risks. Keep10 direct points and6-pass ceiling for like-for-like full-candidate comparison; not broadband certification.",
+        "candidates": [
+          {
+            "name": "residualtrim",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.65,
+              "H_L3": -0.5,
+              "V_L9": -0.85,
+              "V_L8": -0.8
+            },
+            "states": [
+              "H1V1",
+              "H2V1",
+              "H3V1",
+              "H4V1",
+              "H1V2",
+              "H1V3",
+              "H1V4"
+            ]
+          }
+        ]
+      },
+      "status": "complete_audited_7_states_6_center_converged",
+      "pid": 54372,
+      "started_local": "2026-11-03T00:27:24.910711+08:00",
+      "completed_local": "2026-11-03T01:30:26.893898+08:00",
+      "analysis": "analysis_r08/seven_state_diagnostic.json"
+    },
+    {
+      "round": "r09",
+      "plan": {
+        "name": "r09",
+        "frequencies_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "max_passes": 6,
+        "budget_minutes": 65,
+        "case_budget_seconds": 1500,
+        "purpose": "r08 full seven-state evidence shows V2 error +27.02deg at9GHz to -47.47deg at10GHz. Another constant phase shift cannot solve both edges. Compare V common wide-stem width factors0.65 and1.35, keeping r08 terminals, narrow chip pad, RLC endpoints, slot and free coupling-stub end fixed. Each candidate H1V1/H1V2 only for dispersion sensitivity; never combine candidates or certify2bit. Promising direction must be evaluated as one complete seven-state geometry. Six-pass ceiling and10points unchanged.",
+        "candidates": [
+          {
+            "name": "vnarrow",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.65,
+              "H_L3": -0.5,
+              "V_L9": -0.85,
+              "V_L8": -0.8
+            },
+            "states": [
+              "H1V1",
+              "H1V2"
+            ],
+            "common_width_factor": {
+              "V_common": 0.65
+            }
+          },
+          {
+            "name": "vwide",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.65,
+              "H_L3": -0.5,
+              "V_L9": -0.85,
+              "V_L8": -0.8
+            },
+            "states": [
+              "H1V1",
+              "H1V2"
+            ],
+            "common_width_factor": {
+              "V_common": 1.35
+            }
+          }
+        ]
+      },
+      "status": "complete_audited_4_cases",
+      "pid": 49680,
+      "started_local": "2026-11-03T01:41:13.438517+08:00",
+      "completed_local": "2026-11-03T02:16:46.165292+08:00",
+      "analysis": "analysis_r09/incremental_vs_r08.json"
+    },
+    {
+      "round": "r10",
+      "plan": {
+        "name": "r10",
+        "frequencies_GHz": [
+          9,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10
+        ],
+        "max_passes": 6,
+        "budget_minutes": 85,
+        "case_budget_seconds": 1500,
+        "purpose": "Complete the promising same r09 vwide geometry: width1.35 reduces V1/V2 error span74.49->58.45deg and worst47.47->38.36deg, but pair still fails. Reuse audited r09 vwide H1V1/H1V2, solve only remaining5 states with identical geometry/RLC/frequency/solver; merge only these7 same-geometry states before any2bit judgment.",
+        "candidates": [
+          {
+            "name": "vwide",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.65,
+              "H_L3": -0.5,
+              "V_L9": -0.85,
+              "V_L8": -0.8
+            },
+            "states": [
+              "H2V1",
+              "H3V1",
+              "H4V1",
+              "H1V3",
+              "H1V4"
+            ],
+            "common_width_factor": {
+              "V_common": 1.35
+            }
+          }
+        ]
+      },
+      "status": "complete5_audited7_same_geometry",
+      "pid": 13620,
+      "started_local": "2026-11-03T02:25:29.392009+08:00",
+      "completed_local": "2026-11-03T03:09:39.786787+08:00",
+      "analysis": "analysis_vwide_seven/seven_state_diagnostic.json"
+    },
+    {
+      "round": "r11",
+      "plan": {
+        "name": "r11",
+        "frequencies_GHz": [
+          9.0,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10.0
+        ],
+        "max_passes": 6,
+        "budget_minutes": 110,
+        "case_budget_seconds": 1500,
+        "purpose": "Single-geometry full seven-state continuation after vwide complete audit. V1/V2 widening1->1.35 reduces error span74.49->58.44deg and worst47.47->38.36deg with better amplitude; full V has five passing sample points, H edges still fail. Expand V_common width factor1.35->1.70 only, leave all terminals and RLC unchanged. Direction supported but benefit at new width unproven; check H coupling/V3/V4/amplitude and convergence. No mixed geometry or broadband certification.",
+        "candidates": [
+          {
+            "name": "vwide170",
+            "terminal_delta_mm": {
+              "H_L2": -0.6,
+              "H_L5": -0.65,
+              "H_L3": -0.5,
+              "V_L9": -0.85,
+              "V_L8": -0.8
+            },
+            "common_width_factor": {
+              "V_common": 1.7
+            },
+            "states": [
+              "H1V1",
+              "H2V1",
+              "H3V1",
+              "H4V1",
+              "H1V2",
+              "H1V3",
+              "H1V4"
+            ]
+          }
+        ]
+      },
+      "status": "seven_complete_audited_tradeoff",
+      "pid": 20256,
+      "started_local": "2026-11-03T03:16:07.179708+08:00",
+      "completed_local": "2026-11-03T04:17:35.611996+08:00",
+      "analysis": "analysis_r11/seven_state_diagnostic.json",
+      "recovery": "Results_rlc_r11_v1/recovery_observation.json"
+    },
+    {
+      "round": "r12",
+      "plan": {
+        "name": "r12",
+        "frequencies_GHz": [
+          9.0,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10.0
+        ],
+        "max_passes": 6,
+        "budget_minutes": 110,
+        "case_budget_seconds": 1500,
+        "purpose": "Full-seven residual compensation after r11 audits. Width1.70 improves V2 upper error but shifts V4 upper to+36.85deg. H2-H3 low-edge cyclic=-23.39 and H4 upper=+26.44. Extend H_L5 by0.07mm and H_L2 by0.10mm relative r11, and extend V_L7 by0.20mm; fixed Vcommon width1.70 and RLC. This is a joint exploratory compensation based on signed residuals, not established single-branch sensitivities; evaluate entire geometry and amplitude. V2 upper residual may remain. No claim of 2-bit or broadband convergence.",
+        "candidates": [
+          {
+            "name": "edgecomp",
+            "terminal_delta_mm": {
+              "H_L2": -0.5,
+              "H_L5": -0.58,
+              "H_L3": -0.5,
+              "V_L9": -0.85,
+              "V_L8": -0.8,
+              "V_L7": 0.2
+            },
+            "common_width_factor": {
+              "V_common": 1.7
+            },
+            "states": [
+              "H1V1",
+              "H2V1",
+              "H3V1",
+              "H4V1",
+              "H1V2",
+              "H1V3",
+              "H1V4"
+            ]
+          }
+        ]
+      },
+      "status": "seven_complete_audited",
+      "pid": 19624,
+      "started_local": "2026-11-03T09:33:07.502933+08:00",
+      "completed_local": "2026-11-03T10:44:59.083988+08:00",
+      "analysis": "analysis_r12/seven_state_diagnostic.json"
+    },
+    {
+      "round": "r13",
+      "plan": {
+        "name": "r13",
+        "frequencies_GHz": [
+          9.0,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10.0
+        ],
+        "max_passes": 6,
+        "budget_minutes": 110,
+        "case_budget_seconds": 1500,
+        "purpose": "Full-seven joint upper-edge compensation: r12 H4 upper worsened with L2 extension, V2 upper remains -25deg, V4 upper +29.62deg. Shorten H_L2 by0.20mm versus r12; widen Vcommon1.70->1.90 to test further reduction in V2 dispersion, extend V_L7 by0.45mm to compensate V4. No single-branch attribution or assumed success; exact10-point whole-candidate comparison and amplitude reporting required.",
+        "candidates": [
+          {
+            "name": "uppercomp",
+            "terminal_delta_mm": {
+              "H_L2": -0.7,
+              "H_L5": -0.58,
+              "H_L3": -0.5,
+              "V_L9": -0.85,
+              "V_L8": -0.8,
+              "V_L7": 0.65
+            },
+            "common_width_factor": {
+              "V_common": 1.9
+            },
+            "states": [
+              "H1V1",
+              "H2V1",
+              "H3V1",
+              "H4V1",
+              "H1V2",
+              "H1V3",
+              "H1V4"
+            ]
+          }
+        ]
+      },
+      "status": "seven_complete_audited",
+      "pid": 15776,
+      "started_local": "2026-11-03T10:53:47.824322+08:00",
+      "completed_local": "2026-11-03T11:57:41.534703+08:00",
+      "analysis": "analysis_r13/seven_state_diagnostic.json"
+    },
+    {
+      "round": "r14",
+      "plan": {
+        "name": "r14",
+        "frequencies_GHz": [
+          9.0,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10.0
+        ],
+        "max_passes": 6,
+        "budget_minutes": 50,
+        "case_budget_seconds": 1500,
+        "purpose": "Single-parameter V common taper +0.25mm on frozen r13 geometry. r13 V3/V4 errors at10GHz +28.25/+37.30deg, V2 +2.81deg. Screen V1/V3/V4 on exact10 points with same6-pass9.5GHz mesh, then complete same geometry only if promising. No full2bit claim from3states. Prior r03 taper was on different geometry and cannot establish this sensitivity. Expected20-30min, hard50min budget.",
+        "candidates": [
+          {
+            "name": "vtaperplus",
+            "terminal_delta_mm": {
+              "H_L2": -0.7,
+              "H_L5": -0.58,
+              "H_L3": -0.5,
+              "V_L9": -0.85,
+              "V_L8": -0.8,
+              "V_L7": 0.65
+            },
+            "common_width_factor": {
+              "V_common": 1.9
+            },
+            "states": [
+              "H1V1",
+              "H1V3",
+              "H1V4"
+            ],
+            "common_taper_delta_mm": {
+              "V_common": 0.25
+            }
+          }
+        ]
+      },
+      "status": "three_complete_audited_promising",
+      "pid": 54696,
+      "started_local": "2026-11-03T12:02:52.856731+08:00",
+      "completed_local": "2026-11-03T12:27:16.422805+08:00",
+      "analysis": "analysis_r14/v134_vs_analysis_r13.json"
+    },
+    {
+      "round": "r15",
+      "plan": {
+        "name": "r15",
+        "frequencies_GHz": [
+          9.0,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10.0
+        ],
+        "max_passes": 6,
+        "budget_minutes": 70,
+        "case_budget_seconds": 1500,
+        "purpose": "Complete missing H2V1/H3V1/H4V1/H1V2 of the identical r14 vtaperplus geometry. r14 V1/V3/V4 worst relative37.30->26.93deg, minimum-1.039->-0.963dB, but V3 only last pass below.03. Reuse three audited r14 states without claiming convergence or2bit. Same10 direct points/9.5GHz6passes; combine only after exact history/parts/native audits and provenance.",
+        "candidates": [
+          {
+            "name": "vtaperplus",
+            "terminal_delta_mm": {
+              "H_L2": -0.7,
+              "H_L5": -0.58,
+              "H_L3": -0.5,
+              "V_L9": -0.85,
+              "V_L8": -0.8,
+              "V_L7": 0.65
+            },
+            "common_width_factor": {
+              "V_common": 1.9
+            },
+            "states": [
+              "H2V1",
+              "H3V1",
+              "H4V1",
+              "H1V2"
+            ],
+            "common_taper_delta_mm": {
+              "V_common": 0.25
+            }
+          }
+        ]
+      },
+      "status": "four_complete_audited_samegeometry_merged",
+      "pid": 54528,
+      "started_local": "2026-11-03T12:31:36.501321+08:00",
+      "completed_local": "2026-11-03T13:07:06.304933+08:00",
+      "analysis": "analysis_vtaper_seven",
+      "actual_exit_query": "2026-11-03T13:11+08:00"
+    },
+    {
+      "round": "r16",
+      "plan": {
+        "name": "r16",
+        "frequencies_GHz": [
+          9.0,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875,
+          10.0
+        ],
+        "max_passes": 6,
+        "budget_minutes": 40,
+        "case_budget_seconds": 1500,
+        "purpose": "Single-parameter V_L9 terminal trim -0.85 to -0.95mm relative to vtaper seven. V2 negative trough -24.66deg at9.75 and V2->V3 edge29.95deg at10 motivate a positive relative-phase correction. Earlier V9 trim had positive phase shift on another geometry; current sensitivity is unverified. Two states only, no2bit or full-cycle claim. Same10 directpoints/9.5GHz6passes.",
+        "candidates": [
+          {
+            "name": "v9trim",
+            "terminal_delta_mm": {
+              "H_L2": -0.7,
+              "H_L5": -0.58,
+              "H_L3": -0.5,
+              "V_L9": -0.95,
+              "V_L8": -0.8,
+              "V_L7": 0.65
+            },
+            "common_width_factor": {
+              "V_common": 1.9
+            },
+            "states": [
+              "H1V1",
+              "H1V2"
+            ],
+            "common_taper_delta_mm": {
+              "V_common": 0.25
+            }
+          }
+        ]
+      },
+      "status": "solving",
+      "pid": 53240,
+      "started_local": "2026-11-03T13:14:32.813529+08:00"
+    }
+  ],
+  "automation_id": "cao-rlc-x",
+  "helpers": {
+    "analyzer": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/analyze_rlc.py",
+    "candidate_generator": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/prepare_opt_round.py",
+    "generator_scope": "Terminal perturbations plus common_taper_delta_mm for H_common/V_common, bounded +/-0.25mm, only shoulder moves and pads/contacts fixed; V_common wide-stem width factor0.65..1.70: move7stem/shoulder vertices only, narrow chip pad/RLC/slot/free stub endpoint fixed."
+  },
+  "last_observed": {
+    "pid": 53240,
+    "started_local": "2026-11-03T13:13:57.117619+08:00",
+    "deadline_local": "2026-11-03T13:53:56.379988+08:00",
+    "completed": [],
+    "status": "solving",
+    "updated_local": "2026-11-03T13:14:32.814403+08:00",
+    "case": "caoxrlc-r16-v9trim-H1V1",
+    "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r16-projects-v1\\caoxrlc-r16-v9trim-H1V1.cst",
+    "solver_started_local": "2026-11-03T13:14:32.813529+08:00",
+    "solver_limit_seconds": 1500
+  },
+  "latest_observation": {
+    "pid": 53240,
+    "started_local": "2026-11-03T13:13:57.117619+08:00",
+    "deadline_local": "2026-11-03T13:53:56.379988+08:00",
+    "completed": [],
+    "status": "solving",
+    "updated_local": "2026-11-03T13:14:32.814403+08:00",
+    "case": "caoxrlc-r16-v9trim-H1V1",
+    "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r16-projects-v1\\caoxrlc-r16-v9trim-H1V1.cst",
+    "solver_started_local": "2026-11-03T13:14:32.813529+08:00",
+    "solver_limit_seconds": 1500
+  },
+  "resume_results": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_base_v1r1",
+  "resume_cases": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/rlc-base-resume-cases.json",
+  "mirror_policy": "Windows-local archives; independent best-effort remote sync retries",
+  "baseline_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_rlc_base_v1/seven_state_diagnostic.json",
+  "active_round": "r16",
+  "active_results": "Results_rlc_r16_v1",
+  "next_coarse_frequencies_GHz": [
+    9,
+    9.1,
+    9.2,
+    9.3,
+    9.4,
+    9.5,
+    9.625,
+    9.75,
+    9.875,
+    10
+  ],
+  "sampling_user_update": "User authorized10 direct frequencies during r01 deployment; preserve frozen running r01 four-point cases and use10 from next round; reduce batch count to target20-30min",
+  "ppt_scope": {
+    "cao_groups_only": [
+      "original-paper-band reproduction",
+      "best9-10GHz optimized result"
+    ],
+    "exclude_intermediate_iterations": true,
+    "contents": "native layer views/key dimensions/switch description, co-polar amplitude/phase, fixed-order phase error; disclose convergence/pass status",
+    "timing": "Update best X-band group after choosing and validating best candidate; do not add every round"
+  },
+  "r05_merge_manifest": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/h5trim-seven-merge-manifest.json",
+  "h5trim_seven_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_h5trim_seven/seven_state_diagnostic.json",
+  "best_audited_complete_candidate": "r14r15-vtaperplus",
+  "best_analysis": "analysis_vtaper_seven",
+  "r06_metrics": {
+    "H": {
+      "worst_relative_deg": 33.60244062233846,
+      "worst_cyclic_deg": 39.207109827664766,
+      "minimum_amp_dB": -1.558265914902997
+    },
+    "V": {
+      "worst_relative_deg": 62.278220381694496,
+      "worst_cyclic_deg": 62.278220381694496,
+      "minimum_amp_dB": -1.4491959221194652
+    }
+  },
+  "ppt_delivery": {
+    "version": 8,
+    "analysis": "analysis_vtaper_seven",
+    "files": [
+      {
+        "path": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T结构与结果汇报.pptx",
+        "sha256": "13a0a4f9ad842478934f5458e259791462e030e2753eb3db858b8dde1aa2a0a9"
+      },
+      {
+        "path": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/文献单元快速复现与混合结构粗算.pptx",
+        "sha256": "94476a688f1d4c5faaed354d15ccf2b297a35a4a0636ad2200b645a9ad4cc6cf"
+      }
+    ],
+    "all_50_slides_rendered": true,
+    "changed_slides_8_to_12_individually_visually_inspected": true,
+    "original_38_render_byte_identical": true,
+    "Cao_first_7_render_byte_identical": true,
+    "merged_Cao_12_render_matches_standalone": true,
+    "model_limit": "Fixed scaled RLC;6/7 states converge at9.5GHz only;H1V3 .0304903/.0119545 fails lasttwo. Six shared direct samples pass, not continuous or whole-band2bit. H minimum-1.189dB fails paper-1dB;V minimum-0.984dB."
+  },
+  "ppt_style": {
+    "Chinese": "SimSun",
+    "Latin_numbers": "Times New Roman",
+    "body": "black",
+    "key_conclusions": "dark blue bold",
+    "tables": "three horizontal rules"
+  },
+  "r07_metrics": {
+    "H": {
+      "worst_relative_deg": 25.929340002255003,
+      "worst_cyclic_deg": 34.01587794705648,
+      "minimum_amp_dB": -1.195061316213377
+    },
+    "V": {
+      "worst_relative_deg": 57.423711143007836,
+      "worst_cyclic_deg": 57.423711143007836,
+      "minimum_amp_dB": -1.3952928718229924
+    }
+  },
+  "r08_metrics": {
+    "H": {
+      "worst_relative_deg": 22.342142639234112,
+      "worst_cyclic_deg": 24.122130016695422,
+      "minimum_amp_dB": -1.1586706959637585
+    },
+    "V": {
+      "worst_relative_deg": 47.47110546280541,
+      "worst_cyclic_deg": 47.47110546280541,
+      "minimum_amp_dB": -1.51658397944588
+    }
+  },
+  "r10_merge_manifest": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/code/vwide-seven-merge-manifest.json",
+  "vwide_metrics": {
+    "H": {
+      "max_relative_deg": 24.530733815530425,
+      "max_cyclic_deg": 24.530733815530454,
+      "minimum_amp_dB": -1.1955262393307287,
+      "max_relative_phase_change_deg": 2.8699581728567978,
+      "phase_change_deg": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.6861431308565784,
+          1.436499192042504,
+          1.2048928000589854,
+          1.0009911247740035,
+          0.8343897270595448,
+          0.717485713754968,
+          0.6723042028380917,
+          0.809792408804924,
+          1.2917089984503605,
+          2.5140485779914457
+        ],
+        [
+          1.5409441121719283,
+          1.3049641160076817,
+          1.0944836878910564,
+          0.9187140201989905,
+          0.7869330432573065,
+          0.7109628900207667,
+          0.7242584055437646,
+          0.9278028277427666,
+          1.4919891396733647,
+          2.8699581728567978
+        ],
+        [
+          0.7756840586776548,
+          0.5627057384530758,
+          0.3835635538321185,
+          0.24509865587265267,
+          0.15324872342910112,
+          0.11600337243032754,
+          0.16940117733616944,
+          0.3937061068310186,
+          0.9387109726754943,
+          2.1885911762963133
+        ]
+      ],
+      "amplitude_change_dB": [
+        [
+          0.0063882331941111925,
+          0.0060766559323155445,
+          0.005372826822330534,
+          0.0042340171599098975,
+          0.002512649906818931,
+          -3.3755373294808155e-05,
+          -0.005278550397325332,
+          -0.015286676851998027,
+          -0.037014087113499405,
+          -0.09177190805244506
+        ],
+        [
+          -0.005002598998651742,
+          -0.005438382272446418,
+          -0.005798379919436547,
+          -0.00607225256299837,
+          -0.006226465378986745,
+          -0.006212829664478781,
+          -0.0058949536699777205,
+          -0.0052051802680173065,
+          -0.004201884054545468,
+          -0.003106066307666855
+        ],
+        [
+          -0.0028627531865337286,
+          -0.002194095813356167,
+          -0.001581619067454021,
+          -0.0010035012538438526,
+          -0.0004374182391154724,
+          0.0001450265779703308,
+          0.0009826406087590778,
+          0.0022569558024320147,
+          0.005201616839534351,
+          0.016864895369219646
+        ],
+        [
+          -0.004518553619887511,
+          -0.004158836658962883,
+          -0.003854495787415979,
+          -0.00363362129857131,
+          -0.003530641023597625,
+          -0.003556477914116174,
+          -0.0038064886921315155,
+          -0.004323304928070704,
+          -0.00516864465807132,
+          -0.006407995464654481
+        ]
+      ],
+      "both_phase_criteria_pass_samples_GHz": [
+        9.1,
+        9.2,
+        9.3,
+        9.4,
+        9.5,
+        9.625,
+        9.75,
+        9.875
+      ]
+    },
+    "V": {
+      "max_relative_deg": 38.35779220805358,
+      "max_cyclic_deg": 38.35779220805358,
+      "minimum_amp_dB": -1.2913487903209198,
+      "max_relative_phase_change_deg": 16.155650262507947,
+      "phase_change_deg": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -6.933217454705698,
+          -7.041710971041709,
+          -7.083812037278221,
+          -6.990959999152551,
+          -6.657278534604586,
+          -5.933397097089511,
+          -4.194337167473748,
+          -1.1900195250201477,
+          3.280328450617617,
+          9.11331325475183
+        ],
+        [
+          -7.20108050780766,
+          -5.305685922563839,
+          -3.381473127493223,
+          -1.3961722248224646,
+          0.6647150764370622,
+          2.8096032632265633,
+          5.634844099664406,
+          8.69540548920611,
+          12.137855609559267,
+          16.155650262507947
+        ],
+        [
+          5.916404515789225,
+          6.276467825076963,
+          6.673274119920848,
+          7.136283366148348,
+          7.696844815839768,
+          8.391655168096065,
+          9.5190193527622,
+          11.043326245443893,
+          13.11624944208387,
+          15.902519528862001
+        ]
+      ],
+      "amplitude_change_dB": [
+        [
+          -0.01645943176270742,
+          -0.01747207110926452,
+          -0.019050958598509776,
+          -0.021308539110796526,
+          -0.024357136146544167,
+          -0.02838811320948445,
+          -0.03520155207296699,
+          -0.04458422023327224,
+          -0.057276806515332956,
+          -0.07401456061754641
+        ],
+        [
+          -0.0548666517298646,
+          -0.0419032603191295,
+          -0.025784535956074883,
+          -0.004805943947642666,
+          0.0227489993462191,
+          0.057854690224902416,
+          0.11028563603846764,
+          0.16240209437984365,
+          0.1972166768568422,
+          0.20270291255027162
+        ],
+        [
+          0.2252351891249602,
+          0.2189142463573146,
+          0.20834994081014724,
+          0.19331657064747598,
+          0.17422434401975617,
+          0.1522136153454603,
+          0.12304907143569965,
+          0.09496645615418398,
+          0.07018452948854459,
+          0.04978861156867809
+        ],
+        [
+          0.017036159891033686,
+          0.009166144786351693,
+          0.00234084845817617,
+          -0.0036073175744764097,
+          -0.008855836831417552,
+          -0.013567806587542308,
+          -0.018985600333095265,
+          -0.024252521840280428,
+          -0.02985360084703692,
+          -0.03649291858817838
+        ]
+      ],
+      "both_phase_criteria_pass_samples_GHz": [
+        9.1,
+        9.2,
+        9.3,
+        9.4,
+        9.5
+      ]
+    }
+  },
+  "r11_metrics": {
+    "reference": "r09r10-vwide",
+    "candidate": "r11-vwide170",
+    "frequency_GHz": [
+      9.0,
+      9.1,
+      9.2,
+      9.3,
+      9.4,
+      9.5,
+      9.625,
+      9.75,
+      9.875,
+      10.0
+    ],
+    "same_direct_points": true,
+    "interpolation": false,
+    "convergence_scope_GHz": [
+      9.5
+    ],
+    "entire_band_convergence_verified": false,
+    "metrics": {
+      "H": {
+        "states": [
+          "H1V1",
+          "H2V1",
+          "H3V1",
+          "H4V1"
+        ],
+        "reference_worst_relative_deg": 24.530733815530425,
+        "worst_relative_deg": 26.444461434186564,
+        "reference_worst_cyclic_deg": 24.530733815530454,
+        "worst_cyclic_deg": 26.444461434186536,
+        "reference_min_amp_dB": -1.1955262393307287,
+        "min_amp_dB": -1.2276513865287189,
+        "delta_relative_deg": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.4018098572353779,
+            1.3006554798766103,
+            1.1708508738100818,
+            1.0174851985198075,
+            0.8446744833846083,
+            0.65808165903195,
+            0.4227204040205663,
+            0.2275303203384169,
+            0.1632003750295894,
+            0.42044394402813623
+          ],
+          [
+            0.6475299729587505,
+            0.5691130944818497,
+            0.49394207574766824,
+            0.42533271162909614,
+            0.3656246464773858,
+            0.31776935789292793,
+            0.2810834427841655,
+            0.28375891429698186,
+            0.3493291776823071,
+            0.4781274019687771
+          ],
+          [
+            1.6523720925229668,
+            1.5543397039717206,
+            1.4532952241388557,
+            1.3555255922090623,
+            1.2677845826261205,
+            1.1986169271877998,
+            1.1557722029976958,
+            1.1956819617527117,
+            1.390764073890466,
+            1.9137276186561394
+          ]
+        ],
+        "max_abs_relative_change_deg": 1.9137276186561394,
+        "delta_amplitude_dB": [
+          [
+            0.0030886979191103725,
+            0.0030621682989553922,
+            0.0028948965890818745,
+            0.0025658198298363355,
+            0.0020575381435444795,
+            0.001255285786579463,
+            -0.000489607741980147,
+            -0.003948685178471578,
+            -0.011842506305132727,
+            -0.0321251471979902
+          ],
+          [
+            0.01522863084018189,
+            0.011711179396142635,
+            0.00834948029459559,
+            0.00520323215736318,
+            0.0023864161417688212,
+            6.060545425801145e-05,
+            -0.001767487217313457,
+            -0.0019097521116602234,
+            -8.426970122488164e-05,
+            0.0035169372910489605
+          ],
+          [
+            0.0036094170296303574,
+            0.00256478185504605,
+            0.0015663350223951156,
+            0.0005735084517461964,
+            -0.0004662332317014739,
+            -0.0016320515102828947,
+            -0.003536421153938929,
+            -0.0068135702683054244,
+            -0.014802073196256815,
+            -0.04587658951414686
+          ],
+          [
+            0.002893140943337036,
+            0.002628360813677122,
+            0.0024097526264735825,
+            0.0022723181548136573,
+            0.002241671050088878,
+            0.002325871183927908,
+            0.002634569739027093,
+            0.0032146449491753937,
+            0.004192314503637384,
+            0.005827584114487638
+          ]
+        ],
+        "phase_error_deg": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            12.271794126079755,
+            8.93775815135001,
+            5.472037988643393,
+            1.7632814070542793,
+            -2.2062094194180304,
+            -6.328584825801386,
+            -11.240388050700659,
+            -14.777423913776971,
+            -14.705669460238624,
+            -6.628145510811066
+          ],
+          [
+            -11.11691899759569,
+            -11.789775828417987,
+            -12.919375286317745,
+            -14.349554348484617,
+            -15.832469082238617,
+            -17.03580720186335,
+            -17.497389420872196,
+            -15.776018199648433,
+            -10.279136670432877,
+            1.568098197364236
+          ],
+          [
+            -9.26903308185183,
+            -9.035013694808072,
+            -9.021225372496815,
+            -8.979990854305242,
+            -8.640531563940385,
+            -7.701724213970692,
+            -5.128258483719151,
+            -0.05442556161187895,
+            9.257763195501411,
+            26.444461434186564
+          ]
+        ],
+        "cyclic_adjacent_error_deg": [
+          [
+            12.271794126079755,
+            8.93775815135001,
+            5.472037988643393,
+            1.7632814070542793,
+            -2.2062094194180304,
+            -6.328584825801386,
+            -11.240388050700659,
+            -14.777423913776971,
+            -14.705669460238624,
+            -6.628145510811066
+          ],
+          [
+            -23.3887131236755,
+            -20.727533979767998,
+            -18.391413274961167,
+            -16.112835755538867,
+            -13.626259662820615,
+            -10.707222376061964,
+            -6.257001370171565,
+            -0.9985942858714907,
+            4.426532789805719,
+            8.196243708175302
+          ],
+          [
+            1.8478859157438592,
+            2.754762133609944,
+            3.89814991382093,
+            5.369563494179374,
+            7.191937518298232,
+            9.334082987892657,
+            12.369130937153102,
+            15.721592638036554,
+            19.536899865934345,
+            24.8763632368223
+          ],
+          [
+            9.269033081851859,
+            9.035013694808043,
+            9.021225372496815,
+            8.979990854305186,
+            8.640531563940414,
+            7.701724213970692,
+            5.128258483719151,
+            0.05442556161190737,
+            -9.257763195501468,
+            -26.444461434186536
+          ]
+        ],
+        "both_phase_pass_samples_GHz": [
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875
+        ]
+      },
+      "V": {
+        "states": [
+          "H1V1",
+          "H1V2",
+          "H1V3",
+          "H1V4"
+        ],
+        "reference_worst_relative_deg": 38.35779220805358,
+        "worst_relative_deg": 36.84973511022133,
+        "reference_worst_cyclic_deg": 38.35779220805358,
+        "worst_cyclic_deg": 36.84973511022133,
+        "reference_min_amp_dB": -1.2913487903209198,
+        "min_amp_dB": -1.1276621086535703,
+        "delta_relative_deg": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -5.138988151642991,
+            -4.83479113938364,
+            -4.426557375552989,
+            -3.835343170626004,
+            -2.9567929454442208,
+            -1.664538049094233,
+            0.7348021464387671,
+            4.194866529887463,
+            8.763776993827747,
+            14.227608854910386
+          ],
+          [
+            0.02993689646731923,
+            1.4127144159593854,
+            2.8375962505001553,
+            4.3427124445989875,
+            5.959073906680089,
+            7.718451469507386,
+            10.181138799416544,
+            13.038134199229603,
+            16.408221848594224,
+            20.31968504897202
+          ],
+          [
+            7.3645759588456485,
+            7.628281611887246,
+            7.9685862992722605,
+            8.417111614483304,
+            9.00830729506265,
+            9.782392559313621,
+            11.080993323696475,
+            12.85137076952168,
+            15.195780634185326,
+            18.10319079439614
+          ]
+        ],
+        "max_abs_relative_change_deg": 20.31968504897202,
+        "delta_amplitude_dB": [
+          [
+            -0.018601868138692412,
+            -0.01988705991625417,
+            -0.021833698845188626,
+            -0.02453153172094838,
+            -0.028103568184446648,
+            -0.032693386431045524,
+            -0.04003945487807925,
+            -0.0491797676542457,
+            -0.05898701543720042,
+            -0.06538397282245367
+          ],
+          [
+            -0.009873203809306563,
+            0.003976390995314993,
+            0.020068749647273454,
+            0.03929693511522259,
+            0.062046831886106046,
+            0.0876258173117912,
+            0.11989833826849239,
+            0.1449515012757272,
+            0.15465430868270869,
+            0.14666817228616036
+          ],
+          [
+            0.16368668166734945,
+            0.15121204959839885,
+            0.13786716842900226,
+            0.12342057873595369,
+            0.10801717181557235,
+            0.09214156572586885,
+            0.07265817994209622,
+            0.054742816704040465,
+            0.03923309558817756,
+            0.02646067992268697
+          ],
+          [
+            -0.002245486243563244,
+            -0.007797398350779083,
+            -0.01269734930565214,
+            -0.017088677445657896,
+            -0.021125141809528958,
+            -0.024971663903714914,
+            -0.02980043271608024,
+            -0.03506651137554573,
+            -0.04134973616987314,
+            -0.04959777343773042
+          ]
+        ],
+        "phase_error_deg": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            14.944587686178238,
+            11.162276116082182,
+            6.875981788835475,
+            2.051441190115554,
+            -3.2644819120753255,
+            -8.906424741343812,
+            -15.903638537486188,
+            -21.825086838372613,
+            -25.152571160487526,
+            -24.130183353143195
+          ],
+          [
+            4.508852984083177,
+            1.021109380280535,
+            -2.5910289782307245,
+            -6.07409137028435,
+            -9.119072867171667,
+            -11.373874013342515,
+            -12.487737411098806,
+            -10.922004821892756,
+            -5.736013386399009,
+            4.073971049639823
+          ],
+          [
+            11.924323686856837,
+            10.695411261643585,
+            9.632007537662389,
+            8.958423460812014,
+            8.899905826375516,
+            9.690075972161026,
+            12.262819025616523,
+            17.149559142680346,
+            25.07301873457709,
+            36.84973511022133
+          ]
+        ],
+        "cyclic_adjacent_error_deg": [
+          [
+            14.944587686178238,
+            11.162276116082182,
+            6.875981788835475,
+            2.051441190115554,
+            -3.2644819120753255,
+            -8.906424741343812,
+            -15.903638537486188,
+            -21.825086838372613,
+            -25.152571160487526,
+            -24.130183353143195
+          ],
+          [
+            -10.435734702095061,
+            -10.141166735801676,
+            -9.467010767066228,
+            -8.125532560399847,
+            -5.8545909550963415,
+            -2.467449271998703,
+            3.415901126387382,
+            10.903082016479857,
+            19.41655777408846,
+            28.20415440278302
+          ],
+          [
+            7.415470702773632,
+            9.67430188136305,
+            12.223036515893142,
+            15.032514831096307,
+            18.018978693547155,
+            21.063949985503484,
+            24.7505564367153,
+            28.071563964573045,
+            30.809032120976156,
+            32.77576406058151
+          ],
+          [
+            -11.924323686856809,
+            -10.695411261643585,
+            -9.632007537662417,
+            -8.958423460812014,
+            -8.899905826375516,
+            -9.690075972161026,
+            -12.262819025616523,
+            -17.149559142680346,
+            -25.07301873457709,
+            -36.84973511022133
+          ]
+        ],
+        "both_phase_pass_samples_GHz": [
+          9.0,
+          9.1,
+          9.2,
+          9.3,
+          9.4
+        ]
+      }
+    },
+    "common_pass_samples_GHz": [
+      9.2,
+      9.3,
+      9.4
+    ],
+    "center_converged_states": 7,
+    "conclusion": "Tradeoff: width1.70 improves V2 upper residual and V amplitude but shifts V4 upper to+36.85deg, H upper to+26.44deg; common passing samples5->3. Seven center-frequency states converged, not whole-band. Retain PPT v6 as selected balanced candidate pending compensating full geometry. Next trial jointly extends H_L5 by.07,H_L2 by.10,V_L7 by.20 relative r11; no single-branch attribution."
+  },
+  "ppt_selection_reason": "Select r14r15-vtaperplus under declared minimax across both polarizations relative/cyclic phase errors:34.7983->29.9549deg. H/V amplitudes improve to-1.189/-0.984dB; common passing samples7->6 and center-converged states7->6 are explicit tradeoffs. Not whole-band2bit.",
+  "r12_metrics": {
+    "reference": "r09r10-vwide",
+    "candidate": "r12-edgecomp",
+    "frequency_GHz": [
+      9.0,
+      9.1,
+      9.2,
+      9.3,
+      9.4,
+      9.5,
+      9.625,
+      9.75,
+      9.875,
+      10.0
+    ],
+    "same_direct_points": true,
+    "interpolation": false,
+    "convergence_scope_GHz": [
+      9.5
+    ],
+    "entire_band_convergence_verified": false,
+    "metrics": {
+      "H": {
+        "states": [
+          "H1V1",
+          "H2V1",
+          "H3V1",
+          "H4V1"
+        ],
+        "reference_worst_relative_deg": 24.530733815530425,
+        "worst_relative_deg": 34.7983193971902,
+        "reference_worst_cyclic_deg": 24.530733815530454,
+        "worst_cyclic_deg": 34.79831939719023,
+        "reference_min_amp_dB": -1.1955262393307287,
+        "min_amp_dB": -1.7587705287455133,
+        "delta_relative_deg": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -4.989325155941913,
+            -4.885219902489496,
+            -4.7725670072243815,
+            -4.637802214842225,
+            -4.450624736180515,
+            -4.1570694048406835,
+            -3.491818288536024,
+            -2.1296021909444107,
+            0.9309288797132353,
+            9.025693322287282
+          ],
+          [
+            -0.4295053705295686,
+            -0.3110225503443189,
+            -0.19701802479670505,
+            -0.08335552844869198,
+            0.03932251281196386,
+            0.18963442852100343,
+            0.4744517798517336,
+            1.0205779564958561,
+            2.2036589435750784,
+            4.463519166923902
+          ],
+          [
+            -2.057411584194199,
+            -1.9945381199068493,
+            -1.9145124950408672,
+            -1.8076095970253618,
+            -1.6555436556031395,
+            -1.4233342052724538,
+            -0.9083960761231538,
+            0.17641419324564822,
+            2.7961699238995834,
+            10.267585581659773
+          ]
+        ],
+        "max_abs_relative_change_deg": 10.267585581659773,
+        "delta_amplitude_dB": [
+          [
+            -0.005175117605474622,
+            -0.006036847830342973,
+            -0.007267084251073919,
+            -0.009190343553936775,
+            -0.012387731663008383,
+            -0.01806624022327752,
+            -0.032748244005040505,
+            -0.06929211351627718,
+            -0.17614090099117374,
+            -0.5566749626607461
+          ],
+          [
+            -0.03643367378494866,
+            -0.032651291661479176,
+            -0.028974629888283143,
+            -0.025020693611929268,
+            -0.0204486142561513,
+            -0.015049178959248843,
+            -0.007193674781710291,
+            0.001026126826752627,
+            0.008193496149774049,
+            0.013942340293491728
+          ],
+          [
+            0.00029099484354966343,
+            -0.0019182735550933305,
+            -0.004459447241745629,
+            -0.0076079938019725235,
+            -0.011840374559286215,
+            -0.018095598273896063,
+            -0.032058525495343715,
+            -0.06448237277401081,
+            -0.1676164686531607,
+            -0.7617629334556097
+          ],
+          [
+            0.013028839012266591,
+            0.011842561421501141,
+            0.010597427274915416,
+            0.009298924666750752,
+            0.007948484045651683,
+            0.006537349594897268,
+            0.004686947411999931,
+            0.0026963721092731485,
+            0.0005373781519538157,
+            -0.0018027627598189988
+          ]
+        ],
+        "phase_error_deg": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            5.880659112902464,
+            2.751882768983876,
+            -0.47137989239109856,
+            -3.8920060063077813,
+            -7.501508638983154,
+            -11.14373588967402,
+            -15.15492674325725,
+            -17.13455642505977,
+            -13.93794095555495,
+            1.9771038674480792
+          ],
+          [
+            -12.193954341084009,
+            -12.669911473244156,
+            -13.610335386862062,
+            -14.858242588562348,
+            -16.15877121590404,
+            -17.163942131235217,
+            -17.304021083804628,
+            -15.039199157449502,
+            -8.424806904540105,
+            5.553489962319361
+          ],
+          [
+            -12.978816758568996,
+            -12.583891518686642,
+            -12.389033091676538,
+            -12.14312604353961,
+            -11.563859802169645,
+            -10.323675346430946,
+            -7.19242676284,
+            -1.0736933301188856,
+            10.663169045510585,
+            34.7983193971902
+          ]
+        ],
+        "cyclic_adjacent_error_deg": [
+          [
+            5.880659112902464,
+            2.751882768983876,
+            -0.47137989239109856,
+            -3.8920060063077813,
+            -7.501508638983154,
+            -11.14373588967402,
+            -15.15492674325725,
+            -17.13455642505977,
+            -13.93794095555495,
+            1.9771038674480792
+          ],
+          [
+            -18.0746134539865,
+            -15.42179424222806,
+            -13.13895549447102,
+            -10.966236582254567,
+            -8.657262576920886,
+            -6.0202062415612545,
+            -2.1490943405473786,
+            2.0953572676102112,
+            5.513134051014845,
+            3.5763860948712534
+          ],
+          [
+            -0.7848624174849874,
+            0.08601995455748579,
+            1.2213022951855805,
+            2.7151165450227666,
+            4.594911413734309,
+            6.840266784804328,
+            10.111594320964656,
+            13.965505827330617,
+            19.08797595005069,
+            29.244829434870894
+          ],
+          [
+            12.978816758568996,
+            12.583891518686642,
+            12.389033091676538,
+            12.143126043539581,
+            11.563859802169702,
+            10.323675346430946,
+            7.192426762839972,
+            1.0736933301189424,
+            -10.663169045510614,
+            -34.79831939719023
+          ]
+        ],
+        "both_phase_pass_samples_GHz": [
+          9.0,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75,
+          9.875
+        ]
+      },
+      "V": {
+        "states": [
+          "H1V1",
+          "H1V2",
+          "H1V3",
+          "H1V4"
+        ],
+        "reference_worst_relative_deg": 38.35779220805358,
+        "worst_relative_deg": 29.619070167577433,
+        "reference_worst_cyclic_deg": 38.35779220805358,
+        "worst_cyclic_deg": 29.619070167577433,
+        "reference_min_amp_dB": -1.2913487903209198,
+        "min_amp_dB": -1.1224028280531486,
+        "delta_relative_deg": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            -6.160921258066196,
+            -5.6684546781363565,
+            -5.091776927923206,
+            -4.354223618621745,
+            -3.3536487020199957,
+            -1.9669151779785352,
+            0.5046227220767037,
+            3.9723184693367557,
+            8.463330522562785,
+            13.736598766080078
+          ],
+          [
+            -1.6262275995091784,
+            -0.09661342814615637,
+            1.4582369113984441,
+            3.0758836184471647,
+            4.78625647230723,
+            6.6182680807197585,
+            9.133347011801959,
+            11.983072526795752,
+            15.260368789717688,
+            18.950279226490466
+          ],
+          [
+            0.15941886871257793,
+            0.6199870655724453,
+            1.1576500758177417,
+            1.791374064109391,
+            2.541089320598701,
+            3.430456350340137,
+            4.783615008424761,
+            6.467183379716005,
+            8.52739129772442,
+            10.872525851752243
+          ]
+        ],
+        "max_abs_relative_change_deg": 18.950279226490466,
+        "delta_amplitude_dB": [
+          [
+            -0.02405427411095884,
+            -0.025204726879979794,
+            -0.02694578616155971,
+            -0.029365365887095513,
+            -0.032610004359768296,
+            -0.03683531589722022,
+            -0.04377754748199275,
+            -0.053011661234759644,
+            -0.06559733609191026,
+            -0.08706976113519638
+          ],
+          [
+            -0.008102182508890166,
+            0.005571006338743745,
+            0.021472285043617756,
+            0.040492291140970194,
+            0.06299012409926341,
+            0.08824722070994184,
+            0.11990468176631452,
+            0.1437206421311592,
+            0.15044589062176472,
+            0.13418114008562698
+          ],
+          [
+            0.16894596226777114,
+            0.15698273191484513,
+            0.14411334057388325,
+            0.1300594979912636,
+            0.11491398616417081,
+            0.0991207119658033,
+            0.07945256718762883,
+            0.061002595448330754,
+            0.044575752154496495,
+            0.03016560974114979
+          ],
+          [
+            0.03568689547130588,
+            0.02796511471880092,
+            0.020528676625284903,
+            0.013222088172067159,
+            0.005901064082426577,
+            -0.0015879189731858312,
+            -0.011508452721103957,
+            -0.022676796097771457,
+            -0.03635075934688142,
+            -0.055240126409041246
+          ]
+        ],
+        "phase_error_deg": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            13.922654579755005,
+            10.328612577329466,
+            6.210762236465257,
+            1.5325607421198129,
+            -3.6613376686511288,
+            -9.208801870228115,
+            -16.13381796184825,
+            -22.04763489892329,
+            -25.45301763175246,
+            -24.621193441973503
+          ],
+          [
+            2.852688488106679,
+            -0.48821846382497824,
+            -3.9703883173324357,
+            -7.340920196436173,
+            -10.291890301544527,
+            -12.474057402130143,
+            -13.535529198713448,
+            -11.977066494326664,
+            -6.883866445275544,
+            2.704565227158241
+          ],
+          [
+            4.719166596723767,
+            3.6871167153287843,
+            2.8210713142078703,
+            2.3326859104381583,
+            2.4326878519116235,
+            3.3381397631875416,
+            5.965440710344865,
+            10.765371752874671,
+            18.404629398116185,
+            29.619070167577433
+          ]
+        ],
+        "cyclic_adjacent_error_deg": [
+          [
+            13.922654579755005,
+            10.328612577329466,
+            6.210762236465257,
+            1.5325607421198129,
+            -3.6613376686511288,
+            -9.208801870228115,
+            -16.13381796184825,
+            -22.04763489892329,
+            -25.45301763175246,
+            -24.621193441973503
+          ],
+          [
+            -11.069966091648354,
+            -10.8168310411545,
+            -10.181150553797693,
+            -8.873480938555929,
+            -6.630552632893455,
+            -3.265255531902028,
+            2.5982887631348603,
+            10.070568404596656,
+            18.569151186476944,
+            27.325758669131744
+          ],
+          [
+            1.866478108617116,
+            4.1753351791537625,
+            6.791459631540334,
+            9.673606106874217,
+            12.724578153456122,
+            15.812197165317627,
+            19.5009699090582,
+            22.742438247201278,
+            25.288495843391672,
+            26.914504940419192
+          ],
+          [
+            -4.719166596723767,
+            -3.687116715328756,
+            -2.8210713142078987,
+            -2.3326859104381015,
+            -2.4326878519115667,
+            -3.3381397631875416,
+            -5.965440710344808,
+            -10.765371752874671,
+            -18.40462939811613,
+            -29.619070167577433
+          ]
+        ],
+        "both_phase_pass_samples_GHz": [
+          9.0,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625
+        ]
+      }
+    },
+    "common_pass_samples_GHz": [
+      9.0,
+      9.1,
+      9.2,
+      9.3,
+      9.4,
+      9.5,
+      9.625
+    ],
+    "center_converged_states": 7,
+    "conclusion": "Seven shared direct samples pass phase; H10GHz worsens to34.80deg and -1.759dB, V worst improves to29.62deg. All7 converge at9.5GHz only. Joint changes not individual sensitivities; not whole-band2bit."
+  },
+  "r13_metrics": {
+    "reference": "r12-edgecomp",
+    "candidate": "r13-uppercomp",
+    "frequency_GHz": [
+      9.0,
+      9.1,
+      9.2,
+      9.3,
+      9.4,
+      9.5,
+      9.625,
+      9.75,
+      9.875,
+      10.0
+    ],
+    "same_direct_points": true,
+    "interpolation": false,
+    "convergence_scope_GHz": [
+      9.5
+    ],
+    "entire_band_convergence_verified": false,
+    "metrics": {
+      "H": {
+        "states": [
+          "H1V1",
+          "H2V1",
+          "H3V1",
+          "H4V1"
+        ],
+        "reference_worst_relative_deg": 29.80507935465903,
+        "worst_relative_deg": 29.80507935465903,
+        "reference_worst_cyclic_deg": 29.805079354659085,
+        "worst_cyclic_deg": 29.805079354659085,
+        "reference_min_amp_dB": -1.186363684945241,
+        "min_amp_dB": -1.186363684945241,
+        "delta_relative_deg": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "max_abs_relative_change_deg": 0.0,
+        "delta_amplitude_dB": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "phase_error_deg": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            12.944322578653953,
+            8.58610366220347,
+            4.206076765582338,
+            -0.28659769327333606,
+            -4.887294894011433,
+            -9.463652115615304,
+            -14.65612283969341,
+            -18.133412779957325,
+            -17.752612177182442,
+            -9.713212500134603
+          ],
+          [
+            -4.814102952441658,
+            -6.4115051555331775,
+            -8.381116736721879,
+            -10.542959640407389,
+            -12.629083227537876,
+            -14.28619479803399,
+            -15.059967665587237,
+            -13.280919023786737,
+            -7.201172087796749,
+            6.0564656447438665
+          ],
+          [
+            -0.8638080968204349,
+            -1.524475583308913,
+            -2.3424146602344535,
+            -3.0489662095587846,
+            -3.356786866590255,
+            -2.9505734599333664,
+            -0.8607615745091834,
+            3.9450656233188965,
+            13.13434147300245,
+            29.80507935465903
+          ]
+        ],
+        "cyclic_adjacent_error_deg": [
+          [
+            12.944322578653953,
+            8.58610366220347,
+            4.206076765582338,
+            -0.28659769327333606,
+            -4.887294894011433,
+            -9.463652115615304,
+            -14.65612283969341,
+            -18.133412779957325,
+            -17.752612177182442,
+            -9.713212500134603
+          ],
+          [
+            -17.75842553109561,
+            -14.997608817736648,
+            -12.587193502304217,
+            -10.256361947133996,
+            -7.741788333526529,
+            -4.822542682418657,
+            -0.4038448258938274,
+            4.8524937561705315,
+            10.551440089385693,
+            15.769678144878469
+          ],
+          [
+            3.950294855621223,
+            4.887029572224321,
+            6.038702076487425,
+            7.493993430848491,
+            9.272296360947735,
+            11.33562133810068,
+            14.199206091078054,
+            17.225984647105747,
+            20.33551356079917,
+            23.74861370991522
+          ],
+          [
+            0.8638080968204065,
+            1.5244755833088561,
+            2.3424146602344535,
+            3.0489662095588415,
+            3.3567868665902267,
+            2.9505734599333096,
+            0.8607615745091834,
+            -3.9450656233189534,
+            -13.13434147300245,
+            -29.805079354659085
+          ]
+        ],
+        "both_phase_pass_samples_GHz": [
+          9.0,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75
+        ]
+      },
+      "V": {
+        "states": [
+          "H1V1",
+          "H1V2",
+          "H1V3",
+          "H1V4"
+        ],
+        "reference_worst_relative_deg": 37.296164920060846,
+        "worst_relative_deg": 37.296164920060846,
+        "reference_worst_cyclic_deg": 37.296164920060846,
+        "worst_cyclic_deg": 37.296164920060846,
+        "reference_min_amp_dB": -1.0387532456531148,
+        "min_amp_dB": -1.0387532456531148,
+        "delta_relative_deg": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "max_abs_relative_change_deg": 0.0,
+        "delta_amplitude_dB": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "phase_error_deg": [
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            16.52361804541414,
+            12.859156937880869,
+            8.88776073929614,
+            4.655036349792738,
+            0.3132350556747383,
+            -3.8364429175026658,
+            -7.975454108746646,
+            -9.548619171545056,
+            -6.599193270810474,
+            2.809959042474958
+          ],
+          [
+            6.24295689362998,
+            3.009993493948542,
+            -0.1772585900030208,
+            -3.0027187052636464,
+            -5.083336984113885,
+            -5.970706145011263,
+            -4.601321531169333,
+            0.6567652431013755,
+            11.1954038762928,
+            28.250463415970444
+          ],
+          [
+            -2.161532949779712,
+            -3.562882089142022,
+            -4.549741516657605,
+            -4.892355557498377,
+            -4.348417887183928,
+            -2.643593248816046,
+            1.632622199417483,
+            9.077359598808926,
+            20.69854836058164,
+            37.296164920060846
+          ]
+        ],
+        "cyclic_adjacent_error_deg": [
+          [
+            16.52361804541414,
+            12.859156937880869,
+            8.88776073929614,
+            4.655036349792738,
+            0.3132350556747383,
+            -3.8364429175026658,
+            -7.975454108746646,
+            -9.548619171545056,
+            -6.599193270810474,
+            2.809959042474958
+          ],
+          [
+            -10.28066115178413,
+            -9.849163443932355,
+            -9.065019329299162,
+            -7.657755055056413,
+            -5.396572039788623,
+            -2.1342632275085407,
+            3.3741325775773703,
+            10.205384414646403,
+            17.794597147103246,
+            25.440504373495486
+          ],
+          [
+            -8.404489843409777,
+            -6.5728755830905925,
+            -4.372482926654641,
+            -1.8896368522346734,
+            0.734919096929957,
+            3.3271128961951604,
+            6.233943730586759,
+            8.420594355707635,
+            9.503144484288839,
+            9.045701504090346
+          ],
+          [
+            2.161532949779769,
+            3.5628820891420503,
+            4.549741516657633,
+            4.89235555749832,
+            4.348417887183928,
+            2.643593248816046,
+            -1.632622199417483,
+            -9.077359598808982,
+            -20.69854836058164,
+            -37.296164920060846
+          ]
+        ],
+        "both_phase_pass_samples_GHz": [
+          9.0,
+          9.1,
+          9.2,
+          9.3,
+          9.4,
+          9.5,
+          9.625,
+          9.75
+        ]
+      }
+    },
+    "common_pass_samples_GHz": [
+      9.0,
+      9.1,
+      9.2,
+      9.3,
+      9.4,
+      9.5,
+      9.625,
+      9.75
+    ],
+    "center_converged_states": 7,
+    "conclusion": "Eight common direct samples pass; H worst29.81deg/minamp-1.186dB, V worst37.30deg/minamp-1.039dB. Overall minimax worse than r12 despite amplitude improvements. Seven states converge at9.5GHz only; not whole-band2bit. Joint changes not individual sensitivity."
+  },
+  "r14_metrics": {
+    "round": "r14",
+    "reference": "analysis_r13",
+    "states": [
+      "H1V1",
+      "H1V3",
+      "H1V4"
+    ],
+    "frequency_GHz": [
+      9.0,
+      9.1,
+      9.2,
+      9.3,
+      9.4,
+      9.5,
+      9.625,
+      9.75,
+      9.875,
+      10.0
+    ],
+    "same_direct_points": true,
+    "interpolation": false,
+    "ideal_relative_deg": [
+      0.0,
+      -180.0,
+      90.0
+    ],
+    "relative_phase_deg": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        177.12574502946586,
+        174.4997224206212,
+        171.8008597551899,
+        169.31253375898797,
+        167.3698895285812,
+        166.3534984728155,
+        167.03945484363305,
+        170.79379564949068,
+        178.7131539961498,
+        -168.07281127678218
+      ],
+      [
+        85.32379212168746,
+        84.38310803569846,
+        83.71346046258827,
+        83.52183377842096,
+        84.01808218880933,
+        85.42729611301456,
+        88.86971186350519,
+        94.76317186706609,
+        103.86603391339168,
+        116.9298856397998
+      ]
+    ],
+    "phase_error_deg": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -2.874254970534139,
+        -5.500277579378803,
+        -8.19914024481011,
+        -10.687466241012089,
+        -12.630110471418789,
+        -13.646501527184455,
+        -12.960545156366948,
+        -9.206204350509324,
+        -1.2868460038502008,
+        11.927188723217824
+      ],
+      [
+        -4.676207878312539,
+        -5.616891964301544,
+        -6.286539537411727,
+        -6.478166221579045,
+        -5.9819178111906695,
+        -4.572703886985437,
+        -1.130288136494812,
+        4.763171867066092,
+        13.866033913391675,
+        26.929885639799807
+      ]
+    ],
+    "amplitude_dB": [
+      [
+        -0.25064664720208146,
+        -0.25785469660079313,
+        -0.26820973206260607,
+        -0.2826950292676778,
+        -0.3025138629613821,
+        -0.3292198836134981,
+        -0.3753944807529059,
+        -0.4405077054625017,
+        -0.5299328749089689,
+        -0.646061458965188
+      ],
+      [
+        -0.9627440803324078,
+        -0.9175404783944708,
+        -0.8693708111611048,
+        -0.8177718813434702,
+        -0.7632571262864944,
+        -0.7071061677077313,
+        -0.6372161880095242,
+        -0.5708694102442617,
+        -0.5110516194786308,
+        -0.4601709097811447
+      ],
+      [
+        -0.474806507935974,
+        -0.4608367261324428,
+        -0.4469036205728661,
+        -0.43410077511437056,
+        -0.42348660375370806,
+        -0.41611880739077167,
+        -0.4131377177141932,
+        -0.4194426282812769,
+        -0.4386334628570586,
+        -0.47678858337808
+      ]
+    ],
+    "delta_relative_deg": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        -9.117211864164119,
+        -8.510271073327317,
+        -8.021881654807089,
+        -7.684747535748386,
+        -7.546773487304904,
+        -7.675795382173305,
+        -8.359223625197671,
+        -9.862969593610728,
+        -12.482249880142945,
+        -16.32327469275262
+      ],
+      [
+        -2.51467492853277,
+        -2.0540098751595224,
+        -1.7367980207541223,
+        -1.585810664080725,
+        -1.6334999240067418,
+        -1.9291106381693908,
+        -2.762910335912295,
+        -4.314187731742891,
+        -6.832514447189965,
+        -10.366279280260983
+      ]
+    ],
+    "delta_amplitude_dB": [
+      [
+        -0.00562520651888343,
+        -0.0030751777918843204,
+        0.0003382886755484704,
+        0.004866508414790305,
+        0.01092711691465037,
+        0.019146765783621233,
+        0.03379556184821464,
+        0.05517364538018932,
+        0.08394426542180333,
+        0.11440596811360892
+      ],
+      [
+        0.076009165320707,
+        0.07463273541251869,
+        0.0725780255098174,
+        0.06969250589779552,
+        0.06597502565520497,
+        0.06157994315812432,
+        0.05552288954373452,
+        0.049365370515602414,
+        0.043604845167994344,
+        0.0386136667395125
+      ],
+      [
+        0.026123451752409155,
+        0.024446720329641847,
+        0.0230603410559998,
+        0.022046570093045725,
+        0.02148144868143881,
+        0.02142498919665059,
+        0.022188715070800002,
+        0.02409340086135825,
+        0.027552548821032807,
+        0.033262008102022234
+      ]
+    ],
+    "worst_relative_error_deg": 26.929885639799807,
+    "reference_worst_relative_error_deg": 37.29616492006079,
+    "minimum_amplitude_dB": -0.9627440803324078,
+    "reference_minimum_amplitude_dB": -1.0387532456531148,
+    "V3_to_V4_adjacent_error_deg": [
+      -1.8019529077784,
+      -0.11661438492274101,
+      1.9126007073983828,
+      4.2093000194329875,
+      6.648192660228119,
+      9.073797640199075,
+      11.830257019872136,
+      13.969376217575416,
+      15.152879917241876,
+      15.002696916581954
+    ],
+    "V4_to_V1_adjacent_error_deg": [
+      4.676207878312539,
+      5.616891964301544,
+      6.286539537411727,
+      6.478166221579045,
+      5.9819178111906695,
+      4.572703886985437,
+      1.130288136494812,
+      -4.763171867066092,
+      -13.866033913391675,
+      -26.929885639799807
+    ],
+    "convergence_scope_GHz": [
+      9.5
+    ],
+    "audits": [
+      {
+        "state": "H1V1",
+        "seconds": 419.875,
+        "deltaS": [
+          0.057855,
+          0.0385425,
+          0.027194,
+          0.0245729
+        ],
+        "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r14-projects-v1\\caoxrlc-r14-vtaperplus-H1V1.cst",
+        "source_sha256": "d6a709c0abfe10fd839eb44fc20908b6e3f0311527addc05f51fa5ed5ac14491",
+        "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r14/native/runs/caoxrlc-r14-vtaperplus-H1V1",
+        "native_audit_pass": true,
+        "converged_last_two_deltaS_at_9_5GHz": true
+      },
+      {
+        "state": "H1V3",
+        "seconds": 544.3909999998286,
+        "deltaS": [
+          0.12745,
+          0.0936597,
+          0.0623483,
+          0.0304903,
+          0.0119545
+        ],
+        "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r14-projects-v1\\caoxrlc-r14-vtaperplus-H1V3.cst",
+        "source_sha256": "00bd3c0b405993e5ad270059114a50a97f31074d7ba41272857da803bcabc34c",
+        "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r14/native/runs/caoxrlc-r14-vtaperplus-H1V3",
+        "native_audit_pass": true,
+        "converged_last_two_deltaS_at_9_5GHz": false
+      },
+      {
+        "state": "H1V4",
+        "seconds": 411.969000000041,
+        "deltaS": [
+          0.0276837,
+          0.0514109,
+          0.0289275,
+          0.0179482
+        ],
+        "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r14-projects-v1\\caoxrlc-r14-vtaperplus-H1V4.cst",
+        "source_sha256": "03961898ac35ebd32b402480bc83ff67e52e6059e2524ace84b9d6d1de07e910",
+        "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r14/native/runs/caoxrlc-r14-vtaperplus-H1V4",
+        "native_audit_pass": true,
+        "converged_last_two_deltaS_at_9_5GHz": true
+      }
+    ],
+    "case_sha256": "ae7527947beaa2eae92708411d778368f04882f9b2125aabb536b3ed303d6f31",
+    "complete_four_state_phase_checked": false,
+    "two_bit_certified": false,
+    "limitation": "V2 and H2/H3/H4 not evaluated in this subset; no full cyclic or whole-band certification. Fixed scaled diagnostic RLC, native power-wave S,20log10|S|."
+  },
+  "vtaper_metrics": {
+    "H": {
+      "states": [
+        "H1V1",
+        "H2V1",
+        "H3V1",
+        "H4V1"
+      ],
+      "phase_deg": [
+        [
+          -103.55106007085513,
+          -115.01838824355124,
+          -126.1032309856268,
+          -136.93319863499678,
+          -147.68147504874943,
+          -158.57284955154088,
+          -172.84347620599195,
+          171.38555581494143,
+          152.83224839362094,
+          129.2767280922571
+        ],
+        [
+          173.41892952478702,
+          158.49821904795755,
+          143.8061088070467,
+          129.09513817780612,
+          114.16645429820083,
+          98.88879451792565,
+          79.24416390156613,
+          59.13613913892856,
+          38.95411330912815,
+          19.24995283596511
+        ],
+        [
+          64.89950842687813,
+          52.74504173551821,
+          40.5013335337462,
+          28.191294974382355,
+          15.878820726698455,
+          3.651580304057924,
+          -11.376717716676717,
+          -26.01227295712493,
+          -40.29281346285783,
+          -54.636820971794734
+        ],
+        [
+          -20.829619520174564,
+          -32.05301964278884,
+          -43.14942999872784,
+          -54.008156064966265,
+          -64.54642639441268,
+          -74.71454869945218,
+          -86.88377265497795,
+          -98.49326174376746,
+          -109.65428229526295,
+          -120.5444588596676
+        ]
+      ],
+      "amplitude_dB": [
+        [
+          -0.3068534885722184,
+          -0.3165414438549493,
+          -0.32840748801037367,
+          -0.344009934008366,
+          -0.3652068007459516,
+          -0.3945318596120981,
+          -0.44843955195345375,
+          -0.5335045885479559,
+          -0.6748249135736124,
+          -0.928036889980455
+        ],
+        [
+          -1.1601257570821115,
+          -1.1622273278093775,
+          -1.1682144424301475,
+          -1.1768654675060266,
+          -1.185280013116259,
+          -1.1891787234457354,
+          -1.1797968861242771,
+          -1.1456840436818854,
+          -1.08165516811281,
+          -0.9902558642513168
+        ],
+        [
+          -1.1179218820497747,
+          -1.0677593454138259,
+          -1.0222735045192464,
+          -0.9785580538136213,
+          -0.935081950708173,
+          -0.8917279360069155,
+          -0.8399477222606488,
+          -0.797208586984104,
+          -0.7777949535080569,
+          -0.8201430530297148
+        ],
+        [
+          -0.3536266542560922,
+          -0.34954648202368854,
+          -0.34382384679642997,
+          -0.33702635157894345,
+          -0.3298956159781602,
+          -0.3232753886323787,
+          -0.31701650416089844,
+          -0.3145553509400784,
+          -0.3176174128900486,
+          -0.32808790629876905
+        ]
+      ],
+      "relative_phase_deg": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -83.03001040435788,
+          -86.48339270849124,
+          -90.09066020732652,
+          -93.97166318719708,
+          -98.15207065304976,
+          -102.5383559305335,
+          -107.91235989244194,
+          -112.24941667601286,
+          -113.8781350844928,
+          -110.02677525629198
+        ],
+        [
+          168.45056849773323,
+          167.76342997906943,
+          166.60456451937296,
+          165.12449360937916,
+          163.5602957754479,
+          162.22442985559883,
+          161.46675848931523,
+          162.6021712279337,
+          166.87493814352126,
+          176.08645093594816
+        ],
+        [
+          82.72144055068054,
+          82.96536860076242,
+          82.95380098689895,
+          82.92504257003054,
+          83.13504865433674,
+          83.85830085208869,
+          85.959703551014,
+          90.12118244129113,
+          97.51346931111613,
+          110.17881304807531
+        ]
+      ],
+      "phase_error_deg": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          6.969989595642119,
+          3.5166072915087625,
+          -0.09066020732652191,
+          -3.9716631871970662,
+          -8.152070653049748,
+          -12.538355930533498,
+          -17.91235989244194,
+          -22.249416676012856,
+          -23.878135084492783,
+          -20.026775256291984
+        ],
+        [
+          -11.54943150226677,
+          -12.236570020930571,
+          -13.395435480627043,
+          -14.875506390620785,
+          -16.439704224552088,
+          -17.775570144401172,
+          -18.533241510684775,
+          -17.397828772066305,
+          -13.125061856478737,
+          -3.9135490640518356
+        ],
+        [
+          -7.278559449319459,
+          -7.034631399237583,
+          -7.046199013101045,
+          -7.074957429969459,
+          -6.864951345663258,
+          -6.141699147911368,
+          -4.040296448986055,
+          0.12118244129112554,
+          7.513469311116069,
+          20.178813048075313
+        ]
+      ],
+      "cyclic_adjacent_phase_deg": [
+        [
+          -83.03001040435788,
+          -86.48339270849124,
+          -90.09066020732652,
+          -93.97166318719708,
+          -98.15207065304976,
+          -102.5383559305335,
+          -107.91235989244194,
+          -112.24941667601286,
+          -113.8781350844928,
+          -110.02677525629198
+        ],
+        [
+          -108.51942109790888,
+          -105.75317731243933,
+          -103.3047752733005,
+          -100.90384320342378,
+          -98.28763357150237,
+          -95.23721421386772,
+          -90.62088161824285,
+          -85.14841209605349,
+          -79.24692677198598,
+          -73.88677380775985
+        ],
+        [
+          -85.72912794705269,
+          -84.79806137830704,
+          -83.65076353247404,
+          -82.19945103934862,
+          -80.42524712111113,
+          -78.36612900351011,
+          -75.50705493830122,
+          -72.48098878664253,
+          -69.36146883240512,
+          -65.90763788787288
+        ],
+        [
+          -82.72144055068057,
+          -82.96536860076239,
+          -82.95380098689894,
+          -82.92504257003053,
+          -83.13504865433674,
+          -83.85830085208869,
+          -85.95970355101399,
+          -90.12118244129113,
+          -97.51346931111613,
+          -110.17881304807531
+        ]
+      ],
+      "cyclic_adjacent_error_deg": [
+        [
+          6.969989595642119,
+          3.5166072915087625,
+          -0.09066020732652191,
+          -3.9716631871970662,
+          -8.152070653049748,
+          -12.538355930533498,
+          -17.91235989244194,
+          -22.249416676012856,
+          -23.878135084492783,
+          -20.026775256291984
+        ],
+        [
+          -18.51942109790889,
+          -15.753177312439334,
+          -13.304775273300493,
+          -10.903843203423776,
+          -8.287633571502369,
+          -5.2372142138677305,
+          -0.6208816182428336,
+          4.851587903946495,
+          10.753073228014017,
+          16.11322619224015
+        ],
+        [
+          4.270872052947311,
+          5.20193862169296,
+          6.349236467525941,
+          7.800548960651383,
+          9.574752878888887,
+          11.63387099648989,
+          14.492945061698776,
+          17.519011213357487,
+          20.638531167594863,
+          24.09236211212712
+        ],
+        [
+          7.278559449319431,
+          7.034631399237611,
+          7.046199013101045,
+          7.074957429969459,
+          6.864951345663258,
+          6.141699147911311,
+          4.040296448985998,
+          -0.12118244129112554,
+          -7.5134693111161255,
+          -20.178813048075313
+        ]
+      ],
+      "max_relative_error_deg": [
+        11.54943150226677,
+        12.236570020930571,
+        13.395435480627043,
+        14.875506390620785,
+        16.439704224552088,
+        17.775570144401172,
+        18.533241510684775,
+        22.249416676012856,
+        23.878135084492783,
+        20.178813048075313
+      ],
+      "max_cyclic_adjacent_error_deg": [
+        18.51942109790889,
+        15.753177312439334,
+        13.304775273300493,
+        10.903843203423776,
+        9.574752878888887,
+        12.538355930533498,
+        17.91235989244194,
+        22.249416676012856,
+        23.878135084492783,
+        24.09236211212712
+      ],
+      "max_combined_error_deg": [
+        18.51942109790889,
+        15.753177312439334,
+        13.395435480627043,
+        14.875506390620785,
+        16.439704224552088,
+        17.775570144401172,
+        18.533241510684775,
+        22.249416676012856,
+        23.878135084492783,
+        24.09236211212712
+      ],
+      "minimum_amplitude_dB": [
+        -1.1601257570821115,
+        -1.1622273278093775,
+        -1.1682144424301475,
+        -1.1768654675060266,
+        -1.185280013116259,
+        -1.1891787234457354,
+        -1.1797968861242771,
+        -1.1456840436818854,
+        -1.08165516811281,
+        -0.9902558642513168
+      ],
+      "paper_adjacent20_pass_frequencies_GHz": [
+        9.0,
+        9.1,
+        9.2,
+        9.3,
+        9.4,
+        9.5,
+        9.625
+      ],
+      "paper_minus1dB_pass_frequencies_GHz": [
+        10.0
+      ],
+      "fixed_other_phase_drift_deg": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.24514093096388478,
+          0.056889434636985925,
+          -0.10979736501332127,
+          -0.25243150900274713,
+          -0.3669058042404174,
+          -0.44630204882363955,
+          -0.47764937492704007,
+          -0.39590616586968963,
+          -0.14090063633847194,
+          0.3470480333156729
+        ],
+        [
+          1.6537783935866344,
+          1.2679943994460245,
+          0.9442807163816838,
+          0.6929209741109617,
+          0.5282868629966231,
+          0.4724208452273331,
+          0.6092580906773719,
+          1.077133643819991,
+          2.0311450035799226,
+          3.6275717606021374
+        ],
+        [
+          1.7894757589001244,
+          1.3993841069741961,
+          1.0706221395948603,
+          0.8136344656502956,
+          0.6428903480995416,
+          0.5808128208530832,
+          0.7107584924769981,
+          1.1762460996588118,
+          2.1430754783289956,
+          3.7992756042179963
+        ]
+      ],
+      "fixed_other_amplitude_drift_dB": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.009224782579759384,
+          -0.008892525588422939,
+          -0.008453241468828284,
+          -0.00787065324286814,
+          -0.0070969506381121095,
+          -0.006002644496754671,
+          -0.003874450929270209,
+          -0.0002920348140046281,
+          0.005732391404578277,
+          0.015038150316027472
+        ],
+        [
+          -0.01064784599399208,
+          -0.00942637034498152,
+          -0.007803144903099254,
+          -0.005700208832592051,
+          -0.0029439384573366704,
+          0.0007433794594094869,
+          0.007297949701731572,
+          0.017116982801591876,
+          0.031301662146558044,
+          0.04889217566745727
+        ],
+        [
+          -0.013450694579856787,
+          -0.012614945288262146,
+          -0.01140757828528529,
+          -0.009755459757454182,
+          -0.007487203932518031,
+          -0.004336939180994087,
+          0.0015386535014516847,
+          0.010872937328056562,
+          0.025584507771581846,
+          0.04767844848887217
+        ]
+      ]
+    },
+    "V": {
+      "states": [
+        "H1V1",
+        "H1V2",
+        "H1V3",
+        "H1V4"
+      ],
+      "phase_deg": [
+        [
+          -127.11204197702335,
+          -136.8670036912703,
+          -146.55259410834327,
+          -156.34222282130006,
+          -166.44565426176314,
+          -177.12010012945564,
+          168.2387170914416,
+          151.39107320053847,
+          131.30181143218053,
+          106.82106566729189
+        ],
+        [
+          147.62456518286098,
+          134.28275380974887,
+          120.58208914723276,
+          106.38644158102421,
+          91.62682974537577,
+          76.32268281268814,
+          56.62407888706848,
+          36.73109814670622,
+          17.252958357879088,
+          -1.2066618355441248
+        ],
+        [
+          50.01370305244255,
+          37.6327187293509,
+          25.248265646846633,
+          12.970310937687923,
+          0.9242352668181142,
+          -10.766601656640146,
+          -24.721828064925404,
+          -37.81513114997085,
+          -49.985034571669715,
+          -61.25174560949028
+        ],
+        [
+          -41.78824985533591,
+          -52.48389565557183,
+          -62.83913364575502,
+          -72.82038904287907,
+          -82.42757207295378,
+          -91.69280401644103,
+          -102.89157104505324,
+          -113.84575493239544,
+          -124.83215465442784,
+          -136.2490486929083
+        ]
+      ],
+      "amplitude_dB": [
+        [
+          -0.25064664720208146,
+          -0.25785469660079313,
+          -0.26820973206260607,
+          -0.2826950292676778,
+          -0.3025138629613821,
+          -0.3292198836134981,
+          -0.3753944807529059,
+          -0.4405077054625017,
+          -0.5299328749089689,
+          -0.646061458965188
+        ],
+        [
+          -0.9433563879998303,
+          -0.9549119960182596,
+          -0.9679286456715092,
+          -0.9791783465639372,
+          -0.9844351701562344,
+          -0.9790127034883277,
+          -0.9509793059642124,
+          -0.8958734651465194,
+          -0.8168530702869603,
+          -0.7236397595933906
+        ],
+        [
+          -0.9627440803324078,
+          -0.9175404783944708,
+          -0.8693708111611048,
+          -0.8177718813434702,
+          -0.7632571262864944,
+          -0.7071061677077313,
+          -0.6372161880095242,
+          -0.5708694102442617,
+          -0.5110516194786308,
+          -0.4601709097811447
+        ],
+        [
+          -0.474806507935974,
+          -0.4608367261324428,
+          -0.4469036205728661,
+          -0.43410077511437056,
+          -0.42348660375370806,
+          -0.41611880739077167,
+          -0.4131377177141932,
+          -0.4194426282812769,
+          -0.4386334628570586,
+          -0.47678858337808
+        ]
+      ],
+      "relative_phase_deg": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -85.2633928401157,
+          -88.85024249898088,
+          -92.86531674442396,
+          -97.27133559767576,
+          -101.92751599286113,
+          -106.55721705785623,
+          -111.61463820437312,
+          -114.65997505383226,
+          -114.04885307430143,
+          -108.02772750283602
+        ],
+        [
+          177.12574502946586,
+          174.4997224206212,
+          171.8008597551899,
+          169.31253375898797,
+          167.3698895285812,
+          166.3534984728155,
+          167.03945484363305,
+          170.79379564949068,
+          178.7131539961498,
+          -168.07281127678218
+        ],
+        [
+          85.32379212168746,
+          84.38310803569846,
+          83.71346046258827,
+          83.52183377842096,
+          84.01808218880933,
+          85.42729611301456,
+          88.86971186350519,
+          94.76317186706609,
+          103.86603391339168,
+          116.9298856397998
+        ]
+      ],
+      "phase_error_deg": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          4.736607159884301,
+          1.14975750101911,
+          -2.8653167444239784,
+          -7.2713355976757725,
+          -11.927515992861117,
+          -16.557217057856235,
+          -21.614638204373136,
+          -24.659975053832255,
+          -24.048853074301434,
+          -18.027727502836
+        ],
+        [
+          -2.874254970534139,
+          -5.500277579378803,
+          -8.19914024481011,
+          -10.687466241012089,
+          -12.630110471418789,
+          -13.646501527184455,
+          -12.960545156366948,
+          -9.206204350509324,
+          -1.2868460038502008,
+          11.927188723217824
+        ],
+        [
+          -4.676207878312539,
+          -5.616891964301544,
+          -6.286539537411727,
+          -6.478166221579045,
+          -5.9819178111906695,
+          -4.572703886985437,
+          -1.1302881364947552,
+          4.7631718670661485,
+          13.866033913391675,
+          26.92988563979975
+        ]
+      ],
+      "cyclic_adjacent_phase_deg": [
+        [
+          -85.2633928401157,
+          -88.85024249898088,
+          -92.86531674442396,
+          -97.27133559767576,
+          -101.92751599286113,
+          -106.55721705785623,
+          -111.61463820437312,
+          -114.65997505383226,
+          -114.04885307430143,
+          -108.02772750283602
+        ],
+        [
+          -97.61086213041841,
+          -96.65003508039797,
+          -95.33382350038612,
+          -93.41613064333629,
+          -90.70259447855766,
+          -87.08928446932829,
+          -81.34590695199388,
+          -74.54622929667707,
+          -67.2379929295488,
+          -60.04508377394615
+        ],
+        [
+          -91.80195290777847,
+          -90.11661438492273,
+          -88.08739929260166,
+          -85.79069998056698,
+          -83.3518073397719,
+          -80.92620235980088,
+          -78.16974298012784,
+          -76.0306237824246,
+          -74.84712008275812,
+          -74.99730308341803
+        ],
+        [
+          -85.32379212168743,
+          -84.38310803569846,
+          -83.71346046258827,
+          -83.52183377842098,
+          -84.01808218880934,
+          -85.42729611301459,
+          -88.86971186350517,
+          -94.7631718670661,
+          -103.86603391339166,
+          -116.92988563979982
+        ]
+      ],
+      "cyclic_adjacent_error_deg": [
+        [
+          4.736607159884301,
+          1.14975750101911,
+          -2.8653167444239784,
+          -7.2713355976757725,
+          -11.927515992861117,
+          -16.557217057856235,
+          -21.614638204373136,
+          -24.659975053832255,
+          -24.048853074301434,
+          -18.027727502836
+        ],
+        [
+          -7.610862130418411,
+          -6.65003508039797,
+          -5.333823500386131,
+          -3.416130643336288,
+          -0.7025944785576712,
+          2.910715530671723,
+          8.654093048006132,
+          15.453770703322931,
+          22.762007070451205,
+          29.954916226053854
+        ],
+        [
+          -1.8019529077784568,
+          -0.11661438492274101,
+          1.912600707398326,
+          4.209300019433016,
+          6.648192660228119,
+          9.073797640199132,
+          11.830257019872164,
+          13.969376217575416,
+          15.152879917241876,
+          15.002696916581954
+        ],
+        [
+          4.676207878312567,
+          5.616891964301544,
+          6.286539537411727,
+          6.478166221579016,
+          5.9819178111906695,
+          4.572703886985408,
+          1.130288136494812,
+          -4.763171867066092,
+          -13.866033913391675,
+          -26.929885639799807
+        ]
+      ],
+      "max_relative_error_deg": [
+        4.736607159884301,
+        5.616891964301544,
+        8.19914024481011,
+        10.687466241012089,
+        12.630110471418789,
+        16.557217057856235,
+        21.614638204373136,
+        24.659975053832255,
+        24.048853074301434,
+        26.92988563979975
+      ],
+      "max_cyclic_adjacent_error_deg": [
+        7.610862130418411,
+        6.65003508039797,
+        6.286539537411727,
+        7.2713355976757725,
+        11.927515992861117,
+        16.557217057856235,
+        21.614638204373136,
+        24.659975053832255,
+        24.048853074301434,
+        29.954916226053854
+      ],
+      "max_combined_error_deg": [
+        7.610862130418411,
+        6.65003508039797,
+        8.19914024481011,
+        10.687466241012089,
+        12.630110471418789,
+        16.557217057856235,
+        21.614638204373136,
+        24.659975053832255,
+        24.048853074301434,
+        29.954916226053854
+      ],
+      "minimum_amplitude_dB": [
+        -0.9627440803324078,
+        -0.9549119960182596,
+        -0.9679286456715092,
+        -0.9791783465639372,
+        -0.9844351701562344,
+        -0.9790127034883277,
+        -0.9509793059642124,
+        -0.8958734651465194,
+        -0.8168530702869603,
+        -0.7236397595933906
+      ],
+      "paper_adjacent20_pass_frequencies_GHz": [
+        9.0,
+        9.1,
+        9.2,
+        9.3,
+        9.4,
+        9.5
+      ],
+      "paper_minus1dB_pass_frequencies_GHz": [
+        9.0,
+        9.1,
+        9.2,
+        9.3,
+        9.4,
+        9.5,
+        9.625,
+        9.75,
+        9.875,
+        10.0
+      ],
+      "fixed_other_phase_drift_deg": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          2.519215961887028,
+          2.0767779943064966,
+          1.6704324115529516,
+          1.3136245599000347,
+          1.0171536055636636,
+          0.793035120042731,
+          0.6415318244706611,
+          0.6908617005113626,
+          1.0626281404797737,
+          2.0054681531945278
+        ],
+        [
+          3.095135551144807,
+          2.5575032981521417,
+          2.061406964992557,
+          1.6226699369271103,
+          1.253579164817097,
+          0.9669602045583474,
+          0.7524820143801207,
+          0.756808351305267,
+          1.1027692998818566,
+          2.035124409130418
+        ],
+        [
+          2.07968062190767,
+          1.67627450512245,
+          1.3002993959475475,
+          0.9616133769396242,
+          0.667330515180879,
+          0.42424226964737954,
+          0.20705654341227842,
+          0.11831754994454968,
+          0.22571881831848373,
+          0.6622313066041272
+        ]
+      ],
+      "fixed_other_amplitude_drift_dB": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.012807493014410294,
+          -0.01275219387822721,
+          -0.012149505931151064,
+          -0.011007957363566415,
+          -0.009261666474067518,
+          -0.006721212537279185,
+          -0.0017467627778624724,
+          0.006963538018392389,
+          0.023632298569200242,
+          0.058432091446291246
+        ],
+        [
+          -0.014295436497515353,
+          -0.01410017745173169,
+          -0.013215250067272942,
+          -0.011648696812827394,
+          -0.009338178846154666,
+          -0.0060514566926255075,
+          0.00016396854631369286,
+          0.010610837126681184,
+          0.029743810084328096,
+          0.06795886857760819
+        ],
+        [
+          -0.011476599386165208,
+          -0.011552773053262001,
+          -0.011208584575111738,
+          -0.010481330904913077,
+          -0.009357701525891432,
+          -0.007753817628624772,
+          -0.004725833878287311,
+          0.0003767192585044475,
+          0.009761380812910428,
+          0.028288383391423377
+        ]
+      ]
+    }
+  },
+  "vtaper_merge_manifest": "Results_vtaper_seven_merged/merge_provenance.json"
+}
