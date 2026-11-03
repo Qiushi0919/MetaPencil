@@ -1,0 +1,51 @@
+{
+  "status": "local_geometry_and_circuit_preflight_pass",
+  "case_sha256": "8bb7ff7f472b0380e975237094247fb4f0e9bcdeb33fa2b596cbb8b18dee2eea",
+  "cases": 5,
+  "plan": {
+    "name": "r17",
+    "frequencies_GHz": [
+      9.0,
+      9.1,
+      9.2,
+      9.3,
+      9.4,
+      9.5,
+      9.625,
+      9.75,
+      9.875,
+      10.0
+    ],
+    "max_passes": 6,
+    "budget_minutes": 85,
+    "case_budget_seconds": 1500,
+    "purpose": "Complete remaining5 states of identical r16-v9trim geometry. Reuse audited H1V1/H1V2, preserve known H1V2 center lasttwo .03169/.0128972 failure. Pair worst24.66->21.16deg and minamp-.984->-.963dB improve but are not2bit. Same10direct points/9.5GHz6passes; evaluate full H/V relative and cyclic errors after all7 audited.",
+    "candidates": [
+      {
+        "name": "v9trim",
+        "terminal_delta_mm": {
+          "H_L2": -0.7,
+          "H_L5": -0.58,
+          "H_L3": -0.5,
+          "V_L9": -0.95,
+          "V_L8": -0.8,
+          "V_L7": 0.65
+        },
+        "common_width_factor": {
+          "V_common": 1.9
+        },
+        "states": [
+          "H2V1",
+          "H3V1",
+          "H4V1",
+          "H1V3",
+          "H1V4"
+        ],
+        "common_taper_delta_mm": {
+          "V_common": 0.25
+        }
+      }
+    ]
+  },
+  "all_RLC_and_contacts_unchanged": true
+}
