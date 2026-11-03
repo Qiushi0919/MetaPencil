@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "only_change": "V_common width1.35->1.70, 7 wide vertices",
+  "width_mm": 0.7086315789473685,
+  "minimum_gap_mm": [
+    0.027975014402548914,
+    "H_L2",
+    "H_common"
+  ],
+  "width_identity_and_bounds_tested": true,
+  "seven_histories_equal_except_switch_RC": true,
+  "checks": [
+    {
+      "state": "H1V1",
+      "changed_history": [
+        "V_common nominal pad and fanout"
+      ],
+      "fixed_parts": true,
+      "frequency_and_solver_unchanged_semantically": true
+    },
+    {
+      "state": "H2V1",
+      "changed_history": [
+        "V_common nominal pad and fanout"
+      ],
+      "fixed_parts": true,
+      "frequency_and_solver_unchanged_semantically": true
+    },
+    {
+      "state": "H3V1",
+      "changed_history": [
+        "V_common nominal pad and fanout"
+      ],
+      "fixed_parts": true,
+      "frequency_and_solver_unchanged_semantically": true
+    },
+    {
+      "state": "H4V1",
+      "changed_history": [
+        "V_common nominal pad and fanout"
+      ],
+      "fixed_parts": true,
+      "frequency_and_solver_unchanged_semantically": true
+    },
+    {
+      "state": "H1V2",
+      "changed_history": [
+        "V_common nominal pad and fanout"
+      ],
+      "fixed_parts": true,
+      "frequency_and_solver_unchanged_semantically": true
+    },
+    {
+      "state": "H1V3",
+      "changed_history": [
+        "V_common nominal pad and fanout"
+      ],
+      "fixed_parts": true,
+      "frequency_and_solver_unchanged_semantically": true
+    },
+    {
+      "state": "H1V4",
+      "changed_history": [
+        "V_common nominal pad and fanout"
+      ],
+      "fixed_parts": true,
+      "frequency_and_solver_unchanged_semantically": true
+    }
+  ],
+  "numeric_history_format_only": "9->9.0,10->10.0 sample strings normalize to identical values"
+}
