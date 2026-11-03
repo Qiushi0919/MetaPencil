@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "reference": "seven_state_diagnostic.json",
+  "selected_rows": [
+    0,
+    2,
+    3
+  ],
+  "points": 10,
+  "absolute_tolerance": 1e-10,
+  "partial_not_two_bit": true
+}

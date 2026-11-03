@@ -1,0 +1,73 @@
+{
+  "base_commit": "19a043e66552ef51214e5d18fa4efcaebf2453b7",
+  "branch": "analysis/cao-r13-r14-taper-20261103",
+  "recorded_local": "2026-11-03T12:03:41.878125+08:00",
+  "model_level": "Periodic full-wave fixed scaled-RLC screen; not hardware validation",
+  "normalization": "Native positive-real-impedance power-wave S; amplitude = 20 log10 |S|; no amplitude renormalization",
+  "phase_definition": "Relative arg(S_s/S_1); ideal [0,-90,-180,+90] deg; error wrap(relative+90s); cyclic error wrap(arg(S_next/S_s)+90)",
+  "r13_completed": "2026-11-03T11:57:41.534703+08:00",
+  "r13_pid_exit_actual_CUA_query": "2026-11-03T12:00+08:00",
+  "r14_plan": {
+    "name": "r14",
+    "frequencies_GHz": [
+      9.0,
+      9.1,
+      9.2,
+      9.3,
+      9.4,
+      9.5,
+      9.625,
+      9.75,
+      9.875,
+      10.0
+    ],
+    "max_passes": 6,
+    "budget_minutes": 50,
+    "case_budget_seconds": 1500,
+    "purpose": "Single-parameter V common taper +0.25mm on frozen r13 geometry. r13 V3/V4 errors at10GHz +28.25/+37.30deg, V2 +2.81deg. Screen V1/V3/V4 on exact10 points with same6-pass9.5GHz mesh, then complete same geometry only if promising. No full2bit claim from3states. Prior r03 taper was on different geometry and cannot establish this sensitivity. Expected20-30min, hard50min budget.",
+    "candidates": [
+      {
+        "name": "vtaperplus",
+        "terminal_delta_mm": {
+          "H_L2": -0.7,
+          "H_L5": -0.58,
+          "H_L3": -0.5,
+          "V_L9": -0.85,
+          "V_L8": -0.8,
+          "V_L7": 0.65
+        },
+        "common_width_factor": {
+          "V_common": 1.9
+        },
+        "states": [
+          "H1V1",
+          "H1V3",
+          "H1V4"
+        ],
+        "common_taper_delta_mm": {
+          "V_common": 0.25
+        }
+      }
+    ]
+  },
+  "r14_source_sha256": "ae7527947beaa2eae92708411d778368f04882f9b2125aabb536b3ed303d6f31",
+  "r14_deployed_sha256": "841fa7c549aae3bb0e48c85704ccda5b57a6b9a107c2361799f29a5c0652a130",
+  "runtime": {
+    "pid": 54696,
+    "started_local": "2026-11-03T12:02:13.958480+08:00",
+    "deadline_local": "2026-11-03T12:52:13.206786+08:00",
+    "completed": [],
+    "status": "solving",
+    "updated_local": "2026-11-03T12:02:52.857740+08:00",
+    "case": "caoxrlc-r14-vtaperplus-H1V1",
+    "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r14-projects-v1\\caoxrlc-r14-vtaperplus-H1V1.cst",
+    "solver_started_local": "2026-11-03T12:02:52.856731+08:00",
+    "solver_limit_seconds": 1500
+  },
+  "guards": [
+    "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-base-runtime-v1"
+  ],
+  "selection_reason": "Retain PPT v7 r12 by declared minimax phase objective: r13 worst37.30deg exceeds r12 34.80deg, despite eight common passing samples and improved H/V minimum amplitudes. r13 not entire-band2bit;7/7 convergence only9.5GHz.",
+  "template_purpose_note": "Deployed template purpose string says seven-state baseline; frozen cases and plan contain exactly3 targeted states, never certify2bit.",
+  "no_entire_band_certification": true
+}
