@@ -1,0 +1,19 @@
+{
+  "pid": 47156,
+  "runner_alive": false,
+  "observed_local": "2026-11-03T15:21:10.949880+08:00",
+  "runner_status": {
+    "pid": 47156,
+    "started_local": "2026-11-03T15:14:00.364600+08:00",
+    "deadline_local": "2026-11-03T16:18:59.630696+08:00",
+    "completed": [
+      "caoxrlc-r19-vtaper10-H1V1"
+    ],
+    "status": "solving",
+    "updated_local": "2026-11-03T15:20:57.041327+08:00",
+    "case": "caoxrlc-r19-vtaper10-H1V2",
+    "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r19-projects-v1\\caoxrlc-r19-vtaper10-H1V2.cst",
+    "solver_started_local": "2026-11-03T15:20:57.040166+08:00",
+    "solver_limit_seconds": 1500
+  }
+}
