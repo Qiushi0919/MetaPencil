@@ -1,0 +1,18 @@
+{
+  "pid": 43208,
+  "started_local": "2026-11-03T13:43:39.386694+08:00",
+  "deadline_local": "2026-11-03T15:08:38.656882+08:00",
+  "completed": [
+    "caoxrlc-r17-v9trim-H2V1",
+    "caoxrlc-r17-v9trim-H3V1",
+    "caoxrlc-r17-v9trim-H4V1",
+    "caoxrlc-r17-v9trim-H1V3",
+    "caoxrlc-r17-v9trim-H1V4"
+  ],
+  "status": "comparison_complete_requires_audit",
+  "updated_local": "2026-11-03T14:28:18.916430+08:00",
+  "case": "caoxrlc-r17-v9trim-H1V4",
+  "current_project": null,
+  "solver_started_local": "2026-11-03T14:21:24.161606+08:00",
+  "solver_limit_seconds": 1500
+}

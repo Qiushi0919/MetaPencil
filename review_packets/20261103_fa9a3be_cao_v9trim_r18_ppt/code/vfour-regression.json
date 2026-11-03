@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "reference": "analysis_v9trim_seven/seven_state_diagnostic.json",
+  "fields": [
+    "relative_phase_deg",
+    "phase_error_deg",
+    "cyclic_adjacent_error_deg",
+    "amplitude_dB"
+  ],
+  "frequency_points": 10,
+  "atol": 1e-10
+}
