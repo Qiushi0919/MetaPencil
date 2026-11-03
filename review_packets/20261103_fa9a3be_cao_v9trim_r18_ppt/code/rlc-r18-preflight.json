@@ -1,0 +1,50 @@
+{
+  "status": "local_geometry_and_circuit_preflight_pass",
+  "case_sha256": "76500efec32c1815a7213483b1f5671b34473baeb8cb17e7a30438ea64782679",
+  "cases": 4,
+  "plan": {
+    "name": "r18",
+    "frequencies_GHz": [
+      9.0,
+      9.1,
+      9.2,
+      9.3,
+      9.4,
+      9.5,
+      9.625,
+      9.75,
+      9.875,
+      10.0
+    ],
+    "max_passes": 6,
+    "budget_minutes": 65,
+    "case_budget_seconds": 1500,
+    "purpose": "Single-parameter V common taper total+0.45mm versus r16r17+0.25mm; keep V_L9-.95 and all other geometry fixed. Prior taper+0.25 improved V3/V4 upper edge; current complete seven worst26.385deg at10GHz V2->V3, V4relative25.218deg. Screen all four V states on identical10directpoints, no full H or wholeband2bit claim; expected30-40min, hard65min.",
+    "candidates": [
+      {
+        "name": "vtaper45",
+        "terminal_delta_mm": {
+          "H_L2": -0.7,
+          "H_L5": -0.58,
+          "H_L3": -0.5,
+          "V_L9": -0.95,
+          "V_L8": -0.8,
+          "V_L7": 0.65
+        },
+        "common_width_factor": {
+          "V_common": 1.9
+        },
+        "states": [
+          "H1V1",
+          "H1V2",
+          "H1V3",
+          "H1V4"
+        ],
+        "common_taper_delta_mm": {
+          "V_common": 0.45
+        }
+      }
+    ]
+  },
+  "all_RLC_and_contacts_unchanged": true
+}
