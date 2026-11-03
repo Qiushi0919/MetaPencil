@@ -546,13 +546,13 @@
     "next": "Fix target switch parasitic model before adjusting actual launch and delay-line geometry; original reconstruction remains unaccepted."
   },
   "cao_rlc_optimization_20261102": {
-    "status": "r14_v_taper_three_state_screen_solving",
+    "status": "r15_vtaper_missing_four_solving",
     "solver_running": true,
-    "pid": 54696,
-    "started_local": "2026-11-03T12:02:52.856731+08:00",
-    "results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r14_v1",
+    "pid": 54528,
+    "started_local": "2026-11-03T12:31:36.501321+08:00",
+    "results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r15_v1",
     "plan": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/optimization_plan.json",
-    "current_case": "caoxrlc-r14-vtaperplus-H1V1",
+    "current_case": "caoxrlc-r15-vtaperplus-H2V1",
     "fixed_RLC": {
       "Ron_ohm": 1.6,
       "L_nH": 0.037894736842105266,
@@ -563,8 +563,8 @@
     "native_checks": "Actual history, 10 RF nets, 8 series RLC and 8 shunt capacitors, branch mapping and metal contacts checked before and after each solve",
     "automation_id": "cao-rlc-x",
     "optimized_2bit_achieved": false,
-    "review_packet": "项目管理/review_packets/20261103_19a043e_cao_r13_r14_taper",
-    "next": "Do not duplicate caorlcr14.cmd. Audit every r14 archive using code/analyze_pairs.py r14. When three states H1V1/H1V3/H1V4 complete, run code/analyze_v134.py r14 analysis_r13, comparing exact same10 direct points, signed V3/V4 errors/available cyclic edges/amplitude/convergence. No complete four-state or2bit claim from subset. If promising, complete the missing4 same-geometry states with provenance; otherwise compare opposite taper or validated shape control. Final same7 needs>=21points and9/9.5/10 adaptive convergence.",
+    "review_packet": "项目管理/review_packets/20261103_eb4683e_cao_r14_r15_complete",
+    "next": "Do not repeat caorlcr15.cmd. Audit each r15 archive via code/analyze_pairs.py r15. All4 complete: copy/link original r14 three and r15 four archives to independent Results_vtaper_seven_merged/case_snapshots per code/vtaper-seven-merge-manifest.json; verify frozen case hash and sources, preserve raw archives and merge_provenance.json. Run code/analyze_rlc.py code/rlc-vtaper-seven-cases.json Results_vtaper_seven_merged analysis_vtaper_seven. Compare same10points full H/V relative/cyclic/amplitude against r12 and r13. H1V3 lasttwo .0304903/.0119545 already fails center criterion. Continue optimization, only update PPT if complete audited candidate beats stated objective. Final>=21 directpoints plus9/9.5/10 adaptation andlasttwo convergence required.",
     "review_pr_status": "pending",
     "last_reported_case": "caoxrlc-r06-fulltrim-H1V1",
     "baseline_results": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_base_v1",
@@ -619,8 +619,8 @@
         ]
       }
     },
-    "converged_states": 7,
-    "active_round": "r14",
+    "converged_states": 2,
+    "active_round": "r15",
     "next_direct_frequencies_GHz": [
       9,
       9.1,
@@ -649,14 +649,14 @@
     "r02_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r02/pair_sensitivity.json",
     "r03_completed_cases": 4,
     "r03_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r03/pair_sensitivity.json",
-    "prepared_round": "r14",
+    "prepared_round": "r15",
     "prepared_round_started": true,
     "h5trim_pair_max_error_deg": 16.559956811161214,
     "h5trim_pair_min_amp_dB": -1.5974126616619342,
     "r04_completed_cases": 4,
     "r04_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r04/pair_sensitivity.json",
     "current_round_completed_states": [],
-    "last_heartbeat": "2026-11-03T12:03:35.232112+08:00",
+    "last_heartbeat": "2026-11-03T12:32:00.427523+08:00",
     "r05_completed_cases": 5,
     "h5trim_seven_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_h5trim_seven/seven_state_diagnostic.json",
     "h5trim_seven_metrics": {
@@ -1505,7 +1505,7 @@
       "center_converged_states": 7,
       "conclusion": "Tradeoff: width1.70 improves V2 upper residual and V amplitude but shifts V4 upper to+36.85deg, H upper to+26.44deg; common passing samples5->3. Seven center-frequency states converged, not whole-band. Retain PPT v6 as selected balanced candidate pending compensating full geometry. Next trial jointly extends H_L5 by.07,H_L2 by.10,V_L7 by.20 relative r11; no single-branch attribution."
     },
-    "convergence_scope": "r13 all7 at9.5GHz only; not9–10GHz whole band",
+    "convergence_scope": "r14 V1/V3/V4:2/3 at9.5GHz; V3 .0304903/.0119545 fails. Not complete7 or entireband.",
     "r12_completed_cases": 7,
     "r12_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r12/seven_state_diagnostic.json",
     "r12_metrics": {
@@ -2038,7 +2038,7 @@
       ]
     },
     "r13_deadline": "2026-11-03T12:42:39.994722+08:00",
-    "ppt_selection_reason": "Retain PPT v7 r12 by declared minimax phase objective: r13 worst37.30deg exceeds r12 34.80deg, despite eight common passing samples and improved H/V minimum amplitudes. r13 not entire-band2bit;7/7 convergence only9.5GHz.",
+    "ppt_selection_reason": "Retain r12/v7 pending complete audited vtaperplus seven. r14 V1/V3/V4 relative worst26.93deg and minimum-0.963dB improve over r13 subset37.30deg/-1.039dB, but V2/H states missing and V3 center convergence fails.",
     "r13_completed_cases": 7,
     "r13_analysis": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r13/seven_state_diagnostic.json",
     "r13_metrics": {
@@ -2570,6 +2570,353 @@
         }
       ]
     },
-    "r14_deadline": "2026-11-03T12:52:13.206786+08:00"
+    "r14_deadline": "2026-11-03T12:52:13.206786+08:00",
+    "r14_completed_cases": 3,
+    "r14_metrics": {
+      "round": "r14",
+      "reference": "analysis_r13",
+      "states": [
+        "H1V1",
+        "H1V3",
+        "H1V4"
+      ],
+      "frequency_GHz": [
+        9.0,
+        9.1,
+        9.2,
+        9.3,
+        9.4,
+        9.5,
+        9.625,
+        9.75,
+        9.875,
+        10.0
+      ],
+      "same_direct_points": true,
+      "interpolation": false,
+      "ideal_relative_deg": [
+        0.0,
+        -180.0,
+        90.0
+      ],
+      "relative_phase_deg": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          177.12574502946586,
+          174.4997224206212,
+          171.8008597551899,
+          169.31253375898797,
+          167.3698895285812,
+          166.3534984728155,
+          167.03945484363305,
+          170.79379564949068,
+          178.7131539961498,
+          -168.07281127678218
+        ],
+        [
+          85.32379212168746,
+          84.38310803569846,
+          83.71346046258827,
+          83.52183377842096,
+          84.01808218880933,
+          85.42729611301456,
+          88.86971186350519,
+          94.76317186706609,
+          103.86603391339168,
+          116.9298856397998
+        ]
+      ],
+      "phase_error_deg": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -2.874254970534139,
+          -5.500277579378803,
+          -8.19914024481011,
+          -10.687466241012089,
+          -12.630110471418789,
+          -13.646501527184455,
+          -12.960545156366948,
+          -9.206204350509324,
+          -1.2868460038502008,
+          11.927188723217824
+        ],
+        [
+          -4.676207878312539,
+          -5.616891964301544,
+          -6.286539537411727,
+          -6.478166221579045,
+          -5.9819178111906695,
+          -4.572703886985437,
+          -1.130288136494812,
+          4.763171867066092,
+          13.866033913391675,
+          26.929885639799807
+        ]
+      ],
+      "amplitude_dB": [
+        [
+          -0.25064664720208146,
+          -0.25785469660079313,
+          -0.26820973206260607,
+          -0.2826950292676778,
+          -0.3025138629613821,
+          -0.3292198836134981,
+          -0.3753944807529059,
+          -0.4405077054625017,
+          -0.5299328749089689,
+          -0.646061458965188
+        ],
+        [
+          -0.9627440803324078,
+          -0.9175404783944708,
+          -0.8693708111611048,
+          -0.8177718813434702,
+          -0.7632571262864944,
+          -0.7071061677077313,
+          -0.6372161880095242,
+          -0.5708694102442617,
+          -0.5110516194786308,
+          -0.4601709097811447
+        ],
+        [
+          -0.474806507935974,
+          -0.4608367261324428,
+          -0.4469036205728661,
+          -0.43410077511437056,
+          -0.42348660375370806,
+          -0.41611880739077167,
+          -0.4131377177141932,
+          -0.4194426282812769,
+          -0.4386334628570586,
+          -0.47678858337808
+        ]
+      ],
+      "delta_relative_deg": [
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -9.117211864164119,
+          -8.510271073327317,
+          -8.021881654807089,
+          -7.684747535748386,
+          -7.546773487304904,
+          -7.675795382173305,
+          -8.359223625197671,
+          -9.862969593610728,
+          -12.482249880142945,
+          -16.32327469275262
+        ],
+        [
+          -2.51467492853277,
+          -2.0540098751595224,
+          -1.7367980207541223,
+          -1.585810664080725,
+          -1.6334999240067418,
+          -1.9291106381693908,
+          -2.762910335912295,
+          -4.314187731742891,
+          -6.832514447189965,
+          -10.366279280260983
+        ]
+      ],
+      "delta_amplitude_dB": [
+        [
+          -0.00562520651888343,
+          -0.0030751777918843204,
+          0.0003382886755484704,
+          0.004866508414790305,
+          0.01092711691465037,
+          0.019146765783621233,
+          0.03379556184821464,
+          0.05517364538018932,
+          0.08394426542180333,
+          0.11440596811360892
+        ],
+        [
+          0.076009165320707,
+          0.07463273541251869,
+          0.0725780255098174,
+          0.06969250589779552,
+          0.06597502565520497,
+          0.06157994315812432,
+          0.05552288954373452,
+          0.049365370515602414,
+          0.043604845167994344,
+          0.0386136667395125
+        ],
+        [
+          0.026123451752409155,
+          0.024446720329641847,
+          0.0230603410559998,
+          0.022046570093045725,
+          0.02148144868143881,
+          0.02142498919665059,
+          0.022188715070800002,
+          0.02409340086135825,
+          0.027552548821032807,
+          0.033262008102022234
+        ]
+      ],
+      "worst_relative_error_deg": 26.929885639799807,
+      "reference_worst_relative_error_deg": 37.29616492006079,
+      "minimum_amplitude_dB": -0.9627440803324078,
+      "reference_minimum_amplitude_dB": -1.0387532456531148,
+      "V3_to_V4_adjacent_error_deg": [
+        -1.8019529077784,
+        -0.11661438492274101,
+        1.9126007073983828,
+        4.2093000194329875,
+        6.648192660228119,
+        9.073797640199075,
+        11.830257019872136,
+        13.969376217575416,
+        15.152879917241876,
+        15.002696916581954
+      ],
+      "V4_to_V1_adjacent_error_deg": [
+        4.676207878312539,
+        5.616891964301544,
+        6.286539537411727,
+        6.478166221579045,
+        5.9819178111906695,
+        4.572703886985437,
+        1.130288136494812,
+        -4.763171867066092,
+        -13.866033913391675,
+        -26.929885639799807
+      ],
+      "convergence_scope_GHz": [
+        9.5
+      ],
+      "audits": [
+        {
+          "state": "H1V1",
+          "seconds": 419.875,
+          "deltaS": [
+            0.057855,
+            0.0385425,
+            0.027194,
+            0.0245729
+          ],
+          "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r14-projects-v1\\caoxrlc-r14-vtaperplus-H1V1.cst",
+          "source_sha256": "d6a709c0abfe10fd839eb44fc20908b6e3f0311527addc05f51fa5ed5ac14491",
+          "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r14/native/runs/caoxrlc-r14-vtaperplus-H1V1",
+          "native_audit_pass": true,
+          "converged_last_two_deltaS_at_9_5GHz": true
+        },
+        {
+          "state": "H1V3",
+          "seconds": 544.3909999998286,
+          "deltaS": [
+            0.12745,
+            0.0936597,
+            0.0623483,
+            0.0304903,
+            0.0119545
+          ],
+          "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r14-projects-v1\\caoxrlc-r14-vtaperplus-H1V3.cst",
+          "source_sha256": "00bd3c0b405993e5ad270059114a50a97f31074d7ba41272857da803bcabc34c",
+          "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r14/native/runs/caoxrlc-r14-vtaperplus-H1V3",
+          "native_audit_pass": true,
+          "converged_last_two_deltaS_at_9_5GHz": false
+        },
+        {
+          "state": "H1V4",
+          "seconds": 411.969000000041,
+          "deltaS": [
+            0.0276837,
+            0.0514109,
+            0.0289275,
+            0.0179482
+          ],
+          "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r14-projects-v1\\caoxrlc-r14-vtaperplus-H1V4.cst",
+          "source_sha256": "03961898ac35ebd32b402480bc83ff67e52e6059e2524ace84b9d6d1de07e910",
+          "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r14/native/runs/caoxrlc-r14-vtaperplus-H1V4",
+          "native_audit_pass": true,
+          "converged_last_two_deltaS_at_9_5GHz": true
+        }
+      ],
+      "case_sha256": "ae7527947beaa2eae92708411d778368f04882f9b2125aabb536b3ed303d6f31",
+      "complete_four_state_phase_checked": false,
+      "two_bit_certified": false,
+      "limitation": "V2 and H2/H3/H4 not evaluated in this subset; no full cyclic or whole-band certification. Fixed scaled diagnostic RLC, native power-wave S,20log10|S|."
+    },
+    "r15_plan": {
+      "name": "r15",
+      "frequencies_GHz": [
+        9.0,
+        9.1,
+        9.2,
+        9.3,
+        9.4,
+        9.5,
+        9.625,
+        9.75,
+        9.875,
+        10.0
+      ],
+      "max_passes": 6,
+      "budget_minutes": 70,
+      "case_budget_seconds": 1500,
+      "purpose": "Complete missing H2V1/H3V1/H4V1/H1V2 of the identical r14 vtaperplus geometry. r14 V1/V3/V4 worst relative37.30->26.93deg, minimum-1.039->-0.963dB, but V3 only last pass below.03. Reuse three audited r14 states without claiming convergence or2bit. Same10 direct points/9.5GHz6passes; combine only after exact history/parts/native audits and provenance.",
+      "candidates": [
+        {
+          "name": "vtaperplus",
+          "terminal_delta_mm": {
+            "H_L2": -0.7,
+            "H_L5": -0.58,
+            "H_L3": -0.5,
+            "V_L9": -0.85,
+            "V_L8": -0.8,
+            "V_L7": 0.65
+          },
+          "common_width_factor": {
+            "V_common": 1.9
+          },
+          "states": [
+            "H2V1",
+            "H3V1",
+            "H4V1",
+            "H1V2"
+          ],
+          "common_taper_delta_mm": {
+            "V_common": 0.25
+          }
+        }
+      ]
+    },
+    "r15_deadline": "2026-11-03T13:40:59.156365+08:00"
   }
 }

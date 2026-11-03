@@ -1,0 +1,21 @@
+{
+  "pid": 54696,
+  "runner_alive": false,
+  "observed_local": "2026-11-03T12:27:34.564305+08:00",
+  "runner_status": {
+    "pid": 54696,
+    "started_local": "2026-11-03T12:02:13.958480+08:00",
+    "deadline_local": "2026-11-03T12:52:13.206786+08:00",
+    "completed": [
+      "caoxrlc-r14-vtaperplus-H1V1",
+      "caoxrlc-r14-vtaperplus-H1V3",
+      "caoxrlc-r14-vtaperplus-H1V4"
+    ],
+    "status": "comparison_complete_requires_audit",
+    "updated_local": "2026-11-03T12:27:16.422805+08:00",
+    "case": "caoxrlc-r14-vtaperplus-H1V4",
+    "current_project": null,
+    "solver_started_local": "2026-11-03T12:20:12.903514+08:00",
+    "solver_limit_seconds": 1500
+  }
+}
