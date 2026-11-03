@@ -1,0 +1,62 @@
+{
+  "observed_local": "2026-11-03T09:28:04.196034+08:00",
+  "pid": 20256,
+  "runner_alive": false,
+  "runner_status": {
+    "pid": 20256,
+    "started_local": "2026-11-03T03:15:38.771473+08:00",
+    "deadline_local": "2026-11-03T05:05:38.054277+08:00",
+    "completed": [
+      "caoxrlc-r11-vwide170-H1V1",
+      "caoxrlc-r11-vwide170-H2V1",
+      "caoxrlc-r11-vwide170-H3V1",
+      "caoxrlc-r11-vwide170-H4V1",
+      "caoxrlc-r11-vwide170-H1V2",
+      "caoxrlc-r11-vwide170-H1V3",
+      "caoxrlc-r11-vwide170-H1V4"
+    ],
+    "status": "comparison_complete_requires_audit",
+    "updated_local": "2026-11-03T04:17:35.611996+08:00",
+    "case": "caoxrlc-r11-vwide170-H1V4",
+    "current_project": null,
+    "solver_started_local": "2026-11-03T04:08:03.918687+08:00",
+    "solver_limit_seconds": 1500
+  },
+  "archives": [
+    {
+      "name": "caoxrlc-r11-vwide170-H1V1.zip",
+      "sha256": "6b6b3613f54a554a3b09df546c9c2005a2035a2abcc4aed1716d35f268460d7c",
+      "bytes": 275719
+    },
+    {
+      "name": "caoxrlc-r11-vwide170-H1V2.zip",
+      "sha256": "756f283210719186b27c5afcb8dfc36aa72793dbefb4085d398447dec59bfc00",
+      "bytes": 275912
+    },
+    {
+      "name": "caoxrlc-r11-vwide170-H1V3.zip",
+      "sha256": "9c5cbe048795171c105f4bcf606ed696c3ee54be5bc0162ba0d9cdba3948d00d",
+      "bytes": 275868
+    },
+    {
+      "name": "caoxrlc-r11-vwide170-H1V4.zip",
+      "sha256": "f6f1fa724f4641cc02708c920fe2c713cbdbe14cfacfad3cd7aaa90297b946b3",
+      "bytes": 275727
+    },
+    {
+      "name": "caoxrlc-r11-vwide170-H2V1.zip",
+      "sha256": "af99363c7c67c28465cbb85ae79a70b9063e8dcf7fe9bf1c165f4e04bf239b4b",
+      "bytes": 275631
+    },
+    {
+      "name": "caoxrlc-r11-vwide170-H3V1.zip",
+      "sha256": "45723c8f7ad8513944833e0269eabe0f2fe3e806f74d65adc998a302174683cc",
+      "bytes": 276019
+    },
+    {
+      "name": "caoxrlc-r11-vwide170-H4V1.zip",
+      "sha256": "caf958528ff8c50a010222b66617053161c35c821403c8cde859b95196cb0bcc",
+      "bytes": 275392
+    }
+  ]
+}
