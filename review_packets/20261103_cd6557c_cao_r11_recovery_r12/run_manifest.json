@@ -1,0 +1,135 @@
+{
+  "base_commit": "cd6557c378498b822c1f3ab52dba751787bdb13a",
+  "branch": "analysis/cao-r11-recovery-r12-20261103",
+  "recorded_local": "2026-11-03T09:34:15.477301+08:00",
+  "model_level": "Periodic full-wave fixed scaled-RLC screen; not hardware validation",
+  "normalization": "Native positive-real-impedance power-wave S; amplitude = 20 log10 |S|; no amplitude renormalization",
+  "phase_definition": "Relative arg(S_s/S_1); ideal [0,-90,-180,+90] deg; error wrap(relative+90s); cyclic error wrap(arg(S_next/S_s)+90)",
+  "r11_result": "analysis_r11/seven_state_diagnostic.json",
+  "r11_recovery": {
+    "observed_local": "2026-11-03T09:28:04.196034+08:00",
+    "pid": 20256,
+    "runner_alive": false,
+    "runner_status": {
+      "pid": 20256,
+      "started_local": "2026-11-03T03:15:38.771473+08:00",
+      "deadline_local": "2026-11-03T05:05:38.054277+08:00",
+      "completed": [
+        "caoxrlc-r11-vwide170-H1V1",
+        "caoxrlc-r11-vwide170-H2V1",
+        "caoxrlc-r11-vwide170-H3V1",
+        "caoxrlc-r11-vwide170-H4V1",
+        "caoxrlc-r11-vwide170-H1V2",
+        "caoxrlc-r11-vwide170-H1V3",
+        "caoxrlc-r11-vwide170-H1V4"
+      ],
+      "status": "comparison_complete_requires_audit",
+      "updated_local": "2026-11-03T04:17:35.611996+08:00",
+      "case": "caoxrlc-r11-vwide170-H1V4",
+      "current_project": null,
+      "solver_started_local": "2026-11-03T04:08:03.918687+08:00",
+      "solver_limit_seconds": 1500
+    },
+    "archives": [
+      {
+        "name": "caoxrlc-r11-vwide170-H1V1.zip",
+        "sha256": "6b6b3613f54a554a3b09df546c9c2005a2035a2abcc4aed1716d35f268460d7c",
+        "bytes": 275719
+      },
+      {
+        "name": "caoxrlc-r11-vwide170-H1V2.zip",
+        "sha256": "756f283210719186b27c5afcb8dfc36aa72793dbefb4085d398447dec59bfc00",
+        "bytes": 275912
+      },
+      {
+        "name": "caoxrlc-r11-vwide170-H1V3.zip",
+        "sha256": "9c5cbe048795171c105f4bcf606ed696c3ee54be5bc0162ba0d9cdba3948d00d",
+        "bytes": 275868
+      },
+      {
+        "name": "caoxrlc-r11-vwide170-H1V4.zip",
+        "sha256": "f6f1fa724f4641cc02708c920fe2c713cbdbe14cfacfad3cd7aaa90297b946b3",
+        "bytes": 275727
+      },
+      {
+        "name": "caoxrlc-r11-vwide170-H2V1.zip",
+        "sha256": "af99363c7c67c28465cbb85ae79a70b9063e8dcf7fe9bf1c165f4e04bf239b4b",
+        "bytes": 275631
+      },
+      {
+        "name": "caoxrlc-r11-vwide170-H3V1.zip",
+        "sha256": "45723c8f7ad8513944833e0269eabe0f2fe3e806f74d65adc998a302174683cc",
+        "bytes": 276019
+      },
+      {
+        "name": "caoxrlc-r11-vwide170-H4V1.zip",
+        "sha256": "caf958528ff8c50a010222b66617053161c35c821403c8cde859b95196cb0bcc",
+        "bytes": 275392
+      }
+    ]
+  },
+  "r12_plan": {
+    "name": "r12",
+    "frequencies_GHz": [
+      9.0,
+      9.1,
+      9.2,
+      9.3,
+      9.4,
+      9.5,
+      9.625,
+      9.75,
+      9.875,
+      10.0
+    ],
+    "max_passes": 6,
+    "budget_minutes": 110,
+    "case_budget_seconds": 1500,
+    "purpose": "Full-seven residual compensation after r11 audits. Width1.70 improves V2 upper error but shifts V4 upper to+36.85deg. H2-H3 low-edge cyclic=-23.39 and H4 upper=+26.44. Extend H_L5 by0.07mm and H_L2 by0.10mm relative r11, and extend V_L7 by0.20mm; fixed Vcommon width1.70 and RLC. This is a joint exploratory compensation based on signed residuals, not established single-branch sensitivities; evaluate entire geometry and amplitude. V2 upper residual may remain. No claim of 2-bit or broadband convergence.",
+    "candidates": [
+      {
+        "name": "edgecomp",
+        "terminal_delta_mm": {
+          "H_L2": -0.5,
+          "H_L5": -0.58,
+          "H_L3": -0.5,
+          "V_L9": -0.85,
+          "V_L8": -0.8,
+          "V_L7": 0.2
+        },
+        "common_width_factor": {
+          "V_common": 1.7
+        },
+        "states": [
+          "H1V1",
+          "H2V1",
+          "H3V1",
+          "H4V1",
+          "H1V2",
+          "H1V3",
+          "H1V4"
+        ]
+      }
+    ]
+  },
+  "r12_source_sha256": "2a170815e66c854f3a0cc9740f2391bb9a99bf34d6c318f9b815e1bace6675e3",
+  "r12_deployed_sha256": "2a4506d1d18f0efffd2e9bb12a062e8610820283a409d11da5cb644edb19790a",
+  "runtime": {
+    "pid": 19624,
+    "started_local": "2026-11-03T09:31:57.792267+08:00",
+    "deadline_local": "2026-11-03T11:21:56.979947+08:00",
+    "completed": [],
+    "status": "solving",
+    "updated_local": "2026-11-03T09:33:07.503618+08:00",
+    "case": "caoxrlc-r12-edgecomp-H1V1",
+    "current_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r12-projects-v1\\caoxrlc-r12-edgecomp-H1V1.cst",
+    "solver_started_local": "2026-11-03T09:33:07.502933+08:00",
+    "solver_limit_seconds": 1500
+  },
+  "lock_guard": [
+    "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-base-runtime-v1"
+  ],
+  "actual_precheck_gates": "Worker obtained existing global locks and audited saved CST history/parts before setting solving; inspect archived reports again on completion.",
+  "PPT": "v6 unchanged, r09r10-vwide remains selected balanced result; r11 tradeoff recorded",
+  "no_entire_band_certification": true
+}

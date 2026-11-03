@@ -1,0 +1,20 @@
+{
+  "pid": 20256,
+  "started_local": "2026-11-03T03:15:38.771473+08:00",
+  "deadline_local": "2026-11-03T05:05:38.054277+08:00",
+  "completed": [
+    "caoxrlc-r11-vwide170-H1V1",
+    "caoxrlc-r11-vwide170-H2V1",
+    "caoxrlc-r11-vwide170-H3V1",
+    "caoxrlc-r11-vwide170-H4V1",
+    "caoxrlc-r11-vwide170-H1V2",
+    "caoxrlc-r11-vwide170-H1V3",
+    "caoxrlc-r11-vwide170-H1V4"
+  ],
+  "status": "comparison_complete_requires_audit",
+  "updated_local": "2026-11-03T04:17:35.611996+08:00",
+  "case": "caoxrlc-r11-vwide170-H1V4",
+  "current_project": null,
+  "solver_started_local": "2026-11-03T04:08:03.918687+08:00",
+  "solver_limit_seconds": 1500
+}

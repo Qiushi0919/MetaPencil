@@ -1,0 +1,20 @@
+{
+  "r11_seven_actual_pre_post_geometry_and_16parts": true,
+  "r11_exact10_direct_frequencies_and_modes": true,
+  "r11_archives_recovered_with_sha256": 7,
+  "r11_center9p5GHz_last_two_deltaS_pass": 7,
+  "r11_entire_band_converged": false,
+  "r12_local_geometry_contacts_and_history_incremental_pass": true,
+  "r12_changed_nets": [
+    "H_L2",
+    "H_L5",
+    "V_L7"
+  ],
+  "r12_frozen_RLC_and_solver": true,
+  "r12_launched_once": true,
+  "r12_solver_start_confirmed": "2026-11-03T09:33:07.502933+08:00",
+  "repository_structure": "PASS",
+  "sensitive_scan": "PASS",
+  "git_diff_check": "PASS",
+  "PPT": "v6 preserved; no regenerated deliverable this turn"
+}
