@@ -1,0 +1,44 @@
+{
+  "name": "r19",
+  "frequencies_GHz": [
+    9.0,
+    9.1,
+    9.2,
+    9.3,
+    9.4,
+    9.5,
+    9.625,
+    9.75,
+    9.875,
+    10.0
+  ],
+  "max_passes": 6,
+  "budget_minutes": 65,
+  "case_budget_seconds": 1500,
+  "purpose": "Single-parameter V taper total+0.10mm vs audited r16r17+0.25mm; r18+0.45 worsened worst V cyclic26.385->31.190deg and V2 upper-edge errors. Test shorter taper on four V states, no extrapolated sensitivity guarantee; same terminals,width,RLC,10directpoints and9.5GHz6passes. No full H or whole-band certification.",
+  "candidates": [
+    {
+      "name": "vtaper10",
+      "terminal_delta_mm": {
+        "H_L2": -0.7,
+        "H_L5": -0.58,
+        "H_L3": -0.5,
+        "V_L9": -0.95,
+        "V_L8": -0.8,
+        "V_L7": 0.65
+      },
+      "common_width_factor": {
+        "V_common": 1.9
+      },
+      "states": [
+        "H1V1",
+        "H1V2",
+        "H1V3",
+        "H1V4"
+      ],
+      "common_taper_delta_mm": {
+        "V_common": 0.1
+      }
+    }
+  ]
+}

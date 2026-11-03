@@ -1,0 +1,17 @@
+{
+  "pid": 12704,
+  "started_local": "2026-11-03T14:34:26.795339+08:00",
+  "deadline_local": "2026-11-03T15:39:26.080020+08:00",
+  "completed": [
+    "caoxrlc-r18-vtaper45-H1V1",
+    "caoxrlc-r18-vtaper45-H1V2",
+    "caoxrlc-r18-vtaper45-H1V3",
+    "caoxrlc-r18-vtaper45-H1V4"
+  ],
+  "status": "comparison_complete_requires_audit",
+  "updated_local": "2026-11-03T15:11:10.562258+08:00",
+  "case": "caoxrlc-r18-vtaper45-H1V4",
+  "current_project": null,
+  "solver_started_local": "2026-11-03T15:01:57.416837+08:00",
+  "solver_limit_seconds": 1500
+}

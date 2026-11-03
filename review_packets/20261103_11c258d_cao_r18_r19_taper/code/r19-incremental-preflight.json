@@ -1,0 +1,148 @@
+{
+  "passed": true,
+  "V_taper_range_mm": [
+    -0.25,
+    0.45
+  ],
+  "H_taper_range_unchanged_mm": [
+    -0.25,
+    0.25
+  ],
+  "identity_boundaries_and_rejection_pass": true,
+  "parent": "r16r17-v9trim",
+  "only_changed_net": "V_common",
+  "only_change": "Two wide taper shoulders y-0.15mm (total+0.10); stem width and narrow pad fixed",
+  "minimum_gap_mm": [
+    0.027975014402548914,
+    "H_L2",
+    "H_common"
+  ],
+  "histories_equal_except_switch_RC": true,
+  "checks": [
+    {
+      "state": "H1V1",
+      "history_changes": [
+        "V_common nominal pad and fanout"
+      ],
+      "changed_vertices": [
+        [
+          2,
+          [
+            -0.396,
+            -4.183684210526316
+          ],
+          [
+            -0.396,
+            -4.333684210526316
+          ]
+        ],
+        [
+          11,
+          [
+            0.396,
+            -4.183684210526316
+          ],
+          [
+            0.396,
+            -4.333684210526316
+          ]
+        ]
+      ],
+      "parts_contacts_ground_slots_frequencies_solver_identical": true
+    },
+    {
+      "state": "H1V2",
+      "history_changes": [
+        "V_common nominal pad and fanout"
+      ],
+      "changed_vertices": [
+        [
+          2,
+          [
+            -0.396,
+            -4.183684210526316
+          ],
+          [
+            -0.396,
+            -4.333684210526316
+          ]
+        ],
+        [
+          11,
+          [
+            0.396,
+            -4.183684210526316
+          ],
+          [
+            0.396,
+            -4.333684210526316
+          ]
+        ]
+      ],
+      "parts_contacts_ground_slots_frequencies_solver_identical": true
+    },
+    {
+      "state": "H1V3",
+      "history_changes": [
+        "V_common nominal pad and fanout"
+      ],
+      "changed_vertices": [
+        [
+          2,
+          [
+            -0.396,
+            -4.183684210526316
+          ],
+          [
+            -0.396,
+            -4.333684210526316
+          ]
+        ],
+        [
+          11,
+          [
+            0.396,
+            -4.183684210526316
+          ],
+          [
+            0.396,
+            -4.333684210526316
+          ]
+        ]
+      ],
+      "parts_contacts_ground_slots_frequencies_solver_identical": true
+    },
+    {
+      "state": "H1V4",
+      "history_changes": [
+        "V_common nominal pad and fanout"
+      ],
+      "changed_vertices": [
+        [
+          2,
+          [
+            -0.396,
+            -4.183684210526316
+          ],
+          [
+            -0.396,
+            -4.333684210526316
+          ]
+        ],
+        [
+          11,
+          [
+            0.396,
+            -4.183684210526316
+          ],
+          [
+            0.396,
+            -4.333684210526316
+          ]
+        ]
+      ],
+      "parts_contacts_ground_slots_frequencies_solver_identical": true
+    }
+  ],
+  "source_case_sha256": "4f689411ac76456f7960281c5faaf6be7d063eae175aeb10191ed6ba36f0142a"
+}

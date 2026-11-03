@@ -1,0 +1,21 @@
+{
+  "sync_entry.md": "9940294a83d22081aaaef89f5c9c8522cd7108d811441f9cf5e2ab77504be2da",
+  "README.md": "d84b15220fa8b9eb287c856c838750d3041b860488f34bbec4c93da8a4c349a3",
+  "optimization_plan.json": "26794c00581d26adbd714f5d9fb5277382fd03ebf173929ce080dbfa11676406",
+  "run_manifest.json": "bf4ec188776af5b7ff568c933c6f444afc20903b6446eb897cc0221517f3e2cd",
+  "tools/caorlcr19.py": "155d2b8baedf9230957433697c92242b20796a83033fb8aee0b725d93924489f",
+  "tools/caorlcr19.cmd": "ffde3ad771a6c25d2f0402aaddf8a1a638816e1282244abf0ec668e9510a2a78",
+  "code/prepare_opt_round.py": "acdd9ac0aa78b5fbc6c67cee3f351c6ee1cb5ccc925ec9985a53fcfb4a8d12cb",
+  "code/analyze_vfour.py": "c534646904ccf65001eeb7c218684325c7f298055e244f2416770e0a7f7846eb",
+  "code/r19-plan.json": "dcba59172be8b7851cb73096b0e54c5367a7d98dee3c11afd1ba72e602b86376",
+  "code/check_incremental_r19.py": "a62727f007df91ac5b727af24f69e848476c8a95366dd27e13522c0bc4d62a85",
+  "code/r19-incremental-preflight.json": "999a3bce48552eb465b9431778b68d8ce427db4b0240d39bfd43a2a249e5ed3b",
+  "code/rlc-r19-preflight.json": "ef88ed988123c4a106b217f9bd935c38aa809298769df996264ced9074341dbb",
+  "Results_rlc_r19_v1/heartbeat.json": "1efb105a0a17074475415de5cc6e20b68aaffa04c6f2f90ff83a89c9d4640189",
+  "Results_rlc_r19_v1/DEPLOY.json": "34c6382ccf7179ec0bdfc8a1ee1a814a92719a7673a83018971db5ee12df4606",
+  "Results_rlc_r19_v1/latest_status.json": "0d1ce84b76ca0a07af30389481df3600d33925e568bf39778b85851f8ba72746",
+  "Results_rlc_r18_v1/heartbeat.json": "da396d57b24ed2bba2ed9d305e5a244cbe5d58d117e90807dd5ba82d3c7119ab",
+  "Results_rlc_r18_v1/latest_status.json": "12b4c508f5f8836ac8048ddc5bda438e47e7d9ec1bd27b69a2520479031b8b1b",
+  "analysis_r18/pair_sensitivity.json": "54c2f90bab2834be78a7c2f3e3dc7623062ac044db423556511d32351a84f50e",
+  "analysis_r18/vfour_vs_analysis_v9trim_seven.json": "807fe1415cf6af3f59d93328f8562bf106783e0b43c24b7f716896273817ef95"
+}

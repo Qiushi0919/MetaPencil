@@ -1,0 +1,9 @@
+{
+  "repository_structure": "PASS",
+  "sensitive_scan": "PASS high_confidence_findings=0",
+  "native_r18_audits": "4/4 PASS before and after geometry,16 parts,contacts,slots,ten frequencies and modes",
+  "r19_incremental_preflight": "PASS only two V shoulder vertices;fixed RLC and solver; gap .027975mm",
+  "analysis": "Existing V-four analyzer regression previously passed1e-10; r18 computed on all ten direct points",
+  "git_diff_check": "PASS",
+  "no_full_band_or_dual_pol_certification": true
+}
