@@ -1,0 +1,20 @@
+{
+  "native_seven_audit": "PASS",
+  "exact_10points": "PASS",
+  "incremental_preflight": "PASS",
+  "width_identity_bounds": "PASS",
+  "ppt_standalone": "PASS",
+  "ppt_merged": "PASS",
+  "final_slides_rendered": 50,
+  "changed_Cao_slides_inspected": [
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "first38_and_original_Cao1to7_render_byte_identical": true,
+  "repository_structure": "PASS",
+  "sensitive_scan": "PASS high_confidence_findings=0",
+  "git_diff_check": "PASS"
+}

@@ -1,0 +1,162 @@
+{
+  "round": "r10",
+  "pairs": [],
+  "completed_case_audits": [
+    {
+      "state": "H2V1",
+      "seconds": 508.39099999982864,
+      "deltaS": [
+        0.067662,
+        0.0302034,
+        0.0320465,
+        0.0234209,
+        0.00950468
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r10-projects-v1\\caoxrlc-r10-vwide-H2V1.cst",
+      "source_sha256": "cc4318078e9c294a60a5d17567f9ca93dd41eb2b67a276990bce8f4f69438244",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r10/native/runs/caoxrlc-r10-vwide-H2V1",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "b33f54bbc3cf88bfee72c96a279b0e86cf50b8e9cea9365da70839f591a2a8a1",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L5",
+          "V_L10"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "580ba4c08e772ece7dbede0a3045c736877a04cd621538e58325bd1223ccb5f6"
+    },
+    {
+      "state": "H3V1",
+      "seconds": 515.5,
+      "deltaS": [
+        0.142351,
+        0.0964795,
+        0.0492071,
+        0.0275391,
+        0.0100842
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r10-projects-v1\\caoxrlc-r10-vwide-H3V1.cst",
+      "source_sha256": "2265991bf9b0d0764050494c6afd2a4c3cdbcc7a5ee5424e959c789414e52733",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r10/native/runs/caoxrlc-r10-vwide-H3V1",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "0e9f35b6829271f77beead5ff2d388ebc9161aef43eebb04a9295058ee0cfeb8",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L3",
+          "V_L10"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "55a59811828b2d995850e066683dccf3ac0ad84ef643d41e70c420b196661bdc"
+    },
+    {
+      "state": "H4V1",
+      "seconds": 385.03100000019185,
+      "deltaS": [
+        0.069378,
+        0.0519206,
+        0.0291062,
+        0.0264836
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r10-projects-v1\\caoxrlc-r10-vwide-H4V1.cst",
+      "source_sha256": "299b4cf5496af49a09d2363ebb28ea6f6f02a6a6d1f66834b19794c48b38e990",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r10/native/runs/caoxrlc-r10-vwide-H4V1",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "715652bbb2cc6fb70ae68290ba89c620f6eb1347434da803938dabf0f751afb0",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L2",
+          "V_L10"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "7ecf8bf3829ef88387160d1e01a8ddd2b820df06a8b6ef5c130ecd5188e4ead7"
+    },
+    {
+      "state": "H1V3",
+      "seconds": 549.2970000000205,
+      "deltaS": [
+        0.106439,
+        0.100051,
+        0.0570631,
+        0.0285336,
+        0.0130228
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r10-projects-v1\\caoxrlc-r10-vwide-H1V3.cst",
+      "source_sha256": "f304ad103febb6a2d659579d76909f31acdfb1530baed6ca3fbdc1ffd0c329f9",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r10/native/runs/caoxrlc-r10-vwide-H1V3",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "811ab15b52a16684ffadd651cfd0728c27b2ee252345aa2ae0f961430e9408d6",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L4",
+          "V_L8"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "6313c4070fd4dc1a5af9a54a4957bee2c08b7c655b559b0d4932a5a7b614669a"
+    },
+    {
+      "state": "H1V4",
+      "seconds": 532.8899999998976,
+      "deltaS": [
+        0.0691938,
+        0.0679847,
+        0.0397737,
+        0.0253292,
+        0.0124545
+      ],
+      "source_project": "C:\\Users\\xqs\\Desktop\\qiushi-cao-rlc-r10-projects-v1\\caoxrlc-r10-vwide-H1V4.cst",
+      "source_sha256": "85a0a3717690a8b3c46b64f5fcf9db44073a6e1ae4a83ce5d8ec68dc035f5d7e",
+      "run": "/Users/qiushi/Doctor/MetaPencil/Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/analysis_r10/native/runs/caoxrlc-r10-vwide-H1V4",
+      "native_audit_pass": true,
+      "geometry": {
+        "passed": true,
+        "native_history_sha256": "2b0d4d19e62c9108d1fc8da38a6194f7bff237282a9f2497b780c537f7046d34",
+        "RF_nets": 10,
+        "series_RLC": 8,
+        "ground_shunts": 8,
+        "on_branches": [
+          "H_L4",
+          "V_L7"
+        ],
+        "actual_polygons_match_preflight": true,
+        "all_contacts_inside_actual_metal": true,
+        "all_shunts_on_unslotted_ground": true,
+        "paper_geometry_certified": false
+      },
+      "archive_sha256": "d541fd0fe512f935a3fd3aa08c5844410a503f5b13fcae1b1703cd3730fc1e6d"
+    }
+  ],
+  "pending_cases": [],
+  "cannot_combine_different_geometries": true
+}

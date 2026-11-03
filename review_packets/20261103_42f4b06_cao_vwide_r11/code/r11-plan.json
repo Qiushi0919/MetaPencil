@@ -1,0 +1,43 @@
+{
+  "name": "r11",
+  "frequencies_GHz": [
+    9.0,
+    9.1,
+    9.2,
+    9.3,
+    9.4,
+    9.5,
+    9.625,
+    9.75,
+    9.875,
+    10.0
+  ],
+  "max_passes": 6,
+  "budget_minutes": 110,
+  "case_budget_seconds": 1500,
+  "purpose": "Single-geometry full seven-state continuation after vwide complete audit. V1/V2 widening1->1.35 reduces error span74.49->58.44deg and worst47.47->38.36deg with better amplitude; full V has five passing sample points, H edges still fail. Expand V_common width factor1.35->1.70 only, leave all terminals and RLC unchanged. Direction supported but benefit at new width unproven; check H coupling/V3/V4/amplitude and convergence. No mixed geometry or broadband certification.",
+  "candidates": [
+    {
+      "name": "vwide170",
+      "terminal_delta_mm": {
+        "H_L2": -0.6,
+        "H_L5": -0.65,
+        "H_L3": -0.5,
+        "V_L9": -0.85,
+        "V_L8": -0.8
+      },
+      "common_width_factor": {
+        "V_common": 1.7
+      },
+      "states": [
+        "H1V1",
+        "H2V1",
+        "H3V1",
+        "H4V1",
+        "H1V2",
+        "H1V3",
+        "H1V4"
+      ]
+    }
+  ]
+}
