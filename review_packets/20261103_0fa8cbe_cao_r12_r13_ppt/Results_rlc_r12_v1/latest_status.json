@@ -1,0 +1,20 @@
+{
+  "pid": 19624,
+  "started_local": "2026-11-03T09:31:57.792267+08:00",
+  "deadline_local": "2026-11-03T11:21:56.979947+08:00",
+  "completed": [
+    "caoxrlc-r12-edgecomp-H1V1",
+    "caoxrlc-r12-edgecomp-H2V1",
+    "caoxrlc-r12-edgecomp-H3V1",
+    "caoxrlc-r12-edgecomp-H4V1",
+    "caoxrlc-r12-edgecomp-H1V2",
+    "caoxrlc-r12-edgecomp-H1V3",
+    "caoxrlc-r12-edgecomp-H1V4"
+  ],
+  "status": "comparison_complete_requires_audit",
+  "updated_local": "2026-11-03T10:44:59.083988+08:00",
+  "case": "caoxrlc-r12-edgecomp-H1V4",
+  "current_project": null,
+  "solver_started_local": "2026-11-03T10:35:28.319539+08:00",
+  "solver_limit_seconds": 1500
+}

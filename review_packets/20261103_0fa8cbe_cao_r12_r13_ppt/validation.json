@@ -1,0 +1,10 @@
+{
+  "repository_structure": "PASS",
+  "baseline_checksums": "PASS checked872",
+  "sensitive_scan": "PASS high_confidence_findings0",
+  "git_diff_check": "PASS",
+  "r12_native_audits": "7/7passed",
+  "r13_local_geometry_and_incremental": "PASS",
+  "PPT": "finalizer PASS; all50rendered; changed5inspected; original38unchanged",
+  "root_layout_changes_not_staged": 952
+}

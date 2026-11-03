@@ -1,0 +1,44 @@
+{
+  "name": "r13",
+  "frequencies_GHz": [
+    9.0,
+    9.1,
+    9.2,
+    9.3,
+    9.4,
+    9.5,
+    9.625,
+    9.75,
+    9.875,
+    10.0
+  ],
+  "max_passes": 6,
+  "budget_minutes": 110,
+  "case_budget_seconds": 1500,
+  "purpose": "Full-seven joint upper-edge compensation: r12 H4 upper worsened with L2 extension, V2 upper remains -25deg, V4 upper +29.62deg. Shorten H_L2 by0.20mm versus r12; widen Vcommon1.70->1.90 to test further reduction in V2 dispersion, extend V_L7 by0.45mm to compensate V4. No single-branch attribution or assumed success; exact10-point whole-candidate comparison and amplitude reporting required.",
+  "candidates": [
+    {
+      "name": "uppercomp",
+      "terminal_delta_mm": {
+        "H_L2": -0.7,
+        "H_L5": -0.58,
+        "H_L3": -0.5,
+        "V_L9": -0.85,
+        "V_L8": -0.8,
+        "V_L7": 0.65
+      },
+      "common_width_factor": {
+        "V_common": 1.9
+      },
+      "states": [
+        "H1V1",
+        "H2V1",
+        "H3V1",
+        "H4V1",
+        "H1V2",
+        "H1V3",
+        "H1V4"
+      ]
+    }
+  ]
+}
