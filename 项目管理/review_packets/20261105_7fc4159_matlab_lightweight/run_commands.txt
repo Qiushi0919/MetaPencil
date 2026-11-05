@@ -1,0 +1,10 @@
+Full default recomputation (working directory /tmp):
+/Applications/MATLAB_R2025a.app/bin/matlab -batch "run('/Users/qiushi/Doctor/MetaPencil/Matlab-code/code/main_study.m')"
+
+Before the full run, verify_memory_plot.m rendered the five original complete-run arrays directly from memory to a separate lightweight directory and checked all PNG pixels against the original outputs. No MAT/FIG was written.
+After the full run, verify_lightweight_run.m compares actual default-run PNG pixels,parameters,metrics,CSV controls and source snapshots; checks storage size,absence of MAT/FIG,overwrite protection and the explicit no-cached-data guard.
+
+Baseline complete run:
+Matlab-code/code/results_report/20261105_161814_428
+Review packet:
+项目管理/review_packets/20261105_7fc4159_matlab_lightweight

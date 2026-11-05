@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "all_12_numerical_helpers_and_hash_helper_verbatim": true,
+  "no_mat_save_calls": true,
+  "no_savefig_calls": true,
+  "core_source_sha256": "c0a804d7a05677e817dbeb878ede7344fa32b2822220073637b6949b1f5d14ac",
+  "plot_source_sha256": "d52e265bc58a3fe2f75e710de28b1992ce241663b119b20b5427fac33c10feb2"
+}

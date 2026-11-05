@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "matlab_version": "25.1.0.2943329 (R2025a)",
+  "same_parameters_except_elapsed_time": true,
+  "all_metrics_identical": true,
+  "all_five_png_pixels_identical": true,
+  "pngs": [
+    {
+      "name": "fig3_12_sar_comparison_minus80.png",
+      "max_pixel_difference": 0
+    },
+    {
+      "name": "fig3_1_point_unmodulated.png",
+      "max_pixel_difference": 0
+    },
+    {
+      "name": "fig3_2_reference_unmodulated.png",
+      "max_pixel_difference": 0
+    },
+    {
+      "name": "fig3_3_ordinary_vs_delay.png",
+      "max_pixel_difference": 0
+    },
+    {
+      "name": "fig3_13_slow_time_and_point_controls.png",
+      "max_pixel_difference": 0
+    }
+  ],
+  "control_csv_identical": true,
+  "no_mat_or_fig_files": true,
+  "no_cached_data_guard": true,
+  "overwrite_guard": true,
+  "same_input_data": true,
+  "source_snapshots_match": true,
+  "total_bytes": 7.425623E+6,
+  "total_decimal_MB": 7.425623,
+  "total_MiB": 7.0816259384155273,
+  "file_count": 17,
+  "numeric_elapsed_seconds": 450.96573420833334
+}

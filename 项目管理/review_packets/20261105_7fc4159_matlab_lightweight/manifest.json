@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-05",
+  "status": "PASS",
+  "base_commit": "7fc41593a47350a5cd56610758532f97300d5659",
+  "publication_branch": "fix/matlab-lightweight-output-20261105",
+  "entry": "Matlab-code/code/main_study.m",
+  "output": "Matlab-code/code/results_report/20261105_174457_036",
+  "review_packet": "项目管理/review_packets/20261105_7fc4159_matlab_lightweight",
+  "storage": "PNG,JSON/CSV parameters and metrics,source/run records only",
+  "scientific_algorithm_changed": false,
+  "all_12_numerical_helpers_verbatim": true,
+  "full_complex_arrays_saved": false,
+  "editable_figures_saved": false,
+  "old_full_results_preserved": true,
+  "local_preexisting_readme_deletion_preserved": true,
+  "model": "ideal four-state cell response and carrier horizontal array factor times whole-object complex echo; unchanged RD; not full-wave/hardware",
+  "normalization": "same-run unmodulated700point peak,20log10 amplitude; -80..0dB comparison, -50..0dB controls",
+  "acceptance": {
+    "status": "PASS",
+    "matlab_version": "25.1.0.2943329 (R2025a)",
+    "same_parameters_except_elapsed_time": true,
+    "all_metrics_identical": true,
+    "all_five_png_pixels_identical": true,
+    "pngs": [
+      {
+        "name": "fig3_12_sar_comparison_minus80.png",
+        "max_pixel_difference": 0
+      },
+      {
+        "name": "fig3_1_point_unmodulated.png",
+        "max_pixel_difference": 0
+      },
+      {
+        "name": "fig3_2_reference_unmodulated.png",
+        "max_pixel_difference": 0
+      },
+      {
+        "name": "fig3_3_ordinary_vs_delay.png",
+        "max_pixel_difference": 0
+      },
+      {
+        "name": "fig3_13_slow_time_and_point_controls.png",
+        "max_pixel_difference": 0
+      }
+    ],
+    "control_csv_identical": true,
+    "no_mat_or_fig_files": true,
+    "no_cached_data_guard": true,
+    "overwrite_guard": true,
+    "same_input_data": true,
+    "source_snapshots_match": true,
+    "total_bytes": 7425623.0,
+    "total_decimal_MB": 7.425623,
+    "total_MiB": 7.081625938415527,
+    "file_count": 17,
+    "numeric_elapsed_seconds": 450.96573420833334
+  },
+  "started_local": "2026-11-05 17:44:57",
+  "finished_local": "2026-11-05 17:52:55",
+  "publication_status": "validated_ready_for_PR"
+}

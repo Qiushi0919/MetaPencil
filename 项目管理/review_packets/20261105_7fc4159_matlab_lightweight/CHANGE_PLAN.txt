@@ -1,0 +1,7 @@
+User selected PNG+parameters+metrics+run records only. Change output storage, not the scientific configuration.
+Keep fc=9.5GHz,B=1GHz,Fs=9.6GSa/s,PRF3072Hz,2426x32768,horizontal16x16,pitch15mm,whole-object echo and all12 numerical helpers unchanged.
+Keep original phase signs,units,axes,common reference,-80dB three-panel limits and -50dB controls.
+Return plot data in memory to the renderer; do not write full_results.mat,point_images.mat,timing.mat or FIG files in new runs.
+Retain PNG,JSON/CSV parameters and metrics,source snapshots and run logs. No reduced precision,coarser sampling,temporary large MAT files or deletion of prior full results.
+Validate all five PNGs and numeric metrics against the prior complete report run; execute the default entry and measure actual output size.
+Local Matlab-code/使用说明.md is already absent at task start; do not restore it silently. Updated usage lives in this packet and in the published README.

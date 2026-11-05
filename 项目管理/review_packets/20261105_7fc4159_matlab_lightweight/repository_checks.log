@@ -1,0 +1,16 @@
+REPOSITORY_STRUCTURE=PASS
+BASELINE_CHECKSUMS=PASS checked=872
+test_balanced_2bit_plus_one (tests.test_harmonic_model.HarmonicModelTest) ... ok
+test_balanced_two_channel_area (tests.test_harmonic_model.HarmonicModelTest) ... ok
+test_four_delay_nulls (tests.test_harmonic_model.HarmonicModelTest) ... ok
+test_retained_plus_one_and_2d_amplitude (tests.test_harmonic_model.HarmonicModelTest) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+SENSITIVE_SCAN=PASS high_confidence_findings=0
+项目管理/review_packets/20261105_7fc4159_matlab_lightweight/acceptance.log:23: new blank line at EOF.
+
+The published acceptance.log had only its trailing blank line removed; the raw local log is preserved.
+FINAL_WHITESPACE_CHECK=PASS
