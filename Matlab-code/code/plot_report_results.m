@@ -1,7 +1,7 @@
-function info=plot_report_results(output_dir)
-% PLOT_REPORT_RESULTS 从本次MAT数据重画，无须重算回波或读取项目管理目录。
+function info=plot_report_results(output_dir,data)
+% PLOT_REPORT_RESULTS 直接绘制内存中的计算结果，只输出PNG。
 % 三模型图统一未调制参考，-80..0dB，地距/方位±20m；其他控制图-50..0dB。
-% PNG与可编辑FIG保存在同一输出目录；仅覆盖该目录中的同名绘图文件。
+% 单参数调用仅兼容已有完整MAT归档；轻量结果需重算后绘图。
 assert(isfolder(output_dir),'Result directory not found.');
 p=jsondecode(fileread(fullfile(output_dir,'parameters.json')));
 metrics=jsondecode(fileread(fullfile(output_dir,'point_metrics.json')));
@@ -9,10 +9,23 @@ fonts=listfonts;
 cn=chooseFont(fonts,{'Microsoft YaHei','微软雅黑','PingFang SC','Heiti SC','Arial Unicode MS'});
 en=chooseFont(fonts,{'Times New Roman','Times','Liberation Serif'});
 info=struct('chinese_font',cn,'latin_font',en,'display_range_db',[-80,0], ...
- 'raw_complex_data_clipped',false,'per_panel_renormalized',false,'files',{{}});
+ 'raw_complex_data_clipped',false,'per_panel_renormalized',false, ...
+ 'full_complex_arrays_saved',false,'editable_figures_saved',false,'files',{{}});
 datafile=fullfile(output_dir,'full_results.mat');
-if ~isfile(datafile)
- data=load(fullfile(output_dir,'point_images.mat'));
+if nargin<2
+ if isfile(datafile)
+  data=matfile(datafile);point_only=false;
+ elseif isfile(fullfile(output_dir,'point_images.mat'))
+  data=load(fullfile(output_dir,'point_images.mat'));point_only=true;
+ else
+  error('plot_report_results:NoSavedData', ...
+   'This lightweight run contains PNGs and metrics only. Rerun main_study to redraw.');
+ end
+else
+ assert(isstruct(data)&&isfield(data,'mode'),'Missing in-memory plot data.');
+ point_only=strcmp(data.mode,'point');
+end
+if point_only
  fig=newFigure(1500,500);tl=tiledlayout(fig,1,3,'TileSpacing','compact','Padding','compact');
  keys={'ref','pc','ps'};titles={'未调制单点','计数平均单点','水平空间单点'};
  for k=1:3
@@ -20,11 +33,11 @@ if ~isfile(datafile)
  end
  cb=colorbar(ax);cb.Layout.Tile='east';cb.Ticks=-80:10:0;cb.FontName=en;cb.Label.String=mixed('共同单点参考幅度','/ dB',cn,en);
  info.files{end+1}=savePlot(fig,output_dir,'point_comparison_minus80');
- info.normalization='stored point images divided by same-run unmodulated point peak';
+ info.normalization='point images divided by same-run unmodulated point peak';
  writePlotJson(output_dir,info);return;
 end
 
-m=matfile(datafile);x=m.Range_axis_ground;y=m.Az_axis;
+m=data;x=m.Range_axis_ground;y=m.Az_axis;
 ref=m.reference_peak;point_ref=m.reference_point_peak;
 assert(isfinite(ref)&&ref>0&&isfinite(point_ref)&&point_ref>0);
 ix=find(abs(x)<=20);iy=find(abs(y)<=20);
@@ -82,7 +95,12 @@ cb=colorbar(ax);cb.Layout.Tile='east';cb.FontName=en;cb.Label.String=mixed('共�
 info.files{end+1}=savePlot(fig,output_dir,'fig3_3_ordinary_vs_delay');
 
 % 图3-13：慢时间响应，以及未调制的水平阵面单点控制。
-tm=m.tm;h0=m.response_count(:,p.Nr/2+1);h1=m.response_spatial(:,p.Nr/2+1);
+tm=m.tm;
+if isstruct(m)&&isfield(m,'slow_count')
+ h0=m.slow_count;h1=m.slow_spatial;
+else
+ h0=m.response_count(:,p.Nr/2+1);h1=m.response_spatial(:,p.Nr/2+1);
+end
 fig=newFigure(1400,850);tl=tiledlayout(fig,2,2,'TileSpacing','compact','Padding','compact');
 ax=nexttile(tl);plot(ax,tm,abs(h0),tm,abs(h1),'LineWidth',.8);styleAxes(ax,en);
 title(ax,'雷达方向场幅（快时间为零）','FontName',cn);
@@ -161,7 +179,6 @@ end
 function name=savePlot(fig,out,stem)
  name=[stem '.png'];drawnow;
  exportgraphics(fig,fullfile(out,name),'Resolution',240,'BackgroundColor','white');
- savefig(fig,fullfile(out,[stem '.fig']));
  if usejava('desktop'),set(fig,'Visible','on');else,close(fig);end
 end
 

@@ -1,0 +1,60 @@
+{
+  "c": 3.0E+8,
+  "fc": 9.5E+9,
+  "Br": 1.0E+9,
+  "Tp": 1E-6,
+  "beta": 1.0471975511965976,
+  "H0": 500,
+  "v_x": 80,
+  "Fs": 9.6E+9,
+  "PRF": 3072,
+  "pitch_m": 0.015,
+  "lambda": 0.031578947368421054,
+  "Y0": 866.02540378443837,
+  "R0": 999.99999999999977,
+  "Kr": 1.0E+15,
+  "Ka": -405.33333333333337,
+  "nominal_az_resolution": 0.25,
+  "nominal_ground_resolution": 0.17320508075688773,
+  "aperture_length": 63.157894736842096,
+  "aperture_time": 0.78947368421052622,
+  "Na": 2426,
+  "fast_span_required": 2.64E-6,
+  "Nr": 32768,
+  "state_dwell_fraction": [
+    0.25,
+    0.25,
+    0.25,
+    0.25
+  ],
+  "inner_delay_fraction": [
+    0,
+    0.1,
+    0.83333333333333337,
+    0.93333333333333335
+  ],
+  "display_limits_db": [
+    -80,
+    0
+  ],
+  "display_half_width_m": 20,
+  "compensation_added": false,
+  "array_normal_global": [
+    0,
+    0,
+    1
+  ],
+  "array_orientation": "horizontal ground plane",
+  "center_incidence_deg": 59.999999999999993,
+  "state_response_deg": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "actual_aperture_N_over_PRF": 0.78971354166666663,
+  "source": "report-synced portable MATLAB entry; unchanged report quantizer/response/RD",
+  "normalization": "image amplitude to unmodulated reference peak within same run; raw complex values not clipped",
+  "model_level": "horizontal ground plane at60deg incidence; ideal carrier finite planar array factor times complete object complex echo; no actual wideband unit-cell response",
+  "elapsed_seconds": 450.96573420833334
+}

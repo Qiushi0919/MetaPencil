@@ -1,0 +1,30 @@
+{
+  "chinese_font": "Microsoft YaHei",
+  "latin_font": "Times New Roman",
+  "display_range_db": [
+    -80,
+    0
+  ],
+  "raw_complex_data_clipped": false,
+  "per_panel_renormalized": false,
+  "full_complex_arrays_saved": false,
+  "editable_figures_saved": false,
+  "files": [
+    "fig3_12_sar_comparison_minus80.png",
+    "fig3_1_point_unmodulated.png",
+    "fig3_2_reference_unmodulated.png",
+    "fig3_3_ordinary_vs_delay.png",
+    "fig3_13_slow_time_and_point_controls.png"
+  ],
+  "normalization": "20log10(abs(image)/same-run unmodulated700point peak)",
+  "reference_amplitude": 715157.18474740291,
+  "window_peak_db": [
+    0,
+    -18.767618734532292,
+    -57.341081307668119
+  ],
+  "window_ground_az_m": [
+    -20,
+    20
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "window_m": [
+    -20,
+    20
+  ],
+  "floor_db": -80,
+  "ceiling_db": 0,
+  "reference": 715157.18474740291,
+  "horizontal_peak_db": -57.341081307668119,
+  "count_peak_db": -18.767618734532292,
+  "per_panel_renormalized": false,
+  "raw_data_clipped": false
+}

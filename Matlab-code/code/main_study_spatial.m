@@ -3,7 +3,8 @@ function result=main_study_spatial(options)
 % 直接运行：result = main_study_spatial;
 % 默认：9–10GHz，Fs=9.6GSa/s，PRF=3072Hz，700散射点，1→4编码。
 % options 可选字段：mode('full'或'point'), Fs, PRF, output_dir, make_plots。
-% 只重新绘图：plot_report_results(result.output_dir)。
+% 轻量保存：仅PNG、JSON/CSV参数指标及源文件记录；复数响应照常计算，不写MAT/FIG。
+% 轻量结果没有后处理数据，需重新运行才能重新绘图。
 % 旧多案例/四机/倾斜阵面程序完整保存在历史版本/报告同步前_20261105/code。
 %
 % 阵面水平：r=(x地距,y方位,0)，s=(-Y0,v*eta,H)/sqrt(R0^2+(v*eta)^2)。
@@ -42,21 +43,24 @@ if isfolder(out)
 else
  [ok,msg]=mkdir(out);assert(ok,'Cannot create output: %s',msg);
 end
-manifest=struct('status','RUNNING','version','report_sync_20261105', ...
+manifest=struct('status','RUNNING','version','report_lightweight_20261105', ...
  'started_local',char(datetime('now','Format','yyyy-MM-dd HH:mm:ss')), ...
- 'matlab_version',version,'baseline_source_commit','c64fe55d0b03684aa7a624bc0cd6a4266463ef45', ...
+ 'matlab_version',version,'baseline_source_commit','7fc41593a47350a5cd56610758532f97300d5659', ...
  'options',opts,'script_sha256',fileHash([mfilename('fullpath') '.m']), ...
  'plot_script_sha256',fileHash(fullfile(script_dir,'plot_report_results.m')), ...
  'input_sha256',fileHash(input_file), ...
  'model_level','ideal carrier horizontal array factor times whole-object complex echo; unchanged RD', ...
  'normalization','20log10 image amplitude / same-run unmodulated reference peak; no clipping', ...
- 'physical_scatterer_partition_implemented',false,'direction_compensation_added',false);
+ 'physical_scatterer_partition_implemented',false,'direction_compensation_added',false, ...
+ 'saved_artifacts','PNG, JSON/CSV parameters and metrics, source snapshots', ...
+ 'full_complex_arrays_saved',false,'editable_figures_saved',false);
 writeJson(fullfile(out,'run_manifest.json'),manifest);
 copyfile([mfilename('fullpath') '.m'],fullfile(out,'source_main_study_spatial.m'));
 copyfile(fullfile(script_dir,'plot_report_results.m'),fullfile(out,'source_plot_report_results.m'));
 try
- result=runReport(script_dir,out,opts.mode,opts.Fs,opts.PRF);
- if opts.make_plots,result.figures=plot_report_results(out);end
+ [result,plot_data]=runReport(script_dir,out,opts.mode,opts.Fs,opts.PRF);
+ if opts.make_plots,result.figures=plot_report_results(out,plot_data);end
+ clear plot_data;
  manifest.status='PASS';manifest.parameters=result.parameters;manifest.checks=result.checks;
  if isfield(result,'display'),manifest.display=result.display;end
  if isfield(result,'figures'),manifest.figures=result.figures;end
@@ -69,7 +73,7 @@ catch err
 end
 end
 
-function result=runReport(script_dir,dest,mode,Fs,PRF)
+function [result,plot_data]=runReport(script_dir,dest,mode,Fs,PRF)
 stamp=tic;tag=sprintf('%s_Fs%.1f_PRF%d',mode,Fs/1e9,PRF);
 p=struct('c',3e8,'fc',9.5e9,'Br',1e9,'Tp',1e-6,'beta',deg2rad(60), ...
  'H0',500,'v_x',80,'Fs',Fs,'PRF',PRF,'pitch_m',.015);
@@ -112,12 +116,14 @@ for j=1:3
  end
  metrics.(names{j})=rows;
 end
-ix=abs(Range_axis_ground)<=55;iy=abs(Az_axis)<=55;
-gx=Range_axis_ground(ix);gy=Az_axis(iy);
-ref=point_reference(iy,ix)/reference_point_peak;pc=point_count(iy,ix)/reference_point_peak;
-ps=point_spatial(iy,ix)/reference_point_peak;po=point_ordinary(iy,ix)/reference_point_peak;
-pu=point_uniform(iy,ix)/reference_point_peak;
-save(fullfile(dest,'point_images.mat'),'gx','gy','ref','pc','ps','po','pu','-v7.3');
+plot_data=struct('mode',mode);
+if strcmp(mode,'point')
+ ix=abs(Range_axis_ground)<=55;iy=abs(Az_axis)<=55;
+ plot_data.gx=Range_axis_ground(ix);plot_data.gy=Az_axis(iy);
+ plot_data.ref=point_reference(iy,ix)/reference_point_peak;
+ plot_data.pc=point_count(iy,ix)/reference_point_peak;
+ plot_data.ps=point_spatial(iy,ix)/reference_point_peak;
+end
 writeJson(fullfile(dest,'point_metrics.json'),metrics);
 checks=struct('all_finite',all(isfinite(point_spatial(:))),'source_quantizer_unmodified',true);
 for a=unique([1,round(p.Na/2)+1,p.Na])
@@ -149,25 +155,15 @@ if strcmp(mode,'full')
   'count_peak_db',20*log10(max(abs(img_count(mask_view)))/reference_peak), ...
   'per_panel_renormalized',false,'raw_data_clipped',false);
  writeJson(fullfile(dest,'sar_display_check.json'),display_check);
- save(fullfile(dest,'full_results.mat'),'img_reference','img_count','img_spatial','img_ordinary','img_uniform', ...
-  'point_reference','point_uniform','sr_center','target','response_count','response_spatial', ...
-  'uniform_response','Range_axis_ground','Az_axis','t','tm','reference_peak','reference_point_peak','offsets','map','-v7.3');
+ % Return only the renderer's in-memory inputs. MATLAB shares these arrays
+ % without copying; unused runReport intermediates are released on return.
+ plot_data=struct('mode',mode,'Range_axis_ground',Range_axis_ground,'Az_axis',Az_axis, ...
+  'reference_peak',reference_peak,'reference_point_peak',reference_point_peak, ...
+  'img_reference',img_reference,'img_count',img_count,'img_spatial',img_spatial, ...
+  'img_ordinary',img_ordinary,'point_reference',point_reference,'point_uniform',point_uniform, ...
+  'tm',tm,'slow_count',response_count(:,p.Nr/2+1),'slow_spatial',response_spatial(:,p.Nr/2+1));
  writetable(cells,fullfile(dest,'cells.csv'));writetable(channel_table,fullfile(dest,'channels.csv'));
  writetable(tile_table,fullfile(dest,'tiles.csv'));
- % Stable switching intervals and precise MATLAB slow states for plots.
- fr=channel_table.range_mod_frequency_hz;fa=channel_table.azimuth_mod_frequency_hz;
- T=1/abs(fr(1));edges=[0,1];D=p.inner_delay_fraction;
- for s=[-1,1],for d=D,edges=[edges,mod(s*((0:3)/4+d),1)];end,end
- edges=unique(round(edges*1e12)/1e12)*T;mids=(edges(1:end-1)+edges(2:end))/2;
- gammas=zeros(height(cells),numel(mids));
- for ii=1:numel(mids),for n=1:height(cells)
-  k=cells.channel(n);dr=cells.range_delay_type(n);da=cells.azimuth_delay_type(n);
-  gammas(n,ii)=fourPhaseRamp(2*pi*fr(k)*mids(ii)-2*pi*D(dr),p.state_response,p.state_dwell_fraction)* ...
-   fourPhaseRamp(-2*pi*D(da),p.state_response,p.state_dwell_fraction);
- end,end
- slow_states=zeros(p.Na,4);fast_example_t=[1.2,5]*1e-9;
- for d=1:4,slow_states(:,d)=mod(round(angle(fourPhaseRamp(2*pi*fa(4)*tm(:)-2*pi*D(d),p.state_response,p.state_dwell_fraction))/(pi/2)),4);end
- save(fullfile(dest,'timing.mat'),'fr','fa','D','edges','mids','gammas','slow_states','tm','fast_example_t','-v7');
 end
 parameters=rmfield(p,{'tm','fast_time_relative','state_response'});
 parameters.state_response_deg=[0,90,180,270];parameters.actual_aperture_N_over_PRF=p.Na/PRF;

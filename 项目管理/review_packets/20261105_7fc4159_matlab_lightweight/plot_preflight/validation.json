@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "png_comparisons": [
+    {
+      "file": "fig3_12_sar_comparison_minus80.png",
+      "pixels_identical": true
+    },
+    {
+      "file": "fig3_1_point_unmodulated.png",
+      "pixels_identical": true
+    },
+    {
+      "file": "fig3_2_reference_unmodulated.png",
+      "pixels_identical": true
+    },
+    {
+      "file": "fig3_3_ordinary_vs_delay.png",
+      "pixels_identical": true
+    },
+    {
+      "file": "fig3_13_slow_time_and_point_controls.png",
+      "pixels_identical": true
+    }
+  ],
+  "no_mat_or_fig": true,
+  "no_saved_data_guard": true
+}

@@ -1,0 +1,11 @@
+                 status: 'PASS'
+        png_comparisons: [1×5 struct]
+          no_mat_or_fig: 1
+    no_saved_data_guard: 1
+
+CHECKCODE main_study.m
+[]
+CHECKCODE main_study_spatial.m
+[{"id":"AGROW","message":"变量的大小似乎在每个循环迭代都会更改。请考虑进行预分配以提升速度。","fix":0,"line":115,"column":[51,54]},{"id":"NASGU","message":"赋给变量的值可能未使用。","fix":0,"line":145,"column":[51,61]}]
+CHECKCODE plot_report_results.m
+[]
