@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "reviewed_images": [
+    "fig3_12_sar_comparison_minus80",
+    "fig3_1_point_unmodulated",
+    "fig3_2_reference_unmodulated",
+    "fig3_3_ordinary_vs_delay",
+    "fig3_13_slow_time_and_point_controls"
+  ],
+  "chinese_font": "Microsoft YaHei",
+  "latin_font": "Times New Roman",
+  "three_panel_cdata_error": 0,
+  "three_panel_limits_db": [
+    -80,
+    0
+  ],
+  "report_renderer_note": "Numerical image arrays are identical; MATLAB figure layout/export is not a pixel-for-pixel copy of the Python-rendered DOCX image."
+}

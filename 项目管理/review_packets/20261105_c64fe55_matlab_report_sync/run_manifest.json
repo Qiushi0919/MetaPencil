@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "version": "report_sync_20261105",
+  "started_local": "2026-11-05 16:18:14",
+  "matlab_version": "25.1.0.2943329 (R2025a)",
+  "baseline_source_commit": "c64fe55d0b03684aa7a624bc0cd6a4266463ef45",
+  "options": {
+    "mode": "full",
+    "Fs": 9600000000.0,
+    "PRF": 3072,
+    "output_dir": "",
+    "make_plots": true
+  },
+  "script_sha256": "a64e127e88d0aa0659c4bb6f81a642656412d8e2753abc00bdb23a639a03d8db",
+  "plot_script_sha256": "1956b1b20257443db09b53fe704de12ca5189281b3490ffa0c7a2b57fe73f758",
+  "input_sha256": "2eb085b69fd62cadbded5b9a7092c97eab52a9b1afb9c3a1e3c1d15b3168e2b0",
+  "model_level": "ideal carrier horizontal array factor times whole-object complex echo; unchanged RD",
+  "normalization": "20log10 image amplitude / same-run unmodulated reference peak; no clipping",
+  "physical_scatterer_partition_implemented": false,
+  "direction_compensation_added": false,
+  "parameters": {
+    "c": 300000000.0,
+    "fc": 9500000000.0,
+    "Br": 1000000000.0,
+    "Tp": 1e-06,
+    "beta": 1.0471975511965976,
+    "H0": 500,
+    "v_x": 80,
+    "Fs": 9600000000.0,
+    "PRF": 3072,
+    "pitch_m": 0.015,
+    "lambda": 0.031578947368421054,
+    "Y0": 866.0254037844384,
+    "R0": 999.9999999999998,
+    "Kr": 1000000000000000.0,
+    "Ka": -405.33333333333337,
+    "nominal_az_resolution": 0.25,
+    "nominal_ground_resolution": 0.17320508075688773,
+    "aperture_length": 63.157894736842096,
+    "aperture_time": 0.7894736842105262,
+    "Na": 2426,
+    "fast_span_required": 2.64e-06,
+    "Nr": 32768,
+    "state_dwell_fraction": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "inner_delay_fraction": [
+      0,
+      0.1,
+      0.8333333333333334,
+      0.9333333333333333
+    ],
+    "display_limits_db": [
+      -80,
+      0
+    ],
+    "display_half_width_m": 20,
+    "compensation_added": false,
+    "array_normal_global": [
+      0,
+      0,
+      1
+    ],
+    "array_orientation": "horizontal ground plane",
+    "center_incidence_deg": 59.99999999999999,
+    "state_response_deg": [
+      0,
+      90,
+      180,
+      270
+    ],
+    "actual_aperture_N_over_PRF": 0.7897135416666666,
+    "source": "report-synced portable MATLAB entry; unchanged report quantizer/response/RD",
+    "normalization": "image amplitude to unmodulated reference peak within same run; raw complex values not clipped",
+    "model_level": "horizontal ground plane at60deg incidence; ideal carrier finite planar array factor times complete object complex echo; no actual wideband unit-cell response",
+    "elapsed_seconds": 995.5947726666667
+  },
+  "checks": {
+    "all_finite": true,
+    "source_quantizer_unmodified": true,
+    "direct_cell_sum": true
+  },
+  "display": {
+    "window_m": [
+      -20,
+      20
+    ],
+    "floor_db": -80,
+    "ceiling_db": 0,
+    "reference": 715157.1847474029,
+    "horizontal_peak_db": -57.34108130766812,
+    "count_peak_db": -18.76761873453229,
+    "per_panel_renormalized": false,
+    "raw_data_clipped": false
+  },
+  "figures": {
+    "chinese_font": "Microsoft YaHei",
+    "latin_font": "Times New Roman",
+    "display_range_db": [
+      -80,
+      0
+    ],
+    "raw_complex_data_clipped": false,
+    "per_panel_renormalized": false,
+    "files": [
+      "fig3_12_sar_comparison_minus80.png",
+      "fig3_1_point_unmodulated.png",
+      "fig3_2_reference_unmodulated.png",
+      "fig3_3_ordinary_vs_delay.png",
+      "fig3_13_slow_time_and_point_controls.png"
+    ],
+    "normalization": "20log10(abs(image)/same-run unmodulated700point peak)",
+    "reference_amplitude": 715157.1847474029,
+    "window_peak_db": [
+      0,
+      -18.76761873453229,
+      -57.34108130766812
+    ],
+    "window_ground_az_m": [
+      -20,
+      20
+    ]
+  },
+  "finished_local": "2026-11-05 16:35:42",
+  "initial_plot_script_sha256": "efdd58b533ec8b9d3c1c723ce776db270db07b5c25a11191e7e89e34d161ae0c",
+  "redraw": {
+    "performed_local": "2026-11-05 16:37:44",
+    "reason": "Explicit Microsoft YaHei for the Chinese word after 2-bit; Times New Roman colorbar ticks in optional point-only figure. No numerical change.",
+    "original_manifest": "项目管理/review_packets/20261105_c64fe55_matlab_report_sync/initial_run_manifest.json",
+    "original_plot_source": "项目管理/review_packets/20261105_c64fe55_matlab_report_sync/initial_plot_report_results.m"
+  }
+}

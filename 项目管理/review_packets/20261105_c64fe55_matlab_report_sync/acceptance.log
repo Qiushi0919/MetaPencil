@@ -1,0 +1,29 @@
+COMPARE img_reference relative error 0 max abs 0
+COMPARE img_count relative error 0 max abs 0
+COMPARE img_spatial relative error 0 max abs 0
+                                  status: 'PASS'
+                          matlab_version: '25.1.0.2943329 (R2025a)'
+                        parameters_match: 1
+    coordinates_and_scatterers_identical: 1
+                reference_peak_abs_error: 0
+               complex_image_comparisons: [1×1 struct]
+              max_point_metric_abs_error: 0
+                      roi_peak_change_db: -38.5735
+                    roi_energy_change_db: -37.8420
+               horizontal_window_peak_db: -57.3411
+              figure_CData_max_abs_error: 0
+              all_three_axes_limits_pass: 1
+                    overwrite_guard_pass: 1
+               unknown_option_guard_pass: 1
+                            chinese_font: 'Microsoft YaHei'
+                              latin_font: 'Times New Roman'
+                              png_groups: 5
+                  source_kernel_verbatim: 1
+                full_run_elapsed_seconds: 995.5948
+
+main_study.m
+[]
+main_study_spatial.m
+[{"id":"AGROW","message":"变量的大小似乎在每个循环迭代都会更改。请考虑进行预分配以提升速度。","fix":0,"line":111,"column":[51,54]},{"id":"AGROW","message":"变量的大小似乎在每个循环迭代都会更改。请考虑进行预分配以提升速度。","fix":0,"line":160,"column":[23,27]},{"id":"ALIGN","message":"此关键字可能未与其在第 167 行上的匹配 END 对齐。","fix":0,"line":163,"column":[2,4]},{"id":"ALIGN","message":"此关键字可能未与其在第 167 行上的匹配 END 对齐。","fix":0,"line":163,"column":[23,25]}]
+plot_report_results.m
+[]

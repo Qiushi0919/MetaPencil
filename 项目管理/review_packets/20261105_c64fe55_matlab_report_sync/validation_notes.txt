@@ -1,0 +1,5 @@
+The full production MATLAB run exited successfully (995.60 s numerical computation and MAT save; about17.5 min including figures).
+The first acceptance attempt used64-row reads of compressed HDF5 MAT images, causing repeated chunk decompression. It was terminated explicitly after several minutes, before producing a comparison outcome; no simulation data was altered.
+The revised acceptance reads each complete image once, then compares all pixels in64-row in-memory blocks. It is not a reduced or sampled test.
+After the full run, the plotting source received a font-only refinement: Chinese 编码 after 2-bit explicitly uses Microsoft YaHei; optional point-only colorbar ticks explicitly use Times New Roman. All five full-mode figures were redrawn successfully without recomputation. Initial plot source and manifest are retained; the result manifest records the redraw and both source hashes.
+The archived four_aircraft.m has an original trailing space. It is retained byte-for-byte, with a narrow .gitattributes whitespace exemption; no historical numerical source was reformatted.

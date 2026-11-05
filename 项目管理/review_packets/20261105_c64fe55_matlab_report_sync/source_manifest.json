@@ -1,0 +1,50 @@
+{
+  "baseline_commit": "c64fe55d0b03684aa7a624bc0cd6a4266463ef45",
+  "files": [
+    {
+      "path": "Matlab-code/code/airplane_scatter_points.mat",
+      "bytes": 46790,
+      "sha256": "2eb085b69fd62cadbded5b9a7092c97eab52a9b1afb9c3a1e3c1d15b3168e2b0"
+    },
+    {
+      "path": "Matlab-code/code/main_study.m",
+      "bytes": 555,
+      "sha256": "a0b85df678ab463375e87b150c7e547fa384c1c56b24b9cf099aa8577a78f7e0"
+    },
+    {
+      "path": "Matlab-code/code/main_study_spatial.m",
+      "bytes": 20215,
+      "sha256": "a64e127e88d0aa0659c4bb6f81a642656412d8e2753abc00bdb23a639a03d8db"
+    },
+    {
+      "path": "Matlab-code/code/phone_sketch_input/compiled_phone_mask_7x7.csv",
+      "bytes": 98,
+      "sha256": "2ffcc90b9107a2f126f4c86082501d2a6ee8f705a144730eaef7c8d51c42c867"
+    },
+    {
+      "path": "Matlab-code/code/phone_sketch_input/phone_sketch.png",
+      "bytes": 1813,
+      "sha256": "70d2782f5929c92fb15d75374f2bcb3957227edfc359abb357231430f0b4283b"
+    },
+    {
+      "path": "Matlab-code/code/phone_sketch_input/sample_Z_7x7.csv",
+      "bytes": 98,
+      "sha256": "9d672fff67c93e5d7ec77c61a4bb1f4a5cd9cd59b1f044c56b07e7fbd3647976"
+    },
+    {
+      "path": "Matlab-code/code/phone_sketch_input/sample_arrow_7x7.csv",
+      "bytes": 98,
+      "sha256": "770ca24cc3f55132944f0f84f948fb486fe88cf5f405ad31312fbc4fcb7a8f12"
+    },
+    {
+      "path": "Matlab-code/code/phone_sketch_input/sample_heart_7x7.csv",
+      "bytes": 98,
+      "sha256": "0829a8615d5df773ab4500834edaa4749beef649adecca3d01b232b8466d936b"
+    },
+    {
+      "path": "Matlab-code/code/plot_report_results.m",
+      "bytes": 8880,
+      "sha256": "1956b1b20257443db09b53fe704de12ca5189281b3490ffa0c7a2b57fe73f758"
+    }
+  ]
+}

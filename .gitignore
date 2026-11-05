@@ -52,3 +52,5 @@ MetaPencil_Code_Handoff_*.zip
 MetaPencil_Review_*.zip
 MetaPencil_Fresh_Clone/
 
+# Reproducible MATLAB report runs (raw complex arrays and figures)
+Matlab-code/code/results_report/

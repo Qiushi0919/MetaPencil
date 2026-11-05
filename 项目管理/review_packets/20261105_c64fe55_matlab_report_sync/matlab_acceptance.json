@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "matlab_version": "25.1.0.2943329 (R2025a)",
+  "parameters_match": true,
+  "coordinates_and_scatterers_identical": true,
+  "reference_peak_abs_error": 0,
+  "complex_image_comparisons": {
+    "img_reference": {
+      "relative_L2_error": 0,
+      "max_abs_error": 0,
+      "reference_peak": 715157.18474740291
+    },
+    "img_count": {
+      "relative_L2_error": 0,
+      "max_abs_error": 0,
+      "reference_peak": 82417.714934983829
+    },
+    "img_spatial": {
+      "relative_L2_error": 0,
+      "max_abs_error": 0,
+      "reference_peak": 1530.8520009739634
+    }
+  },
+  "max_point_metric_abs_error": 0,
+  "roi_peak_change_db": -38.573462573135828,
+  "roi_energy_change_db": -37.84200030884368,
+  "horizontal_window_peak_db": -57.341081307668119,
+  "figure_CData_max_abs_error": 0,
+  "all_three_axes_limits_pass": true,
+  "overwrite_guard_pass": true,
+  "unknown_option_guard_pass": true,
+  "chinese_font": "Microsoft YaHei",
+  "latin_font": "Times New Roman",
+  "png_groups": 5,
+  "source_kernel_verbatim": true,
+  "full_run_elapsed_seconds": 995.5947726666667
+}

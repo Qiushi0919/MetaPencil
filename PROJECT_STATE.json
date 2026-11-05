@@ -14,25 +14,26 @@
     "branch_protection": "enabled after public visibility change; force pushes and branch deletions are disabled"
   },
   "primary_language": "MATLAB",
-  "canonical_entrypoint": "source/2 暑假_两个月仿真任务/Week 5 0815之前/SAR假目标自由度与物理阵列/run_full_array_freedom_study.m",
+  "canonical_entrypoint": "Matlab-code/code/main_study.m",
   "current_milestone": "Ideal single-polarized 2-bit point-scatterer validation with four-delay harmonic cancellation and outer H_k target codebooks",
   "model_levels": {
     "L0_harmonic_coefficients": "implemented_and_smoke_tested",
     "L1_separable_fast_slow_time_response": "implemented_ideal",
     "L2_point_scatterer_complex_raw_echo_RD": "implemented_baseline",
     "L3_position_aware_finite_aperture_partition": "not_implemented_P0",
-    "L4_full_wave_conformal_hardware": "not_implemented"
+    "L4_full_wave_conformal_hardware": "not_implemented",
+    "L2_position_aware_carrier_array_factor": "implemented_ideal; multiplies whole-object complex echo; no physical scatterer partition"
   },
   "confirmed_model_boundaries": [
-    "tile_map spatial coordinates do not affect the current response; only per-channel counts and area weights are used",
-    "each H_k channel currently multiplies a weighted full-aircraft complex response rather than a spatial subset of scatterers"
+    "Legacy and count-average models use channel counts only; current horizontal report branch additionally uses unit-cell coordinates and moving radar look in an ideal carrier array factor",
+    "All channel responses still multiply the complete input complex echo, not spatial subsets of scatterers; actual wideband oblique-incidence states, coupling and hardware are not modeled"
   ],
   "key_parameters": {
-    "fc_hz": 10000000000,
+    "fc_hz": 9500000000.0,
     "incidence_deg": 60,
     "platform_height_m": 500,
     "platform_velocity_mps": 80,
-    "ground_range_resolution_m": 0.25,
+    "ground_range_resolution_m": 0.17320508075688773,
     "azimuth_resolution_m": 0.25,
     "grid_spacing_m": 8,
     "phase_states_deg": [
@@ -46,7 +47,21 @@
       0.1,
       0.8333333333333334,
       0.9333333333333333
-    ]
+    ],
+    "bandwidth_hz": 1000000000.0,
+    "pulse_width_s": 1e-06,
+    "fast_sample_rate_hz": 9600000000.0,
+    "prf_hz": 3072,
+    "pulses": 2426,
+    "fast_time_samples": 32768,
+    "slant_range_resolution_m": 0.15,
+    "azimuth_resolution_definition": "nominal design input; not measured modulated image resolution",
+    "array_orientation": "horizontal ground plane",
+    "array_size": [
+      16,
+      16
+    ],
+    "array_pitch_m": 0.015
   },
   "validated_results": {
     "C_plus1_amplitude": 0.900316316157106,
@@ -99,7 +114,7 @@
   },
   "github_release": "https://github.com/Qiushi0919/MetaPencil/releases/tag/handoff-v1.1-git-ready",
   "next_priority": "Cao迁频对照定位开关理想化导致主要新增偏差；下一步固定含寄生开关模型再调几何。",
-  "last_updated": "2026-11-03T03:19:00+08:00",
+  "last_updated": "2026-11-05",
   "documentation": {
     "last_update": "2026-10-05",
     "personal_homepage_cn": "https://qiushi0919.cn/",
@@ -5138,5 +5153,79 @@
     "automation_deleted": true,
     "user_stop_local": "2026-11-03T15:21:06.654574+08:00",
     "r19_stop_receipt": "Unitcell-qiushi/Cao双SP4T_9至10GHz迁频_20261102/Results_rlc_r19_v1/user_stop_receipt.json"
+  },
+  "matlab_report_code_sync": {
+    "source_baseline_commit": "c64fe55d0b03684aa7a624bc0cd6a4266463ef45",
+    "publication_base_commit": "129b4dbc6c6764aa34fa622f56cdaa39f9fd2141",
+    "publication_branch": "chore/sync-matlab-report-20261105",
+    "source": "项目管理/review_packets/20261030_c64fe55_horizontal_sar/sar_horizontal_run.m",
+    "golden_results": "项目管理/review_packets/20261030_c64fe55_horizontal_sar/full_Fs9.6_PRF3072",
+    "current_entry": "Matlab-code/code/main_study.m",
+    "backup": "Matlab-code/历史版本/报告同步前_20261105",
+    "new_output": "Matlab-code/code/results_report/20261105_161814_428",
+    "run_working_directory": "/tmp",
+    "matlab_binary": "/Applications/MATLAB_R2025a.app/bin/matlab",
+    "preserved_numerical_helpers": 12,
+    "model": "ideal carrier horizontal finite-array factor times full-object complex echo; same RD",
+    "normalization": "20log10(abs(image)/same-run unmodulated 700-point image peak)",
+    "figure3_12_limits_db": [
+      -80,
+      0
+    ],
+    "raw_data_clipped": false,
+    "direction_compensation_added": false,
+    "old_code_byte_exact_backup_verified": true,
+    "source_manifest": "source_manifest.json",
+    "acceptance_manifest": "matlab_acceptance.json",
+    "publication_exclusions": [
+      "large generated MAT arrays",
+      "FIG outputs",
+      "OS metadata .DS_Store",
+      "unrelated local directory migration",
+      "original DOCX"
+    ],
+    "formatting_note": "A .gitattributes whitespace exception applies only to the byte-exact historical four_aircraft.m backup; its original trailing space is deliberately preserved.",
+    "status": "PASS",
+    "acceptance": {
+      "status": "PASS",
+      "matlab_version": "25.1.0.2943329 (R2025a)",
+      "parameters_match": true,
+      "coordinates_and_scatterers_identical": true,
+      "reference_peak_abs_error": 0,
+      "complex_image_comparisons": {
+        "img_reference": {
+          "relative_L2_error": 0,
+          "max_abs_error": 0,
+          "reference_peak": 715157.1847474029
+        },
+        "img_count": {
+          "relative_L2_error": 0,
+          "max_abs_error": 0,
+          "reference_peak": 82417.71493498383
+        },
+        "img_spatial": {
+          "relative_L2_error": 0,
+          "max_abs_error": 0,
+          "reference_peak": 1530.8520009739634
+        }
+      },
+      "max_point_metric_abs_error": 0,
+      "roi_peak_change_db": -38.57346257313583,
+      "roi_energy_change_db": -37.84200030884368,
+      "horizontal_window_peak_db": -57.34108130766812,
+      "figure_CData_max_abs_error": 0,
+      "all_three_axes_limits_pass": true,
+      "overwrite_guard_pass": true,
+      "unknown_option_guard_pass": true,
+      "chinese_font": "Microsoft YaHei",
+      "latin_font": "Times New Roman",
+      "png_groups": 5,
+      "source_kernel_verbatim": true,
+      "full_run_elapsed_seconds": 995.5947726666667
+    },
+    "run_size_gib": 10.417534080334008,
+    "review_packet": "项目管理/review_packets/20261105_c64fe55_matlab_report_sync",
+    "full_image_comparison_pending": false,
+    "publication_status": "validated_ready_for_PR"
   }
 }
