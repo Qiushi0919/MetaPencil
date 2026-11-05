@@ -5288,5 +5288,28 @@
     "started_local": "2026-11-05 17:44:57",
     "finished_local": "2026-11-05 17:52:55",
     "publication_status": "validated_ready_for_PR"
+  },
+  "matlab_lightweight_package": {
+    "status": "PASS",
+    "source_commit": "9f3466d30329d6a55e348f3771a0a1e6ef428f7c",
+    "archive": "Matlab-code/code.zip",
+    "archive_bytes": 7370400,
+    "archive_decimal_MB": 7.3704,
+    "archive_sha256": "247e9d21140966d9b271d5de2cde28ab243cbf9750cd980ada7561fa4a011ed8",
+    "entries": 23,
+    "uncompressed_bytes": 7507619,
+    "crc_pass": true,
+    "extracted_bytes_match": true,
+    "source_matches_verified_run": true,
+    "only_mat_file_is_required_small_input": true,
+    "old_large_results_included": false,
+    "matlab_recomputed_for_packaging": false,
+    "date": "2026-11-05",
+    "review_packet": "项目管理/review_packets/20261105_9f3466d_code_zip",
+    "publication_branch": "chore/package-code-20261105",
+    "entrypoint": "code/main_study.m",
+    "result_directory": "code/results_report/20261105_174457_036",
+    "model_level": "ideal carrier horizontal array factor times whole-object complex echo; unchanged RD",
+    "normalization": "20log10 image amplitude / same-run unmodulated reference peak; no clipping"
   }
 }
