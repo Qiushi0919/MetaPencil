@@ -24,3 +24,6 @@
 *.pdf binary
 *.pptx binary
 *.docx binary
+
+# Byte-exact historical backup retains its original trailing space.
+Matlab-code/历史版本/报告同步前_20261105/code/four_aircraft.m -whitespace

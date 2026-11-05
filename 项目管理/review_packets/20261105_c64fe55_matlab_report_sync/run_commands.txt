@@ -1,0 +1,20 @@
+MATLAB full recomputation, launched with working directory /tmp:
+/Applications/MATLAB_R2025a.app/bin/matlab -batch "run('/Users/qiushi/Doctor/MetaPencil/Matlab-code/code/main_study.m')"
+
+Independent numerical/FIG acceptance (after full run completion):
+addpath('/Users/qiushi/Doctor/MetaPencil/Matlab-code/code');
+addpath('/Users/qiushi/Doctor/MetaPencil/项目管理/review_packets/20261105_c64fe55_matlab_report_sync');
+verify_report_reproduction(new_output_dir, report_golden_dir, audit_dir);
+
+Report golden directory:
+项目管理/review_packets/20261030_c64fe55_horizontal_sar/full_Fs9.6_PRF3072
+Display convention source:
+项目管理/review_packets/20261101_c64fe55_sar_minus80/redraw.py
+
+Publication checks in isolated worktree based on origin/main:
+python3 tests/validate_repository.py --full
+python3 -m unittest tests/test_harmonic_model.py -v
+python3 tests/scan_secrets.py
+git diff --cached --check
+
+Full run needs MATLAB R2025a in the verified environment; no report-packet dependency at runtime.

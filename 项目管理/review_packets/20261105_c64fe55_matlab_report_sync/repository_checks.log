@@ -1,0 +1,12 @@
+REPOSITORY_STRUCTURE=PASS
+BASELINE_CHECKSUMS=PASS checked=872
+test_balanced_2bit_plus_one (tests.test_harmonic_model.HarmonicModelTest) ... ok
+test_balanced_two_channel_area (tests.test_harmonic_model.HarmonicModelTest) ... ok
+test_four_delay_nulls (tests.test_harmonic_model.HarmonicModelTest) ... ok
+test_retained_plus_one_and_2d_amplitude (tests.test_harmonic_model.HarmonicModelTest) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK
+SENSITIVE_SCAN=PASS high_confidence_findings=0
